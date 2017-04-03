@@ -5,7 +5,7 @@ Members:
 14521167 – Nguyen Dinh Khuong
 14520131 – Vu Nguyen Hai Dang
 I. Motivation: 
-Building application in order to receive registration of football clubs, create schedule for competing, record results of 	, search informations of players in Football Tournament.
+Building application in order to receive registration of football clubs, create schedule for competing, record results of , search informations of players in Football Tournament.
 II. System requirement:
 1. Function:
 •	Receive registration
