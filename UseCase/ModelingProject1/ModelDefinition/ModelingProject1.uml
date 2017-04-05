@@ -3,12 +3,6 @@
   dslVersion="1.0.0.0"
   Id="bcd4521a-7ecb-4766-95f9-6bb933c133b1"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
-  <ownedCommentsInternal>
-    <comment
-      Id="855e181a-40bf-4389-941d-4c72c68ab145">
-      <body>Will be user</body>
-    </comment>
-  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -1546,7 +1540,49 @@
         Id="3688dcfa-2562-4c80-91a0-eb14aaa65ca1"
         name="Login"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="112d3b63-fae1-40f5-865a-42ce9bfbb247"
+            isDerived="false"
+            sourceEndRoleName="Login"
+            targetEndRoleName="User"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="539174f6-33b6-4bcd-8731-651813db1801"
+              LastKnownName="User"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="697e3681-8a43-47d3-8f5b-473c835c4b19"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="459b3a9f-229b-4ab9-888b-f820cc57a851"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
