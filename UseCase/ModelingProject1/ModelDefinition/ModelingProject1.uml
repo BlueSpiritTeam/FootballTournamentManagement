@@ -1,0 +1,1579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="bcd4521a-7ecb-4766-95f9-6bb933c133b1"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="855e181a-40bf-4389-941d-4c72c68ab145">
+      <body>Will be user</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="539174f6-33b6-4bcd-8731-651813db1801"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a4b78a31-869c-4528-9b56-2602d331130c"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Tiếp nhận hồ sơ đăng ký"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1b957cd3-aa53-4f15-a4bf-55d4dc3a60ee"
+              LastKnownName="Receive registration"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="54e486a8-f20e-4105-935c-8b8b5c98a12f"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="386aa6b6-9934-4432-af82-d96edc2c801a"
+                  name="Tiếp nhận hồ sơ đăng ký"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fdabf3fb-dc80-4e3b-beb2-f5302bf29ebf"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Lập lịch thi đấu"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="856d1570-2870-424c-a59d-fe8215094d3b"
+              LastKnownName="Create schedule"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="81c81543-1893-41b5-98c2-d2ced4fac8f4"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98f109b3-81d9-40bc-9985-9d8d2196dc7e"
+                  name="Lập lịch thi đấu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ba621f0f-a4b0-47d9-8e38-2846f85cce05"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Ghi nhận kết quả trận đấu"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d8a0e9d2-f73b-44ce-b0fa-9ea8ac08de0e"
+              LastKnownName="Record the result of match"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a004ce5-7417-4ce4-bea9-7d3ac01ddce7"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="753d3eb6-a39f-48f8-ad6c-f8c2afdd2026"
+                  name="Ghi nhận kết quả trận đấu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="990d6152-fa14-44b4-aa06-4bce43916ead"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Tra cứu cầu thủ"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7898dc39-527f-4021-9757-85afd2bb9ea6"
+              LastKnownName="Search player"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b21feba6-f721-47bc-9152-0f11c67c8f61"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d086af14-e394-48af-8317-31e94ae4cd83"
+                  name="Tra cứu cầu thủ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4e5b48c3-5da9-40d2-987e-2bed2e5869d0"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Lập báo cáo giải"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="78f74199-8d4c-4076-b48b-52d78c75b09e"
+              LastKnownName="Create report"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2eb100d-a0d6-4d2c-83b9-4527bf0f9658"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f896777-8bf2-477d-a07e-5a6249a79319"
+                  name="Lập báo cáo giải"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e879b2e7-d238-40d3-856d-c3abafb2a2bd"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Thay đổi quy định"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="43df72ab-5383-4daf-94e2-7b504e57e09e"
+              LastKnownName="Change regulations"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9819d026-2f03-4327-b4ef-870acd202c83"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aba6bd50-6d47-4cf5-b386-c746e1fd223a"
+                  name="Thay đổi quy định"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c8def13e-62a7-44d6-a26b-4fa805502893"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Xem quy đinh"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c489018d-d520-4cd7-a7a3-086ac7ef4758"
+              LastKnownName="View regulations"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cae7c4e2-6b3a-4326-9f87-675ade0a46be"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd23d566-b96b-4102-95a8-42d14499c700"
+                  name="Xem quy đinh"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a0314c8e-c371-4e9f-ad31-ac21ea7fa64a"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="22306d3f-edaa-481d-9345-a16818a2c920"
+              LastKnownName="Logout"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e78836e-7c1c-4bec-9850-c11ae35f3bfd"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e11d20c-ed5c-4158-af8c-95fc09967a2c"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b957cd3-aa53-4f15-a4bf-55d4dc3a60ee"
+        name="Receive registration"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="856d1570-2870-424c-a59d-fe8215094d3b"
+        name="Create schedule"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d8a0e9d2-f73b-44ce-b0fa-9ea8ac08de0e"
+        name="Record the result of match"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="a7dc0e23-ce82-4155-8c26-f13803da549b"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="f255da07-5db5-4de8-93dd-2233673f6cda"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="6a389aa5-662b-4286-8b50-c37dfb36e649"
+            isDerived="false"
+            sourceEndRoleName="Ghi nhận kết quả trận đấu"
+            targetEndRoleName="Tỉ số"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4300ec7d-4afc-4b41-b321-21f6e7ba173a"
+              LastKnownName="Tỉ số"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e46eed71-150a-4978-afd0-c11d67c07946"
+                  name="Ghi nhận kết quả trận đấu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a361130-f020-4996-9ae6-b990147ee176"
+                  name="Tỉ số"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="23a01c9d-0436-4dcb-91cb-9298547dcec4"
+            isDerived="false"
+            sourceEndRoleName="Ghi nhận kết quả trận đấu"
+            targetEndRoleName="Chọn cặp đấu"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1372fb85-fdc8-44da-b0d8-6931da2084cb"
+              LastKnownName="Select pair"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e8d490a-5e13-4695-aedc-7fddc280e3e3"
+                  name="Ghi nhận kết quả trận đấu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7ac955e-a29e-4d63-bfec-70c076daf21a"
+                  name="Chọn cặp đấu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4300ec7d-4afc-4b41-b321-21f6e7ba173a"
+        name="Tỉ số"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="623c2afc-d106-4388-a9eb-bc9cc698863b"
+            isDerived="false"
+            sourceEndRoleName="Tỉ số"
+            targetEndRoleName="Người ghi bàn"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b0789864-4a2b-4895-89b4-e1623179ba08"
+              LastKnownName="Record whose goal"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="886c4782-7c2f-414c-953e-270a35899b93"
+                  name="Tỉ số"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ecb09a29-aac2-4f66-a4e3-d8e2b826e1e8"
+                  name="Người ghi bàn"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b0789864-4a2b-4895-89b4-e1623179ba08"
+        name="Record whose goal"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="5e0a052d-5041-45fd-b69b-0da76e8f3ba0">
+            <useCaseMoniker
+              Id="bb628207-1799-411b-bb76-af150b1804ea"
+              LastKnownName="Record time"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+          <include
+            Id="de5cc9a7-2442-4722-ab0b-309bfdf9535c">
+            <useCaseMoniker
+              Id="fcce7fbb-87d0-4ca5-bea8-f471a5c600f3"
+              LastKnownName="Show list of players who participate in match"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+          <include
+            Id="bf944c41-4046-4b78-b624-e2a9654ff439">
+            <useCaseMoniker
+              Id="ef1d8b1b-2754-462f-8908-04b62bf313da"
+              LastKnownName="Record classifing goal"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cfb679a4-d27d-4742-8890-029c645478fc"
+        name="Record who is assistance"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="53e5a128-7001-4636-a682-d93bfb63ca31">
+            <useCaseMoniker
+              Id="b0789864-4a2b-4895-89b4-e1623179ba08"
+              LastKnownName="Record whose goal"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="0cf89d76-26a4-4b5a-9ba8-478530f7f7c3">
+            <useCaseMoniker
+              Id="fcce7fbb-87d0-4ca5-bea8-f471a5c600f3"
+              LastKnownName="Show list of players who participate in match"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7898dc39-527f-4021-9757-85afd2bb9ea6"
+        name="Search player"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="70a3571b-5001-4aa4-b3aa-a05fab7d42a5"
+        name="Search by name"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="3a1ba65b-063c-41ac-8959-128904808d61"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="7898dc39-527f-4021-9757-85afd2bb9ea6"
+              LastKnownName="Search player"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <extendedCases>
+          <extend
+            Id="caa08c2b-4b79-4d0e-a6a0-c50b86494295">
+            <useCaseMoniker
+              Id="d3a4a933-3c51-4383-a5df-236929a29fa3"
+              LastKnownName="Search by Club (list player in Club)"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d3a4a933-3c51-4383-a5df-236929a29fa3"
+        name="Search by Club (list player in Club)"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="8a88a41c-cd7a-412d-a4f4-20a137329989"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="7898dc39-527f-4021-9757-85afd2bb9ea6"
+              LastKnownName="Search player"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bb628207-1799-411b-bb76-af150b1804ea"
+        name="Record time"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1372fb85-fdc8-44da-b0d8-6931da2084cb"
+        name="Select pair"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="da58be51-1f9c-42ef-bca9-55ced3b7ed59"
+            isDerived="false"
+            sourceEndRoleName="Chọn cặp đấu"
+            targetEndRoleName="Tỉ số"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ebfd3f00-be1a-4b45-84f9-9118cb9623d6"
+              LastKnownName="Record score ratio"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f66f13b5-b753-4b89-a49e-6624f90a0d91"
+                  name="Chọn cặp đấu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d63151ae-d59a-4ba7-8771-aeb2c17071d3"
+                  name="Tỉ số"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2e721b86-dfb7-4c95-96c6-a26f53d1218d"
+            isDerived="false"
+            sourceEndRoleName="Chọn cặp đấu"
+            targetEndRoleName="Danh sách cầu thủ tham gia trận đấu ( kể cả dự bị )"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fcce7fbb-87d0-4ca5-bea8-f471a5c600f3"
+              LastKnownName="Show list of players who participate in match"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e5a42fdc-87c9-461b-9478-a0da9d679201"
+                  name="Chọn cặp đấu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f6c010b-0ad7-44e0-af5b-490b5a011af3"
+                  name="Danh sách cầu thủ tham gia trận đấu ( kể cả dự bị )"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="12babf6e-9471-46e6-81c2-a67c4f6833c2">
+            <useCaseMoniker
+              Id="6e28fc88-20bc-4e2f-b20e-6f5fbe676584"
+              LastKnownName="Lịch thi đấu chính thức"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+          <include
+            Id="ba5e6985-012e-475b-a7cc-e2874b345683">
+            <useCaseMoniker
+              Id="7d960deb-573c-49b5-91ad-0f5e2954abc2"
+              LastKnownName="View schedue"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ebfd3f00-be1a-4b45-84f9-9118cb9623d6"
+        name="Record score ratio"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="261d96a2-7ab9-4f00-b17d-77bc9e3e0505"
+            isDerived="false"
+            sourceEndRoleName="Tỉ số"
+            targetEndRoleName="Người ghi bàn"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b0789864-4a2b-4895-89b4-e1623179ba08"
+              LastKnownName="Record whose goal"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1237bf14-d69d-45fe-81bb-df935edda60e"
+                  name="Tỉ số"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39d1d318-5857-421d-a7d4-65e277ccc459"
+                  name="Người ghi bàn"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7d960deb-573c-49b5-91ad-0f5e2954abc2"
+        name="View schedue"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="05aec6f0-a138-4840-bf16-a2b5aaa55be9"
+            isDerived="false"
+            sourceEndRoleName="Tạo lịch thi đấu"
+            targetEndRoleName="Lịch thi đấu chính thức"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6e28fc88-20bc-4e2f-b20e-6f5fbe676584"
+              LastKnownName="Lịch thi đấu chính thức"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5690cc3a-197f-4e0f-9c5f-02055d35fc52"
+                  name="Tạo lịch thi đấu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="38811914-0acb-440e-add9-6d76ea873c22"
+                  name="Lịch thi đấu chính thức"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="2bd6a559-5bf1-4c58-a52c-733e179403ff">
+            <useCaseMoniker
+              Id="856d1570-2870-424c-a59d-fe8215094d3b"
+              LastKnownName="Create schedule"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d904d3aa-c71b-43ab-bd9b-82cf6b394c8c"
+        name="Modify schedule"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="23414f8a-c0a2-4090-bdca-a27480fc8cf2"
+            isDerived="false"
+            sourceEndRoleName="Sửa lịch đấu"
+            targetEndRoleName="Lịch thi đấu chính thức"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6e28fc88-20bc-4e2f-b20e-6f5fbe676584"
+              LastKnownName="Lịch thi đấu chính thức"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bceadfc9-d1a0-424f-84c4-5222de04d711"
+                  name="Sửa lịch đấu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2fed806-bf36-4954-9aae-7f382a8d03bd"
+                  name="Lịch thi đấu chính thức"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="73476738-4744-4ed0-97d6-eb298314ba1e">
+            <useCaseMoniker
+              Id="7d960deb-573c-49b5-91ad-0f5e2954abc2"
+              LastKnownName="View schedue"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+          <extend
+            Id="ec6405dd-19d8-4163-848e-7853b34c0c74">
+            <useCaseMoniker
+              Id="856d1570-2870-424c-a59d-fe8215094d3b"
+              LastKnownName="Create schedule"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6e28fc88-20bc-4e2f-b20e-6f5fbe676584"
+        name="Lịch thi đấu chính thức"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fcce7fbb-87d0-4ca5-bea8-f471a5c600f3"
+        name="Show list of players who participate in match"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="78f74199-8d4c-4076-b48b-52d78c75b09e"
+        name="Create report"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="80e58480-8eca-4592-b7a1-b3b2b0cff113"
+            isDerived="false"
+            sourceEndRoleName="Lập báo cáo giải"
+            targetEndRoleName="Bàn thắng sớm nhất"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="48d80238-3b04-40a2-99c0-c282058291e3"
+              LastKnownName="Bàn thắng sớm nhất"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9cbf6911-fa0f-4525-b1a5-dc5c735b547f"
+                  name="Lập báo cáo giải"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="488ace4a-dcd7-4b16-9936-263cbbeea64d"
+                  name="Bàn thắng sớm nhất"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="80322068-3eea-4c2f-9710-9e1b05d3a0e2"
+        name="Show rank by point"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="427b9e68-f71d-4feb-b870-703e5fce4a31"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="78f74199-8d4c-4076-b48b-52d78c75b09e"
+              LastKnownName="Create report"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="de6f6656-dea8-4726-ba73-486dd3c3af27"
+        name="Show rank by the numbers of goal of each players"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="1525b5a7-adcc-4d70-89c9-330a9d3b5354"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="78f74199-8d4c-4076-b48b-52d78c75b09e"
+              LastKnownName="Create report"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ef1d8b1b-2754-462f-8908-04b62bf313da"
+        name="Record classifing goal"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="97ff100f-64ff-4d54-8cac-aa59d57c86cd"
+        name="Show rank by the level of beautiful goal"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="57cba3a2-f0cb-4efb-9c0f-bb977bf48770"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="78f74199-8d4c-4076-b48b-52d78c75b09e"
+              LastKnownName="Create report"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="48d80238-3b04-40a2-99c0-c282058291e3"
+        name="Bàn thắng sớm nhất"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d4938f2a-c310-48c3-aa1f-3bc2d3806fd1"
+        name="Thống kê trận đấu"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f255da07-5db5-4de8-93dd-2233673f6cda"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="43df72ab-5383-4daf-94e2-7b504e57e09e"
+        name="Change regulations"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c60ae0a6-8567-416e-876c-7709b3b56f2e"
+            isDerived="false"
+            sourceEndRoleName="Thay đổi quy định"
+            targetEndRoleName="Tuổi"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e63e8ab-c2e9-4fe5-9ff6-3fe8d27022b4"
+              LastKnownName="Tuổi"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e3a3100-cfa6-48af-9faa-aa6069b7c5a8"
+                  name="Thay đổi quy định"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="43e30a0c-ff38-4777-acf4-cb84dfa0e25a"
+                  name="Tuổi"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8cba1f88-dff3-4dbb-9f8c-b2b7285965ed"
+            isDerived="false"
+            sourceEndRoleName="Thay đổi quy định"
+            targetEndRoleName="Số lượng cầu thủ"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4251f426-d011-45bb-9a2f-b004dd24dcc0"
+              LastKnownName="Số lượng cầu thủ"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eb5c8ae6-fb73-4010-9c34-bbea337a283c"
+                  name="Thay đổi quy định"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91147bc0-d380-412e-ad4f-2b5e4d97210f"
+                  name="Số lượng cầu thủ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="958e9b2a-dbf2-4d3b-a612-2645cd10ee0e">
+            <useCaseMoniker
+              Id="c489018d-d520-4cd7-a7a3-086ac7ef4758"
+              LastKnownName="View regulations"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e63e8ab-c2e9-4fe5-9ff6-3fe8d27022b4"
+        name="Tuổi"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c117a845-79d5-4461-be11-14005d155852"
+            isDerived="false"
+            sourceEndRoleName="Tuổi"
+            targetEndRoleName="Tối thiểu"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3b1bc1eb-ae1b-4486-b793-3d2d0ed0e0d5"
+              LastKnownName="Tối thiểu"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d69d776-23c5-4da2-871e-05b9e2ad840b"
+                  name="Tuổi"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e833a424-66ba-4800-a8a8-428fd0c641f6"
+                  name="Tối thiểu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="39b4acc6-5623-47ff-80e1-9ba5601c88fa"
+            isDerived="false"
+            sourceEndRoleName="Tuổi"
+            targetEndRoleName="Tối đa"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7c304821-228c-449a-bf56-282c74400088"
+              LastKnownName="Tối đa"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="996ad68f-32d4-4782-9ec6-95e8c3b33452"
+                  name="Tuổi"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d44e9fb-1935-4d20-918c-c6fd4ab26f02"
+                  name="Tối đa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3b1bc1eb-ae1b-4486-b793-3d2d0ed0e0d5"
+        name="Tối thiểu"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7c304821-228c-449a-bf56-282c74400088"
+        name="Tối đa"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4251f426-d011-45bb-9a2f-b004dd24dcc0"
+        name="Số lượng cầu thủ"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6f88d7c3-28c4-4f3d-86d8-b599f750f430"
+            isDerived="false"
+            sourceEndRoleName="Số lượng cầu thủ"
+            targetEndRoleName="Tối thiểu"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="992889df-7e19-4ed1-9d2f-3344e3e44c11"
+              LastKnownName="Tối thiểu"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f9f3e6e-9bb2-4486-8a7f-10e29562276b"
+                  name="Số lượng cầu thủ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7859e69-df4e-40e5-bcef-8a930b8b591e"
+                  name="Tối thiểu"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f2596cd6-bb48-491a-9a6c-04c3fb8a417d"
+            isDerived="false"
+            sourceEndRoleName="Số lượng cầu thủ"
+            targetEndRoleName="Tối đa"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7a17a587-6cbe-43c3-a473-f4f80e6f486e"
+              LastKnownName="Tối đa"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e4889f6-d497-402c-995c-c8c678712ebb"
+                  name="Số lượng cầu thủ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="979006b5-3de4-4272-8466-c87e81f59365"
+                  name="Tối đa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="992889df-7e19-4ed1-9d2f-3344e3e44c11"
+        name="Tối thiểu"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7a17a587-6cbe-43c3-a473-f4f80e6f486e"
+        name="Tối đa"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c489018d-d520-4cd7-a7a3-086ac7ef4758"
+        name="View regulations"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="23612166-1b52-435d-af46-cade2f6703fe"
+        name="Change age"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="cead7233-6c34-4dca-a0dd-8186ca63c099"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="43df72ab-5383-4daf-94e2-7b504e57e09e"
+              LastKnownName="Change regulations"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="62ebc42c-6b69-40d3-8964-f8fbc4a04333"
+        name="Change the numbers of players in each Club (min max)"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="10153c01-0b4a-4fd1-b837-eca3946c2aec"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="43df72ab-5383-4daf-94e2-7b504e57e09e"
+              LastKnownName="Change regulations"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bd3131e3-9fb7-49e9-86f6-580d38ea7bad"
+        name="Change the maximum numbers of international players in each Club"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="ee80869a-b1c3-486b-9374-372f126b66fb"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="43df72ab-5383-4daf-94e2-7b504e57e09e"
+              LastKnownName="Change regulations"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0a6cab2a-70ce-452b-b858-cec1203d7bef"
+        name="Anonymous"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b6db70a6-78de-4edd-acf7-46f98c8ebb62"
+            isDerived="false"
+            sourceEndRoleName="Anonymous"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f49db535-ceac-43b6-8538-66c038756f1f"
+              LastKnownName="Login"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8a127021-d3aa-4109-932f-8436a3c967e2"
+                  name="Anonymous"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="779133bb-b237-40ff-bb2b-e44ba30abfd4"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="62859abb-1846-4491-96af-d33cdc3e5766"
+            isDerived="false"
+            sourceEndRoleName="Anonymous"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3688dcfa-2562-4c80-91a0-eb14aaa65ca1"
+              LastKnownName="Login"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e09e73f3-b35c-49b4-adc0-c84ab64a98a5"
+                  name="Anonymous"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e7a26f3-5611-4022-87a9-a7e528c13130"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f49db535-ceac-43b6-8538-66c038756f1f"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1e09da93-f028-4bc5-b144-bac868c8cce0"
+            isDerived="false"
+            sourceEndRoleName="Login"
+            targetEndRoleName="User"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="539174f6-33b6-4bcd-8731-651813db1801"
+              LastKnownName="User"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1acb5813-ac15-4c6e-880d-c47db2d0b67d"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="046b7ee0-c9da-4bf9-bc6e-26ecf9b73a6d"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3688dcfa-2562-4c80-91a0-eb14aaa65ca1"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="22306d3f-edaa-481d-9345-a16818a2c920"
+        name="Logout"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
