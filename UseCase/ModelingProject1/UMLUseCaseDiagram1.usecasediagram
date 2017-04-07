@@ -1,11 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="11b18f10-f845-4541-bea7-5f3c7c8db1fa" name="UMLUseCaseDiagram1" linkedPackageId="e3d61b01-78b2-47a9-ac0d-186dcba0f3bf" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <ownedCommentsInternal>
-    <comment Id="e3ca59ba-81fe-4036-bc98-1665d513b160">
-      <elementDefinition Id="855e181a-40bf-4389-941d-4c72c68ab145" />
-      <body>Will be user</body>
-    </comment>
-  </ownedCommentsInternal>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="3330c9b4-eed7-47ea-bf33-3f231f4e85f6" name="User" isAbstract="false" isLeaf="false">
@@ -466,6 +460,24 @@
     <useCaseModelRootHasTypes>
       <useCase Id="69b4a608-d2aa-4c85-81de-6d494c5db588" name="Login" isAbstract="false" isLeaf="false">
         <elementDefinition Id="3688dcfa-2562-4c80-91a0-eb14aaa65ca1" />
+        <targetEnds>
+          <association Id="301176ff-f6e0-45d2-9631-6a3c88d1e667" isDerived="false" sourceEndRoleName="Login" targetEndRoleName="User" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="3330c9b4-eed7-47ea-bf33-3f231f4e85f6" LastKnownName="User" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b399782-6cb4-41cf-bf41-c31a5986457a" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="697e3681-8a43-47d3-8f5b-473c835c4b19" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e8fdd815-5e64-46f4-a178-58721080c372" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="459b3a9f-229b-4ab9-888b-f820cc57a851" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="112d3b63-fae1-40f5-865a-42ce9bfbb247" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
