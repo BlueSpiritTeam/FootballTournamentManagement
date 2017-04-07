@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1faafbcd-8322-42b7-98b3-5638812b7c4b" name="VerifyRegisterTeam" linkedPackageId="2fe03c4f-04c7-4720-a74c-b3510e411ee2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="bbb8035a-3b2d-4e61-9474-e104e8ae40f4">
+      <profileInstance Id="8be4ff4f-42e0-4d9f-8e2f-d01f3869817d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="21e063d7-4e5a-4e20-83fc-18ea0f2e4eed">
+      <profileInstance Id="a1391095-c1b1-42ac-9cd1-147b8b69c4c2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="c1e9b680-5aaa-4f2f-a191-537e685053f4" name="VerifyRegisterTeam" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="46311a1c-3a72-4931-9ea5-2e85d463f02d" />
+        <nodes>
+          <initialNode Id="594ff726-94cb-4f1f-a45a-7b5ad574e2d4" name="Initial1" isLeaf="false">
+            <elementDefinition Id="7f28039d-d9d9-4efd-a12d-fb3dc0c07097" />
+            <flowNodeTargets>
+              <controlFlow Id="ce446372-372e-406a-a4d0-f446a0780bc9" isLeaf="false">
+                <opaqueActionMoniker Id="8647976c-43d3-4284-a68d-30f80f8c920f" LastKnownName="LOGIN" />
+                <elementDefinition Id="4e4f90f0-01b7-4c2d-bd83-ce6b50fa59a0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="8647976c-43d3-4284-a68d-30f80f8c920f" name="LOGIN" isLeaf="false">
+            <elementDefinition Id="87096616-b172-42f7-81b8-2c101f5eafa3" />
+            <flowNodeTargets>
+              <controlFlow Id="7773d3c8-d888-4066-a838-f58d2cc34973" isLeaf="false">
+                <opaqueActionMoniker Id="77b5453e-91f8-460e-a844-6237489be935" LastKnownName="VIEW RULES" />
+                <elementDefinition Id="cf9a2736-1e1f-4434-a874-0219b43b5ede" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="77b5453e-91f8-460e-a844-6237489be935" name="VIEW RULES" isLeaf="false">
+            <elementDefinition Id="fec51520-4f01-4cb0-8e5e-436508ec5d23" />
+            <flowNodeTargets>
+              <controlFlow Id="f1ec9dfa-3056-4e0f-b9c5-09f7a1b688f4" isLeaf="false">
+                <decisionNodeMoniker Id="b17dabaa-cfb5-468d-8c72-772243bb8612" LastKnownName="Decision1" />
+                <elementDefinition Id="8d55ddcc-6dcf-4746-a8d3-cc24e701bb0f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="632678c3-16ca-445b-a976-f5937e186d81" name="REGISTER A TEAM" isLeaf="false">
+            <elementDefinition Id="a8665b91-5956-4c50-be3c-a924168538bc" />
+            <flowNodeTargets>
+              <controlFlow Id="f984bacf-e975-4668-b001-4c00c2ce0292" isLeaf="false">
+                <activityFinalNodeMoniker Id="f82969b0-7d9e-4379-9206-eda20186dcb3" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c72bad42-8c2d-40d2-91c0-c7b0585e300b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="b17dabaa-cfb5-468d-8c72-772243bb8612" name="Decision1" isLeaf="false">
+            <elementDefinition Id="d9310b43-da2a-4769-afaf-5e097033fc67" />
+            <flowNodeTargets>
+              <controlFlow Id="63dbe28a-8539-4074-9fd8-d4289dc64f5b" isLeaf="false">
+                <opaqueActionMoniker Id="632678c3-16ca-445b-a976-f5937e186d81" LastKnownName="REGISTER A TEAM" />
+                <elementDefinition Id="2f28fb0e-38c2-46c4-acf2-74a3d0452964" />
+              </controlFlow>
+              <controlFlow Id="6b313952-45df-4281-b798-0b17ca68dedf" isLeaf="false">
+                <activityFinalNodeMoniker Id="3d64f87a-ee26-47e7-a65a-2d790a092d06" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="93e6999a-b8da-45d0-b428-dd18eccd3675" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <objectNode Id="a6d9d65a-8945-4685-9b77-fdc6f2856b0c" name="RIGHT" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="5d8a5ad3-a9fc-4498-bd5b-34da404f0bff" />
+            <upperBound>
+              <literalInteger Id="bca75fb7-22e5-4bc5-b4dd-f98d98742e6b" name="2147483647" value="2147483647">
+                <elementDefinition Id="873c07bf-6cc3-4123-95a8-84f7f4043c81" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="57c86093-111c-47ef-a00c-c90f878dd37d" name="WRONG" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="97a635c8-f8a0-4399-bdeb-2618fbf6c58e" />
+            <upperBound>
+              <literalInteger Id="baa0f143-8190-46ff-8950-47164ea4bd36" name="2147483647" value="2147483647">
+                <elementDefinition Id="4bed0fba-b458-45b2-a9bc-645f7ed9d81b" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <activityFinalNode Id="f82969b0-7d9e-4379-9206-eda20186dcb3" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="6de41844-28c9-4826-9ed3-39dce36b1147" />
+          </activityFinalNode>
+          <activityFinalNode Id="3d64f87a-ee26-47e7-a65a-2d790a092d06" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="a412e1cf-1ccd-476f-89d8-42eeefa1b543" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="2fe03c4f-04c7-4720-a74c-b3510e411ee2" name="MatchRecord">
+    <elementDefinition Id="46aec0b1-83eb-48c6-b494-529f58c0f37d" />
+  </package>
+</activityRootModel>

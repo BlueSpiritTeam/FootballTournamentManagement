@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UpdatePlayerInfo">
+  <activityRootModelMoniker Id="0956ce53-60ef-4d4b-9d59-1877367233b2" />
+  <nestedChildShapes>
+    <initialNodeShape Id="9206e2de-a0d5-43ad-878d-d36605c9e886" absoluteBounds="1.25, 0.75, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="f90e0a07-fc4e-42f6-80ef-2f936cecaf5f" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="0346b042-abab-49f9-b5e7-db3b0d62a368" absoluteBounds="2.625, 0.625, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="09514a11-89c7-4e39-836f-d895812ebe4a" LastKnownName="LOGIN" />
+    </actionShape>
+    <actionShape Id="a20c38d3-6a70-4efc-a684-ff4e92f55f86" absoluteBounds="2.625, 1.625, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="cce035a1-15f1-4fd8-a38d-60519b482bf6" LastKnownName="VIEW PLAYERS LIST" />
+    </actionShape>
+    <actionShape Id="f16cc9bd-d79f-4b7f-9f81-dc0814889350" absoluteBounds="2.625, 2.5, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="7fda862b-7e03-42e6-9ef7-75e864c3d56b" LastKnownName="CHOOSE A PLAYER" />
+    </actionShape>
+    <activityFinalNodeShape Id="fdc7918e-99a0-4aa6-8e5b-4c539312fa2f" absoluteBounds="3.125, 4.875, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="c0c9fc03-20ef-4351-bf02-197d74e7bbd1" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <actionShape Id="e9426dd8-b8bd-4fea-b9ef-c687c656b959" absoluteBounds="2.625, 3.375, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="4a734f6c-65ab-4cff-8e3a-e208e3218831" LastKnownName="UPDATE INFO" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(1.375 : 0.8125); (2.625 : 0.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="6acdbee7-ebcf-45d1-a4b2-614a54842e39" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="9206e2de-a0d5-43ad-878d-d36605c9e886" />
+        <actionShapeMoniker Id="0346b042-abab-49f9-b5e7-db3b0d62a368" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.1875 : 1); (3.1875 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="68654b49-9a07-4ad8-be91-96c6bd484af2" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="0346b042-abab-49f9-b5e7-db3b0d62a368" />
+        <actionShapeMoniker Id="a20c38d3-6a70-4efc-a684-ff4e92f55f86" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.1875 : 2); (3.1875 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="ca39beb7-55b7-49d9-aaf1-7505e4d243bf" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="a20c38d3-6a70-4efc-a684-ff4e92f55f86" />
+        <actionShapeMoniker Id="f16cc9bd-d79f-4b7f-9f81-dc0814889350" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.1875 : 2.875); (3.1875 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="b21fc2b9-b3c2-446c-8116-18d815e57365" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="f16cc9bd-d79f-4b7f-9f81-dc0814889350" />
+        <actionShapeMoniker Id="e9426dd8-b8bd-4fea-b9ef-c687c656b959" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.1875 : 3.75); (3.1875 : 4.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="d30b1b8f-d087-4468-ad64-2824dfa4e050" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="e9426dd8-b8bd-4fea-b9ef-c687c656b959" />
+        <activityFinalNodeShapeMoniker Id="fdc7918e-99a0-4aa6-8e5b-4c539312fa2f" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

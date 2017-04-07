@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5087275a-35af-457f-9824-3480c79aa48e" name="CreateMatchCalendar" linkedPackageId="1597811f-0ead-4c0c-91aa-ce162c79185d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="4ab8e7d6-f143-42cf-8448-1ebbab59e3c4" name="CreateMatchCalendar" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0797bbba-71c8-41f4-a819-3afa5ce90b25" />
+        <nodes>
+          <initialNode Id="a8c89592-494d-4187-9f67-97e653f24109" name="Initial1" isLeaf="false">
+            <elementDefinition Id="ceb38087-8bbb-42a8-866d-6780aa246e71" />
+            <flowNodeTargets>
+              <controlFlow Id="aaadf2fe-6156-4efd-b32b-6941e8f2d773" isLeaf="false">
+                <opaqueActionMoniker Id="09174dfa-e7c0-44e9-b12a-20e6717de7dc" LastKnownName="LOGIN" />
+                <elementDefinition Id="c1da863c-fa31-4830-abe3-01703b2456de" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="09174dfa-e7c0-44e9-b12a-20e6717de7dc" name="LOGIN" isLeaf="false">
+            <elementDefinition Id="02a0e070-436c-4011-bae5-3b35ce1e5636" />
+            <flowNodeTargets>
+              <controlFlow Id="0a0c2623-9584-4b8e-8e35-39cfd97fc268" isLeaf="false">
+                <opaqueActionMoniker Id="9b0e9936-5530-4ca7-965f-859bd305d416" LastKnownName="CREATE MATCH CALENDAR" />
+                <elementDefinition Id="73ec2dd9-62e0-4362-8001-1f47c6432119" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9b0e9936-5530-4ca7-965f-859bd305d416" name="CREATE MATCH CALENDAR" isLeaf="false">
+            <elementDefinition Id="567990e3-a5b0-4456-9aac-224ca543ff69" />
+            <flowNodeTargets>
+              <controlFlow Id="5ec0c5b0-5bde-44af-811d-aeea760056c6" isLeaf="false">
+                <forkNodeMoniker Id="703ec4cb-fee6-4047-bfc7-c208f3c5e005" LastKnownName="Fork1" />
+                <elementDefinition Id="55319e0a-f2fa-493e-913d-8592ca440d05" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="65a98b63-26df-462d-a39c-45e3ada22658" name="VIEW MATCH CALENDAR" isLeaf="false">
+            <elementDefinition Id="8b3b84f6-e26f-4d3b-b8ae-f036bcb5e975" />
+          </opaqueAction>
+          <opaqueAction Id="0571ea70-2149-4233-92f6-d57478154ca4" name="EDIT MATCH CALENDAR" isLeaf="false">
+            <elementDefinition Id="e166e232-0400-46c3-954f-ea27a48723fb" />
+            <flowNodeTargets>
+              <controlFlow Id="fb5b91ec-96d8-4df2-bc97-bca745fbcaa9" isLeaf="false">
+                <opaqueActionMoniker Id="cfca6bd0-82d7-413a-9deb-8181410921e5" LastKnownName="VIEW MATCH CALENDAR" />
+                <elementDefinition Id="06fb28d7-e4d2-4977-a745-c8837d83cbce" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a16db22f-1ae4-438f-9986-39b3669e59b4" name="DELETE MATCH CALENDAR" isLeaf="false">
+            <elementDefinition Id="e2fe5983-3153-4c83-a8b2-51d732bbe49d" />
+          </opaqueAction>
+          <opaqueAction Id="cfca6bd0-82d7-413a-9deb-8181410921e5" name="VIEW MATCH CALENDAR" isLeaf="false">
+            <elementDefinition Id="01c02860-400d-4cd6-a331-700edb725a8c" />
+            <flowNodeTargets>
+              <controlFlow Id="da980ae8-8472-4881-89c8-c5a6f38cab33" isLeaf="false">
+                <activityFinalNodeMoniker Id="2625aa06-5394-4210-96d8-a23976cceec7" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="e36cc75b-ccfc-4584-84f7-22ee3f2c7c04" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="2625aa06-5394-4210-96d8-a23976cceec7" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="e60f98f3-1eed-4be8-96ea-053c31bdccb7" />
+          </activityFinalNode>
+          <forkNode Id="703ec4cb-fee6-4047-bfc7-c208f3c5e005" name="Fork1" isLeaf="false">
+            <elementDefinition Id="517ea12a-68c2-4279-9768-dad78460c172" />
+            <flowNodeTargets>
+              <controlFlow Id="4f5b06e4-342f-4ff0-914b-c6931076e1f4" isLeaf="false">
+                <opaqueActionMoniker Id="0571ea70-2149-4233-92f6-d57478154ca4" LastKnownName="EDIT MATCH CALENDAR" />
+                <elementDefinition Id="828db7eb-fd51-45d0-9a0f-ee7d522a8b6a" />
+              </controlFlow>
+              <controlFlow Id="81a8de12-5d57-41c1-9158-43067d8a24bd" isLeaf="false">
+                <opaqueActionMoniker Id="a16db22f-1ae4-438f-9986-39b3669e59b4" LastKnownName="DELETE MATCH CALENDAR" />
+                <elementDefinition Id="1fa0b608-1853-4b72-91c9-31a19f583ddc" />
+              </controlFlow>
+              <controlFlow Id="6a90c995-7754-445d-93a6-75e47292f0b5" isLeaf="false">
+                <opaqueActionMoniker Id="65a98b63-26df-462d-a39c-45e3ada22658" LastKnownName="VIEW MATCH CALENDAR" />
+                <elementDefinition Id="b312ac33-a9ed-4644-a026-800d857e8eec" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="1597811f-0ead-4c0c-91aa-ce162c79185d" name="MatchRecord">
+    <elementDefinition Id="46aec0b1-83eb-48c6-b494-529f58c0f37d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="7d7997e8-8427-44fd-9926-a7983acac7f9">
+        <profileInstance Id="5a2b4be3-7cfe-4adf-a9f7-3c6eea506f91" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b26d76c2-2789-4707-865b-50dbcaea170f">
+        <profileInstance Id="f84e6af2-a68e-4340-89f4-16ab79939669" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

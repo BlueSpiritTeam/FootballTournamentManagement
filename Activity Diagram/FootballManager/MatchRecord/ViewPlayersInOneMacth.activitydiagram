@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="968579f7-25ee-4237-a0b9-5418242562a5" name="ViewPlayersInOneMacth" linkedPackageId="719044b4-6f32-458c-9c28-371dcd4f022b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c2ade8e9-1f94-411c-9931-5bf630af99ae">
+      <profileInstance Id="1c50d758-8c65-4f8a-9ab1-fd1b1c661245" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b0aabe86-5ba0-4338-b4e3-140b88b25152">
+      <profileInstance Id="1b2b2783-954b-4ddb-8c3b-d3b90f24a630" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="832a8dd0-a0f6-4980-80cf-c1d306e639f8" name="ViewPlayersInOneMacth" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="112034e2-4a6d-4313-9b1d-c912f7dc1bb2" />
+        <nodes>
+          <initialNode Id="168e9c27-f098-4c95-aa5d-d5609235af0c" name="Initial1" isLeaf="false">
+            <elementDefinition Id="9dcf32f3-08f7-4460-b5aa-95b765e9410b" />
+            <flowNodeTargets>
+              <controlFlow Id="8f2bb5d1-e679-46fa-aa57-da76f1b03638" isLeaf="false">
+                <opaqueActionMoniker Id="cfb1da4d-f3e8-4736-a0e8-e23f35ad4639" LastKnownName="LOGIN" />
+                <elementDefinition Id="ff803067-8fed-4680-9ca7-e37dd3b28bf1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="cfb1da4d-f3e8-4736-a0e8-e23f35ad4639" name="LOGIN" isLeaf="false">
+            <elementDefinition Id="4af49b3f-424f-47db-83cf-8ff9cd17d265" />
+            <flowNodeTargets>
+              <controlFlow Id="4035e7b4-2203-4c5b-b7ee-074933c23124" isLeaf="false">
+                <opaqueActionMoniker Id="77558342-06ed-437f-880a-3a3a9b741e21" LastKnownName="VIEW MATCH CALENDAR" />
+                <elementDefinition Id="5088b6da-4a59-4e53-ba47-ac1c40db119b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="77558342-06ed-437f-880a-3a3a9b741e21" name="VIEW MATCH CALENDAR" isLeaf="false">
+            <elementDefinition Id="b4ab47a7-51d9-4fce-bb95-15b7bc4152ad" />
+            <flowNodeTargets>
+              <controlFlow Id="435533c0-ca55-44df-8edf-b9d2317965c0" isLeaf="false">
+                <opaqueActionMoniker Id="ed74b931-21d4-444d-9362-6b246ad8966c" LastKnownName="CHOOSE A MATCH" />
+                <elementDefinition Id="d9676da5-f3fa-4909-8a1e-66be8dfc9c55" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ed74b931-21d4-444d-9362-6b246ad8966c" name="CHOOSE A MATCH" isLeaf="false">
+            <elementDefinition Id="72a1410c-d9c7-46b2-b76e-96d0c8db7cac" />
+            <flowNodeTargets>
+              <controlFlow Id="58e98e58-29c6-4e71-9735-36f3b5087b97" isLeaf="false">
+                <opaqueActionMoniker Id="3be1b4ea-dfb8-46c6-bf27-97d21cd39de3" LastKnownName="VIEW PLAYERS LIST IN MATCH" />
+                <elementDefinition Id="97f3b0b2-c062-474a-894d-636bb702f055" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="a0f5df0c-2112-4944-8d80-c0a84738b425" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="6b453454-ac12-419a-82f4-da82fed727fb" />
+          </activityFinalNode>
+          <opaqueAction Id="3be1b4ea-dfb8-46c6-bf27-97d21cd39de3" name="VIEW PLAYERS LIST IN MATCH" isLeaf="false">
+            <elementDefinition Id="24c9d91d-43eb-45e3-a81f-81bf900c318b" />
+            <flowNodeTargets>
+              <controlFlow Id="e53f0760-3588-408b-9b7f-82bfd175c8e0" isLeaf="false">
+                <activityFinalNodeMoniker Id="a0f5df0c-2112-4944-8d80-c0a84738b425" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ebd9b7b1-f267-44ec-af2b-152a59d12d9d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="719044b4-6f32-458c-9c28-371dcd4f022b" name="MatchRecord">
+    <elementDefinition Id="46aec0b1-83eb-48c6-b494-529f58c0f37d" />
+  </package>
+</activityRootModel>

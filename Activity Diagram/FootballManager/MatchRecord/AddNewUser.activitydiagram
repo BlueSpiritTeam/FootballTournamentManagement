@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7fae4304-c83c-444d-b3a7-49ba3af3173d" name="AddNewUser" linkedPackageId="290c9a12-6610-40e3-a625-7a67a5c3b35c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4bd4a780-6efc-47a8-aa23-0307937aecca">
+      <profileInstance Id="aaa4fb5c-584f-496e-a091-f56b42c31001" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="eec5d095-4425-44d6-9382-59eea558023f">
+      <profileInstance Id="fd546df6-471e-4289-8a74-273af58b98ad" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="759d9191-641d-4d78-bce7-962a7f93db01" name="AddNewUser" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="cb4fd396-f382-4408-93d0-061831bc98ac" />
+        <nodes>
+          <initialNode Id="f1e8c1e1-0959-44f8-b365-983a10ef515e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="d514ede0-43bb-4094-96ff-5379ff4672c2" />
+            <flowNodeTargets>
+              <controlFlow Id="58b88c13-98bd-4e92-819a-7545d8e2508e" isLeaf="false">
+                <opaqueActionMoniker Id="7451646b-aa40-4d3e-a396-08c06d4918ed" LastKnownName="LOGIN" />
+                <elementDefinition Id="f7c97677-b91c-422c-a15b-514e0149c305" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="7451646b-aa40-4d3e-a396-08c06d4918ed" name="LOGIN" isLeaf="false">
+            <elementDefinition Id="65ba4c90-f1f4-4aa6-b60b-f700c3554e3d" />
+            <flowNodeTargets>
+              <controlFlow Id="027d1bd5-e1cb-4405-b2f4-3ed20b0c66d1" isLeaf="false">
+                <opaqueActionMoniker Id="9fc5560e-c0d5-443f-bb2a-663be69b9649" LastKnownName="CREATE NEW ACCOUNT" />
+                <elementDefinition Id="99d21795-4490-4f4c-a187-0c627543c24a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9fc5560e-c0d5-443f-bb2a-663be69b9649" name="CREATE NEW ACCOUNT" isLeaf="false">
+            <elementDefinition Id="1affc97e-63f0-453a-a5c4-3041cf3edf34" />
+            <flowNodeTargets>
+              <controlFlow Id="45e7ac12-57ae-403f-af57-c427b5787008" isLeaf="false">
+                <activityFinalNodeMoniker Id="ae18409d-7f80-4807-9250-3df366c30a1d" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="8c600a64-360d-4a42-a13e-992d18ea8d16" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="ae18409d-7f80-4807-9250-3df366c30a1d" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="85cfd206-2f48-4400-8443-33886f36a0de" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="290c9a12-6610-40e3-a625-7a67a5c3b35c" name="MatchRecord">
+    <elementDefinition Id="46aec0b1-83eb-48c6-b494-529f58c0f37d" />
+  </package>
+</activityRootModel>

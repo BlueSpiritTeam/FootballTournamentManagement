@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5da0188f-4a11-4035-a0cb-08be96ba3234" name="ViewPlayers" linkedPackageId="45ba187a-714a-4a6d-91f7-f6486dc02fa9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0af7aeb6-ed8a-497e-8db8-9f197fc1d9fd">
+      <profileInstance Id="d58eac01-b06b-4a5b-b475-3aa931dc4c8b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ceb21239-2010-4bdf-b62e-03500565ec24">
+      <profileInstance Id="e67bb200-945c-4d13-9f48-ece0ce457863" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="d13f74d5-2ecb-4b37-8b43-7785854d6d32" name="ViewPlayers" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="dc3b768e-24dd-406e-8e10-bda44ddb957e" />
+        <nodes>
+          <initialNode Id="02efc97a-1c56-4d36-93eb-943b1b503de7" name="Initial1" isLeaf="false">
+            <elementDefinition Id="5a58b9be-238d-4407-9e89-9d6c462fd218" />
+            <flowNodeTargets>
+              <controlFlow Id="46d340c9-2690-43fd-b7f0-ceba41dada79" isLeaf="false">
+                <opaqueActionMoniker Id="06180382-cd21-4eec-9d8c-48aab26c0553" LastKnownName="LOGIN" />
+                <elementDefinition Id="0a5f4d84-2dff-46ba-93cb-dafc3f79919f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="06180382-cd21-4eec-9d8c-48aab26c0553" name="LOGIN" isLeaf="false">
+            <elementDefinition Id="ed302fb2-e748-4b55-97cc-bedb4e50eaaa" />
+            <flowNodeTargets>
+              <controlFlow Id="7510bec8-cf49-4840-ac16-c30e7a7bfdd3" isLeaf="false">
+                <opaqueActionMoniker Id="5c45fecb-5ffc-4a15-b6c5-b1a032fef385" LastKnownName="CHOOSE METHOD" />
+                <elementDefinition Id="044f9244-5972-4361-9228-94f540d7253e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5c45fecb-5ffc-4a15-b6c5-b1a032fef385" name="CHOOSE METHOD" isLeaf="false">
+            <elementDefinition Id="71bfd7b1-0b5f-45c9-9fd6-b4cd3f33e354" />
+            <flowNodeTargets>
+              <controlFlow Id="d01f747f-a9ff-47de-af1a-a44e2fc8d5c8" isLeaf="false">
+                <forkNodeMoniker Id="a963cfdd-8751-454c-894d-f9bf9346c8b0" LastKnownName="Fork1" />
+                <elementDefinition Id="e3343f80-30df-40e7-a893-e63908159dd8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e89c742a-ce71-46fe-8970-d5440cd89f6e" name="SEARCH BY SCORES" isLeaf="false">
+            <elementDefinition Id="83ce8a17-21cc-4cd3-a513-05b739faccb5" />
+            <flowNodeTargets>
+              <controlFlow Id="98e5b360-dbbc-4810-a070-aacedd564390" isLeaf="false">
+                <joinNodeMoniker Id="5536c33f-62ae-4687-a781-636df2036f40" LastKnownName="Join1" />
+                <elementDefinition Id="857b0026-97d5-4a85-8c17-005d6a255e6b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="10d66000-d409-41dc-8e03-9398565821bb" name="SEARCH BY NAME" isLeaf="false">
+            <elementDefinition Id="8848af8e-a2ff-4e74-8437-1aee7e4d4392" />
+            <flowNodeTargets>
+              <controlFlow Id="b7f38137-e67a-40a5-a796-46e41fef007f" isLeaf="false">
+                <joinNodeMoniker Id="5536c33f-62ae-4687-a781-636df2036f40" LastKnownName="Join1" />
+                <elementDefinition Id="3b26a2e4-62ac-4e84-a458-b91e72708e92" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6c525dd1-453c-43b6-8a90-a57db194ef64" name="SEARCH BY AGE" isLeaf="false">
+            <elementDefinition Id="86665b49-5bb1-45d1-9cd1-d1289a32d332" />
+            <flowNodeTargets>
+              <controlFlow Id="43d5d88e-d92e-4c43-b211-838d0e6385dd" isLeaf="false">
+                <joinNodeMoniker Id="5536c33f-62ae-4687-a781-636df2036f40" LastKnownName="Join1" />
+                <elementDefinition Id="7961e08c-4d4b-4e9e-bd08-46f4b65b1095" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5287d5e0-41c0-4506-8f89-817e59c640f8" name="SEARCH BY TEAM" isLeaf="false">
+            <elementDefinition Id="06044585-ce76-4d0b-bc55-819c4d436cb3" />
+            <flowNodeTargets>
+              <controlFlow Id="6dffbfe4-c4ee-412b-8a3f-1df7bbdaa446" isLeaf="false">
+                <joinNodeMoniker Id="5536c33f-62ae-4687-a781-636df2036f40" LastKnownName="Join1" />
+                <elementDefinition Id="f7f41f19-affd-4946-b438-5640cbecef9d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4fcfcb1f-a475-4afa-9076-5e54766d990e" name="SHOW THE LIST" isLeaf="false">
+            <elementDefinition Id="41e2b50a-ad3c-446c-97fa-6cd4aa1b9b7d" />
+            <flowNodeTargets>
+              <controlFlow Id="e7a18929-546b-46d6-8bc3-f95744650012" isLeaf="false">
+                <activityFinalNodeMoniker Id="08bec4af-825a-41bf-b7ff-dfe3f13b7815" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="858d349d-4c42-4f00-adac-67e080784e0d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="be789f0d-d33c-4789-ae8a-1c0ff843d6eb" name="Decision1" isLeaf="false">
+            <elementDefinition Id="c6b48827-373b-4d72-a69d-b6dd7d67a9a1" />
+            <flowNodeTargets>
+              <controlFlow Id="15a72f4a-e6e6-49c6-bc68-3fcb827a24ed" isLeaf="false">
+                <opaqueActionMoniker Id="4fcfcb1f-a475-4afa-9076-5e54766d990e" LastKnownName="SHOW THE LIST" />
+                <elementDefinition Id="79ab2960-b2a4-4793-aa84-1b04820269b1" />
+              </controlFlow>
+              <controlFlow Id="b8ae1224-0d36-473e-9498-9171d3fe53a1" isLeaf="false">
+                <activityFinalNodeMoniker Id="d895d81e-9a46-4602-a86a-a53a10bd4c8d" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="747315a6-27a9-4fe3-b46d-a85bd5962253" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <joinNode Id="5536c33f-62ae-4687-a781-636df2036f40" name="Join1" isLeaf="false">
+            <elementDefinition Id="75968052-e3d3-4ccb-bf1b-ff606177ff67" />
+            <flowNodeTargets>
+              <controlFlow Id="9cbeb5a7-9779-48a2-827e-ea8340eacc8c" isLeaf="false">
+                <decisionNodeMoniker Id="be789f0d-d33c-4789-ae8a-1c0ff843d6eb" LastKnownName="Decision1" />
+                <elementDefinition Id="a645e018-81e6-4155-9385-5eff5916e309" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <forkNode Id="a963cfdd-8751-454c-894d-f9bf9346c8b0" name="Fork1" isLeaf="false">
+            <elementDefinition Id="32bc6027-f360-4008-bde3-3cb3e1e7e17f" />
+            <flowNodeTargets>
+              <controlFlow Id="6cef2928-bc9c-4fbc-ad60-dbad64e500cc" isLeaf="false">
+                <opaqueActionMoniker Id="e89c742a-ce71-46fe-8970-d5440cd89f6e" LastKnownName="SEARCH BY SCORES" />
+                <elementDefinition Id="91c0fcf4-a5eb-4757-b7e0-267c263878b1" />
+              </controlFlow>
+              <controlFlow Id="75a57c68-c801-4214-9d3d-9aea06ebaad7" isLeaf="false">
+                <opaqueActionMoniker Id="10d66000-d409-41dc-8e03-9398565821bb" LastKnownName="SEARCH BY NAME" />
+                <elementDefinition Id="642d6c26-cc5f-407d-9161-7494984c540a" />
+              </controlFlow>
+              <controlFlow Id="d48ae3f3-44f5-49a6-b8bf-e5f5665e0d3c" isLeaf="false">
+                <opaqueActionMoniker Id="6c525dd1-453c-43b6-8a90-a57db194ef64" LastKnownName="SEARCH BY AGE" />
+                <elementDefinition Id="3ab03b90-f30f-4d4f-909f-9a776ba24fe8" />
+              </controlFlow>
+              <controlFlow Id="ae9f944e-1790-4e22-bbed-e20e3c538779" isLeaf="false">
+                <opaqueActionMoniker Id="5287d5e0-41c0-4506-8f89-817e59c640f8" LastKnownName="SEARCH BY TEAM" />
+                <elementDefinition Id="1e0b04af-011c-42e6-96a4-09d7d1224cd0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <activityFinalNode Id="08bec4af-825a-41bf-b7ff-dfe3f13b7815" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a3a3ed5c-44fd-49b4-9eaa-255cebad2e06" />
+          </activityFinalNode>
+          <activityFinalNode Id="d895d81e-9a46-4602-a86a-a53a10bd4c8d" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="463ea6f8-073a-47bf-89da-647125c7e42b" />
+          </activityFinalNode>
+          <objectNode Id="bcc51cdb-627e-44eb-81bb-fc0ab969389e" name="HAVE RESULT" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="5b0aab42-ae92-437b-8b2f-376a41e10352" />
+            <upperBound>
+              <literalInteger Id="5cc6ca97-d1ce-4e08-a721-41003fac7b4b" name="2147483647" value="2147483647">
+                <elementDefinition Id="5a99855f-9c91-454f-ae49-bdd6731f4df1" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="ca57c2b0-4821-4376-be03-e681ca7d29ad" name="DO NOT HAVE RESULT" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="e306f213-0944-46c9-ba45-1a8a04fcde34" />
+            <upperBound>
+              <literalInteger Id="6444093f-67ec-4eb1-96f4-2d8c156fbfc5" name="2147483647" value="2147483647">
+                <elementDefinition Id="c8763821-0cba-4449-acf7-48ebb8f8cdff" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="45ba187a-714a-4a6d-91f7-f6486dc02fa9" name="MatchRecord">
+    <elementDefinition Id="46aec0b1-83eb-48c6-b494-529f58c0f37d" />
+  </package>
+</activityRootModel>

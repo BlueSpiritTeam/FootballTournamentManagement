@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Footbal", "Footbal\Footbal.csproj", "{BD056C9D-C253-47ED-A81E-1079170D6650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Footbal.Database", "Footbal.Database\Footbal.Database.csproj", "{950B7FCF-7AA2-4AE7-8C9E-D4DA71C95D6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD056C9D-C253-47ED-A81E-1079170D6650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD056C9D-C253-47ED-A81E-1079170D6650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD056C9D-C253-47ED-A81E-1079170D6650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD056C9D-C253-47ED-A81E-1079170D6650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950B7FCF-7AA2-4AE7-8C9E-D4DA71C95D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950B7FCF-7AA2-4AE7-8C9E-D4DA71C95D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950B7FCF-7AA2-4AE7-8C9E-D4DA71C95D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950B7FCF-7AA2-4AE7-8C9E-D4DA71C95D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

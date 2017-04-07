@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0956ce53-60ef-4d4b-9d59-1877367233b2" name="UpdatePlayerInfo" linkedPackageId="8b57ef7d-811a-485d-b13c-0aecad1c8260" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="443d3f2d-394e-45a0-9826-83b326bc16ff">
+      <profileInstance Id="e92600d9-f153-46e6-9b4f-ea09e0ed4bff" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4a8b5ff4-e0dd-4c34-8e2a-b86445244157">
+      <profileInstance Id="8127b4bb-c32d-46ec-8037-352c2b3d6110" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="82feb201-6489-4810-bdb3-742fb41a73df" name="UpdatePlayerInfo" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ee35ec29-8b22-40f9-8e40-6d17d6b0c582" />
+        <nodes>
+          <initialNode Id="f90e0a07-fc4e-42f6-80ef-2f936cecaf5f" name="Initial1" isLeaf="false">
+            <elementDefinition Id="b75493e7-d4f5-475d-b23f-78de410283b2" />
+            <flowNodeTargets>
+              <controlFlow Id="6acdbee7-ebcf-45d1-a4b2-614a54842e39" isLeaf="false">
+                <opaqueActionMoniker Id="09514a11-89c7-4e39-836f-d895812ebe4a" LastKnownName="LOGIN" />
+                <elementDefinition Id="c1e2f554-085c-429a-b2e5-229e325644c5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="09514a11-89c7-4e39-836f-d895812ebe4a" name="LOGIN" isLeaf="false">
+            <elementDefinition Id="36779417-4caa-4341-bef1-db75c0729f95" />
+            <flowNodeTargets>
+              <controlFlow Id="68654b49-9a07-4ad8-be91-96c6bd484af2" isLeaf="false">
+                <opaqueActionMoniker Id="cce035a1-15f1-4fd8-a38d-60519b482bf6" LastKnownName="VIEW PLAYERS LIST" />
+                <elementDefinition Id="29c77b89-d662-4dc7-b645-7d560130f498" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cce035a1-15f1-4fd8-a38d-60519b482bf6" name="VIEW PLAYERS LIST" isLeaf="false">
+            <elementDefinition Id="6097d4f9-34ce-4641-80f5-11169c0a63af" />
+            <flowNodeTargets>
+              <controlFlow Id="ca39beb7-55b7-49d9-aaf1-7505e4d243bf" isLeaf="false">
+                <opaqueActionMoniker Id="7fda862b-7e03-42e6-9ef7-75e864c3d56b" LastKnownName="CHOOSE A PLAYER" />
+                <elementDefinition Id="306cf679-5913-4a8f-96d7-ba11a3a8806d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7fda862b-7e03-42e6-9ef7-75e864c3d56b" name="CHOOSE A PLAYER" isLeaf="false">
+            <elementDefinition Id="127f8680-4a91-4048-aee7-97ce97f93075" />
+            <flowNodeTargets>
+              <controlFlow Id="b21fc2b9-b3c2-446c-8116-18d815e57365" isLeaf="false">
+                <opaqueActionMoniker Id="4a734f6c-65ab-4cff-8e3a-e208e3218831" LastKnownName="UPDATE INFO" />
+                <elementDefinition Id="178fed42-be82-445e-87eb-436a8bf9fd9d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="c0c9fc03-20ef-4351-bf02-197d74e7bbd1" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="c341c8b9-ed59-4add-8f44-1bbe0e9ec8cf" />
+          </activityFinalNode>
+          <opaqueAction Id="4a734f6c-65ab-4cff-8e3a-e208e3218831" name="UPDATE INFO" isLeaf="false">
+            <elementDefinition Id="11189cce-1d48-478d-a374-beb81a2c44bf" />
+            <flowNodeTargets>
+              <controlFlow Id="d30b1b8f-d087-4468-ad64-2824dfa4e050" isLeaf="false">
+                <activityFinalNodeMoniker Id="c0c9fc03-20ef-4351-bf02-197d74e7bbd1" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="14dfebfc-72e4-4aaa-be8a-1903e01ea803" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="8b57ef7d-811a-485d-b13c-0aecad1c8260" name="MatchRecord">
+    <elementDefinition Id="46aec0b1-83eb-48c6-b494-529f58c0f37d" />
+  </package>
+</activityRootModel>
