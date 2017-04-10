@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="11b18f10-f845-4541-bea7-5f3c7c8db1fa" name="UMLUseCaseDiagram1" linkedPackageId="e3d61b01-78b2-47a9-ac0d-186dcba0f3bf" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3330c9b4-eed7-47ea-bf33-3f231f4e85f6" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="539174f6-33b6-4bcd-8731-651813db1801" />
+        <targetEnds>
+          <association Id="54f8f031-04a2-4fe1-8502-626327ca255b" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Tiếp nhận hồ sơ đăng ký" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="01a8eb8a-9f8c-48e6-a406-7a1c74687ba3" LastKnownName="Receive registration" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d41bad21-1824-49b0-abde-d61df3176435" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="54e486a8-f20e-4105-935c-8b8b5c98a12f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f2db2dd-96b5-438f-afbc-e7a6a2584811" name="Tiếp nhận hồ sơ đăng ký" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="386aa6b6-9934-4432-af82-d96edc2c801a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a4b78a31-869c-4528-9b56-2602d331130c" />
+          </association>
+          <association Id="8f0c50ec-e3e2-4306-b0f7-9fe94a7dfc6e" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Lập lịch thi đấu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="90a403f2-1845-416c-a2b3-5b6a3560cf3f" LastKnownName="Create schedule" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a95cd284-2403-43fc-8756-cc2b8b24bc54" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="81c81543-1893-41b5-98c2-d2ced4fac8f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93e950f9-fe7f-455d-a18d-cda54bdbb885" name="Lập lịch thi đấu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="98f109b3-81d9-40bc-9985-9d8d2196dc7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fdabf3fb-dc80-4e3b-beb2-f5302bf29ebf" />
+          </association>
+          <association Id="5eaaa705-64df-4396-b7ad-a13309722a21" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Ghi nhận kết quả trận đấu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="19c283af-31ff-4089-97b5-8765a5bd9b8e" LastKnownName="Record the result of match" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f23b8317-42d7-4b4a-9ad8-d5ae4a6e8e07" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5a004ce5-7417-4ce4-bea9-7d3ac01ddce7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8414870-9935-49b5-8aed-4083d10e5bf6" name="Ghi nhận kết quả trận đấu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="753d3eb6-a39f-48f8-ad6c-f8c2afdd2026" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ba621f0f-a4b0-47d9-8e38-2846f85cce05" />
+          </association>
+          <association Id="d3b15f45-7475-4ca5-8e2d-6ed0f90b366e" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Tra cứu cầu thủ" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="11e0fc47-60b3-44cc-8b45-e9b306908a58" LastKnownName="Search player" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2ccd81c-b504-4468-8dc3-459a9a3ebafb" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b21feba6-f721-47bc-9152-0f11c67c8f61" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="647a311f-2887-4fce-ab86-e7b699b584ba" name="Tra cứu cầu thủ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d086af14-e394-48af-8317-31e94ae4cd83" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="990d6152-fa14-44b4-aa06-4bce43916ead" />
+          </association>
+          <association Id="fd88d4b3-eb7b-4ceb-b763-74d4e645a961" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Lập báo cáo giải" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6d53d504-d65d-4415-9d79-0c494fb6c895" LastKnownName="Create report" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96a7a940-7896-4cf7-99bb-23bccb8c9d4e" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e2eb100d-a0d6-4d2c-83b9-4527bf0f9658" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="40051741-9427-4a54-90e0-f391658c34c9" name="Lập báo cáo giải" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2f896777-8bf2-477d-a07e-5a6249a79319" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4e5b48c3-5da9-40d2-987e-2bed2e5869d0" />
+          </association>
+          <association Id="89af3d34-b10d-4b0f-bab2-0c897b923112" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Thay đổi quy định" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="85b37629-4989-4b5f-a3d3-2d0cac1d38de" LastKnownName="Change regulations" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74ae1762-cabf-459a-b9e6-e793ef8767b4" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9819d026-2f03-4327-b4ef-870acd202c83" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="714e773b-5ddd-437e-b00c-a173fcdbd0f7" name="Thay đổi quy định" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aba6bd50-6d47-4cf5-b386-c746e1fd223a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e879b2e7-d238-40d3-856d-c3abafb2a2bd" />
+          </association>
+          <association Id="4f3d8515-2583-48e4-9a4c-1ad89538e1f4" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Xem quy đinh" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3f9641ec-dc1d-44b4-bec8-f5461f742938" LastKnownName="View regulations" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a30fb6c-7e5f-4d3f-81e7-ffafed7d8517" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cae7c4e2-6b3a-4326-9f87-675ade0a46be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b37d5a64-434f-4f46-b376-a18b915cb106" name="Xem quy đinh" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cd23d566-b96b-4102-95a8-42d14499c700" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c8def13e-62a7-44d6-a26b-4fa805502893" />
+          </association>
+          <association Id="37c7061f-f787-4b64-bdb3-e1a9f40a8ab7" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Logout" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a2698bab-1229-4064-a0d9-ab4b7c35e99c" LastKnownName="Logout" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d4ed9a7-93e2-4aff-97e9-db51083b3878" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4e78836e-7c1c-4bec-9850-c11ae35f3bfd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac30860c-a071-41de-ae01-74956e95e508" name="Logout" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6e11d20c-ed5c-4158-af8c-95fc09967a2c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a0314c8e-c371-4e9f-ad31-ac21ea7fa64a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="01a8eb8a-9f8c-48e6-a406-7a1c74687ba3" name="Receive registration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1b957cd3-aa53-4f15-a4bf-55d4dc3a60ee" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="90a403f2-1845-416c-a2b3-5b6a3560cf3f" name="Create schedule" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="856d1570-2870-424c-a59d-fe8215094d3b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="19c283af-31ff-4089-97b5-8765a5bd9b8e" name="Record the result of match" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d8a0e9d2-f73b-44ce-b0fa-9ea8ac08de0e" />
+        <targetEnds>
+          <association Id="9e19ce61-7c6f-450e-ae82-09dc2ec04bf5" isDerived="false" sourceEndRoleName="Ghi nhận kết quả trận đấu" targetEndRoleName="Chọn cặp đấu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="41ef6634-5b5a-4201-aefd-27f22719d365" LastKnownName="Select pair" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f76e75da-1b1c-47ee-8cc9-fc0181e8c24b" name="Ghi nhận kết quả trận đấu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5e8d490a-5e13-4695-aedc-7fddc280e3e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9724d6bd-8f46-4910-8eee-a196055575ea" name="Chọn cặp đấu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a7ac955e-a29e-4d63-bfec-70c076daf21a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="23a01c9d-0436-4dcb-91cb-9298547dcec4" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="45a5970c-4185-4903-bed1-ababd3e88327" name="Record whose goal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0789864-4a2b-4895-89b4-e1623179ba08" />
+        <additions>
+          <include Id="0d3cdae6-138b-45d3-b18d-91007cd03d11">
+            <useCaseMoniker Id="b101ff85-ef9d-4319-a148-33856fe20fb0" LastKnownName="Record time" />
+            <elementDefinition Id="5e0a052d-5041-45fd-b69b-0da76e8f3ba0" />
+          </include>
+          <include Id="9234ff9e-60f7-4672-ae8e-58873bf4385e">
+            <useCaseMoniker Id="48d002c6-eb87-4123-8bf5-05c272105ed8" LastKnownName="Show list of players who participate in match" />
+            <elementDefinition Id="de5cc9a7-2442-4722-ab0b-309bfdf9535c" />
+          </include>
+          <include Id="b057924d-9bb8-4b4b-b118-4b6d86880065">
+            <useCaseMoniker Id="15d11b3a-2716-4514-ba0d-bf1b6fd73688" LastKnownName="Record classifing goal" />
+            <elementDefinition Id="bf944c41-4046-4b78-b624-e2a9654ff439" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0d05065f-e1fa-401a-9dc6-e19a312e4b56" name="Record who is assistance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cfb679a4-d27d-4742-8890-029c645478fc" />
+        <extendedCases>
+          <extend Id="e3b4c0f9-7d4c-427b-ae00-ee28849b4264">
+            <useCaseMoniker Id="45a5970c-4185-4903-bed1-ababd3e88327" LastKnownName="Record whose goal" />
+            <elementDefinition Id="53e5a128-7001-4636-a682-d93bfb63ca31" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="2230218f-4f08-4918-a7bc-1d558bbcc857">
+            <useCaseMoniker Id="48d002c6-eb87-4123-8bf5-05c272105ed8" LastKnownName="Show list of players who participate in match" />
+            <elementDefinition Id="0cf89d76-26a4-4b5a-9ba8-478530f7f7c3" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="11e0fc47-60b3-44cc-8b45-e9b306908a58" name="Search player" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7898dc39-527f-4021-9757-85afd2bb9ea6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1819b51c-bcb5-40e5-aaf8-0b7ba52a28c1" name="Search by name" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70a3571b-5001-4aa4-b3aa-a05fab7d42a5" />
+        <generalsInternal>
+          <generalization Id="3c85b137-3a48-48c8-b164-30423dc0e427" isSubstitutable="false">
+            <useCaseMoniker Id="11e0fc47-60b3-44cc-8b45-e9b306908a58" LastKnownName="Search player" />
+            <elementDefinition Id="3a1ba65b-063c-41ac-8959-128904808d61" />
+          </generalization>
+        </generalsInternal>
+        <extendedCases>
+          <extend Id="3b0eefdd-8b91-483b-a90e-baa99ef190e6">
+            <useCaseMoniker Id="c059004e-a8a4-4f39-bd62-dc53a6c3d5e8" LastKnownName="Search by Club (list player in Club)" />
+            <elementDefinition Id="caa08c2b-4b79-4d0e-a6a0-c50b86494295" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c059004e-a8a4-4f39-bd62-dc53a6c3d5e8" name="Search by Club (list player in Club)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d3a4a933-3c51-4383-a5df-236929a29fa3" />
+        <generalsInternal>
+          <generalization Id="0c25d5dc-47d2-49a9-97a0-53ef587835b5" isSubstitutable="false">
+            <useCaseMoniker Id="11e0fc47-60b3-44cc-8b45-e9b306908a58" LastKnownName="Search player" />
+            <elementDefinition Id="8a88a41c-cd7a-412d-a4f4-20a137329989" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b101ff85-ef9d-4319-a148-33856fe20fb0" name="Record time" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb628207-1799-411b-bb76-af150b1804ea" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="41ef6634-5b5a-4201-aefd-27f22719d365" name="Select pair" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1372fb85-fdc8-44da-b0d8-6931da2084cb" />
+        <targetEnds>
+          <association Id="fa1d0791-c523-4161-81b1-afe029cd67ba" isDerived="false" sourceEndRoleName="Chọn cặp đấu" targetEndRoleName="Tỉ số" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3f3c8be2-657c-44ce-90c8-adf8c6b8aa8d" LastKnownName="Record score ratio" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c262c41b-7a19-4636-a715-a5d5234ea1b3" name="Chọn cặp đấu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f66f13b5-b753-4b89-a49e-6624f90a0d91" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be6a8c50-34d1-463b-81e2-304ada641e79" name="Tỉ số" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d63151ae-d59a-4ba7-8771-aeb2c17071d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="da58be51-1f9c-42ef-bca9-55ced3b7ed59" />
+          </association>
+          <association Id="dde52e9c-b36d-4541-98a1-65e028a0a7d7" isDerived="false" sourceEndRoleName="Chọn cặp đấu" targetEndRoleName="Danh sách cầu thủ tham gia trận đấu ( kể cả dự bị )" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="48d002c6-eb87-4123-8bf5-05c272105ed8" LastKnownName="Show list of players who participate in match" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="722c2535-243d-47a5-98af-3308699d876f" name="Chọn cặp đấu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e5a42fdc-87c9-461b-9478-a0da9d679201" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e647ef9-d613-454d-ac47-d2182caf845e" name="Danh sách cầu thủ tham gia trận đấu ( kể cả dự bị )" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5f6c010b-0ad7-44e0-af5b-490b5a011af3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2e721b86-dfb7-4c95-96c6-a26f53d1218d" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="2076148b-64be-4b65-8624-f0bfa8a19244">
+            <useCaseMoniker Id="e17a0e6c-02b2-48bc-a39b-f1cb5eb90155" LastKnownName="View schedue" />
+            <elementDefinition Id="ba5e6985-012e-475b-a7cc-e2874b345683" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3f3c8be2-657c-44ce-90c8-adf8c6b8aa8d" name="Record score ratio" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ebfd3f00-be1a-4b45-84f9-9118cb9623d6" />
+        <targetEnds>
+          <association Id="6ce71908-fea4-4f6e-8092-c91e7b0b1da0" isDerived="false" sourceEndRoleName="Tỉ số" targetEndRoleName="Người ghi bàn" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="45a5970c-4185-4903-bed1-ababd3e88327" LastKnownName="Record whose goal" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e8257c35-2909-4880-b610-430f2ac5f806" name="Tỉ số" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1237bf14-d69d-45fe-81bb-df935edda60e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ea2b24f-abec-4b4f-b462-255d22f06750" name="Người ghi bàn" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="39d1d318-5857-421d-a7d4-65e277ccc459" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="261d96a2-7ab9-4f00-b17d-77bc9e3e0505" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e17a0e6c-02b2-48bc-a39b-f1cb5eb90155" name="View schedue" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d960deb-573c-49b5-91ad-0f5e2954abc2" />
+        <extendedCases>
+          <extend Id="416780ad-691d-47a1-8a7d-0f2e24311cb4">
+            <useCaseMoniker Id="90a403f2-1845-416c-a2b3-5b6a3560cf3f" LastKnownName="Create schedule" />
+            <elementDefinition Id="2bd6a559-5bf1-4c58-a52c-733e179403ff" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c78301a1-5176-42ab-ae33-1e4ab4ae0ffa" name="Modify schedule" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d904d3aa-c71b-43ab-bd9b-82cf6b394c8c" />
+        <extendedCases>
+          <extend Id="8d5b8e55-a4dd-496b-8a9c-e7b03d7cc533">
+            <useCaseMoniker Id="e17a0e6c-02b2-48bc-a39b-f1cb5eb90155" LastKnownName="View schedue" />
+            <elementDefinition Id="73476738-4744-4ed0-97d6-eb298314ba1e" />
+          </extend>
+          <extend Id="a991f8db-5f15-4f16-b072-f7d60b9d5f88">
+            <useCaseMoniker Id="90a403f2-1845-416c-a2b3-5b6a3560cf3f" LastKnownName="Create schedule" />
+            <elementDefinition Id="ec6405dd-19d8-4163-848e-7853b34c0c74" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="48d002c6-eb87-4123-8bf5-05c272105ed8" name="Show list of players who participate in match" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcce7fbb-87d0-4ca5-bea8-f471a5c600f3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6d53d504-d65d-4415-9d79-0c494fb6c895" name="Create report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="78f74199-8d4c-4076-b48b-52d78c75b09e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6eba1f66-81b3-4495-a6c5-525b6301f381" name="Show rank by point" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80322068-3eea-4c2f-9710-9e1b05d3a0e2" />
+        <generalsInternal>
+          <generalization Id="40b0e744-b771-496c-9f6f-35ddc2d9930c" isSubstitutable="false">
+            <useCaseMoniker Id="6d53d504-d65d-4415-9d79-0c494fb6c895" LastKnownName="Create report" />
+            <elementDefinition Id="427b9e68-f71d-4feb-b870-703e5fce4a31" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e8a3e3bc-91e3-4f3b-ae29-58b8dab1b1c2" name="Show rank by the numbers of goal of each players" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="de6f6656-dea8-4726-ba73-486dd3c3af27" />
+        <generalsInternal>
+          <generalization Id="2bcf8bb0-ad7e-4ad2-bd19-1646601b5b6d" isSubstitutable="false">
+            <useCaseMoniker Id="6d53d504-d65d-4415-9d79-0c494fb6c895" LastKnownName="Create report" />
+            <elementDefinition Id="1525b5a7-adcc-4d70-89c9-330a9d3b5354" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="15d11b3a-2716-4514-ba0d-bf1b6fd73688" name="Record classifing goal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef1d8b1b-2754-462f-8908-04b62bf313da" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="92e076f7-4073-4c5a-b1d9-afbce912a5f7" name="Show rank by the level of beautiful goal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97ff100f-64ff-4d54-8cac-aa59d57c86cd" />
+        <generalsInternal>
+          <generalization Id="0606f12b-29f6-4266-85d7-ba6990efa403" isSubstitutable="false">
+            <useCaseMoniker Id="6d53d504-d65d-4415-9d79-0c494fb6c895" LastKnownName="Create report" />
+            <elementDefinition Id="57cba3a2-f0cb-4efb-9c0f-bb977bf48770" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="85b37629-4989-4b5f-a3d3-2d0cac1d38de" name="Change regulations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43df72ab-5383-4daf-94e2-7b504e57e09e" />
+        <extendedCases>
+          <extend Id="a45d4193-c591-446c-803f-dc66b15d556b">
+            <useCaseMoniker Id="3f9641ec-dc1d-44b4-bec8-f5461f742938" LastKnownName="View regulations" />
+            <elementDefinition Id="958e9b2a-dbf2-4d3b-a612-2645cd10ee0e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3f9641ec-dc1d-44b4-bec8-f5461f742938" name="View regulations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c489018d-d520-4cd7-a7a3-086ac7ef4758" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c7e9643b-b88e-495e-8915-8d1cff0497a2" name="Change age" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23612166-1b52-435d-af46-cade2f6703fe" />
+        <generalsInternal>
+          <generalization Id="a6974cc7-96a8-4bd3-9f91-96084ee63f24" isSubstitutable="false">
+            <useCaseMoniker Id="85b37629-4989-4b5f-a3d3-2d0cac1d38de" LastKnownName="Change regulations" />
+            <elementDefinition Id="cead7233-6c34-4dca-a0dd-8186ca63c099" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="effe8516-7c99-47de-9e1e-25ffa383afc4" name="Change the numbers of players in each Club (min max)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="62ebc42c-6b69-40d3-8964-f8fbc4a04333" />
+        <generalsInternal>
+          <generalization Id="baca8ad8-b424-4f33-90b0-841637705e17" isSubstitutable="false">
+            <useCaseMoniker Id="85b37629-4989-4b5f-a3d3-2d0cac1d38de" LastKnownName="Change regulations" />
+            <elementDefinition Id="10153c01-0b4a-4fd1-b837-eca3946c2aec" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f3566d94-f4cc-4f5a-b455-2e6604d5206d" name="Change the maximum numbers of international players in each Club" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bd3131e3-9fb7-49e9-86f6-580d38ea7bad" />
+        <generalsInternal>
+          <generalization Id="180ee0d3-b1ce-4fc5-8364-6bfaa9ff7e37" isSubstitutable="false">
+            <useCaseMoniker Id="85b37629-4989-4b5f-a3d3-2d0cac1d38de" LastKnownName="Change regulations" />
+            <elementDefinition Id="ee80869a-b1c3-486b-9374-372f126b66fb" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4f1db3a0-1000-4ed0-8815-b6df63ff272c" name="Anonymous" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0a6cab2a-70ce-452b-b858-cec1203d7bef" />
+        <targetEnds>
+          <association Id="5d2cc460-5e8c-414f-b576-01a440bf182c" isDerived="false" sourceEndRoleName="Anonymous" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="69b4a608-d2aa-4c85-81de-6d494c5db588" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0cdda94f-086d-4b22-952e-f9784d795fe2" name="Anonymous" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e09e73f3-b35c-49b4-adc0-c84ab64a98a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aba85621-d2f0-4e41-910d-68a82717e017" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4e7a26f3-5611-4022-87a9-a7e528c13130" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="62859abb-1846-4491-96af-d33cdc3e5766" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="69b4a608-d2aa-4c85-81de-6d494c5db588" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3688dcfa-2562-4c80-91a0-eb14aaa65ca1" />
+        <targetEnds>
+          <association Id="c123a20c-cbd7-4098-8097-787d4f2400c5" isDerived="false" sourceEndRoleName="Login" targetEndRoleName="User" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="3330c9b4-eed7-47ea-bf33-3f231f4e85f6" LastKnownName="User" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9cd1536c-50ef-4f79-8b72-75e94d8f0fcd" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ed0f3169-72ed-410a-be3d-445c4eb1bdf0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba27d9eb-a07f-43bb-ad57-83be7d5daac3" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0744266a-b4bd-4d11-9d05-e427dd05bcdf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3840cf37-6699-4c81-8460-f5d79024677d" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a2698bab-1229-4064-a0d9-ab4b7c35e99c" name="Logout" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22306d3f-edaa-481d-9345-a16818a2c920" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e3d61b01-78b2-47a9-ac0d-186dcba0f3bf" name="ModelingProject1">
+    <elementDefinition Id="bcd4521a-7ecb-4766-95f9-6bb933c133b1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="403305ed-85bb-4ce3-acb5-73446e70892b">
+        <profileInstance Id="c767b9a9-02a2-4f0d-8f63-7684b72083c1" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="75b8bdc0-4b20-4b03-a993-e2cbfa6b7203">
+        <profileInstance Id="82d8272e-bf17-4873-99b2-e41866938b63" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
