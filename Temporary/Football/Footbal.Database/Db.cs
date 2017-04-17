@@ -50,8 +50,9 @@ namespace Footbal.Database
                 using (var cmd = new SqlCommand())
                 {
                     cmd.Connection = conn;
-                    cmd.CommandText = "INSERT Team(TeamName) VALUES(@teamName)";
+                    cmd.CommandText = "INSERT Team(TeamName, Stadium) VALUES(@teamName, @stadium)";
                     cmd.Parameters.Add(new SqlParameter("@teamName", team.Name));
+                    cmd.Parameters.Add(new SqlParameter("@stadium", team.Stadium));
                     result = cmd.ExecuteNonQuery();
                     conn.Close();                  
                 }

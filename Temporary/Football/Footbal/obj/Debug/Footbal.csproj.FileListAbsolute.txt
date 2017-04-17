@@ -56,3 +56,17 @@ E:\Football\FootballTournamentManagement\football-manager\FootballTournamentMana
 d:\Study\Dev C#\Project\GIT\FootballTournamentManagement\Football\Footbal\bin\Debug\Footbal.exe.config
 d:\Study\Dev C#\Project\GIT\FootballTournamentManagement\Football\Footbal\obj\Debug\Footbal.exe
 d:\Study\Dev C#\Project\GIT\FootballTournamentManagement\Football\Footbal\obj\Debug\Footbal.pdb
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\bin\Debug\Footbal.exe.config
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.exe
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.pdb
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\bin\Debug\Footbal.exe
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\bin\Debug\Footbal.pdb
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\bin\Debug\Footbal.Database.dll
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\bin\Debug\Footbal.Database.pdb
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.csprojResolveAssemblyReference.cache
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.MainForm.resources
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.Properties.Resources.resources
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.UI.AddTeam.resources
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.UI.TeamList.resources
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.UI.EditTeam.resources
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.csproj.GenerateResource.Cache

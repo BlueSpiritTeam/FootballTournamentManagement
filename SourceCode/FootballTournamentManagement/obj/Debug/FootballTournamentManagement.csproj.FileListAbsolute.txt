@@ -1,1 +1,2 @@
 D:\Study\Dev C#\Project\SourceCode\FootballTournamentManagement\bin\Debug\FootballTournamentManagement.exe.config
+D:\study\github\FootballManager\FootballTournamentManagement\SourceCode\FootballTournamentManagement\bin\Debug\FootballTournamentManagement.exe.config

@@ -7,3 +7,8 @@ E:\Football\Sample\Footbal\Footbal.Database\bin\Debug\Footbal.Database.pdb
 E:\Football\Sample\Footbal\Footbal.Database\obj\Debug\Footbal.Database.dll
 E:\Football\Sample\Footbal\Footbal.Database\obj\Debug\Footbal.Database.pdb
 E:\Football\Sample\Footbal\Footbal.Database\obj\Debug\Footbal.Database.csprojResolveAssemblyReference.cache
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal.Database\bin\Debug\Footbal.Database.dll
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal.Database\bin\Debug\Footbal.Database.pdb
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal.Database\obj\Debug\Footbal.Database.csprojResolveAssemblyReference.cache
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal.Database\obj\Debug\Footbal.Database.dll
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal.Database\obj\Debug\Footbal.Database.pdb

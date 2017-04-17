@@ -20,6 +20,7 @@ namespace Footbal.UI
 
         private void btAdd_Click(object sender, EventArgs e)
         {
+            string teamStadium = this.tbStadium.Text;
             string teamName = this.tbTeamName.Text;
             if (string.IsNullOrWhiteSpace(teamName))
             {
@@ -28,12 +29,20 @@ namespace Footbal.UI
                 this.tbTeamName.Focus();
                 return;
             }
+            if (string.IsNullOrWhiteSpace(teamStadium))
+            {
+                MessageBox.Show("Please enter stadium.");
+                this.tbStadium.SelectAll();
+                this.tbStadium.Focus();
+                return;
+            }
 
             var db = new Database.Db();
 
             db.CreateTeam(new Database.Team
             {
-                Name = teamName.Trim()
+                Name = teamName.Trim(),
+                Stadium = teamStadium.Trim(),
             });
             this.Close();
         }
