@@ -1,1 +1,0 @@
-Football Tournament Management application is using ADO.Net 
