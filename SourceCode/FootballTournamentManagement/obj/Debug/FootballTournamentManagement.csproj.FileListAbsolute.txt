@@ -1,8 +1,0 @@
-D:\Study\Dev C#\Project\GIT\FootballTournamentManagement\SourceCode\FootballTournamentManagement\bin\Debug\FootballTournamentManagement.exe.config
-D:\Study\Dev C#\Project\GIT\FootballTournamentManagement\SourceCode\FootballTournamentManagement\bin\Debug\FootballTournamentManagement.exe
-D:\Study\Dev C#\Project\GIT\FootballTournamentManagement\SourceCode\FootballTournamentManagement\bin\Debug\FootballTournamentManagement.pdb
-D:\Study\Dev C#\Project\GIT\FootballTournamentManagement\SourceCode\FootballTournamentManagement\obj\Debug\FootballTournamentManagement.csprojResolveAssemblyReference.cache
-D:\Study\Dev C#\Project\GIT\FootballTournamentManagement\SourceCode\FootballTournamentManagement\obj\Debug\FootballTournamentManagement.Properties.Resources.resources
-D:\Study\Dev C#\Project\GIT\FootballTournamentManagement\SourceCode\FootballTournamentManagement\obj\Debug\FootballTournamentManagement.csproj.GenerateResource.Cache
-D:\Study\Dev C#\Project\GIT\FootballTournamentManagement\SourceCode\FootballTournamentManagement\obj\Debug\FootballTournamentManagement.exe
-D:\Study\Dev C#\Project\GIT\FootballTournamentManagement\SourceCode\FootballTournamentManagement\obj\Debug\FootballTournamentManagement.pdb
