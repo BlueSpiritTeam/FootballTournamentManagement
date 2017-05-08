@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+      <HintPath>..\bunifu_Framework\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,159 +49,160 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmChangeRules.cs">
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="Views\frmChangeRules.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmChangeRules.Designer.cs">
+    <Compile Include="Views\frmChangeRules.Designer.cs">
       <DependentUpon>frmChangeRules.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCoach.cs">
+    <Compile Include="Views\frmCoach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCoach.Designer.cs">
+    <Compile Include="Views\frmCoach.Designer.cs">
       <DependentUpon>frmCoach.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Views\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddNewPlayer.cs">
+    <Compile Include="Views\frmAddNewPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddNewPlayer.Designer.cs">
+    <Compile Include="Views\frmAddNewPlayer.Designer.cs">
       <DependentUpon>frmAddNewPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGeneral.cs">
+    <Compile Include="Views\frmGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGeneral.Designer.cs">
+    <Compile Include="Views\frmGeneral.Designer.cs">
       <DependentUpon>frmGeneral.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListPlayerToScore.cs">
+    <Compile Include="Views\frmListPlayerToScore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListPlayerToScore.Designer.cs">
+    <Compile Include="Views\frmListPlayerToScore.Designer.cs">
       <DependentUpon>frmListPlayerToScore.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRecordMatchResult.cs">
+    <Compile Include="Views\frmRecordMatchResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRecordMatchResult.Designer.cs">
+    <Compile Include="Views\frmRecordMatchResult.Designer.cs">
       <DependentUpon>frmRecordMatchResult.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMatchSchedule.cs">
+    <Compile Include="Views\frmMatchSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMatchSchedule.Designer.cs">
+    <Compile Include="Views\frmMatchSchedule.Designer.cs">
       <DependentUpon>frmMatchSchedule.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNewTournament.cs">
+    <Compile Include="Views\frmNewTournament.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNewTournament.Designer.cs">
+    <Compile Include="Views\frmNewTournament.Designer.cs">
       <DependentUpon>frmNewTournament.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPlayer.cs">
+    <Compile Include="Views\frmPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPlayer.Designer.cs">
+    <Compile Include="Views\frmPlayer.Designer.cs">
       <DependentUpon>frmPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRankOfTeam.cs">
+    <Compile Include="Views\frmRankOfTeam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRankOfTeam.Designer.cs">
+    <Compile Include="Views\frmRankOfTeam.Designer.cs">
       <DependentUpon>frmRankOfTeam.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegister.cs">
+    <Compile Include="Views\frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegister.Designer.cs">
+    <Compile Include="Views\frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmReviewMatchResult.cs">
+    <Compile Include="Views\frmReviewMatchResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmReviewMatchResult.Designer.cs">
+    <Compile Include="Views\frmReviewMatchResult.Designer.cs">
       <DependentUpon>frmReviewMatchResult.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTeam.cs">
+    <Compile Include="Views\frmTeam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTeam.Designer.cs">
+    <Compile Include="Views\frmTeam.Designer.cs">
       <DependentUpon>frmTeam.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTournament.cs">
+    <Compile Include="Views\frmTournament.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTournament.Designer.cs">
+    <Compile Include="Views\frmTournament.Designer.cs">
       <DependentUpon>frmTournament.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTournamentReport.cs">
+    <Compile Include="Views\frmTournamentReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTournamentReport.Designer.cs">
+    <Compile Include="Views\frmTournamentReport.Designer.cs">
       <DependentUpon>frmTournamentReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmViewCoachInfor.cs">
+    <Compile Include="Views\frmViewCoachInfor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmViewCoachInfor.Designer.cs">
+    <Compile Include="Views\frmViewCoachInfor.Designer.cs">
       <DependentUpon>frmViewCoachInfor.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmChangeRules.resx">
+    <EmbeddedResource Include="Views\frmChangeRules.resx">
       <DependentUpon>frmChangeRules.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCoach.resx">
+    <EmbeddedResource Include="Views\frmCoach.resx">
       <DependentUpon>frmCoach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddNewPlayer.resx">
+    <EmbeddedResource Include="Views\frmAddNewPlayer.resx">
       <DependentUpon>frmAddNewPlayer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGeneral.resx">
+    <EmbeddedResource Include="Views\frmGeneral.resx">
       <DependentUpon>frmGeneral.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListPlayerToScore.resx">
+    <EmbeddedResource Include="Views\frmListPlayerToScore.resx">
       <DependentUpon>frmListPlayerToScore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRecordMatchResult.resx">
+    <EmbeddedResource Include="Views\frmRecordMatchResult.resx">
       <DependentUpon>frmRecordMatchResult.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMatchSchedule.resx">
+    <EmbeddedResource Include="Views\frmMatchSchedule.resx">
       <DependentUpon>frmMatchSchedule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewTournament.resx">
+    <EmbeddedResource Include="Views\frmNewTournament.resx">
       <DependentUpon>frmNewTournament.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPlayer.resx">
+    <EmbeddedResource Include="Views\frmPlayer.resx">
       <DependentUpon>frmPlayer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRankOfTeam.resx">
+    <EmbeddedResource Include="Views\frmRankOfTeam.resx">
       <DependentUpon>frmRankOfTeam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegister.resx">
+    <EmbeddedResource Include="Views\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReviewMatchResult.resx">
+    <EmbeddedResource Include="Views\frmReviewMatchResult.resx">
       <DependentUpon>frmReviewMatchResult.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTeam.resx">
+    <EmbeddedResource Include="Views\frmTeam.resx">
       <DependentUpon>frmTeam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTournament.resx">
+    <EmbeddedResource Include="Views\frmTournament.resx">
       <DependentUpon>frmTournament.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTournamentReport.resx">
+    <EmbeddedResource Include="Views\frmTournamentReport.resx">
       <DependentUpon>frmTournamentReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmViewCoachInfor.resx">
+    <EmbeddedResource Include="Views\frmViewCoachInfor.resx">
       <DependentUpon>frmViewCoachInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -228,6 +229,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
