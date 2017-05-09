@@ -52,6 +52,16 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\RuleDAO.cs" />
     <Compile Include="DAO\TypeGoalDAO.cs" />
+    <Compile Include="DTO\ClubDTO.cs" />
+    <Compile Include="DTO\CoachDTO.cs" />
+    <Compile Include="DTO\GenderDTO.cs" />
+    <Compile Include="DTO\GoalRecordDTO.cs" />
+    <Compile Include="DTO\HumandInformationDTO.cs" />
+    <Compile Include="DTO\MatchDTO.cs" />
+    <Compile Include="DTO\MatchRecordDTO.cs" />
+    <Compile Include="DTO\PlayerDTO.cs" />
+    <Compile Include="DTO\RoleDTO.cs" />
+    <Compile Include="DTO\RoundDTO.cs" />
     <Compile Include="DTO\RuleDTO.cs" />
     <Compile Include="DTO\TypeGoalDTO.cs" />
     <Compile Include="Views\frmChangeRules.cs">
