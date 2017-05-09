@@ -1,6 +1,6 @@
 ﻿namespace SourceCode
 {
-    partial class frmTeam
+    partial class frmClub
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTeam));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClub));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grbTeamInfor = new System.Windows.Forms.GroupBox();
             this.btnCoachInfor = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnModify = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -43,12 +43,12 @@
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtNumberPlayer = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtTeamName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtClubName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtTeamID = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtClubID = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.grbSearchTeam = new System.Windows.Forms.GroupBox();
-            this.btnSearchTeam = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnSearchClub = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cmbSearchTeam = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtSearchTeam = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -60,7 +60,7 @@
             this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnDeletePlayerInTeam = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnDeletePlayerInClub = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSaveTeamInfor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnUpdateTeamInfor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -84,9 +84,9 @@
             this.grbTeamInfor.Controls.Add(this.bunifuCustomLabel6);
             this.grbTeamInfor.Controls.Add(this.txtNumberPlayer);
             this.grbTeamInfor.Controls.Add(this.bunifuCustomLabel5);
-            this.grbTeamInfor.Controls.Add(this.txtTeamName);
+            this.grbTeamInfor.Controls.Add(this.txtClubName);
             this.grbTeamInfor.Controls.Add(this.bunifuCustomLabel4);
-            this.grbTeamInfor.Controls.Add(this.txtTeamID);
+            this.grbTeamInfor.Controls.Add(this.txtClubID);
             this.grbTeamInfor.Controls.Add(this.bunifuCustomLabel3);
             this.grbTeamInfor.Dock = System.Windows.Forms.DockStyle.Top;
             this.grbTeamInfor.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,7 +96,7 @@
             this.grbTeamInfor.Size = new System.Drawing.Size(1102, 274);
             this.grbTeamInfor.TabIndex = 4;
             this.grbTeamInfor.TabStop = false;
-            this.grbTeamInfor.Text = "Team Information";
+            this.grbTeamInfor.Text = "Club Information";
             // 
             // btnCoachInfor
             // 
@@ -261,15 +261,15 @@
             this.bunifuCustomLabel5.TabIndex = 6;
             this.bunifuCustomLabel5.Text = "Number Players:";
             // 
-            // txtTeamName
+            // txtClubName
             // 
-            this.txtTeamName.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtTeamName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeamName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtTeamName.Location = new System.Drawing.Point(707, 35);
-            this.txtTeamName.Name = "txtTeamName";
-            this.txtTeamName.Size = new System.Drawing.Size(290, 28);
-            this.txtTeamName.TabIndex = 5;
+            this.txtClubName.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtClubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClubName.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtClubName.Location = new System.Drawing.Point(707, 35);
+            this.txtClubName.Name = "txtClubName";
+            this.txtClubName.Size = new System.Drawing.Size(290, 28);
+            this.txtClubName.TabIndex = 5;
             // 
             // bunifuCustomLabel4
             // 
@@ -278,17 +278,17 @@
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(118, 19);
             this.bunifuCustomLabel4.TabIndex = 4;
-            this.bunifuCustomLabel4.Text = "Team Name:";
+            this.bunifuCustomLabel4.Text = "Club Name:";
             // 
-            // txtTeamID
+            // txtClubID
             // 
-            this.txtTeamID.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtTeamID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeamID.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtTeamID.Location = new System.Drawing.Point(360, 35);
-            this.txtTeamID.Name = "txtTeamID";
-            this.txtTeamID.Size = new System.Drawing.Size(182, 28);
-            this.txtTeamID.TabIndex = 3;
+            this.txtClubID.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtClubID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClubID.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtClubID.Location = new System.Drawing.Point(360, 35);
+            this.txtClubID.Name = "txtClubID";
+            this.txtClubID.Size = new System.Drawing.Size(182, 28);
+            this.txtClubID.TabIndex = 3;
             // 
             // bunifuCustomLabel3
             // 
@@ -297,12 +297,12 @@
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(86, 19);
             this.bunifuCustomLabel3.TabIndex = 1;
-            this.bunifuCustomLabel3.Text = "Team ID:";
+            this.bunifuCustomLabel3.Text = "Club ID:";
             // 
             // grbSearchTeam
             // 
             this.grbSearchTeam.BackColor = System.Drawing.Color.White;
-            this.grbSearchTeam.Controls.Add(this.btnSearchTeam);
+            this.grbSearchTeam.Controls.Add(this.btnSearchClub);
             this.grbSearchTeam.Controls.Add(this.cmbSearchTeam);
             this.grbSearchTeam.Controls.Add(this.bunifuCustomLabel10);
             this.grbSearchTeam.Controls.Add(this.txtSearchTeam);
@@ -315,30 +315,30 @@
             this.grbSearchTeam.TabStop = false;
             this.grbSearchTeam.Text = "Search";
             // 
-            // btnSearchTeam
+            // btnSearchClub
             // 
-            this.btnSearchTeam.ActiveBorderThickness = 1;
-            this.btnSearchTeam.ActiveCornerRadius = 20;
-            this.btnSearchTeam.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnSearchTeam.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearchTeam.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearchTeam.BackColor = System.Drawing.Color.White;
-            this.btnSearchTeam.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchTeam.BackgroundImage")));
-            this.btnSearchTeam.ButtonText = "Search Team";
-            this.btnSearchTeam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearchTeam.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchTeam.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnSearchTeam.IdleBorderThickness = 1;
-            this.btnSearchTeam.IdleCornerRadius = 20;
-            this.btnSearchTeam.IdleFillColor = System.Drawing.Color.White;
-            this.btnSearchTeam.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnSearchTeam.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearchTeam.Location = new System.Drawing.Point(66, 87);
-            this.btnSearchTeam.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSearchTeam.Name = "btnSearchTeam";
-            this.btnSearchTeam.Size = new System.Drawing.Size(333, 41);
-            this.btnSearchTeam.TabIndex = 23;
-            this.btnSearchTeam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearchClub.ActiveBorderThickness = 1;
+            this.btnSearchClub.ActiveCornerRadius = 20;
+            this.btnSearchClub.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchClub.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearchClub.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchClub.BackColor = System.Drawing.Color.White;
+            this.btnSearchClub.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchClub.BackgroundImage")));
+            this.btnSearchClub.ButtonText = "Search Club";
+            this.btnSearchClub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearchClub.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchClub.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchClub.IdleBorderThickness = 1;
+            this.btnSearchClub.IdleCornerRadius = 20;
+            this.btnSearchClub.IdleFillColor = System.Drawing.Color.White;
+            this.btnSearchClub.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnSearchClub.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchClub.Location = new System.Drawing.Point(66, 87);
+            this.btnSearchClub.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSearchClub.Name = "btnSearchClub";
+            this.btnSearchClub.Size = new System.Drawing.Size(333, 41);
+            this.btnSearchClub.TabIndex = 23;
+            this.btnSearchClub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmbSearchTeam
             // 
@@ -385,23 +385,23 @@
             // 
             // dgvTeamPlayer
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvTeamPlayer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvTeamPlayer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTeamPlayer.BackgroundColor = System.Drawing.Color.White;
             this.dgvTeamPlayer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTeamPlayer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTeamPlayer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTeamPlayer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTeamPlayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTeamPlayer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderingNumber,
@@ -419,9 +419,9 @@
             this.dgvTeamPlayer.Location = new System.Drawing.Point(3, 22);
             this.dgvTeamPlayer.Name = "dgvTeamPlayer";
             this.dgvTeamPlayer.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvTeamPlayer.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvTeamPlayer.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTeamPlayer.RowTemplate.Height = 24;
             this.dgvTeamPlayer.Size = new System.Drawing.Size(1096, 210);
             this.dgvTeamPlayer.TabIndex = 0;
@@ -456,42 +456,42 @@
             this.Note.HeaderText = "Note";
             this.Note.Name = "Note";
             // 
-            // btnDeletePlayerInTeam
+            // btnDeletePlayerInClub
             // 
-            this.btnDeletePlayerInTeam.Activecolor = System.Drawing.Color.SeaGreen;
-            this.btnDeletePlayerInTeam.BackColor = System.Drawing.Color.White;
-            this.btnDeletePlayerInTeam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDeletePlayerInTeam.BorderRadius = 3;
-            this.btnDeletePlayerInTeam.ButtonText = "Delete Player In Team";
-            this.btnDeletePlayerInTeam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeletePlayerInTeam.DisabledColor = System.Drawing.Color.Gainsboro;
-            this.btnDeletePlayerInTeam.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletePlayerInTeam.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnDeletePlayerInTeam.Iconcolor = System.Drawing.Color.White;
-            this.btnDeletePlayerInTeam.Iconimage = null;
-            this.btnDeletePlayerInTeam.Iconimage_right = null;
-            this.btnDeletePlayerInTeam.Iconimage_right_Selected = null;
-            this.btnDeletePlayerInTeam.Iconimage_Selected = null;
-            this.btnDeletePlayerInTeam.IconMarginLeft = 1;
-            this.btnDeletePlayerInTeam.IconMarginRight = 0;
-            this.btnDeletePlayerInTeam.IconRightVisible = false;
-            this.btnDeletePlayerInTeam.IconRightZoom = 0D;
-            this.btnDeletePlayerInTeam.IconVisible = true;
-            this.btnDeletePlayerInTeam.IconZoom = 90D;
-            this.btnDeletePlayerInTeam.IsTab = false;
-            this.btnDeletePlayerInTeam.Location = new System.Drawing.Point(610, 357);
-            this.btnDeletePlayerInTeam.Margin = new System.Windows.Forms.Padding(6);
-            this.btnDeletePlayerInTeam.Name = "btnDeletePlayerInTeam";
-            this.btnDeletePlayerInTeam.Normalcolor = System.Drawing.Color.White;
-            this.btnDeletePlayerInTeam.OnHovercolor = System.Drawing.Color.SeaGreen;
-            this.btnDeletePlayerInTeam.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDeletePlayerInTeam.selected = true;
-            this.btnDeletePlayerInTeam.Size = new System.Drawing.Size(262, 63);
-            this.btnDeletePlayerInTeam.TabIndex = 32;
-            this.btnDeletePlayerInTeam.Text = "Delete Player In Team";
-            this.btnDeletePlayerInTeam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDeletePlayerInTeam.Textcolor = System.Drawing.Color.SeaGreen;
-            this.btnDeletePlayerInTeam.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletePlayerInClub.Activecolor = System.Drawing.Color.SeaGreen;
+            this.btnDeletePlayerInClub.BackColor = System.Drawing.Color.White;
+            this.btnDeletePlayerInClub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeletePlayerInClub.BorderRadius = 3;
+            this.btnDeletePlayerInClub.ButtonText = "Delete Player In Club";
+            this.btnDeletePlayerInClub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeletePlayerInClub.DisabledColor = System.Drawing.Color.Gainsboro;
+            this.btnDeletePlayerInClub.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletePlayerInClub.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnDeletePlayerInClub.Iconcolor = System.Drawing.Color.White;
+            this.btnDeletePlayerInClub.Iconimage = null;
+            this.btnDeletePlayerInClub.Iconimage_right = null;
+            this.btnDeletePlayerInClub.Iconimage_right_Selected = null;
+            this.btnDeletePlayerInClub.Iconimage_Selected = null;
+            this.btnDeletePlayerInClub.IconMarginLeft = 1;
+            this.btnDeletePlayerInClub.IconMarginRight = 0;
+            this.btnDeletePlayerInClub.IconRightVisible = false;
+            this.btnDeletePlayerInClub.IconRightZoom = 0D;
+            this.btnDeletePlayerInClub.IconVisible = true;
+            this.btnDeletePlayerInClub.IconZoom = 90D;
+            this.btnDeletePlayerInClub.IsTab = false;
+            this.btnDeletePlayerInClub.Location = new System.Drawing.Point(610, 357);
+            this.btnDeletePlayerInClub.Margin = new System.Windows.Forms.Padding(6);
+            this.btnDeletePlayerInClub.Name = "btnDeletePlayerInClub";
+            this.btnDeletePlayerInClub.Normalcolor = System.Drawing.Color.White;
+            this.btnDeletePlayerInClub.OnHovercolor = System.Drawing.Color.SeaGreen;
+            this.btnDeletePlayerInClub.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDeletePlayerInClub.selected = true;
+            this.btnDeletePlayerInClub.Size = new System.Drawing.Size(262, 63);
+            this.btnDeletePlayerInClub.TabIndex = 32;
+            this.btnDeletePlayerInClub.Text = "Delete Player In Club";
+            this.btnDeletePlayerInClub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDeletePlayerInClub.Textcolor = System.Drawing.Color.SeaGreen;
+            this.btnDeletePlayerInClub.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnSaveTeamInfor
             // 
@@ -606,7 +606,7 @@
             this.btnCancel.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // frmTeam
+            // frmClub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -614,14 +614,14 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdateTeamInfor);
             this.Controls.Add(this.btnSaveTeamInfor);
-            this.Controls.Add(this.btnDeletePlayerInTeam);
+            this.Controls.Add(this.btnDeletePlayerInClub);
             this.Controls.Add(this.grbTeamPlayer);
             this.Controls.Add(this.grbSearchTeam);
             this.Controls.Add(this.grbTeamInfor);
             this.MinimizeBox = false;
-            this.Name = "frmTeam";
+            this.Name = "frmClub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Team Management";
+            this.Text = "Club Management";
             this.Load += new System.EventHandler(this.frmTeam_Load);
             this.grbTeamInfor.ResumeLayout(false);
             this.grbTeamInfor.PerformLayout();
@@ -646,12 +646,12 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtNumberPlayer;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtTeamName;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtClubName;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtTeamID;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtClubID;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private System.Windows.Forms.GroupBox grbSearchTeam;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnSearchTeam;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSearchClub;
         private System.Windows.Forms.ComboBox cmbSearchTeam;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtSearchTeam;
@@ -664,7 +664,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PlayerType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Note;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCoachInfor;
-        private Bunifu.Framework.UI.BunifuFlatButton btnDeletePlayerInTeam;
+        private Bunifu.Framework.UI.BunifuFlatButton btnDeletePlayerInClub;
         private Bunifu.Framework.UI.BunifuFlatButton btnSaveTeamInfor;
         private Bunifu.Framework.UI.BunifuFlatButton btnUpdateTeamInfor;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancel;

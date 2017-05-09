@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmViewCoachInfor));
             this.btnUpdateCoachInfor = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSaveCoachInfor = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtAge = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtNation = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -96,29 +94,6 @@
             this.btnSaveCoachInfor.Size = new System.Drawing.Size(179, 60);
             this.btnSaveCoachInfor.TabIndex = 65;
             this.btnSaveCoachInfor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtAge
-            // 
-            this.txtAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAge.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAge.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtAge.Location = new System.Drawing.Point(359, 277);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(101, 28);
-            this.txtAge.TabIndex = 64;
-            // 
-            // bunifuCustomLabel8
-            // 
-            this.bunifuCustomLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(282, 283);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(57, 21);
-            this.bunifuCustomLabel8.TabIndex = 63;
-            this.bunifuCustomLabel8.Text = "Age:";
             // 
             // bunifuCustomLabel6
             // 
@@ -235,7 +210,7 @@
             this.cmbGender.FormattingEnabled = true;
             this.cmbGender.Location = new System.Drawing.Point(124, 278);
             this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(101, 30);
+            this.cmbGender.Size = new System.Drawing.Size(170, 30);
             this.cmbGender.TabIndex = 68;
             // 
             // txtBirthday
@@ -260,8 +235,6 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdateCoachInfor);
             this.Controls.Add(this.btnSaveCoachInfor);
-            this.Controls.Add(this.txtAge);
-            this.Controls.Add(this.bunifuCustomLabel8);
             this.Controls.Add(this.bunifuCustomLabel6);
             this.Controls.Add(this.txtNation);
             this.Controls.Add(this.bunifuCustomLabel2);
@@ -284,8 +257,6 @@
 
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdateCoachInfor;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSaveCoachInfor;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtAge;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtNation;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;

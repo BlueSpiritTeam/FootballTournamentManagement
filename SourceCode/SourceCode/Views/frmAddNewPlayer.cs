@@ -32,11 +32,9 @@ namespace SourceCode
         public void RefreshTextbox()
         {
             txtPlayerName.Clear();
-            txtAge.Clear();
             txtKitnum.Clear();
             txtNation.Clear();
             txtRole.Clear();
-            txtType.Clear();
         }
         private void btnRefresh_Click(object sender, EventArgs e)
         {

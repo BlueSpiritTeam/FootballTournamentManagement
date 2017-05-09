@@ -41,7 +41,7 @@
             this.pnlRankOfTeams = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.dgvRankOfTeams = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TeamName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClubName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Win = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Draw = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lose = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,9 +87,9 @@
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel.Location = new System.Drawing.Point(403, 21);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
-            this.bunifuCustomLabel.Size = new System.Drawing.Size(354, 44);
+            this.bunifuCustomLabel.Size = new System.Drawing.Size(352, 44);
             this.bunifuCustomLabel.TabIndex = 60;
-            this.bunifuCustomLabel.Text = "Rank Of Teams";
+            this.bunifuCustomLabel.Text = "Rank Of Clubs";
             // 
             // picCreateSchedule
             // 
@@ -159,6 +159,7 @@
             // 
             // dgvRankOfTeams
             // 
+            this.dgvRankOfTeams.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
@@ -179,7 +180,7 @@
             this.dgvRankOfTeams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRankOfTeams.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderingNumber,
-            this.TeamName,
+            this.ClubName,
             this.Win,
             this.Draw,
             this.Lose,
@@ -209,10 +210,10 @@
             this.OrderingNumber.HeaderText = "Ordering Number";
             this.OrderingNumber.Name = "OrderingNumber";
             // 
-            // TeamName
+            // ClubName
             // 
-            this.TeamName.HeaderText = "Team Name";
-            this.TeamName.Name = "TeamName";
+            this.ClubName.HeaderText = "Club Name";
+            this.ClubName.Name = "ClubName";
             // 
             // Win
             // 
@@ -372,8 +373,10 @@
             this.Controls.Add(this.pnlRankOfTeams);
             this.Controls.Add(this.pnlDateOfCompetition);
             this.Controls.Add(this.pnlTitle);
+            this.MinimizeBox = false;
             this.Name = "frmRankOfTeam";
-            this.Text = "Rank Of Teams";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Rank Of Clubs";
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).EndInit();
@@ -395,8 +398,11 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuGradientPanel pnlRankOfTeams;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvRankOfTeams;
+        private Bunifu.Framework.UI.BunifuFlatButton btnPrintReport;
+        private Bunifu.Framework.UI.BunifuFlatButton btnShowResult;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderingNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TeamName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClubName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Win;
         private System.Windows.Forms.DataGridViewTextBoxColumn Draw;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lose;
@@ -405,8 +411,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SoBanThang;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoBanThua;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rank;
-        private Bunifu.Framework.UI.BunifuFlatButton btnPrintReport;
-        private Bunifu.Framework.UI.BunifuFlatButton btnShowResult;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
     }
 }

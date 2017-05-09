@@ -11,7 +11,7 @@ namespace SourceCode.DAO
     class DataProvider
     {
         // Connection String thiết lập các thông số để kết nối.
-        static string cnStr = @"Data Source=DESKTOP-GNUGB00\SQLEXPRESS;Initial Catalog=FootballManagement_Version02;Integrated Security=True";
+        static string cnStr = @"Data Source=DESKTOP-GNUGB00\SQLEXPRESS;Initial Catalog=Football_ver02;Integrated Security=True";
 
         // Tạo kết nối
         static SqlConnection cn;

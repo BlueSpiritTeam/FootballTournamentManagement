@@ -34,7 +34,7 @@
             this.picCreateSchedule = new System.Windows.Forms.PictureBox();
             this.grbCreateTournament = new System.Windows.Forms.GroupBox();
             this.chkCreateNewTournament = new System.Windows.Forms.CheckBox();
-            this.chkTeamList = new System.Windows.Forms.CheckBox();
+            this.chkClubList = new System.Windows.Forms.CheckBox();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCreateNewTournament = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlTitle.SuspendLayout();
@@ -86,7 +86,7 @@
             // grbCreateTournament
             // 
             this.grbCreateTournament.Controls.Add(this.chkCreateNewTournament);
-            this.grbCreateTournament.Controls.Add(this.chkTeamList);
+            this.grbCreateTournament.Controls.Add(this.chkClubList);
             this.grbCreateTournament.Controls.Add(this.btnCancel);
             this.grbCreateTournament.Controls.Add(this.btnCreateNewTournament);
             this.grbCreateTournament.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -112,18 +112,18 @@
             this.chkCreateNewTournament.Text = "Match Schedule, Goal";
             this.chkCreateNewTournament.UseVisualStyleBackColor = false;
             // 
-            // chkTeamList
+            // chkClubList
             // 
-            this.chkTeamList.AutoSize = true;
-            this.chkTeamList.BackColor = System.Drawing.Color.SeaGreen;
-            this.chkTeamList.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTeamList.ForeColor = System.Drawing.Color.White;
-            this.chkTeamList.Location = new System.Drawing.Point(135, 44);
-            this.chkTeamList.Name = "chkTeamList";
-            this.chkTeamList.Size = new System.Drawing.Size(180, 44);
-            this.chkTeamList.TabIndex = 63;
-            this.chkTeamList.Text = "Team List";
-            this.chkTeamList.UseVisualStyleBackColor = false;
+            this.chkClubList.AutoSize = true;
+            this.chkClubList.BackColor = System.Drawing.Color.SeaGreen;
+            this.chkClubList.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkClubList.ForeColor = System.Drawing.Color.White;
+            this.chkClubList.Location = new System.Drawing.Point(135, 44);
+            this.chkClubList.Name = "chkClubList";
+            this.chkClubList.Size = new System.Drawing.Size(169, 44);
+            this.chkClubList.TabIndex = 63;
+            this.chkClubList.Text = "Club List";
+            this.chkClubList.UseVisualStyleBackColor = false;
             // 
             // btnCancel
             // 
@@ -208,6 +208,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCreateNewTournament;
         private System.Windows.Forms.CheckBox chkCreateNewTournament;
-        private System.Windows.Forms.CheckBox chkTeamList;
+        private System.Windows.Forms.CheckBox chkClubList;
     }
 }

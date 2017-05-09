@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddCoach));
-            this.txtAge = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtNation = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -43,31 +41,9 @@
             this.btnSaveCoach = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnChooseImage = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.picAddCoach)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtAge
-            // 
-            this.txtAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAge.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAge.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtAge.Location = new System.Drawing.Point(359, 330);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(101, 28);
-            this.txtAge.TabIndex = 50;
-            // 
-            // bunifuCustomLabel8
-            // 
-            this.bunifuCustomLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(282, 336);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(57, 21);
-            this.bunifuCustomLabel8.TabIndex = 49;
-            this.bunifuCustomLabel8.Text = "Age:";
             // 
             // bunifuCustomLabel6
             // 
@@ -75,7 +51,7 @@
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(12, 337);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(12, 379);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(96, 21);
             this.bunifuCustomLabel6.TabIndex = 47;
@@ -87,7 +63,7 @@
             this.txtNation.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtNation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNation.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtNation.Location = new System.Drawing.Point(126, 399);
+            this.txtNation.Location = new System.Drawing.Point(126, 441);
             this.txtNation.Name = "txtNation";
             this.txtNation.Size = new System.Drawing.Size(270, 28);
             this.txtNation.TabIndex = 46;
@@ -98,7 +74,7 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(17, 406);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(17, 448);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(91, 21);
             this.bunifuCustomLabel2.TabIndex = 45;
@@ -162,6 +138,7 @@
             this.picAddCoach.Location = new System.Drawing.Point(12, 83);
             this.picAddCoach.Name = "picAddCoach";
             this.picAddCoach.Size = new System.Drawing.Size(215, 215);
+            this.picAddCoach.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAddCoach.TabIndex = 40;
             this.picAddCoach.TabStop = false;
             // 
@@ -183,7 +160,7 @@
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
             this.btnCancel.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnCancel.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.Location = new System.Drawing.Point(255, 462);
+            this.btnCancel.Location = new System.Drawing.Point(255, 504);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(178, 60);
@@ -209,7 +186,7 @@
             this.btnSaveCoach.IdleFillColor = System.Drawing.Color.White;
             this.btnSaveCoach.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnSaveCoach.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSaveCoach.Location = new System.Drawing.Point(48, 462);
+            this.btnSaveCoach.Location = new System.Drawing.Point(48, 504);
             this.btnSaveCoach.Margin = new System.Windows.Forms.Padding(5);
             this.btnSaveCoach.Name = "btnSaveCoach";
             this.btnSaveCoach.Size = new System.Drawing.Size(179, 60);
@@ -222,9 +199,9 @@
             this.cmbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGender.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Location = new System.Drawing.Point(126, 330);
+            this.cmbGender.Location = new System.Drawing.Point(126, 372);
             this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(101, 30);
+            this.cmbGender.Size = new System.Drawing.Size(157, 30);
             this.cmbGender.TabIndex = 54;
             // 
             // bunifuCustomLabel
@@ -236,9 +213,34 @@
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel.Location = new System.Drawing.Point(110, 20);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
-            this.bunifuCustomLabel.Size = new System.Drawing.Size(303, 44);
+            this.bunifuCustomLabel.Size = new System.Drawing.Size(267, 44);
             this.bunifuCustomLabel.TabIndex = 55;
-            this.bunifuCustomLabel.Text = "Add Players";
+            this.bunifuCustomLabel.Text = "Add Coach";
+            // 
+            // btnChooseImage
+            // 
+            this.btnChooseImage.ActiveBorderThickness = 1;
+            this.btnChooseImage.ActiveCornerRadius = 20;
+            this.btnChooseImage.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnChooseImage.ActiveForecolor = System.Drawing.Color.White;
+            this.btnChooseImage.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnChooseImage.BackColor = System.Drawing.Color.White;
+            this.btnChooseImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnChooseImage.BackgroundImage")));
+            this.btnChooseImage.ButtonText = "Choose Image";
+            this.btnChooseImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChooseImage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChooseImage.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnChooseImage.IdleBorderThickness = 1;
+            this.btnChooseImage.IdleCornerRadius = 20;
+            this.btnChooseImage.IdleFillColor = System.Drawing.Color.White;
+            this.btnChooseImage.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnChooseImage.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnChooseImage.Location = new System.Drawing.Point(31, 306);
+            this.btnChooseImage.Margin = new System.Windows.Forms.Padding(5);
+            this.btnChooseImage.Name = "btnChooseImage";
+            this.btnChooseImage.Size = new System.Drawing.Size(179, 44);
+            this.btnChooseImage.TabIndex = 56;
+            this.btnChooseImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmAddCoach
             // 
@@ -246,12 +248,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(523, 626);
+            this.Controls.Add(this.btnChooseImage);
             this.Controls.Add(this.bunifuCustomLabel);
             this.Controls.Add(this.cmbGender);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSaveCoach);
-            this.Controls.Add(this.txtAge);
-            this.Controls.Add(this.bunifuCustomLabel8);
             this.Controls.Add(this.bunifuCustomLabel6);
             this.Controls.Add(this.txtNation);
             this.Controls.Add(this.bunifuCustomLabel2);
@@ -260,7 +261,9 @@
             this.Controls.Add(this.txtCoachName);
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.picAddCoach);
+            this.MinimizeBox = false;
             this.Name = "frmAddCoach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Coach";
             ((System.ComponentModel.ISupportInitialize)(this.picAddCoach)).EndInit();
             this.ResumeLayout(false);
@@ -269,9 +272,6 @@
         }
 
         #endregion
-
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtAge;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtNation;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
@@ -284,5 +284,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnSaveCoach;
         private System.Windows.Forms.ComboBox cmbGender;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnChooseImage;
     }
 }

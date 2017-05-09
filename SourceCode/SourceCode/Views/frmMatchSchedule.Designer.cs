@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMatchSchedule));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.picCreateSchedule = new System.Windows.Forms.PictureBox();
@@ -39,16 +39,16 @@
             this.pnlMatchRound = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dgvMatchResult = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HomeTeam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GuestTeam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stadium = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCreateMatch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlFooter = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnFinish = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HomeClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GuestClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stadium = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -140,30 +140,30 @@
             // 
             // dgvMatchResult
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvMatchResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvMatchResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMatchResult.BackgroundColor = System.Drawing.Color.White;
             this.dgvMatchResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMatchResult.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMatchResult.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMatchResult.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvMatchResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMatchResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderingNumber,
             this.Date,
             this.Time,
-            this.HomeTeam,
-            this.GuestTeam,
+            this.HomeClub,
+            this.GuestClub,
             this.Stadium});
             this.dgvMatchResult.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgvMatchResult.DoubleBuffered = true;
@@ -174,42 +174,12 @@
             this.dgvMatchResult.Location = new System.Drawing.Point(0, 168);
             this.dgvMatchResult.Name = "dgvMatchResult";
             this.dgvMatchResult.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvMatchResult.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvMatchResult.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMatchResult.RowTemplate.Height = 24;
             this.dgvMatchResult.Size = new System.Drawing.Size(935, 426);
             this.dgvMatchResult.TabIndex = 3;
-            // 
-            // OrderingNumber
-            // 
-            this.OrderingNumber.HeaderText = "Ordering Number";
-            this.OrderingNumber.Name = "OrderingNumber";
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // Time
-            // 
-            this.Time.HeaderText = "Time";
-            this.Time.Name = "Time";
-            // 
-            // HomeTeam
-            // 
-            this.HomeTeam.HeaderText = "Home Team";
-            this.HomeTeam.Name = "HomeTeam";
-            // 
-            // GuestTeam
-            // 
-            this.GuestTeam.HeaderText = "Guest Team";
-            this.GuestTeam.Name = "GuestTeam";
-            // 
-            // Stadium
-            // 
-            this.Stadium.HeaderText = "Stadium";
-            this.Stadium.Name = "Stadium";
             // 
             // btnCreateMatch
             // 
@@ -305,6 +275,36 @@
             this.btnUpdate.TabIndex = 68;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // OrderingNumber
+            // 
+            this.OrderingNumber.HeaderText = "Ordering Number";
+            this.OrderingNumber.Name = "OrderingNumber";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // Time
+            // 
+            this.Time.HeaderText = "Time";
+            this.Time.Name = "Time";
+            // 
+            // HomeClub
+            // 
+            this.HomeClub.HeaderText = "Home Club";
+            this.HomeClub.Name = "HomeClub";
+            // 
+            // GuestClub
+            // 
+            this.GuestClub.HeaderText = "Guest Club";
+            this.GuestClub.Name = "GuestClub";
+            // 
+            // Stadium
+            // 
+            this.Stadium.HeaderText = "Stadium";
+            this.Stadium.Name = "Stadium";
+            // 
             // frmMatchSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -339,15 +339,15 @@
         private Bunifu.Framework.UI.BunifuGradientPanel pnlMatchRound;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvMatchResult;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OrderingNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Time;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HomeTeam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GuestTeam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Stadium;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCreateMatch;
         private Bunifu.Framework.UI.BunifuGradientPanel pnlFooter;
         private Bunifu.Framework.UI.BunifuThinButton2 btnFinish;
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OrderingNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HomeClub;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GuestClub;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Stadium;
     }
 }

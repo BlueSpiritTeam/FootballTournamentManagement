@@ -41,10 +41,10 @@
             this.cmbSearchMatch = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtHomeTeamName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.txtHomeTeamRatio = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.txtGuestTeamName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.txtGuestTeamRatio = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtHomeClubName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtHomeClubRatio = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtGuestClubName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtGuestClubRatio = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtMatchDate = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -59,7 +59,7 @@
             this.dgvListPlayerToScore = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Team = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Club = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalNumberOfGoals = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).BeginInit();
@@ -216,45 +216,45 @@
             this.bunifuCustomLabel1.TabIndex = 6;
             this.bunifuCustomLabel1.Text = "Round: ";
             // 
-            // txtHomeTeamName
+            // txtHomeClubName
             // 
-            this.txtHomeTeamName.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtHomeTeamName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHomeTeamName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtHomeTeamName.Location = new System.Drawing.Point(26, 75);
-            this.txtHomeTeamName.Name = "txtHomeTeamName";
-            this.txtHomeTeamName.Size = new System.Drawing.Size(216, 28);
-            this.txtHomeTeamName.TabIndex = 9;
+            this.txtHomeClubName.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtHomeClubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHomeClubName.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtHomeClubName.Location = new System.Drawing.Point(26, 75);
+            this.txtHomeClubName.Name = "txtHomeClubName";
+            this.txtHomeClubName.Size = new System.Drawing.Size(216, 28);
+            this.txtHomeClubName.TabIndex = 9;
             // 
-            // txtHomeTeamRatio
+            // txtHomeClubRatio
             // 
-            this.txtHomeTeamRatio.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtHomeTeamRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHomeTeamRatio.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtHomeTeamRatio.Location = new System.Drawing.Point(268, 75);
-            this.txtHomeTeamRatio.Name = "txtHomeTeamRatio";
-            this.txtHomeTeamRatio.Size = new System.Drawing.Size(84, 28);
-            this.txtHomeTeamRatio.TabIndex = 11;
+            this.txtHomeClubRatio.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtHomeClubRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHomeClubRatio.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtHomeClubRatio.Location = new System.Drawing.Point(268, 75);
+            this.txtHomeClubRatio.Name = "txtHomeClubRatio";
+            this.txtHomeClubRatio.Size = new System.Drawing.Size(84, 28);
+            this.txtHomeClubRatio.TabIndex = 11;
             // 
-            // txtGuestTeamName
+            // txtGuestClubName
             // 
-            this.txtGuestTeamName.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtGuestTeamName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGuestTeamName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtGuestTeamName.Location = new System.Drawing.Point(485, 75);
-            this.txtGuestTeamName.Name = "txtGuestTeamName";
-            this.txtGuestTeamName.Size = new System.Drawing.Size(219, 28);
-            this.txtGuestTeamName.TabIndex = 13;
+            this.txtGuestClubName.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtGuestClubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGuestClubName.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtGuestClubName.Location = new System.Drawing.Point(485, 75);
+            this.txtGuestClubName.Name = "txtGuestClubName";
+            this.txtGuestClubName.Size = new System.Drawing.Size(219, 28);
+            this.txtGuestClubName.TabIndex = 13;
             // 
-            // txtGuestTeamRatio
+            // txtGuestClubRatio
             // 
-            this.txtGuestTeamRatio.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtGuestTeamRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGuestTeamRatio.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtGuestTeamRatio.Location = new System.Drawing.Point(369, 75);
-            this.txtGuestTeamRatio.Name = "txtGuestTeamRatio";
-            this.txtGuestTeamRatio.Size = new System.Drawing.Size(84, 28);
-            this.txtGuestTeamRatio.TabIndex = 15;
+            this.txtGuestClubRatio.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtGuestClubRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGuestClubRatio.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtGuestClubRatio.Location = new System.Drawing.Point(369, 75);
+            this.txtGuestClubRatio.Name = "txtGuestClubRatio";
+            this.txtGuestClubRatio.Size = new System.Drawing.Size(84, 28);
+            this.txtGuestClubRatio.TabIndex = 15;
             // 
             // bunifuCustomLabel8
             // 
@@ -336,10 +336,10 @@
             this.pnlMatchResult.Controls.Add(this.bunifuCustomLabel7);
             this.pnlMatchResult.Controls.Add(this.txtMatchDate);
             this.pnlMatchResult.Controls.Add(this.bunifuCustomLabel8);
-            this.pnlMatchResult.Controls.Add(this.txtGuestTeamRatio);
-            this.pnlMatchResult.Controls.Add(this.txtGuestTeamName);
-            this.pnlMatchResult.Controls.Add(this.txtHomeTeamRatio);
-            this.pnlMatchResult.Controls.Add(this.txtHomeTeamName);
+            this.pnlMatchResult.Controls.Add(this.txtGuestClubRatio);
+            this.pnlMatchResult.Controls.Add(this.txtGuestClubName);
+            this.pnlMatchResult.Controls.Add(this.txtHomeClubRatio);
+            this.pnlMatchResult.Controls.Add(this.txtHomeClubName);
             this.pnlMatchResult.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMatchResult.GradientBottomLeft = System.Drawing.Color.White;
             this.pnlMatchResult.GradientBottomRight = System.Drawing.Color.White;
@@ -359,9 +359,9 @@
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(546, 34);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(133, 21);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(132, 21);
             this.bunifuCustomLabel5.TabIndex = 63;
-            this.bunifuCustomLabel5.Text = "Guest Team";
+            this.bunifuCustomLabel5.Text = "Guest Club";
             // 
             // bunifuCustomLabel4
             // 
@@ -383,9 +383,9 @@
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(79, 34);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(127, 21);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(126, 21);
             this.bunifuCustomLabel2.TabIndex = 61;
-            this.bunifuCustomLabel2.Text = "Home Team";
+            this.bunifuCustomLabel2.Text = "Home Club";
             // 
             // groupBox1
             // 
@@ -422,7 +422,7 @@
             this.dgvListPlayerToScore.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderingNumber,
             this.PlayerName,
-            this.Team,
+            this.Club,
             this.Role,
             this.TotalNumberOfGoals});
             this.dgvListPlayerToScore.DoubleBuffered = true;
@@ -450,10 +450,10 @@
             this.PlayerName.HeaderText = "Player Name";
             this.PlayerName.Name = "PlayerName";
             // 
-            // Team
+            // Club
             // 
-            this.Team.HeaderText = "Team";
-            this.Team.Name = "Team";
+            this.Club.HeaderText = "Club";
+            this.Club.Name = "Club";
             // 
             // Role
             // 
@@ -494,10 +494,10 @@
         private Bunifu.Framework.UI.BunifuGradientPanel pnlTitle;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtHomeTeamName;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtHomeTeamRatio;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtGuestTeamName;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtGuestTeamRatio;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtHomeClubName;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtHomeClubRatio;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtGuestClubName;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtGuestClubRatio;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtMatchDate;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
@@ -507,11 +507,6 @@
         private Bunifu.Framework.UI.BunifuGradientPanel pnlMatchResult;
         private System.Windows.Forms.GroupBox groupBox1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvListPlayerToScore;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OrderingNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PlayerName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Team;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalNumberOfGoals;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
@@ -519,5 +514,10 @@
         private System.Windows.Forms.ComboBox cmbSearchMatch;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
         private Bunifu.Framework.UI.BunifuThinButton2 btnShowResult;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OrderingNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PlayerName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Club;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalNumberOfGoals;
     }
 }

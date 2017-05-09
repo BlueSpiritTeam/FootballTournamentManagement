@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlayer));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grbPlayerInfor = new System.Windows.Forms.GroupBox();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.txtKitnum = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -41,8 +41,6 @@
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtRole = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtType = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtClub = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtNation = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -60,6 +58,10 @@
             this.txtSearchPlayer = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.grbPlayerDetails = new System.Windows.Forms.GroupBox();
             this.dgvPlayerInfor = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnSave = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,10 +72,6 @@
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kitnum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSave = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.grbPlayerInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             this.grbSearchPlayer.SuspendLayout();
@@ -92,8 +90,6 @@
             this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel6);
             this.grbPlayerInfor.Controls.Add(this.txtRole);
             this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel5);
-            this.grbPlayerInfor.Controls.Add(this.txtType);
-            this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel4);
             this.grbPlayerInfor.Controls.Add(this.txtClub);
             this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel3);
             this.grbPlayerInfor.Controls.Add(this.txtNation);
@@ -118,7 +114,7 @@
             this.cmbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGender.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Location = new System.Drawing.Point(781, 153);
+            this.cmbGender.Location = new System.Drawing.Point(781, 98);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(101, 30);
             this.cmbGender.TabIndex = 32;
@@ -128,7 +124,7 @@
             this.txtKitnum.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtKitnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKitnum.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtKitnum.Location = new System.Drawing.Point(781, 211);
+            this.txtKitnum.Location = new System.Drawing.Point(781, 168);
             this.txtKitnum.Name = "txtKitnum";
             this.txtKitnum.Size = new System.Drawing.Size(101, 28);
             this.txtKitnum.TabIndex = 31;
@@ -136,7 +132,7 @@
             // bunifuCustomLabel9
             // 
             this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(679, 217);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(684, 173);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
             this.bunifuCustomLabel9.Size = new System.Drawing.Size(91, 21);
             this.bunifuCustomLabel9.TabIndex = 30;
@@ -147,7 +143,7 @@
             this.txtAge.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAge.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtAge.Location = new System.Drawing.Point(978, 152);
+            this.txtAge.Location = new System.Drawing.Point(978, 97);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(101, 28);
             this.txtAge.TabIndex = 29;
@@ -155,7 +151,7 @@
             // bunifuCustomLabel8
             // 
             this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(903, 158);
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(903, 103);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
             this.bunifuCustomLabel8.Size = new System.Drawing.Size(57, 21);
             this.bunifuCustomLabel8.TabIndex = 28;
@@ -164,7 +160,7 @@
             // bunifuCustomLabel6
             // 
             this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(679, 158);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(679, 103);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(96, 21);
             this.bunifuCustomLabel6.TabIndex = 26;
@@ -189,31 +185,12 @@
             this.bunifuCustomLabel5.TabIndex = 24;
             this.bunifuCustomLabel5.Text = "Role:";
             // 
-            // txtType
-            // 
-            this.txtType.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtType.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtType.Location = new System.Drawing.Point(781, 95);
-            this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(260, 28);
-            this.txtType.TabIndex = 23;
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(679, 101);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(64, 21);
-            this.bunifuCustomLabel4.TabIndex = 22;
-            this.bunifuCustomLabel4.Text = "Type:";
-            // 
             // txtClub
             // 
             this.txtClub.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClub.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtClub.Location = new System.Drawing.Point(337, 211);
+            this.txtClub.Location = new System.Drawing.Point(337, 213);
             this.txtClub.Name = "txtClub";
             this.txtClub.Size = new System.Drawing.Size(270, 28);
             this.txtClub.TabIndex = 21;
@@ -221,7 +198,7 @@
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(246, 217);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(246, 219);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(69, 21);
             this.bunifuCustomLabel3.TabIndex = 20;
@@ -257,7 +234,7 @@
             this.dtpBirthday.Location = new System.Drawing.Point(372, 84);
             this.dtpBirthday.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(235, 38);
+            this.dtpBirthday.Size = new System.Drawing.Size(235, 45);
             this.dtpBirthday.TabIndex = 17;
             this.dtpBirthday.Value = new System.DateTime(2017, 5, 1, 10, 35, 47, 69);
             // 
@@ -415,23 +392,23 @@
             // 
             // dgvPlayerInfor
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvPlayerInfor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvPlayerInfor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPlayerInfor.BackgroundColor = System.Drawing.Color.White;
             this.dgvPlayerInfor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPlayerInfor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPlayerInfor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPlayerInfor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPlayerInfor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPlayerInfor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderingNumber,
@@ -452,71 +429,12 @@
             this.dgvPlayerInfor.Location = new System.Drawing.Point(3, 24);
             this.dgvPlayerInfor.Name = "dgvPlayerInfor";
             this.dgvPlayerInfor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvPlayerInfor.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvPlayerInfor.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPlayerInfor.RowTemplate.Height = 24;
             this.dgvPlayerInfor.Size = new System.Drawing.Size(1096, 207);
             this.dgvPlayerInfor.TabIndex = 1;
-            // 
-            // OrderingNumber
-            // 
-            this.OrderingNumber.HeaderText = "Ordering Number";
-            this.OrderingNumber.Name = "OrderingNumber";
-            // 
-            // PlayerID
-            // 
-            this.PlayerID.DataPropertyName = "PlayerID";
-            this.PlayerID.HeaderText = "Player ID";
-            this.PlayerID.Name = "PlayerID";
-            // 
-            // PlayerName
-            // 
-            this.PlayerName.DataPropertyName = "PlayerName";
-            this.PlayerName.HeaderText = "Player Name";
-            this.PlayerName.Name = "PlayerName";
-            // 
-            // Birthday
-            // 
-            this.Birthday.DataPropertyName = "Birthday";
-            this.Birthday.HeaderText = "Birthday";
-            this.Birthday.Name = "Birthday";
-            // 
-            // Age
-            // 
-            this.Age.DataPropertyName = "Age";
-            this.Age.HeaderText = "Age";
-            this.Age.Name = "Age";
-            // 
-            // Gender
-            // 
-            this.Gender.DataPropertyName = "Gender";
-            this.Gender.HeaderText = "Gender";
-            this.Gender.Name = "Gender";
-            // 
-            // Club
-            // 
-            this.Club.DataPropertyName = "TeamName";
-            this.Club.HeaderText = "Club";
-            this.Club.Name = "Club";
-            // 
-            // Role
-            // 
-            this.Role.DataPropertyName = "Position";
-            this.Role.HeaderText = "Role";
-            this.Role.Name = "Role";
-            // 
-            // Nation
-            // 
-            this.Nation.DataPropertyName = "Nation";
-            this.Nation.HeaderText = "Type(Nation)";
-            this.Nation.Name = "Nation";
-            // 
-            // Kitnum
-            // 
-            this.Kitnum.DataPropertyName = "KitNum";
-            this.Kitnum.HeaderText = "Kitnum";
-            this.Kitnum.Name = "Kitnum";
             // 
             // btnSave
             // 
@@ -620,6 +538,66 @@
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // OrderingNumber
+            // 
+            this.OrderingNumber.DataPropertyName = "OrderingNumber";
+            this.OrderingNumber.HeaderText = "Ordering Number";
+            this.OrderingNumber.Name = "OrderingNumber";
+            // 
+            // PlayerID
+            // 
+            this.PlayerID.DataPropertyName = "PlayerID";
+            this.PlayerID.HeaderText = "Player ID";
+            this.PlayerID.Name = "PlayerID";
+            // 
+            // PlayerName
+            // 
+            this.PlayerName.DataPropertyName = "Name";
+            this.PlayerName.HeaderText = "Player Name";
+            this.PlayerName.Name = "PlayerName";
+            // 
+            // Birthday
+            // 
+            this.Birthday.DataPropertyName = "Birthday";
+            this.Birthday.HeaderText = "Birthday";
+            this.Birthday.Name = "Birthday";
+            // 
+            // Age
+            // 
+            this.Age.DataPropertyName = "Age";
+            this.Age.HeaderText = "Age";
+            this.Age.Name = "Age";
+            // 
+            // Gender
+            // 
+            this.Gender.DataPropertyName = "GenderName";
+            this.Gender.HeaderText = "Gender";
+            this.Gender.Name = "Gender";
+            // 
+            // Club
+            // 
+            this.Club.DataPropertyName = "ClubName";
+            this.Club.HeaderText = "Club";
+            this.Club.Name = "Club";
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "RoleName";
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            // 
+            // Nation
+            // 
+            this.Nation.DataPropertyName = "Nation";
+            this.Nation.HeaderText = "Nation";
+            this.Nation.Name = "Nation";
+            // 
+            // Kitnum
+            // 
+            this.Kitnum.DataPropertyName = "KitNum";
+            this.Kitnum.HeaderText = "Kitnum";
+            this.Kitnum.Name = "Kitnum";
+            // 
             // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -666,8 +644,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtRole;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtType;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtClub;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtNation;

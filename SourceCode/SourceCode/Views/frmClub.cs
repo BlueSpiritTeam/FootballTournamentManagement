@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SourceCode
 {
-    public partial class frmTeam : Form
+    public partial class frmClub : Form
     {
-        public frmTeam()
+        public frmClub()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace SourceCode
 
         private void frmTeam_Load(object sender, EventArgs e)
         {
-            btnDeletePlayerInTeam.Enabled = false;
+            btnDeletePlayerInClub.Enabled = false;
             btnSaveTeamInfor.Enabled = false;
 
 

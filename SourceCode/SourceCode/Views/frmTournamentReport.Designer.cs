@@ -32,7 +32,7 @@
             this.pnlTournamentContent = new System.Windows.Forms.Panel();
             this.btnFinish = new Bunifu.Framework.UI.BunifuFlatButton();
             this.picTournament = new System.Windows.Forms.PictureBox();
-            this.btnRankOfTeam = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnRankOfClub = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnMatchResult = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnListPlayerToScore = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnReviewMatchResult = new Bunifu.Framework.UI.BunifuTileButton();
@@ -98,25 +98,25 @@
             this.picTournament.TabIndex = 1;
             this.picTournament.TabStop = false;
             // 
-            // btnRankOfTeam
+            // btnRankOfClub
             // 
-            this.btnRankOfTeam.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnRankOfTeam.color = System.Drawing.Color.SeaGreen;
-            this.btnRankOfTeam.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btnRankOfTeam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRankOfTeam.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRankOfTeam.ForeColor = System.Drawing.Color.White;
-            this.btnRankOfTeam.Image = ((System.Drawing.Image)(resources.GetObject("btnRankOfTeam.Image")));
-            this.btnRankOfTeam.ImagePosition = 14;
-            this.btnRankOfTeam.ImageZoom = 50;
-            this.btnRankOfTeam.LabelPosition = 30;
-            this.btnRankOfTeam.LabelText = "Rank Of Teams";
-            this.btnRankOfTeam.Location = new System.Drawing.Point(266, 244);
-            this.btnRankOfTeam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnRankOfTeam.Name = "btnRankOfTeam";
-            this.btnRankOfTeam.Size = new System.Drawing.Size(340, 201);
-            this.btnRankOfTeam.TabIndex = 15;
-            this.btnRankOfTeam.Click += new System.EventHandler(this.btnRankOfTeam_Click);
+            this.btnRankOfClub.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnRankOfClub.color = System.Drawing.Color.SeaGreen;
+            this.btnRankOfClub.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnRankOfClub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRankOfClub.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRankOfClub.ForeColor = System.Drawing.Color.White;
+            this.btnRankOfClub.Image = ((System.Drawing.Image)(resources.GetObject("btnRankOfClub.Image")));
+            this.btnRankOfClub.ImagePosition = 14;
+            this.btnRankOfClub.ImageZoom = 50;
+            this.btnRankOfClub.LabelPosition = 30;
+            this.btnRankOfClub.LabelText = "Rank Of Clubs";
+            this.btnRankOfClub.Location = new System.Drawing.Point(266, 244);
+            this.btnRankOfClub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRankOfClub.Name = "btnRankOfClub";
+            this.btnRankOfClub.Size = new System.Drawing.Size(340, 201);
+            this.btnRankOfClub.TabIndex = 15;
+            this.btnRankOfClub.Click += new System.EventHandler(this.btnRankOfTeam_Click);
             // 
             // btnMatchResult
             // 
@@ -187,7 +187,7 @@
             this.Controls.Add(this.btnReviewMatchResult);
             this.Controls.Add(this.btnListPlayerToScore);
             this.Controls.Add(this.pnlTournamentContent);
-            this.Controls.Add(this.btnRankOfTeam);
+            this.Controls.Add(this.btnRankOfClub);
             this.Controls.Add(this.btnMatchResult);
             this.MinimizeBox = false;
             this.Name = "frmTournamentReport";
@@ -204,7 +204,7 @@
         private System.Windows.Forms.Panel pnlTournamentContent;
         private Bunifu.Framework.UI.BunifuFlatButton btnFinish;
         private System.Windows.Forms.PictureBox picTournament;
-        private Bunifu.Framework.UI.BunifuTileButton btnRankOfTeam;
+        private Bunifu.Framework.UI.BunifuTileButton btnRankOfClub;
         private Bunifu.Framework.UI.BunifuTileButton btnMatchResult;
         private Bunifu.Framework.UI.BunifuTileButton btnListPlayerToScore;
         private Bunifu.Framework.UI.BunifuTileButton btnReviewMatchResult;

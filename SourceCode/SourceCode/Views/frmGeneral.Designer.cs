@@ -33,7 +33,7 @@
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.picGeneralContent = new System.Windows.Forms.PictureBox();
-            this.btnTeam = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnClub = new Bunifu.Framework.UI.BunifuTileButton();
             this.pnlGeneral = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnSetting = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnTournamentReport = new Bunifu.Framework.UI.BunifuTileButton();
@@ -124,26 +124,26 @@
             this.picGeneralContent.TabIndex = 0;
             this.picGeneralContent.TabStop = false;
             // 
-            // btnTeam
+            // btnClub
             // 
-            this.btnTeam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTeam.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnTeam.color = System.Drawing.Color.SeaGreen;
-            this.btnTeam.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btnTeam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTeam.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeam.ForeColor = System.Drawing.Color.White;
-            this.btnTeam.Image = ((System.Drawing.Image)(resources.GetObject("btnTeam.Image")));
-            this.btnTeam.ImagePosition = 14;
-            this.btnTeam.ImageZoom = 50;
-            this.btnTeam.LabelPosition = 30;
-            this.btnTeam.LabelText = "Team Management";
-            this.btnTeam.Location = new System.Drawing.Point(105, 231);
-            this.btnTeam.Margin = new System.Windows.Forms.Padding(5);
-            this.btnTeam.Name = "btnTeam";
-            this.btnTeam.Size = new System.Drawing.Size(330, 201);
-            this.btnTeam.TabIndex = 1;
-            this.btnTeam.Click += new System.EventHandler(this.btnTeam_Click);
+            this.btnClub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClub.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnClub.color = System.Drawing.Color.SeaGreen;
+            this.btnClub.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnClub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClub.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClub.ForeColor = System.Drawing.Color.White;
+            this.btnClub.Image = ((System.Drawing.Image)(resources.GetObject("btnClub.Image")));
+            this.btnClub.ImagePosition = 14;
+            this.btnClub.ImageZoom = 50;
+            this.btnClub.LabelPosition = 30;
+            this.btnClub.LabelText = "Club Management";
+            this.btnClub.Location = new System.Drawing.Point(105, 231);
+            this.btnClub.Margin = new System.Windows.Forms.Padding(5);
+            this.btnClub.Name = "btnClub";
+            this.btnClub.Size = new System.Drawing.Size(330, 201);
+            this.btnClub.TabIndex = 1;
+            this.btnClub.Click += new System.EventHandler(this.btnTeam_Click);
             // 
             // pnlGeneral
             // 
@@ -154,7 +154,7 @@
             this.pnlGeneral.Controls.Add(this.btnPlayerManagement);
             this.pnlGeneral.Controls.Add(this.btnTournamentManagement);
             this.pnlGeneral.Controls.Add(this.btnRegister);
-            this.pnlGeneral.Controls.Add(this.btnTeam);
+            this.pnlGeneral.Controls.Add(this.btnClub);
             this.pnlGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlGeneral.GradientBottomLeft = System.Drawing.Color.White;
             this.pnlGeneral.GradientBottomRight = System.Drawing.Color.White;
@@ -297,7 +297,7 @@
         private Bunifu.Framework.UI.BunifuGradientPanel pnlGeneralContent;
         private System.Windows.Forms.PictureBox picGeneralContent;
         private Bunifu.Framework.UI.BunifuFlatButton btnLogout;
-        private Bunifu.Framework.UI.BunifuTileButton btnTeam;
+        private Bunifu.Framework.UI.BunifuTileButton btnClub;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel;
         private Bunifu.Framework.UI.BunifuGradientPanel pnlGeneral;
         private Bunifu.Framework.UI.BunifuTileButton btnRegister;

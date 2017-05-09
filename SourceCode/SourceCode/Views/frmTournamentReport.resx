@@ -150,7 +150,7 @@
         YII=
 </value>
   </data>
-  <data name="btnRankOfTeam.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRankOfClub.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAABXRJREFUeF7t
         14FtG0cQQFGXklJSQkpIx0kHSSfOnfn0bYekjpLGlOXlAwQ4X3tz1KwdQJ9u9fnz5z+2r3+2r4fv/bV9

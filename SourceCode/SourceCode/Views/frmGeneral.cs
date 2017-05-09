@@ -20,7 +20,7 @@ namespace SourceCode
         private void btnTeam_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmTeam team = new frmTeam();
+            frmClub team = new frmClub();
             team.ShowDialog();
             this.Close();
         }
