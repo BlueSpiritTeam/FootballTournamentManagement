@@ -135,7 +135,6 @@ namespace SourceCode.DTO
             // hàm dựng với datarow
             uint temp;
 
-
             uint.TryParse(row["MaximumAge"].ToString(), out temp);
             this.Max_age = temp;
 
@@ -156,8 +155,6 @@ namespace SourceCode.DTO
 
             uint.TryParse(row["ScoreDraw"].ToString(), out temp);
             this.Score_draw = temp;
-
-
         }
     }
 }
