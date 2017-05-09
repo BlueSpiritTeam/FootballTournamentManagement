@@ -9,25 +9,11 @@ namespace SourceCode.DTO
 {
     class GoalRecordDTO
     {
-        private uint match_id;
         private string player_score_id;
         private string player_assist_id;
         private uint round_id;
         private uint type_goal_id;
         private string time_to_goal;
-
-        public uint Match_id
-        {
-            get
-            {
-                return match_id;
-            }
-
-            set
-            {
-                match_id = value;
-            }
-        }
 
         public string Player_score_id
         {
@@ -99,9 +85,8 @@ namespace SourceCode.DTO
 
         }
 
-        public GoalRecordDTO(uint mid, string sid, string aid, uint rid, uint tgid, string ttg)
+        public GoalRecordDTO(string sid, string aid, uint rid, uint tgid, string ttg)
         {
-            this.Match_id = mid;
             this.Player_score_id = sid;
             this.Player_assist_id = aid;
             this.Round_id = rid;
@@ -111,7 +96,6 @@ namespace SourceCode.DTO
 
         public GoalRecordDTO(DataRow row)
         {
-            this.Match_id = uint.Parse(row["MatchID"].ToString());
             this.Player_score_id = (string)row["PlayerScoreID"].ToString();
             this.Player_assist_id = (string)row["PlayerAssistID"].ToString();
             this.Round_id = uint.Parse(row["RoundID"].ToString());

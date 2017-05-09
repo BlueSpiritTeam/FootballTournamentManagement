@@ -10,25 +10,11 @@ namespace SourceCode.DTO
 {
     class MatchDTO
     {
-        private uint match_id;
         private DateTime match_date;
         private string match_time;      //khai báo lại kiểu time giùm tao!
         private string home_club_name;
         private string guest_club_name;
         private string stadium;
-
-        public uint Match_id
-        {
-            get
-            {
-                return match_id;
-            }
-
-            set
-            {
-                match_id = value;
-            }
-        }
 
         public DateTime Match_date
         {
@@ -97,9 +83,8 @@ namespace SourceCode.DTO
 
         public MatchDTO() { }
 
-        public MatchDTO(uint mid, DateTime mdate, string mtime, string hcname, string gcname, string s)
+        public MatchDTO(DateTime mdate, string mtime, string hcname, string gcname, string s)
         {
-            this.Match_id = mid;
             this.Match_date = mdate;
             this.Match_time = mtime;
             this.Home_club_name = hcname;
@@ -109,7 +94,6 @@ namespace SourceCode.DTO
 
         public MatchDTO(DataRow row)
         {
-            this.Match_id = uint.Parse(row["MatchID"].ToString());
             this.Match_date = DateTime.Parse(row["MacthDate"].ToString());
             this.Match_time = (string)row["MatchTime"].ToString();
             this.Home_club_name = (string)row["HomeClubName"].ToString();

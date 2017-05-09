@@ -9,21 +9,7 @@ namespace SourceCode.DTO
 {
     class RoleDTO
     {
-        private uint role_id;
         private string role_name;
-
-        public uint Role_id
-        {
-            get
-            {
-                return role_id;
-            }
-
-            set
-            {
-                role_id = value;
-            }
-        }
 
         public string Role_name
         {
@@ -40,15 +26,13 @@ namespace SourceCode.DTO
 
         public RoleDTO() { }
 
-        public RoleDTO(uint rid, string rname)
+        public RoleDTO(string rname)
         {
-            this.Role_id = rid;
             this.Role_name = rname;
         }
 
         public RoleDTO(DataRow row)
         {
-            this.Role_id = uint.Parse(row["RoleID"].ToString());
             this.Role_name = (string)row["RoleName"].ToString();
         }
     }
