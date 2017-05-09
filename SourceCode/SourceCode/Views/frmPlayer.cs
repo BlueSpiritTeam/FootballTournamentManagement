@@ -27,20 +27,20 @@ namespace SourceCode
 
         private void frmPlayer_Load(object sender, EventArgs e)
         {
-            LoadData();
-            Binding();
+            //LoadData();
+            //Binding();
         }
 
         
-        public void LoadData()
-        {
-            string sqlString = @"SELECT Row_number() over(ORDER BY h.HumandID) as OrderingNumber, p.PlayerID, h.Name, h.Birthday, (YEAR(GETDATE()) - YEAR(h.Birthday)) as Age, g.GenderName, c.ClubName, r.RoleName, h.Nation, p.KitNum
-                                 FROM HumandInformation as h, Club as c, Player as p, Role as r, Gender as g
-                                 WHERE h.HumandID = p.PlayerID and h.ClubID = c.ClubID and h.GenderID = g.GenderID
-                                 and p.RoleID = r.RoleID";
-            DataTable dt = DAO.DataProvider.LoadCSDL(sqlString);
-            dgvPlayerInfor.DataSource = dt;
-        }
+        //public void LoadData()
+        //{
+        //    string sqlString = @"SELECT Row_number() over(ORDER BY h.HumandID) as OrderingNumber, p.PlayerID, h.Name, h.Birthday, (YEAR(GETDATE()) - YEAR(h.Birthday)) as Age, g.GenderName, c.ClubName, r.RoleName, h.Nation, p.KitNum
+        //                         FROM HumandInformation as h, Club as c, Player as p, Role as r, Gender as g
+        //                         WHERE h.HumandID = p.PlayerID and h.ClubID = c.ClubID and h.GenderID = g.GenderID
+        //                         and p.RoleID = r.RoleID";
+        //    DataTable dt = DAO.DataProvider.LoadCSDL(sqlString);
+        //    dgvPlayerInfor.DataSource = dt;
+        //}
         
         public void Binding()
         {

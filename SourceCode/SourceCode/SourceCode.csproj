@@ -50,6 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\RuleDAO.cs" />
+    <Compile Include="DAO\TypeGoalDAO.cs" />
+    <Compile Include="DTO\RuleDTO.cs" />
+    <Compile Include="DTO\TypeGoalDTO.cs" />
     <Compile Include="Views\frmChangeRules.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,8 +234,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
