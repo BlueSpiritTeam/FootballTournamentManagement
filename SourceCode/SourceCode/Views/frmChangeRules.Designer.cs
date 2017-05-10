@@ -44,6 +44,9 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listView_typeGoal = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lose_score = new System.Windows.Forms.NumericUpDown();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.draw_score = new System.Windows.Forms.NumericUpDown();
@@ -51,15 +54,11 @@
             this.win_score = new System.Windows.Forms.NumericUpDown();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnDeleteTypeOfGoals = new System.Windows.Forms.Button();
-            this.btnModifyTypeOfGoals = new System.Windows.Forms.Button();
             this.btnAddTypeOfGoals = new System.Windows.Forms.Button();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnDefaultRules = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnUpdateRules = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.listView_typeGoal = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).BeginInit();
             this.grbTeam.SuspendLayout();
@@ -85,7 +84,7 @@
             this.pnlTitle.GradientTopLeft = System.Drawing.Color.White;
             this.pnlTitle.GradientTopRight = System.Drawing.Color.White;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnlTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlTitle.Margin = new System.Windows.Forms.Padding(2);
             this.pnlTitle.Name = "pnlTitle";
             this.pnlTitle.Quality = 10;
             this.pnlTitle.Size = new System.Drawing.Size(585, 67);
@@ -111,7 +110,7 @@
             this.picCreateSchedule.BackColor = System.Drawing.Color.SeaGreen;
             this.picCreateSchedule.Image = ((System.Drawing.Image)(resources.GetObject("picCreateSchedule.Image")));
             this.picCreateSchedule.Location = new System.Drawing.Point(128, 6);
-            this.picCreateSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCreateSchedule.Margin = new System.Windows.Forms.Padding(2);
             this.picCreateSchedule.Name = "picCreateSchedule";
             this.picCreateSchedule.Size = new System.Drawing.Size(41, 46);
             this.picCreateSchedule.TabIndex = 59;
@@ -134,9 +133,9 @@
             this.grbTeam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbTeam.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbTeam.Location = new System.Drawing.Point(0, 67);
-            this.grbTeam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbTeam.Margin = new System.Windows.Forms.Padding(2);
             this.grbTeam.Name = "grbTeam";
-            this.grbTeam.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbTeam.Padding = new System.Windows.Forms.Padding(2);
             this.grbTeam.Size = new System.Drawing.Size(585, 158);
             this.grbTeam.TabIndex = 17;
             this.grbTeam.TabStop = false;
@@ -146,7 +145,7 @@
             // 
             this.max_player.ForeColor = System.Drawing.Color.SeaGreen;
             this.max_player.Location = new System.Drawing.Point(408, 92);
-            this.max_player.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.max_player.Margin = new System.Windows.Forms.Padding(2);
             this.max_player.Name = "max_player";
             this.max_player.Size = new System.Drawing.Size(57, 24);
             this.max_player.TabIndex = 38;
@@ -155,7 +154,7 @@
             // 
             this.min_player.ForeColor = System.Drawing.Color.SeaGreen;
             this.min_player.Location = new System.Drawing.Point(288, 92);
-            this.min_player.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.min_player.Margin = new System.Windows.Forms.Padding(2);
             this.min_player.Name = "min_player";
             this.min_player.Size = new System.Drawing.Size(57, 24);
             this.min_player.TabIndex = 37;
@@ -206,7 +205,7 @@
             // 
             this.max_age.ForeColor = System.Drawing.Color.SeaGreen;
             this.max_age.Location = new System.Drawing.Point(408, 43);
-            this.max_age.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.max_age.Margin = new System.Windows.Forms.Padding(2);
             this.max_age.Name = "max_age";
             this.max_age.Size = new System.Drawing.Size(57, 24);
             this.max_age.TabIndex = 33;
@@ -215,7 +214,7 @@
             // 
             this.min_age.ForeColor = System.Drawing.Color.SeaGreen;
             this.min_age.Location = new System.Drawing.Point(288, 43);
-            this.min_age.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.min_age.Margin = new System.Windows.Forms.Padding(2);
             this.min_age.Name = "min_age";
             this.min_age.Size = new System.Drawing.Size(57, 24);
             this.min_age.TabIndex = 32;
@@ -273,26 +272,49 @@
             this.groupBox1.Controls.Add(this.win_score);
             this.groupBox1.Controls.Add(this.bunifuCustomLabel11);
             this.groupBox1.Controls.Add(this.btnDeleteTypeOfGoals);
-            this.groupBox1.Controls.Add(this.btnModifyTypeOfGoals);
             this.groupBox1.Controls.Add(this.btnAddTypeOfGoals);
             this.groupBox1.Controls.Add(this.bunifuCustomLabel9);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.SeaGreen;
             this.groupBox1.Location = new System.Drawing.Point(0, 225);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(585, 255);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(585, 242);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rules for score and rank";
             // 
+            // listView_typeGoal
+            // 
+            this.listView_typeGoal.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView_typeGoal.FullRowSelect = true;
+            this.listView_typeGoal.GridLines = true;
+            this.listView_typeGoal.Location = new System.Drawing.Point(20, 77);
+            this.listView_typeGoal.Name = "listView_typeGoal";
+            this.listView_typeGoal.Size = new System.Drawing.Size(179, 127);
+            this.listView_typeGoal.TabIndex = 54;
+            this.listView_typeGoal.UseCompatibleStateImageBehavior = false;
+            this.listView_typeGoal.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Type ID";
+            this.columnHeader1.Width = 77;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Type Name";
+            this.columnHeader2.Width = 101;
+            // 
             // lose_score
             // 
             this.lose_score.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lose_score.Location = new System.Drawing.Point(467, 176);
-            this.lose_score.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lose_score.Location = new System.Drawing.Point(473, 161);
+            this.lose_score.Margin = new System.Windows.Forms.Padding(2);
             this.lose_score.Name = "lose_score";
             this.lose_score.Size = new System.Drawing.Size(57, 24);
             this.lose_score.TabIndex = 53;
@@ -304,7 +326,7 @@
             this.bunifuCustomLabel12.AutoSize = true;
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(341, 177);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(347, 162);
             this.bunifuCustomLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
             this.bunifuCustomLabel12.Size = new System.Drawing.Size(89, 18);
@@ -314,8 +336,8 @@
             // draw_score
             // 
             this.draw_score.ForeColor = System.Drawing.Color.SeaGreen;
-            this.draw_score.Location = new System.Drawing.Point(467, 135);
-            this.draw_score.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.draw_score.Location = new System.Drawing.Point(473, 120);
+            this.draw_score.Margin = new System.Windows.Forms.Padding(2);
             this.draw_score.Name = "draw_score";
             this.draw_score.Size = new System.Drawing.Size(57, 24);
             this.draw_score.TabIndex = 51;
@@ -327,7 +349,7 @@
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(341, 136);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(347, 121);
             this.bunifuCustomLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(91, 18);
@@ -337,8 +359,8 @@
             // win_score
             // 
             this.win_score.ForeColor = System.Drawing.Color.SeaGreen;
-            this.win_score.Location = new System.Drawing.Point(467, 90);
-            this.win_score.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.win_score.Location = new System.Drawing.Point(473, 75);
+            this.win_score.Margin = new System.Windows.Forms.Padding(2);
             this.win_score.Name = "win_score";
             this.win_score.Size = new System.Drawing.Size(57, 24);
             this.win_score.TabIndex = 49;
@@ -350,7 +372,7 @@
             this.bunifuCustomLabel11.AutoSize = true;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(346, 92);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(352, 77);
             this.bunifuCustomLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
             this.bunifuCustomLabel11.Size = new System.Drawing.Size(82, 18);
@@ -360,33 +382,25 @@
             // btnDeleteTypeOfGoals
             // 
             this.btnDeleteTypeOfGoals.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteTypeOfGoals.BackgroundImage")));
-            this.btnDeleteTypeOfGoals.Location = new System.Drawing.Point(258, 140);
-            this.btnDeleteTypeOfGoals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteTypeOfGoals.Location = new System.Drawing.Point(208, 144);
+            this.btnDeleteTypeOfGoals.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteTypeOfGoals.Name = "btnDeleteTypeOfGoals";
             this.btnDeleteTypeOfGoals.Size = new System.Drawing.Size(52, 53);
             this.btnDeleteTypeOfGoals.TabIndex = 45;
             this.btnDeleteTypeOfGoals.UseVisualStyleBackColor = true;
-            // 
-            // btnModifyTypeOfGoals
-            // 
-            this.btnModifyTypeOfGoals.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnModifyTypeOfGoals.BackgroundImage")));
-            this.btnModifyTypeOfGoals.Location = new System.Drawing.Point(258, 196);
-            this.btnModifyTypeOfGoals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnModifyTypeOfGoals.Name = "btnModifyTypeOfGoals";
-            this.btnModifyTypeOfGoals.Size = new System.Drawing.Size(52, 53);
-            this.btnModifyTypeOfGoals.TabIndex = 44;
-            this.btnModifyTypeOfGoals.UseVisualStyleBackColor = true;
+            this.btnDeleteTypeOfGoals.Click += new System.EventHandler(this.btnDeleteTypeOfGoals_Click);
             // 
             // btnAddTypeOfGoals
             // 
             this.btnAddTypeOfGoals.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddTypeOfGoals.BackgroundImage")));
             this.btnAddTypeOfGoals.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddTypeOfGoals.Location = new System.Drawing.Point(258, 84);
-            this.btnAddTypeOfGoals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddTypeOfGoals.Location = new System.Drawing.Point(208, 88);
+            this.btnAddTypeOfGoals.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddTypeOfGoals.Name = "btnAddTypeOfGoals";
             this.btnAddTypeOfGoals.Size = new System.Drawing.Size(52, 53);
             this.btnAddTypeOfGoals.TabIndex = 43;
             this.btnAddTypeOfGoals.UseVisualStyleBackColor = true;
+            this.btnAddTypeOfGoals.Click += new System.EventHandler(this.btnAddTypeOfGoals_Click);
             // 
             // bunifuCustomLabel9
             // 
@@ -395,7 +409,7 @@
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(11, 95);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(17, 44);
             this.bunifuCustomLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
             this.bunifuCustomLabel9.Size = new System.Drawing.Size(139, 18);
@@ -435,6 +449,7 @@
             this.btnDefaultRules.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDefaultRules.Textcolor = System.Drawing.Color.SeaGreen;
             this.btnDefaultRules.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDefaultRules.Click += new System.EventHandler(this.btnDefaultRules_Click);
             // 
             // btnUpdateRules
             // 
@@ -469,6 +484,7 @@
             this.btnUpdateRules.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdateRules.Textcolor = System.Drawing.Color.SeaGreen;
             this.btnUpdateRules.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateRules.Click += new System.EventHandler(this.btnUpdateRules_Click);
             // 
             // btnCancel
             // 
@@ -505,30 +521,6 @@
             this.btnCancel.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // listView_typeGoal
-            // 
-            this.listView_typeGoal.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
-            this.listView_typeGoal.FullRowSelect = true;
-            this.listView_typeGoal.GridLines = true;
-            this.listView_typeGoal.Location = new System.Drawing.Point(14, 116);
-            this.listView_typeGoal.Name = "listView_typeGoal";
-            this.listView_typeGoal.Size = new System.Drawing.Size(179, 106);
-            this.listView_typeGoal.TabIndex = 54;
-            this.listView_typeGoal.UseCompatibleStateImageBehavior = false;
-            this.listView_typeGoal.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Type ID";
-            this.columnHeader1.Width = 77;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Type Name";
-            this.columnHeader2.Width = 101;
-            // 
             // frmChangeRules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -541,7 +533,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grbTeam);
             this.Controls.Add(this.pnlTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "frmChangeRules";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -588,7 +580,6 @@
         private System.Windows.Forms.NumericUpDown win_score;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
         private System.Windows.Forms.Button btnDeleteTypeOfGoals;
-        private System.Windows.Forms.Button btnModifyTypeOfGoals;
         private System.Windows.Forms.Button btnAddTypeOfGoals;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuFlatButton btnDefaultRules;

@@ -50,6 +50,18 @@ namespace SourceCode.DAO
             return list;
         }
 
+       public bool DeleteType(string id)
+        {
+            int temp;
+            int.TryParse(id, out temp);
+
+
+            string query = "exec DeleteTypeGoal @TypeGoalID";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {temp});
+
+            return result > 0;
+        }
+
         #endregion
     }
 }

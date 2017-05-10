@@ -9,16 +9,16 @@ namespace SourceCode.DTO
 {
     public class RuleDTO
     {
-        private uint max_age;
-        private uint min_age;
-        private uint max_player;
-        private uint min_player;
-        private uint score_win;
-        private uint score_draw;
-        private uint score_lose;
+        private int max_age;
+        private int min_age;
+        private int max_player;
+        private int min_player;
+        private int score_win;
+        private int score_draw;
+        private int score_lose;
 
         #region properties
-        public uint Max_age
+        public int Max_age
         {
             get
             {
@@ -31,7 +31,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Min_age
+        public int Min_age
         {
             get
             {
@@ -44,7 +44,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Max_player
+        public int Max_player
         {
             get
             {
@@ -57,7 +57,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Min_player
+        public int Min_player
         {
             get
             {
@@ -70,7 +70,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Score_win
+        public int Score_win
         {
             get
             {
@@ -83,7 +83,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Score_draw
+        public int Score_draw
         {
             get
             {
@@ -96,7 +96,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Score_lose
+        public int Score_lose
         {
             get
             {
@@ -117,7 +117,7 @@ namespace SourceCode.DTO
             // hàm dựng cơ bản
         }
 
-        public RuleDTO(uint a, uint b, uint c, uint d, uint e, uint f, uint g)
+        public RuleDTO(int a, int b, int c, int d, int e, int f, int g)
         {
             // hàm dựng cơ bản
             this.Max_age = a;
@@ -133,27 +133,27 @@ namespace SourceCode.DTO
         {
 
             // hàm dựng với datarow
-            uint temp;
+            int temp;
 
-            uint.TryParse(row["MaximumAge"].ToString(), out temp);
+            int.TryParse(row["MaximumAge"].ToString(), out temp);
             this.Max_age = temp;
 
-            uint.TryParse(row["MinimumAge"].ToString(), out temp);
+            int.TryParse(row["MinimumAge"].ToString(), out temp);
             this.Min_age = temp;
 
-            uint.TryParse(row["MinimumNumberPlayer"].ToString(), out temp);
+            int.TryParse(row["MinimumNumberPlayer"].ToString(), out temp);
             this.Min_player = temp;
 
-            uint.TryParse(row["MaximumNumberPlayer"].ToString(), out temp);
+            int.TryParse(row["MaximumNumberPlayer"].ToString(), out temp);
             this.Max_player = temp;
 
-            uint.TryParse(row["ScoreWin"].ToString(), out temp);
+            int.TryParse(row["ScoreWin"].ToString(), out temp);
             this.Score_win = temp;
 
-            uint.TryParse(row["ScoreLose"].ToString(), out temp);
+            int.TryParse(row["ScoreLose"].ToString(), out temp);
             this.Score_lose = temp;
 
-            uint.TryParse(row["ScoreDraw"].ToString(), out temp);
+            int.TryParse(row["ScoreDraw"].ToString(), out temp);
             this.Score_draw = temp;
         }
     }
