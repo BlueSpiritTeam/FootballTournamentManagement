@@ -56,7 +56,7 @@
     <Compile Include="DTO\CoachDTO.cs" />
     <Compile Include="DTO\GenderDTO.cs" />
     <Compile Include="DTO\GoalRecordDTO.cs" />
-    <Compile Include="DTO\HumandInformationDTO.cs" />
+    <Compile Include="DTO\Human.cs" />
     <Compile Include="DTO\MatchDTO.cs" />
     <Compile Include="DTO\MatchRecordDTO.cs" />
     <Compile Include="DTO\PlayerDTO.cs" />
