@@ -46,7 +46,6 @@ namespace SourceCode.DAO
                 TypeGoalDTO type = new TypeGoalDTO(item);
                 list.Add(type);
             }
-
             return list;
         }
 
@@ -54,7 +53,6 @@ namespace SourceCode.DAO
         {
             int temp;
             int.TryParse(id, out temp);
-
 
             string query = "exec DeleteTypeGoal @TypeGoalID";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {temp});

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SourceCode.DAO;
 using SourceCode.DTO;
+using SourceCode.Views;
 
 namespace SourceCode
 {
@@ -17,7 +18,7 @@ namespace SourceCode
         private static RuleDTO rules = new RuleDTO(); // sử dụng nhiều lần
         private static List<TypeGoalDTO> list_typegoal = new List<TypeGoalDTO>();
 
-        public static RuleDTO Rules
+        public static RuleDTO Rules //khai bao Rule 
         {
             get
             {
@@ -43,8 +44,7 @@ namespace SourceCode
         private void LoadRules()
         {
             Rules = RuleDAO.Instance.LoadRules(); // load tât cả các rule vào đối tượng Rules đc tạo static ở trên
-            Set_Controll_Value();
-            
+            Set_Controll_Value();   
         }
 
         private void Set_Controll_Value()
@@ -133,7 +133,8 @@ namespace SourceCode
 
         private void btnAddTypeOfGoals_Click(object sender, EventArgs e)
         {
-
+            frmTypesGoal TypeGoal = new frmTypesGoal();
+            TypeGoal.ShowDialog();
         }
 
         private void btnDeleteTypeOfGoals_Click(object sender, EventArgs e)
@@ -143,7 +144,6 @@ namespace SourceCode
         }
 
         
-
         #endregion
 
 

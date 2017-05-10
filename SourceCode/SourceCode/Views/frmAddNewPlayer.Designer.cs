@@ -404,6 +404,7 @@
             this.picPlayer.Location = new System.Drawing.Point(3, 18);
             this.picPlayer.Name = "picPlayer";
             this.picPlayer.Size = new System.Drawing.Size(215, 215);
+            this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPlayer.TabIndex = 14;
             this.picPlayer.TabStop = false;
             // 

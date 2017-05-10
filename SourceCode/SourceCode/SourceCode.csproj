@@ -138,6 +138,12 @@
     <Compile Include="Views\frmClub.Designer.cs">
       <DependentUpon>frmClub.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmTournament.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,12 @@
     </Compile>
     <Compile Include="Views\frmTournamentReport.Designer.cs">
       <DependentUpon>frmTournamentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmTypesGoal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmTypesGoal.Designer.cs">
+      <DependentUpon>frmTypesGoal.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmViewCoachInfor.cs">
       <SubType>Form</SubType>
@@ -200,11 +212,17 @@
     <EmbeddedResource Include="Views\frmClub.resx">
       <DependentUpon>frmClub.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmTournament.resx">
       <DependentUpon>frmTournament.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmTournamentReport.resx">
       <DependentUpon>frmTournamentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmTypesGoal.resx">
+      <DependentUpon>frmTypesGoal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmViewCoachInfor.resx">
       <DependentUpon>frmViewCoachInfor.cs</DependentUpon>
