@@ -37,10 +37,8 @@
             this.pnlTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnShowResult = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.cmbRound = new System.Windows.Forms.ComboBox();
             this.cmbSearchMatch = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtHomeClubName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txtHomeClubRatio = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txtGuestClubName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -99,12 +97,10 @@
             this.pnlTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTitle.Controls.Add(this.btnCancel);
             this.pnlTitle.Controls.Add(this.btnShowResult);
-            this.pnlTitle.Controls.Add(this.cmbRound);
             this.pnlTitle.Controls.Add(this.cmbSearchMatch);
             this.pnlTitle.Controls.Add(this.bunifuCustomLabel);
             this.pnlTitle.Controls.Add(this.picCreateSchedule);
             this.pnlTitle.Controls.Add(this.bunifuCustomLabel3);
-            this.pnlTitle.Controls.Add(this.bunifuCustomLabel1);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.GradientBottomLeft = System.Drawing.Color.White;
             this.pnlTitle.GradientBottomRight = System.Drawing.Color.White;
@@ -168,18 +164,6 @@
             this.btnShowResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnShowResult.Click += new System.EventHandler(this.btnShowResult_Click);
             // 
-            // cmbRound
-            // 
-            this.cmbRound.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbRound.ForeColor = System.Drawing.Color.SeaGreen;
-            this.cmbRound.FormattingEnabled = true;
-            this.cmbRound.Location = new System.Drawing.Point(590, 96);
-            this.cmbRound.Name = "cmbRound";
-            this.cmbRound.Size = new System.Drawing.Size(118, 33);
-            this.cmbRound.TabIndex = 62;
-            // 
             // cmbSearchMatch
             // 
             this.cmbSearchMatch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -189,7 +173,7 @@
             this.cmbSearchMatch.FormattingEnabled = true;
             this.cmbSearchMatch.Location = new System.Drawing.Point(153, 98);
             this.cmbSearchMatch.Name = "cmbSearchMatch";
-            this.cmbSearchMatch.Size = new System.Drawing.Size(244, 33);
+            this.cmbSearchMatch.Size = new System.Drawing.Size(430, 33);
             this.cmbSearchMatch.TabIndex = 61;
             // 
             // bunifuCustomLabel3
@@ -203,18 +187,6 @@
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(85, 21);
             this.bunifuCustomLabel3.TabIndex = 4;
             this.bunifuCustomLabel3.Text = "Match:";
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(479, 101);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(90, 21);
-            this.bunifuCustomLabel1.TabIndex = 6;
-            this.bunifuCustomLabel1.Text = "Round: ";
             // 
             // txtHomeClubName
             // 
@@ -493,7 +465,6 @@
         private System.Windows.Forms.PictureBox picCreateSchedule;
         private Bunifu.Framework.UI.BunifuGradientPanel pnlTitle;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtHomeClubName;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtHomeClubRatio;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtGuestClubName;
@@ -510,7 +481,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private System.Windows.Forms.ComboBox cmbRound;
         private System.Windows.Forms.ComboBox cmbSearchMatch;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
         private Bunifu.Framework.UI.BunifuThinButton2 btnShowResult;

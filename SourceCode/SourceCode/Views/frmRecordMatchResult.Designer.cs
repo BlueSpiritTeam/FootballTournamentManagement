@@ -50,19 +50,17 @@
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtHomeClubName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtRound = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtMatchID = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvListPlayerToScore = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnUpdateRecord = new Bunifu.Framework.UI.BunifuThinButton2();
             this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Club = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalNumberOfGoals = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUpdateRecord = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).BeginInit();
             this.RecordMatchResult.SuspendLayout();
@@ -129,8 +127,6 @@
             this.RecordMatchResult.Controls.Add(this.bunifuCustomLabel4);
             this.RecordMatchResult.Controls.Add(this.txtHomeClubName);
             this.RecordMatchResult.Controls.Add(this.bunifuCustomLabel2);
-            this.RecordMatchResult.Controls.Add(this.txtRound);
-            this.RecordMatchResult.Controls.Add(this.bunifuCustomLabel1);
             this.RecordMatchResult.Controls.Add(this.txtMatchID);
             this.RecordMatchResult.Controls.Add(this.bunifuCustomLabel3);
             this.RecordMatchResult.Dock = System.Windows.Forms.DockStyle.Top;
@@ -283,7 +279,7 @@
             this.txtHomeClubName.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtHomeClubName.Location = new System.Drawing.Point(177, 75);
             this.txtHomeClubName.Name = "txtHomeClubName";
-            this.txtHomeClubName.Size = new System.Drawing.Size(216, 28);
+            this.txtHomeClubName.Size = new System.Drawing.Size(219, 28);
             this.txtHomeClubName.TabIndex = 9;
             // 
             // bunifuCustomLabel2
@@ -298,28 +294,6 @@
             this.bunifuCustomLabel2.TabIndex = 8;
             this.bunifuCustomLabel2.Text = "Home Club:";
             // 
-            // txtRound
-            // 
-            this.txtRound.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRound.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtRound.Location = new System.Drawing.Point(520, 21);
-            this.txtRound.Name = "txtRound";
-            this.txtRound.Size = new System.Drawing.Size(182, 28);
-            this.txtRound.TabIndex = 7;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(406, 26);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(90, 21);
-            this.bunifuCustomLabel1.TabIndex = 6;
-            this.bunifuCustomLabel1.Text = "Round: ";
-            // 
             // txtMatchID
             // 
             this.txtMatchID.BorderColor = System.Drawing.Color.SeaGreen;
@@ -327,7 +301,7 @@
             this.txtMatchID.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtMatchID.Location = new System.Drawing.Point(177, 21);
             this.txtMatchID.Name = "txtMatchID";
-            this.txtMatchID.Size = new System.Drawing.Size(182, 28);
+            this.txtMatchID.Size = new System.Drawing.Size(219, 28);
             this.txtMatchID.TabIndex = 5;
             // 
             // bunifuCustomLabel3
@@ -397,6 +371,31 @@
             this.dgvListPlayerToScore.Size = new System.Drawing.Size(802, 209);
             this.dgvListPlayerToScore.TabIndex = 1;
             // 
+            // OrderingNumber
+            // 
+            this.OrderingNumber.HeaderText = "Ordering Number";
+            this.OrderingNumber.Name = "OrderingNumber";
+            // 
+            // PlayerName
+            // 
+            this.PlayerName.HeaderText = "Player Name";
+            this.PlayerName.Name = "PlayerName";
+            // 
+            // Club
+            // 
+            this.Club.HeaderText = "Club";
+            this.Club.Name = "Club";
+            // 
+            // Role
+            // 
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            // 
+            // TotalNumberOfGoals
+            // 
+            this.TotalNumberOfGoals.HeaderText = "Total Number Of Goals";
+            this.TotalNumberOfGoals.Name = "TotalNumberOfGoals";
+            // 
             // btnCancel
             // 
             this.btnCancel.ActiveBorderThickness = 1;
@@ -448,31 +447,6 @@
             this.btnUpdateRecord.TabIndex = 54;
             this.btnUpdateRecord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // OrderingNumber
-            // 
-            this.OrderingNumber.HeaderText = "Ordering Number";
-            this.OrderingNumber.Name = "OrderingNumber";
-            // 
-            // PlayerName
-            // 
-            this.PlayerName.HeaderText = "Player Name";
-            this.PlayerName.Name = "PlayerName";
-            // 
-            // Club
-            // 
-            this.Club.HeaderText = "Club";
-            this.Club.Name = "Club";
-            // 
-            // Role
-            // 
-            this.Role.HeaderText = "Role";
-            this.Role.Name = "Role";
-            // 
-            // TotalNumberOfGoals
-            // 
-            this.TotalNumberOfGoals.HeaderText = "Total Number Of Goals";
-            this.TotalNumberOfGoals.Name = "TotalNumberOfGoals";
-            // 
             // frmRecordMatchResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -519,8 +493,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtHomeClubName;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtRound;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtMatchID;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private System.Windows.Forms.GroupBox groupBox1;
