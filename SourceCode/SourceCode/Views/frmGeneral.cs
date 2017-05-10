@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SourceCode.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,8 +73,8 @@ namespace SourceCode
         private void btnSetting_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmChangeRules change_rules = new frmChangeRules();
-            change_rules.ShowDialog();
+            frmSetting setting = new frmSetting();
+            setting.ShowDialog();
             this.Close();
         }
     }

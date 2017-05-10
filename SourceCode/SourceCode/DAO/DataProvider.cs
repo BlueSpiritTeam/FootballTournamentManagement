@@ -10,8 +10,9 @@ namespace SourceCode.DAO
 {
     public class DataProvider
     {
-        private string str_connection = @"Data Source=DESKTOP-GNUGB00\SQLEXPRESS;Initial Catalog=Football_ver02;Integrated Security=True";
-        //private string str_connection = @"Data Source=.\sqlexpress;Initial Catalog=FootballManagement;Integrated Security=True";
+
+        private string str_connection = @"Data Source=.\sqlexpress;Initial Catalog=FootballManagement;Integrated Security=True";
+
 
         private static DataProvider instance;
 
@@ -93,7 +94,6 @@ namespace SourceCode.DAO
                         }
                     }
                 }
-
                 data = command.ExecuteNonQuery();
 
                 connection.Close();

@@ -38,12 +38,21 @@ namespace SourceCode.DAO
         public RuleDTO LoadRules()
         {
             DataTable data = DataProvider.Instance.ExcuteQuery("LoadRuleS"); // stored procedure "LoadRules" đã đc chạy trên sql server
-            foreach(DataRow item in data.Rows)
+            foreach (DataRow item in data.Rows)
             {
                 RuleDTO rule = new RuleDTO(item); // chỗ này hơi rườm rà nhưng là cách duy nhất t có thể làm
                 return rule;
             }
             return null;
+        }
+
+        public bool UpdateRule(RuleDTO rule)
+        {
+            string query = "exec UpdateRule @MaximumAge , @MinimumAge , @MinimumNumberPlayer , @MaximumNumberPlayer , @ScoreWin , @ScoreLose , @ScoreDraw";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {rule.Max_age,rule.Min_age,rule.Min_player,rule.Max_player,rule.Score_win,rule.Score_lose,rule.Score_draw });
+
+
+            return result > 0;
         }
 
 
