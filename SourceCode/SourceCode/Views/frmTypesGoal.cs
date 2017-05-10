@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SourceCode.DAO;
+using SourceCode.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +25,33 @@ namespace SourceCode.Views
             frmChangeRules ChangeRule = new frmChangeRules();
             ChangeRule.ShowDialog();
             this.Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if(check_input()==false)
+            {
+                MessageBox.Show("Input please!!!", "Notification");
+            }
+            else
+            {
+                TypeGoalDTO temp = new TypeGoalDTO(txt_TypeGoalID.Text, txt_GoalName.Text);
+                if (TypeGoalDAO.Instance.InsertType(temp))
+                    MessageBox.Show("Done!!!", "Notification");
+                else
+                {
+                    MessageBox.Show("ID exist!!!");
+                }
+            }
+        }
+
+        private bool check_input()
+        {
+            if (txt_TypeGoalID.Text == "")
+                return false;
+            if (txt_GoalName.Text == "")
+                return false;
+            return true;
         }
     }
 }

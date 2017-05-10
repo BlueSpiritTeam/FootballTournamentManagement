@@ -60,6 +60,16 @@ namespace SourceCode.DAO
             return result > 0;
         }
 
+        public bool InsertType(TypeGoalDTO type)
+        {
+            string query = "exec InsertTypeGoal @TypeGoalID , @@TypeGoalName";
+
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { type.Type_id, type.Type_name });
+
+
+            return result > 0;
+        }
+
         #endregion
     }
 }
