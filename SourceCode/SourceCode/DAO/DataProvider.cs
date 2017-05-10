@@ -13,7 +13,6 @@ namespace SourceCode.DAO
 
         private string str_connection = @"Data Source=.\sqlexpress;Initial Catalog=FootballManagement;Integrated Security=True";
 
-
         private static DataProvider instance;
 
         public static DataProvider Instance
