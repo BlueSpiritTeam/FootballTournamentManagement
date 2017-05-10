@@ -98,7 +98,7 @@
             this.bunifuCustomLabel.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel.Location = new System.Drawing.Point(174, 17);
+            this.bunifuCustomLabel.Location = new System.Drawing.Point(161, 15);
             this.bunifuCustomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
             this.bunifuCustomLabel.Size = new System.Drawing.Size(304, 37);
