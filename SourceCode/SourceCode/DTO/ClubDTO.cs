@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SourceCode.DTO
 {
-    class ClubDTO
+    public class ClubDTO
     {
         private string club_id;
         private string club_name;
