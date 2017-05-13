@@ -99,6 +99,5 @@ namespace SourceCode.DTO
             this.Goalassist = assist;
             this.Kitnum = kit;
         }
-
     }
 }

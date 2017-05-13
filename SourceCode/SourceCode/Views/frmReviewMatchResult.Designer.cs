@@ -444,6 +444,7 @@
             this.ClientSize = new System.Drawing.Size(833, 699);
             this.Controls.Add(this.pnlMatchResult);
             this.Controls.Add(this.pnlTitle);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmReviewMatchResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

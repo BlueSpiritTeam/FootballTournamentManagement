@@ -39,16 +39,16 @@
             this.pnlMatchRound = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dgvMatchResult = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnCreateMatch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pnlFooter = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btnFinish = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HomeClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GuestClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stadium = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCreateMatch = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pnlFooter = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnFinish = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -181,6 +181,36 @@
             this.dgvMatchResult.Size = new System.Drawing.Size(935, 426);
             this.dgvMatchResult.TabIndex = 3;
             // 
+            // OrderingNumber
+            // 
+            this.OrderingNumber.HeaderText = "Ordering Number";
+            this.OrderingNumber.Name = "OrderingNumber";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // Time
+            // 
+            this.Time.HeaderText = "Time";
+            this.Time.Name = "Time";
+            // 
+            // HomeClub
+            // 
+            this.HomeClub.HeaderText = "Home Club";
+            this.HomeClub.Name = "HomeClub";
+            // 
+            // GuestClub
+            // 
+            this.GuestClub.HeaderText = "Guest Club";
+            this.GuestClub.Name = "GuestClub";
+            // 
+            // Stadium
+            // 
+            this.Stadium.HeaderText = "Stadium";
+            this.Stadium.Name = "Stadium";
+            // 
             // btnCreateMatch
             // 
             this.btnCreateMatch.ActiveBorderThickness = 1;
@@ -275,36 +305,6 @@
             this.btnUpdate.TabIndex = 68;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // OrderingNumber
-            // 
-            this.OrderingNumber.HeaderText = "Ordering Number";
-            this.OrderingNumber.Name = "OrderingNumber";
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // Time
-            // 
-            this.Time.HeaderText = "Time";
-            this.Time.Name = "Time";
-            // 
-            // HomeClub
-            // 
-            this.HomeClub.HeaderText = "Home Club";
-            this.HomeClub.Name = "HomeClub";
-            // 
-            // GuestClub
-            // 
-            this.GuestClub.HeaderText = "Guest Club";
-            this.GuestClub.Name = "GuestClub";
-            // 
-            // Stadium
-            // 
-            this.Stadium.HeaderText = "Stadium";
-            this.Stadium.Name = "Stadium";
-            // 
             // frmMatchSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -314,6 +314,7 @@
             this.Controls.Add(this.dgvMatchResult);
             this.Controls.Add(this.pnlMatchRound);
             this.Controls.Add(this.pnlTitle);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMatchSchedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -10,6 +10,7 @@ namespace SourceCode.DAO
 {
     public class ClubDAO
     {
+        //tao sigleton parttern
         private static ClubDAO instance;
 
         public static ClubDAO Instance
@@ -35,7 +36,7 @@ namespace SourceCode.DAO
         public List<ClubDTO> LoadAllClubss()
         {
             List<ClubDTO> list = new List<ClubDTO>();
-
+            //ket noi va chay cau truy van
             DataTable data = DataProvider.Instance.ExcuteQuery("LoadAllClub");
 
             foreach(DataRow item in data.Rows)

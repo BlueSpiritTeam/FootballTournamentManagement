@@ -145,10 +145,11 @@
             this.Controls.Add(this.btnCreateSchedule);
             this.Controls.Add(this.btnCreateNewTournament);
             this.Controls.Add(this.pnlTournamentContent);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmTournament";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmTournament";
+            this.Text = "Tournament";
             this.pnlTournamentContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picTournament)).EndInit();
             this.ResumeLayout(false);

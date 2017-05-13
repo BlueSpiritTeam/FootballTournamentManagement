@@ -55,10 +55,10 @@
             this.btnSave.IdleFillColor = System.Drawing.Color.White;
             this.btnSave.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnSave.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.Location = new System.Drawing.Point(106, 99);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Location = new System.Drawing.Point(141, 122);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(115, 43);
+            this.btnSave.Size = new System.Drawing.Size(153, 53);
             this.btnSave.TabIndex = 58;
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -69,10 +69,10 @@
             this.txt_GoalName.BorderColor = System.Drawing.Color.SeaGreen;
             this.txt_GoalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_GoalName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txt_GoalName.Location = new System.Drawing.Point(200, 54);
-            this.txt_GoalName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_GoalName.Location = new System.Drawing.Point(267, 66);
+            this.txt_GoalName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_GoalName.Name = "txt_GoalName";
-            this.txt_GoalName.Size = new System.Drawing.Size(227, 26);
+            this.txt_GoalName.Size = new System.Drawing.Size(301, 30);
             this.txt_GoalName.TabIndex = 56;
             // 
             // bunifuCustomLabel1
@@ -81,10 +81,9 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(51, 60);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(68, 74);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(99, 18);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(131, 24);
             this.bunifuCustomLabel1.TabIndex = 59;
             this.bunifuCustomLabel1.Text = "Add new type:";
             // 
@@ -106,45 +105,48 @@
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
             this.btnCancel.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnCancel.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.Location = new System.Drawing.Point(254, 99);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Location = new System.Drawing.Point(339, 122);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(115, 43);
+            this.btnCancel.Size = new System.Drawing.Size(153, 53);
             this.btnCancel.TabIndex = 60;
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txt_TypeGoalID
             // 
-            this.txt_TypeGoalID.Location = new System.Drawing.Point(200, 23);
+            this.txt_TypeGoalID.Location = new System.Drawing.Point(267, 28);
+            this.txt_TypeGoalID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_TypeGoalID.Name = "txt_TypeGoalID";
-            this.txt_TypeGoalID.Size = new System.Drawing.Size(227, 20);
+            this.txt_TypeGoalID.Size = new System.Drawing.Size(301, 22);
             this.txt_TypeGoalID.TabIndex = 61;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(119, 26);
+            this.label1.Location = new System.Drawing.Point(159, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(21, 17);
             this.label1.TabIndex = 62;
             this.label1.Text = "ID";
             // 
             // frmTypesGoal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(491, 205);
+            this.ClientSize = new System.Drawing.Size(655, 252);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_TypeGoalID);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txt_GoalName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmTypesGoal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Types Goal";

@@ -24,6 +24,7 @@ namespace SourceCode.DTO
             }
         }
 
+        //construtor
         public CoachDTO()
         {
 

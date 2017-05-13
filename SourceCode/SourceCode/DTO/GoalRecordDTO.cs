@@ -11,8 +11,8 @@ namespace SourceCode.DTO
     {
         private string player_score_id;
         private string player_assist_id;
-        private uint round_id;
-        private uint type_goal_id;
+        private int round_id;
+        private int type_goal_id;
         private string time_to_goal;
 
         public string Player_score_id
@@ -41,7 +41,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Round_id
+        public int Round_id
         {
             get
             {
@@ -54,7 +54,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Type_goal_id
+        public int Type_goal_id
         {
             get
             {
@@ -85,7 +85,7 @@ namespace SourceCode.DTO
 
         }
 
-        public GoalRecordDTO(string sid, string aid, uint rid, uint tgid, string ttg)
+        public GoalRecordDTO(string sid, string aid, int rid, int tgid, string ttg)
         {
             this.Player_score_id = sid;
             this.Player_assist_id = aid;
@@ -98,10 +98,9 @@ namespace SourceCode.DTO
         {
             this.Player_score_id = (string)row["PlayerScoreID"].ToString();
             this.Player_assist_id = (string)row["PlayerAssistID"].ToString();
-            this.Round_id = uint.Parse(row["RoundID"].ToString());
-            this.Type_goal_id = uint.Parse(row["TypeGoalID"].ToString());
+            this.Round_id = int.Parse(row["RoundID"].ToString());
+            this.Type_goal_id = int.Parse(row["TypeGoalID"].ToString());
             this.Time_to_goal = (string)row["TimeToGoal"].ToString();
-
         }
     }
 }

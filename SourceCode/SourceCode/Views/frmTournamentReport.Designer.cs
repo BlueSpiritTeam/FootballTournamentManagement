@@ -189,10 +189,11 @@
             this.Controls.Add(this.pnlTournamentContent);
             this.Controls.Add(this.btnRankOfClub);
             this.Controls.Add(this.btnMatchResult);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmTournamentReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmTournamentReport";
+            this.Text = "TournamentReport";
             this.pnlTournamentContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picTournament)).EndInit();
             this.ResumeLayout(false);

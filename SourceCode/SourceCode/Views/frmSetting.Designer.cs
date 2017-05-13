@@ -145,6 +145,7 @@
             this.Controls.Add(this.btnApplicationSetting);
             this.Controls.Add(this.btnTournamentSetting);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSetting";

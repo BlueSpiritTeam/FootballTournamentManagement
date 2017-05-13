@@ -618,6 +618,8 @@
             this.Controls.Add(this.grbTeamPlayer);
             this.Controls.Add(this.grbSearchTeam);
             this.Controls.Add(this.grbTeamInfor);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmClub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

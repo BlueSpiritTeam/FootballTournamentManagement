@@ -15,6 +15,7 @@ namespace SourceCode
 {
     public partial class frmChangeRules : Form
     {
+        //khai bao mot RuleDTO
         private static RuleDTO rules = new RuleDTO(); // sử dụng nhiều lần
         private static List<TypeGoalDTO> list_typegoal = new List<TypeGoalDTO>();
 
@@ -73,6 +74,7 @@ namespace SourceCode
         {
             list_typegoal = TypeGoalDAO.Instance.LoadTypeGoal();
 
+            //xe mot TypeGoal trong list_typegoal
             foreach(TypeGoalDTO item in list_typegoal)
             {
                 ListViewItem lvit = new ListViewItem(item.Type_id);
