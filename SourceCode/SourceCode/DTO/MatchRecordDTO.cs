@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SourceCode.DTO
 {
-    class MatchRecordDTO
+    public class MatchRecordDTO
     {
         private int home_club_ratio;
         private int guest_club_ratio;

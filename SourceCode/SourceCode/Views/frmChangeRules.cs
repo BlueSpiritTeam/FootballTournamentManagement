@@ -77,8 +77,8 @@ namespace SourceCode
             //xe mot TypeGoal trong list_typegoal
             foreach(TypeGoalDTO item in list_typegoal)
             {
-                ListViewItem lvit = new ListViewItem(item.Type_id);
-                lvit.SubItems.Add(item.Type_name);
+                ListViewItem lvit = new ListViewItem(item.Type_id); //===>
+                lvit.SubItems.Add(item.Type_name); // ==>
 
                 listView_typeGoal.Items.Add(lvit);
             }

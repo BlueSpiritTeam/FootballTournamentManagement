@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegister));
             this.pnlRegisterContent = new System.Windows.Forms.Panel();
             this.btnAddCoach = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -65,7 +65,7 @@
             this.panelAddInfor = new System.Windows.Forms.Panel();
             this.tabControlAddInfor = new System.Windows.Forms.TabControl();
             this.tabPageCoach = new System.Windows.Forms.TabPage();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnChooseCoachImage = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cmbGenderCoach = new System.Windows.Forms.ComboBox();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -77,17 +77,16 @@
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtCoachNameInsert = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.picAddCoach = new System.Windows.Forms.PictureBox();
+            this.picCoach = new System.Windows.Forms.PictureBox();
             this.tabPagePlayer = new System.Windows.Forms.TabPage();
             this.pnlAddNewPlayer = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnCancelAddPlayer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnChoosePlayerImage = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cmbGenderPlayer = new System.Windows.Forms.ComboBox();
             this.btnSaveNewPlayer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtKitnum = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtRole = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtClub = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -100,6 +99,7 @@
             this.picPlayer = new System.Windows.Forms.PictureBox();
             this.bunifuTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.cmbRole = new System.Windows.Forms.ComboBox();
             this.pnlRegisterContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRegister)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoTeam)).BeginInit();
@@ -110,7 +110,7 @@
             this.panelAddInfor.SuspendLayout();
             this.tabControlAddInfor.SuspendLayout();
             this.tabPageCoach.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddCoach)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCoach)).BeginInit();
             this.tabPagePlayer.SuspendLayout();
             this.pnlAddNewPlayer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
@@ -203,7 +203,6 @@
             this.btnFinish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnFinish.Textcolor = System.Drawing.Color.SeaGreen;
             this.btnFinish.TextFont = new System.Drawing.Font("Source Sans Pro Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinish.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
             // 
             // btnReview
             // 
@@ -276,7 +275,7 @@
             this.btnAddNewPlayers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddNewPlayers.Textcolor = System.Drawing.Color.SeaGreen;
             this.btnAddNewPlayers.TextFont = new System.Drawing.Font("Source Sans Pro Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNewPlayers.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
+            this.btnAddNewPlayers.Click += new System.EventHandler(this.btnAddNewPlayers_Click);
             // 
             // picRegister
             // 
@@ -441,6 +440,7 @@
             this.btnChooseImage.Size = new System.Drawing.Size(179, 44);
             this.btnChooseImage.TabIndex = 53;
             this.btnChooseImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnChooseImage.Click += new System.EventHandler(this.btnChooseImage_Click);
             // 
             // pnlCoachName
             // 
@@ -534,26 +534,27 @@
             this.btnSaveClub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSaveClub.Textcolor = System.Drawing.Color.White;
             this.btnSaveClub.TextFont = new System.Drawing.Font("Source Sans Pro Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveClub.Click += new System.EventHandler(this.btnSaveClub_Click);
             // 
             // dgvRegister
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvRegister.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvRegister.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvRegister.BackgroundColor = System.Drawing.Color.White;
             this.dgvRegister.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRegister.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRegister.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRegister.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvRegister.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRegister.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderingNumber,
@@ -572,9 +573,9 @@
             this.dgvRegister.Location = new System.Drawing.Point(3, 22);
             this.dgvRegister.Name = "dgvRegister";
             this.dgvRegister.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvRegister.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvRegister.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvRegister.RowTemplate.Height = 24;
             this.dgvRegister.Size = new System.Drawing.Size(893, 304);
             this.dgvRegister.TabIndex = 0;
@@ -649,7 +650,7 @@
             // tabPageCoach
             // 
             this.tabPageCoach.BackColor = System.Drawing.Color.White;
-            this.tabPageCoach.Controls.Add(this.bunifuThinButton21);
+            this.tabPageCoach.Controls.Add(this.btnChooseCoachImage);
             this.tabPageCoach.Controls.Add(this.bunifuCustomLabel);
             this.tabPageCoach.Controls.Add(this.cmbGenderCoach);
             this.tabPageCoach.Controls.Add(this.btnCancel);
@@ -661,7 +662,7 @@
             this.tabPageCoach.Controls.Add(this.bunifuCustomLabel5);
             this.tabPageCoach.Controls.Add(this.txtCoachNameInsert);
             this.tabPageCoach.Controls.Add(this.bunifuCustomLabel8);
-            this.tabPageCoach.Controls.Add(this.picAddCoach);
+            this.tabPageCoach.Controls.Add(this.picCoach);
             this.bunifuTransition.SetDecoration(this.tabPageCoach, BunifuAnimatorNS.DecorationType.None);
             this.tabPageCoach.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageCoach.Location = new System.Drawing.Point(4, 28);
@@ -671,31 +672,32 @@
             this.tabPageCoach.TabIndex = 0;
             this.tabPageCoach.Text = "Add Coach";
             // 
-            // bunifuThinButton21
+            // btnChooseCoachImage
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Choose Image";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition.SetDecoration(this.bunifuThinButton21, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(44, 306);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(179, 44);
-            this.bunifuThinButton21.TabIndex = 69;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnChooseCoachImage.ActiveBorderThickness = 1;
+            this.btnChooseCoachImage.ActiveCornerRadius = 20;
+            this.btnChooseCoachImage.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnChooseCoachImage.ActiveForecolor = System.Drawing.Color.White;
+            this.btnChooseCoachImage.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnChooseCoachImage.BackColor = System.Drawing.Color.White;
+            this.btnChooseCoachImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnChooseCoachImage.BackgroundImage")));
+            this.btnChooseCoachImage.ButtonText = "Choose Image";
+            this.btnChooseCoachImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition.SetDecoration(this.btnChooseCoachImage, BunifuAnimatorNS.DecorationType.None);
+            this.btnChooseCoachImage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChooseCoachImage.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnChooseCoachImage.IdleBorderThickness = 1;
+            this.btnChooseCoachImage.IdleCornerRadius = 20;
+            this.btnChooseCoachImage.IdleFillColor = System.Drawing.Color.White;
+            this.btnChooseCoachImage.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnChooseCoachImage.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnChooseCoachImage.Location = new System.Drawing.Point(44, 306);
+            this.btnChooseCoachImage.Margin = new System.Windows.Forms.Padding(5);
+            this.btnChooseCoachImage.Name = "btnChooseCoachImage";
+            this.btnChooseCoachImage.Size = new System.Drawing.Size(179, 44);
+            this.btnChooseCoachImage.TabIndex = 69;
+            this.btnChooseCoachImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnChooseCoachImage.Click += new System.EventHandler(this.btnChooseCoachImage_Click);
             // 
             // bunifuCustomLabel
             // 
@@ -775,6 +777,7 @@
             this.btnSaveCoach.Size = new System.Drawing.Size(179, 60);
             this.btnSaveCoach.TabIndex = 65;
             this.btnSaveCoach.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSaveCoach.Click += new System.EventHandler(this.btnSaveCoach_Click);
             // 
             // bunifuCustomLabel1
             // 
@@ -869,17 +872,17 @@
             this.bunifuCustomLabel8.TabIndex = 58;
             this.bunifuCustomLabel8.Text = "Name:";
             // 
-            // picAddCoach
+            // picCoach
             // 
-            this.picAddCoach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.picAddCoach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuTransition.SetDecoration(this.picAddCoach, BunifuAnimatorNS.DecorationType.None);
-            this.picAddCoach.Location = new System.Drawing.Point(25, 83);
-            this.picAddCoach.Name = "picAddCoach";
-            this.picAddCoach.Size = new System.Drawing.Size(215, 215);
-            this.picAddCoach.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAddCoach.TabIndex = 57;
-            this.picAddCoach.TabStop = false;
+            this.picCoach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.picCoach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuTransition.SetDecoration(this.picCoach, BunifuAnimatorNS.DecorationType.None);
+            this.picCoach.Location = new System.Drawing.Point(25, 83);
+            this.picCoach.Name = "picCoach";
+            this.picCoach.Size = new System.Drawing.Size(215, 215);
+            this.picCoach.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCoach.TabIndex = 57;
+            this.picCoach.TabStop = false;
             // 
             // tabPagePlayer
             // 
@@ -898,14 +901,14 @@
             // 
             this.pnlAddNewPlayer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlAddNewPlayer.BackgroundImage")));
             this.pnlAddNewPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlAddNewPlayer.Controls.Add(this.cmbRole);
             this.pnlAddNewPlayer.Controls.Add(this.btnCancelAddPlayer);
-            this.pnlAddNewPlayer.Controls.Add(this.bunifuThinButton22);
+            this.pnlAddNewPlayer.Controls.Add(this.btnChoosePlayerImage);
             this.pnlAddNewPlayer.Controls.Add(this.cmbGenderPlayer);
             this.pnlAddNewPlayer.Controls.Add(this.btnSaveNewPlayer);
             this.pnlAddNewPlayer.Controls.Add(this.txtKitnum);
             this.pnlAddNewPlayer.Controls.Add(this.bunifuCustomLabel9);
             this.pnlAddNewPlayer.Controls.Add(this.bunifuCustomLabel10);
-            this.pnlAddNewPlayer.Controls.Add(this.txtRole);
             this.pnlAddNewPlayer.Controls.Add(this.bunifuCustomLabel11);
             this.pnlAddNewPlayer.Controls.Add(this.txtClub);
             this.pnlAddNewPlayer.Controls.Add(this.bunifuCustomLabel12);
@@ -965,31 +968,32 @@
             this.btnCancelAddPlayer.TextFont = new System.Drawing.Font("Source Sans Pro Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelAddPlayer.Click += new System.EventHandler(this.btnCancelAddPlayer_Click);
             // 
-            // bunifuThinButton22
+            // btnChoosePlayerImage
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Choose Image";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition.SetDecoration(this.bunifuThinButton22, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(36, 234);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(179, 44);
-            this.bunifuThinButton22.TabIndex = 52;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnChoosePlayerImage.ActiveBorderThickness = 1;
+            this.btnChoosePlayerImage.ActiveCornerRadius = 20;
+            this.btnChoosePlayerImage.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnChoosePlayerImage.ActiveForecolor = System.Drawing.Color.White;
+            this.btnChoosePlayerImage.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnChoosePlayerImage.BackColor = System.Drawing.Color.Transparent;
+            this.btnChoosePlayerImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnChoosePlayerImage.BackgroundImage")));
+            this.btnChoosePlayerImage.ButtonText = "Choose Image";
+            this.btnChoosePlayerImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition.SetDecoration(this.btnChoosePlayerImage, BunifuAnimatorNS.DecorationType.None);
+            this.btnChoosePlayerImage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChoosePlayerImage.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnChoosePlayerImage.IdleBorderThickness = 1;
+            this.btnChoosePlayerImage.IdleCornerRadius = 20;
+            this.btnChoosePlayerImage.IdleFillColor = System.Drawing.Color.White;
+            this.btnChoosePlayerImage.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnChoosePlayerImage.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnChoosePlayerImage.Location = new System.Drawing.Point(36, 234);
+            this.btnChoosePlayerImage.Margin = new System.Windows.Forms.Padding(5);
+            this.btnChoosePlayerImage.Name = "btnChoosePlayerImage";
+            this.btnChoosePlayerImage.Size = new System.Drawing.Size(179, 44);
+            this.btnChoosePlayerImage.TabIndex = 52;
+            this.btnChoosePlayerImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnChoosePlayerImage.Click += new System.EventHandler(this.btnChoosePlayerImage_Click);
             // 
             // cmbGenderPlayer
             // 
@@ -1072,17 +1076,6 @@
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(96, 21);
             this.bunifuCustomLabel10.TabIndex = 36;
             this.bunifuCustomLabel10.Text = "Gender:";
-            // 
-            // txtRole
-            // 
-            this.txtRole.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTransition.SetDecoration(this.txtRole, BunifuAnimatorNS.DecorationType.None);
-            this.txtRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRole.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtRole.Location = new System.Drawing.Point(134, 361);
-            this.txtRole.Name = "txtRole";
-            this.txtRole.Size = new System.Drawing.Size(270, 27);
-            this.txtRole.TabIndex = 35;
             // 
             // bunifuCustomLabel11
             // 
@@ -1208,22 +1201,22 @@
             // 
             this.bunifuTransition.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlideAndRotate;
             this.bunifuTransition.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(50);
-            animation1.RotateCoeff = 0.3F;
-            animation1.RotateLimit = 0.2F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(50);
+            animation2.RotateCoeff = 0.3F;
+            animation2.RotateLimit = 0.2F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition.DefaultAnimation = animation2;
             this.bunifuTransition.TimeStep = 10F;
             // 
             // imageList1
@@ -1232,12 +1225,23 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // cmbRole
+            // 
+            this.bunifuTransition.SetDecoration(this.cmbRole, BunifuAnimatorNS.DecorationType.None);
+            this.cmbRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRole.ForeColor = System.Drawing.Color.SeaGreen;
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.Location = new System.Drawing.Point(133, 355);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Size = new System.Drawing.Size(271, 30);
+            this.cmbRole.TabIndex = 54;
+            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1102, 673);
+            this.ClientSize = new System.Drawing.Size(1782, 673);
             this.Controls.Add(this.panelAddInfor);
             this.Controls.Add(this.grbTeamPlayer);
             this.Controls.Add(this.pnlRegisterContent);
@@ -1262,7 +1266,7 @@
             this.tabControlAddInfor.ResumeLayout(false);
             this.tabPageCoach.ResumeLayout(false);
             this.tabPageCoach.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddCoach)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCoach)).EndInit();
             this.tabPagePlayer.ResumeLayout(false);
             this.pnlAddNewPlayer.ResumeLayout(false);
             this.pnlAddNewPlayer.PerformLayout();
@@ -1304,7 +1308,7 @@
         private System.Windows.Forms.TabPage tabPageCoach;
         private System.Windows.Forms.TabPage tabPagePlayer;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnChooseCoachImage;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel;
         private System.Windows.Forms.ComboBox cmbGenderCoach;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
@@ -1316,15 +1320,14 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtCoachNameInsert;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
-        private System.Windows.Forms.PictureBox picAddCoach;
+        private System.Windows.Forms.PictureBox picCoach;
         private Bunifu.Framework.UI.BunifuGradientPanel pnlAddNewPlayer;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnChoosePlayerImage;
         private System.Windows.Forms.ComboBox cmbGenderPlayer;
         private Bunifu.Framework.UI.BunifuFlatButton btnSaveNewPlayer;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtKitnum;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtRole;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtClub;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;
@@ -1338,5 +1341,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnCancelAddPlayer;
         private Bunifu.Framework.UI.BunifuFlatButton btnSaveClub;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ComboBox cmbRole;
     }
 }

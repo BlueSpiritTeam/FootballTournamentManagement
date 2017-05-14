@@ -68,21 +68,21 @@ namespace SourceCode.DTO
         #endregion
         public ClubDTO() { }
 
-        public ClubDTO(string cid, string cname, string s,int p, string pt)
-        {
-            this.Club_id = cid;
-            this.Club_name = cname;
-            this.Stadium = s;
-            this.Path = pt;
-        }
-
         //this.Path(chu hoa la ntn)
         public ClubDTO(DataRow row)
         {
             this.Club_id = (string)row["ClubID"].ToString();
             this.Club_name = (string)row["ClubName"].ToString();
-            this.Stadium = (string)row["StadiumName"].ToString();
+            this.Stadium = row["StadiumName"].ToString();
             this.Path = (string)row["Path"].ToString();
+        }
+
+        public ClubDTO(string club_id, string club_name, string stadium, string path)
+        {
+            this.club_id = club_id;
+            this.club_name = club_name;
+            this.stadium = stadium;
+            this.path = path;
         }
     }
 }

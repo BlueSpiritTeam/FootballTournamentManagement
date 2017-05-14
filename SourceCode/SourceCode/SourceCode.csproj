@@ -50,15 +50,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\ClubDAO.cs" />
+    <Compile Include="DAO\CoachDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\GenderDAO.cs" />
+    <Compile Include="DAO\HumanDAO.cs" />
+    <Compile Include="DAO\PlayerDAO.cs" />
+    <Compile Include="DAO\RoleDAO.cs" />
     <Compile Include="DAO\RuleDAO.cs" />
     <Compile Include="DAO\TypeGoalDAO.cs" />
     <Compile Include="DTO\ClubDTO.cs" />
     <Compile Include="DTO\CoachDTO.cs" />
     <Compile Include="DTO\GenderDTO.cs" />
     <Compile Include="DTO\GoalRecordDTO.cs" />
-    <Compile Include="DTO\Human.cs" />
+    <Compile Include="DTO\HumanDTO.cs" />
     <Compile Include="DTO\MatchDTO.cs" />
     <Compile Include="DTO\MatchRecordDTO.cs" />
     <Compile Include="DTO\PlayerDTO.cs" />

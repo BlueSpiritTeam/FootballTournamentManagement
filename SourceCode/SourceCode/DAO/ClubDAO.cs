@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SourceCode.DAO
 {
@@ -17,10 +19,12 @@ namespace SourceCode.DAO
         {
             get
             {
+                if (instance == null)
+                    instance = new ClubDAO();
                 return instance;
             }
 
-            set
+            private set
             {
                 instance = value;
             }
@@ -33,11 +37,11 @@ namespace SourceCode.DAO
 
         #region
 
-        public List<ClubDTO> LoadAllClubss()
+        public List<ClubDTO> LoadAllClubs()
         {
             List<ClubDTO> list = new List<ClubDTO>();
             //ket noi va chay cau truy van
-            DataTable data = DataProvider.Instance.ExcuteQuery("LoadAllClub");
+            DataTable data = DataProvider.Instance.ExcuteQuery("LoadClubInfor");
 
             foreach(DataRow item in data.Rows)
             {
@@ -49,6 +53,13 @@ namespace SourceCode.DAO
             return list;
         }
 
+        public bool InsertNewClub(ClubDTO club)
+        {
+            string query = "exec InsertClub @club_id , @club_name , @stadium_name , @path";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {club.Club_id, club.Club_name, club.Stadium, club.Path});
+
+            return result > 0;
+        }
         #endregion
     }
 }

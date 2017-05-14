@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace SourceCode.DTO
 {
-    class CoachDTO : Human
+    public class CoachDTO : HumanDTO
     {
         private string coach_id;
-
         public string Coach_id
         {
             get
@@ -24,30 +23,45 @@ namespace SourceCode.DTO
             }
         }
 
+
         //construtor
         public CoachDTO()
         {
-
+            
         }
 
-        public CoachDTO(string cid, string gid, string clubid, string n, DateTime bd, string nt)
+        public CoachDTO(string cid)
         {
             this.Coach_id = cid;
-            this.Gender = gid;
+        }
+        public CoachDTO(DataRow row)
+        {
+            this.Coach_id = (string)row["CoachID"].ToString();
+        }
+
+        /*
+        public CoachDTO(string cid, string gid, string clubid, string n, DateTime bd, string nt, string p)
+        {
+            this.Coach_id = cid;
+            this.Gender_id = gid;
             this.Club_id = cid;
             this.Name = n;
             this.Birthday = bd;
             this.Nation = nt;
+            this.Path_img = p;
         }
-
+        */
+        /*
         public CoachDTO(DataRow row)
         {
             this.Coach_id = (string)row["CoachID"].ToString();
-            this.Gender = (string)row["GenderName"].ToString();
+            this.Gender_id = (string)row["GenderName"].ToString();
             this.Club_id = (string)row["ClubID"].ToString();
             this.Name = (string)row["Name"].ToString();
             this.Birthday = DateTime.Parse(row["Birthday"].ToString());
             this.Nation = (string)row["Nation"].ToString();
+            this.Path_img = (string)row["Path"].ToString();
         }
+        */
     }
 }

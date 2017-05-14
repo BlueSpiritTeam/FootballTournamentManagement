@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace SourceCode.DTO
 {
-    class PlayerDTO : Human
+    public class PlayerDTO : HumanDTO
     {
         private string player_id;
-        private string role;
+        private int role_id;
         private int goalnumber;
         private int goalassist;
         private int kitnum;
@@ -28,16 +28,16 @@ namespace SourceCode.DTO
             }
         }
 
-        public string Role
+        public int Role_id
         {
             get
             {
-                return role;
+                return role_id;
             }
 
             set
             {
-                role = value;
+                role_id = value;
             }
         }
 
@@ -86,18 +86,19 @@ namespace SourceCode.DTO
 
         }
 
-        public PlayerDTO(string pid, string name, string gender, string clubid, string role, DateTime birth, string nation, int goal, int assist, int kit)
+        public PlayerDTO(string pid, string name, string gender, string clubid, int role_id, DateTime birth, string nation, int goal, int assist, int kit)
         {
             this.Player_id = pid;
             this.Name = name;
-            this.Gender = gender;
+            this.Gender_id = gender;
             this.Club_id = clubid;
-            this.Role = role;
+            this.Role_id = role_id;
             this.Birthday = birth;
             this.Nation = nation;
             this.Goalnumber = goal;
             this.Goalassist = assist;
             this.Kitnum = kit;
         }
+
     }
 }

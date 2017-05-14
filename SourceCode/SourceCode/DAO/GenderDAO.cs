@@ -8,27 +8,31 @@ using System.Threading.Tasks;
 
 namespace SourceCode.DAO
 {
-    class GenderDAO
+    public class GenderDAO
     {
-        private static GenderDAO instances;
+        private static GenderDAO instance;
 
         internal static GenderDAO Instances
         {
             get
             {
-                return instances;
+                if (instance == null)
+                    instance = new GenderDAO(); // phai co cai nay moi dc khong no null là khong dc 
+
+                return instance;
             }
 
-            set
+            private set
             {
-                instances = value;
+                instance = value;
             }
         }
 
         public GenderDAO()
         { }
 
-        public List<GenderDTO> LoadGender() //load Gender tu GenderDTO va tra ve mot List<> cac thuoc tinh cua gender
+        #region methods
+        public List<GenderDTO> LoadAllGender() //load Gender tu GenderDTO va tra ve mot List<> cac thuoc tinh cua gender
         {
             List<GenderDTO> list_gender = new List<GenderDTO>();
             //ket noi va chay cau truy van
@@ -41,5 +45,15 @@ namespace SourceCode.DAO
             }
             return list_gender; //tra ve mot List<> gender
         }
+
+        public string GetGenderID(string gender)
+        {
+            if (gender == "Female")
+                return "F";
+            else
+                return "M";
+        }
+
+        #endregion
     }
 }
