@@ -34,10 +34,6 @@ namespace SourceCode.DTO
         {
             this.Coach_id = cid;
         }
-        public CoachDTO(DataRow row)
-        {
-            this.Coach_id = (string)row["CoachID"].ToString();
-        }
 
         /*
         public CoachDTO(string cid, string gid, string clubid, string n, DateTime bd, string nt, string p)
@@ -51,17 +47,17 @@ namespace SourceCode.DTO
             this.Path_img = p;
         }
         */
-        /*
+        
         public CoachDTO(DataRow row)
         {
             this.Coach_id = (string)row["CoachID"].ToString();
-            this.Gender_id = (string)row["GenderName"].ToString();
-            this.Club_id = (string)row["ClubID"].ToString();
-            this.Name = (string)row["Name"].ToString();
-            this.Birthday = DateTime.Parse(row["Birthday"].ToString());
-            this.Nation = (string)row["Nation"].ToString();
-            this.Path_img = (string)row["Path"].ToString();
+            //this.Gender_id = (string)row["GenderName"].ToString();
+            //this.Club_id = (string)row["ClubID"].ToString();
+            //this.Name = (string)row["Name"].ToString();
+            //this.Birthday = DateTime.Parse(row["Birthday"].ToString());
+            //this.Nation = (string)row["Nation"].ToString();
+            //this.Path_img = (string)row["Path"].ToString();
         }
-        */
+        
     }
 }

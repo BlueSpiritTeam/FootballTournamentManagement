@@ -100,35 +100,12 @@ namespace SourceCode
             else
                 return false;
          }
-        /*
-        public void AddCoach()
-        {
-            if(CheckTextboxCoach() == false)
-            {
-                string human_id = "C_" + txtClubID;
-                string gender_id = GenderDAO.Instances.GetGenderID(cmbGenderCoach.Text);
-                string clubid = txtClubID.Text;
-                string name_coach = txtCoachNameInsert.Text;
-                DateTime birthday_coach = dtpBirthdayCoach.Value;
-                string nation_coach = txtNationOfCoach.Text;
-                string path_coach = path_img_coach;
-
-                //add data vo bang HumanInfromation
-                HumanDTO hu = new HumanDTO(human_id, gender_id, clubid, name_coach, birthday_coach, nation_coach, path_coach);
-                if(HumanDAO.Instance.InsertNewHuman(hu))
-                {
-                    MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
-                }
-            }
-            else
-                MessageBox.Show("Input wrong or be the same", "Error!!!", MessageBoxButtons.OK);
-        }
-        */
+        
         public void AddCoach()
         {
             if (CheckTextboxCoach() == false)
             {
-                string human_id = "C_" + txtClubID;
+                string human_id = "C_" + txtClubID.Text;
                 string gender_id = GenderDAO.Instances.GetGenderID(cmbGenderCoach.Text);
                 string clubid = txtClubID.Text;
                 string name_coach = txtCoachNameInsert.Text;
@@ -136,9 +113,16 @@ namespace SourceCode
                 string nation_coach = txtNationOfCoach.Text;
                 string path_coach = path_img_coach;
 
-                //add data vo bang HumanInfromation
+                //add data vao bang HumanInformation
+                HumanDTO hm = new HumanDTO(human_id, gender_id, clubid, name_coach, birthday_coach, nation_coach, path_coach);
+                
+                if (CoachDAO.Instance.InsertNewHuman(hm))
+                {
+                    MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
+                }
+                //add data vao bảng Coach
                 CoachDTO c = new CoachDTO(human_id);
-                if (HumanDAO.Instance.InsertNewHuman(c))
+                if (CoachDAO.Instance.InsertNewCoach(c))
                 {
                     MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
                 }

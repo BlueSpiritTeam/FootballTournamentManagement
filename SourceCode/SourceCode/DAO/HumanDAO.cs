@@ -31,7 +31,7 @@ namespace SourceCode.DAO
         public bool InsertNewHuman(HumanDTO hm)
         {
             string query = "exec InsertClub @human_id, @gender_id, @club_id, @human_name, @birthday, @nation, @path";
-            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {hm.Human_id});
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {});
 
             return result > 0;
         }

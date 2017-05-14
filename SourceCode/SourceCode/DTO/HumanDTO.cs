@@ -9,16 +9,16 @@ namespace SourceCode.DTO
 {
     public /*abstract*/ class HumanDTO
     {
-        private string human_id;
+        protected string human_id;
         protected string gender_id;
         protected string club_id;
         protected string name;
         protected DateTime birthday;
         protected string nation;
-        private string path_img;
+        protected string path_img;
 
         #region properties
-        protected string Gender_id
+        public string Gender_id
         {
             get
             {
@@ -31,7 +31,7 @@ namespace SourceCode.DTO
             }
         }
 
-        protected string Club_id
+        public string Club_id
         {
             get
             {
@@ -44,7 +44,7 @@ namespace SourceCode.DTO
             }
         }
 
-        protected string Name
+        public string Name
         {
             get
             {
@@ -57,7 +57,7 @@ namespace SourceCode.DTO
             }
         }
 
-        protected DateTime Birthday
+        public DateTime Birthday
         {
             get
             {
@@ -70,7 +70,7 @@ namespace SourceCode.DTO
             }
         }
 
-        protected string Nation
+        public string Nation
         {
             get
             {
@@ -82,7 +82,7 @@ namespace SourceCode.DTO
                 nation = value;
             }
         }
-        protected string Path_img
+        public string Path_img
         {
             get
             {

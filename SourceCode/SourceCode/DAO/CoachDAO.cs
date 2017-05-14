@@ -34,15 +34,15 @@ namespace SourceCode.DAO
         }
 
         #region methods
-        /*
+        
         public bool InsertNewHuman(HumanDTO hm)
         {
-            string query = "exec InsertClub @human_id, @gender_id, @club_id, @human_name, @birthday, @nation, @path";
-            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { hm.Human_id});
+            string query = "exec InsertHumandInfor @human_id, @gender_id, @club_id, @human_name, @birthday, @nation, @path";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { hm.Human_id, hm.Gender_id, hm.Club_id, hm.Name, hm.Birthday, hm.Nation, hm.Path_img});
 
             return result > 0;
         }
-        */
+        
         public bool InsertNewCoach( CoachDTO coach)
         {
             string query = "exec InsertCoach @coach_id";
