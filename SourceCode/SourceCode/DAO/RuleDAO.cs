@@ -50,8 +50,6 @@ namespace SourceCode.DAO
         {
             string query = "exec UpdateRule @MaximumAge , @MinimumAge , @MinimumNumberPlayer , @MaximumNumberPlayer , @ScoreWin , @ScoreLose , @ScoreDraw";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {rule.Max_age,rule.Min_age,rule.Min_player,rule.Max_player,rule.Score_win,rule.Score_lose,rule.Score_draw });
-
-
             return result > 0;
         }
 

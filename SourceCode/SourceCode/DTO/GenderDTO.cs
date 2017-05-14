@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SourceCode.DTO
 {
-    class GenderDTO
+    public class GenderDTO
     {
         private string gender_id;
         private string gender_name;

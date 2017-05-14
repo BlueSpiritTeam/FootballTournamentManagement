@@ -58,10 +58,6 @@
             this.txtSearchPlayer = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.grbPlayerDetails = new System.Windows.Forms.GroupBox();
             this.dgvPlayerInfor = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnSave = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,6 +68,10 @@
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kitnum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSave = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.grbPlayerInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             this.grbSearchPlayer.SuspendLayout();
@@ -436,6 +436,66 @@
             this.dgvPlayerInfor.Size = new System.Drawing.Size(1096, 207);
             this.dgvPlayerInfor.TabIndex = 1;
             // 
+            // OrderingNumber
+            // 
+            this.OrderingNumber.DataPropertyName = "OrderingNumber";
+            this.OrderingNumber.HeaderText = "Ordering Number";
+            this.OrderingNumber.Name = "OrderingNumber";
+            // 
+            // PlayerID
+            // 
+            this.PlayerID.DataPropertyName = "PlayerID";
+            this.PlayerID.HeaderText = "Player ID";
+            this.PlayerID.Name = "PlayerID";
+            // 
+            // PlayerName
+            // 
+            this.PlayerName.DataPropertyName = "Name";
+            this.PlayerName.HeaderText = "Player Name";
+            this.PlayerName.Name = "PlayerName";
+            // 
+            // Birthday
+            // 
+            this.Birthday.DataPropertyName = "Birthday";
+            this.Birthday.HeaderText = "Birthday";
+            this.Birthday.Name = "Birthday";
+            // 
+            // Age
+            // 
+            this.Age.DataPropertyName = "Age";
+            this.Age.HeaderText = "Age";
+            this.Age.Name = "Age";
+            // 
+            // Gender
+            // 
+            this.Gender.DataPropertyName = "GenderName";
+            this.Gender.HeaderText = "Gender";
+            this.Gender.Name = "Gender";
+            // 
+            // Club
+            // 
+            this.Club.DataPropertyName = "ClubName";
+            this.Club.HeaderText = "Club";
+            this.Club.Name = "Club";
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "RoleName";
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            // 
+            // Nation
+            // 
+            this.Nation.DataPropertyName = "Nation";
+            this.Nation.HeaderText = "Nation";
+            this.Nation.Name = "Nation";
+            // 
+            // Kitnum
+            // 
+            this.Kitnum.DataPropertyName = "KitNum";
+            this.Kitnum.HeaderText = "Kitnum";
+            this.Kitnum.Name = "Kitnum";
+            // 
             // btnSave
             // 
             this.btnSave.ActiveBorderThickness = 1;
@@ -538,66 +598,6 @@
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // OrderingNumber
-            // 
-            this.OrderingNumber.DataPropertyName = "OrderingNumber";
-            this.OrderingNumber.HeaderText = "Ordering Number";
-            this.OrderingNumber.Name = "OrderingNumber";
-            // 
-            // PlayerID
-            // 
-            this.PlayerID.DataPropertyName = "PlayerID";
-            this.PlayerID.HeaderText = "Player ID";
-            this.PlayerID.Name = "PlayerID";
-            // 
-            // PlayerName
-            // 
-            this.PlayerName.DataPropertyName = "Name";
-            this.PlayerName.HeaderText = "Player Name";
-            this.PlayerName.Name = "PlayerName";
-            // 
-            // Birthday
-            // 
-            this.Birthday.DataPropertyName = "Birthday";
-            this.Birthday.HeaderText = "Birthday";
-            this.Birthday.Name = "Birthday";
-            // 
-            // Age
-            // 
-            this.Age.DataPropertyName = "Age";
-            this.Age.HeaderText = "Age";
-            this.Age.Name = "Age";
-            // 
-            // Gender
-            // 
-            this.Gender.DataPropertyName = "GenderName";
-            this.Gender.HeaderText = "Gender";
-            this.Gender.Name = "Gender";
-            // 
-            // Club
-            // 
-            this.Club.DataPropertyName = "ClubName";
-            this.Club.HeaderText = "Club";
-            this.Club.Name = "Club";
-            // 
-            // Role
-            // 
-            this.Role.DataPropertyName = "RoleName";
-            this.Role.HeaderText = "Role";
-            this.Role.Name = "Role";
-            // 
-            // Nation
-            // 
-            this.Nation.DataPropertyName = "Nation";
-            this.Nation.HeaderText = "Nation";
-            this.Nation.Name = "Nation";
-            // 
-            // Kitnum
-            // 
-            this.Kitnum.DataPropertyName = "KitNum";
-            this.Kitnum.HeaderText = "Kitnum";
-            this.Kitnum.Name = "Kitnum";
-            // 
             // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -612,6 +612,7 @@
             this.Controls.Add(this.grbPlayerInfor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Player";

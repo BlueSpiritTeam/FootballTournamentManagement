@@ -58,9 +58,10 @@
             this.pnlGeneralContent.GradientTopLeft = System.Drawing.Color.SeaGreen;
             this.pnlGeneralContent.GradientTopRight = System.Drawing.Color.SeaGreen;
             this.pnlGeneralContent.Location = new System.Drawing.Point(0, 0);
+            this.pnlGeneralContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlGeneralContent.Name = "pnlGeneralContent";
             this.pnlGeneralContent.Quality = 10;
-            this.pnlGeneralContent.Size = new System.Drawing.Size(241, 673);
+            this.pnlGeneralContent.Size = new System.Drawing.Size(181, 544);
             this.pnlGeneralContent.TabIndex = 0;
             // 
             // btnLogout
@@ -85,14 +86,13 @@
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 90D;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(5, 577);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Location = new System.Drawing.Point(4, 467);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.White;
             this.btnLogout.OnHovercolor = System.Drawing.Color.Lime;
             this.btnLogout.OnHoverTextColor = System.Drawing.Color.SeaGreen;
             this.btnLogout.selected = true;
-            this.btnLogout.Size = new System.Drawing.Size(232, 80);
+            this.btnLogout.Size = new System.Drawing.Size(174, 65);
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Log Out";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,7 +107,8 @@
             this.bunifuCustomLabel.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel.Font = new System.Drawing.Font("Copperplate Gothic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel.Location = new System.Drawing.Point(3, 225);
+            this.bunifuCustomLabel.Location = new System.Drawing.Point(2, 181);
+            this.bunifuCustomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
             this.bunifuCustomLabel.Size = new System.Drawing.Size(229, 44);
             this.bunifuCustomLabel.TabIndex = 5;
@@ -118,15 +119,17 @@
             this.picGeneralContent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.picGeneralContent.BackColor = System.Drawing.Color.SeaGreen;
             this.picGeneralContent.Image = ((System.Drawing.Image)(resources.GetObject("picGeneralContent.Image")));
-            this.picGeneralContent.Location = new System.Drawing.Point(64, 59);
+            this.picGeneralContent.Location = new System.Drawing.Point(48, 46);
+            this.picGeneralContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picGeneralContent.Name = "picGeneralContent";
-            this.picGeneralContent.Size = new System.Drawing.Size(134, 137);
+            this.picGeneralContent.Size = new System.Drawing.Size(100, 111);
             this.picGeneralContent.TabIndex = 0;
             this.picGeneralContent.TabStop = false;
             // 
             // btnClub
             // 
-            this.btnClub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClub.BackColor = System.Drawing.Color.SeaGreen;
             this.btnClub.color = System.Drawing.Color.SeaGreen;
             this.btnClub.colorActive = System.Drawing.Color.MediumSeaGreen;
@@ -138,10 +141,10 @@
             this.btnClub.ImageZoom = 50;
             this.btnClub.LabelPosition = 30;
             this.btnClub.LabelText = "Club Management";
-            this.btnClub.Location = new System.Drawing.Point(105, 231);
-            this.btnClub.Margin = new System.Windows.Forms.Padding(5);
+            this.btnClub.Location = new System.Drawing.Point(79, 186);
+            this.btnClub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClub.Name = "btnClub";
-            this.btnClub.Size = new System.Drawing.Size(330, 201);
+            this.btnClub.Size = new System.Drawing.Size(244, 163);
             this.btnClub.TabIndex = 1;
             this.btnClub.Click += new System.EventHandler(this.btnTeam_Click);
             // 
@@ -160,15 +163,17 @@
             this.pnlGeneral.GradientBottomRight = System.Drawing.Color.White;
             this.pnlGeneral.GradientTopLeft = System.Drawing.Color.White;
             this.pnlGeneral.GradientTopRight = System.Drawing.Color.White;
-            this.pnlGeneral.Location = new System.Drawing.Point(241, 0);
+            this.pnlGeneral.Location = new System.Drawing.Point(181, 0);
+            this.pnlGeneral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlGeneral.Name = "pnlGeneral";
             this.pnlGeneral.Quality = 10;
-            this.pnlGeneral.Size = new System.Drawing.Size(861, 673);
+            this.pnlGeneral.Size = new System.Drawing.Size(643, 544);
             this.pnlGeneral.TabIndex = 1;
             // 
             // btnSetting
             // 
-            this.btnSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSetting.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSetting.BackColor = System.Drawing.Color.SeaGreen;
             this.btnSetting.color = System.Drawing.Color.SeaGreen;
             this.btnSetting.colorActive = System.Drawing.Color.MediumSeaGreen;
@@ -180,16 +185,16 @@
             this.btnSetting.ImageZoom = 50;
             this.btnSetting.LabelPosition = 30;
             this.btnSetting.LabelText = "Setting";
-            this.btnSetting.Location = new System.Drawing.Point(442, 440);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSetting.Location = new System.Drawing.Point(332, 356);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(330, 201);
+            this.btnSetting.Size = new System.Drawing.Size(244, 163);
             this.btnSetting.TabIndex = 6;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnTournamentReport
             // 
-            this.btnTournamentReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTournamentReport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTournamentReport.BackColor = System.Drawing.Color.SeaGreen;
             this.btnTournamentReport.color = System.Drawing.Color.SeaGreen;
             this.btnTournamentReport.colorActive = System.Drawing.Color.MediumSeaGreen;
@@ -201,16 +206,16 @@
             this.btnTournamentReport.ImageZoom = 50;
             this.btnTournamentReport.LabelPosition = 30;
             this.btnTournamentReport.LabelText = "Tournament Report";
-            this.btnTournamentReport.Location = new System.Drawing.Point(105, 440);
-            this.btnTournamentReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTournamentReport.Location = new System.Drawing.Point(79, 356);
             this.btnTournamentReport.Name = "btnTournamentReport";
-            this.btnTournamentReport.Size = new System.Drawing.Size(330, 201);
+            this.btnTournamentReport.Size = new System.Drawing.Size(244, 163);
             this.btnTournamentReport.TabIndex = 5;
             this.btnTournamentReport.Click += new System.EventHandler(this.btnTournamentReport_Click);
             // 
             // btnPlayerManagement
             // 
-            this.btnPlayerManagement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPlayerManagement.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPlayerManagement.BackColor = System.Drawing.Color.SeaGreen;
             this.btnPlayerManagement.color = System.Drawing.Color.SeaGreen;
             this.btnPlayerManagement.colorActive = System.Drawing.Color.MediumSeaGreen;
@@ -222,16 +227,16 @@
             this.btnPlayerManagement.ImageZoom = 50;
             this.btnPlayerManagement.LabelPosition = 30;
             this.btnPlayerManagement.LabelText = "Player Management";
-            this.btnPlayerManagement.Location = new System.Drawing.Point(442, 231);
-            this.btnPlayerManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlayerManagement.Location = new System.Drawing.Point(332, 186);
             this.btnPlayerManagement.Name = "btnPlayerManagement";
-            this.btnPlayerManagement.Size = new System.Drawing.Size(330, 201);
+            this.btnPlayerManagement.Size = new System.Drawing.Size(244, 163);
             this.btnPlayerManagement.TabIndex = 4;
             this.btnPlayerManagement.Click += new System.EventHandler(this.btnPlayerManagement_Click);
             // 
             // btnTournamentManagement
             // 
-            this.btnTournamentManagement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTournamentManagement.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTournamentManagement.BackColor = System.Drawing.Color.SeaGreen;
             this.btnTournamentManagement.color = System.Drawing.Color.SeaGreen;
             this.btnTournamentManagement.colorActive = System.Drawing.Color.MediumSeaGreen;
@@ -243,16 +248,16 @@
             this.btnTournamentManagement.ImageZoom = 50;
             this.btnTournamentManagement.LabelPosition = 30;
             this.btnTournamentManagement.LabelText = "Tournament Management";
-            this.btnTournamentManagement.Location = new System.Drawing.Point(443, 22);
-            this.btnTournamentManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTournamentManagement.Location = new System.Drawing.Point(332, 16);
             this.btnTournamentManagement.Name = "btnTournamentManagement";
-            this.btnTournamentManagement.Size = new System.Drawing.Size(330, 201);
+            this.btnTournamentManagement.Size = new System.Drawing.Size(244, 163);
             this.btnTournamentManagement.TabIndex = 3;
             this.btnTournamentManagement.Click += new System.EventHandler(this.btnTournamentManagement_Click);
             // 
             // btnRegister
             // 
-            this.btnRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRegister.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegister.BackColor = System.Drawing.Color.SeaGreen;
             this.btnRegister.color = System.Drawing.Color.SeaGreen;
             this.btnRegister.colorActive = System.Drawing.Color.MediumSeaGreen;
@@ -264,25 +269,30 @@
             this.btnRegister.ImageZoom = 50;
             this.btnRegister.LabelPosition = 30;
             this.btnRegister.LabelText = "Register";
-            this.btnRegister.Location = new System.Drawing.Point(105, 22);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegister.Location = new System.Drawing.Point(79, 16);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(330, 201);
+            this.btnRegister.Size = new System.Drawing.Size(244, 163);
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // frmGeneral
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 673);
+            this.ClientSize = new System.Drawing.Size(824, 544);
             this.Controls.Add(this.pnlGeneral);
             this.Controls.Add(this.pnlGeneralContent);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmGeneral";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "General";
+            this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.frmGeneral_Load);
             this.pnlGeneralContent.ResumeLayout(false);
             this.pnlGeneralContent.PerformLayout();

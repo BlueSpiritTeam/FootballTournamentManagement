@@ -50,14 +50,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\ClubDAO.cs" />
+    <Compile Include="DAO\CoachDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\GenderDAO.cs" />
+    <Compile Include="DAO\HumanDAO.cs" />
+    <Compile Include="DAO\PlayerDAO.cs" />
+    <Compile Include="DAO\RoleDAO.cs" />
     <Compile Include="DAO\RuleDAO.cs" />
     <Compile Include="DAO\TypeGoalDAO.cs" />
     <Compile Include="DTO\ClubDTO.cs" />
     <Compile Include="DTO\CoachDTO.cs" />
     <Compile Include="DTO\GenderDTO.cs" />
     <Compile Include="DTO\GoalRecordDTO.cs" />
-    <Compile Include="DTO\Human.cs" />
+    <Compile Include="DTO\HumanDTO.cs" />
     <Compile Include="DTO\MatchDTO.cs" />
     <Compile Include="DTO\MatchRecordDTO.cs" />
     <Compile Include="DTO\PlayerDTO.cs" />
@@ -72,23 +77,11 @@
     <Compile Include="Views\frmChangeRules.Designer.cs">
       <DependentUpon>frmChangeRules.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmAddCoach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\frmAddCoach.Designer.cs">
-      <DependentUpon>frmAddCoach.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\frmAddNewPlayer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\frmAddNewPlayer.Designer.cs">
-      <DependentUpon>frmAddNewPlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmGeneral.cs">
       <SubType>Form</SubType>
@@ -185,14 +178,8 @@
     <EmbeddedResource Include="Views\frmChangeRules.resx">
       <DependentUpon>frmChangeRules.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmAddCoach.resx">
-      <DependentUpon>frmAddCoach.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmAddNewPlayer.resx">
-      <DependentUpon>frmAddNewPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmGeneral.resx">
       <DependentUpon>frmGeneral.cs</DependentUpon>

@@ -242,6 +242,7 @@
             this.Controls.Add(this.txtCoachName);
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.picViewCoach);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmViewCoachInfor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.bunifuCustomLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.PanalLogin = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -37,6 +38,7 @@
             this.txtUserName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblPassword = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblUserName = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.PanalLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +49,8 @@
             this.bunifuCustomLabel.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel.Font = new System.Drawing.Font("Copperplate Gothic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel.Location = new System.Drawing.Point(198, 91);
+            this.bunifuCustomLabel.Location = new System.Drawing.Point(102, 74);
+            this.bunifuCustomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
             this.bunifuCustomLabel.Size = new System.Drawing.Size(801, 44);
             this.bunifuCustomLabel.TabIndex = 0;
@@ -71,11 +74,12 @@
             this.PanalLogin.GradientBottomRight = System.Drawing.Color.White;
             this.PanalLogin.GradientTopLeft = System.Drawing.Color.White;
             this.PanalLogin.GradientTopRight = System.Drawing.Color.White;
-            this.PanalLogin.Location = new System.Drawing.Point(249, 184);
+            this.PanalLogin.Location = new System.Drawing.Point(187, 149);
+            this.PanalLogin.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PanalLogin.Name = "PanalLogin";
             this.PanalLogin.Padding = new System.Windows.Forms.Padding(1);
             this.PanalLogin.Quality = 20;
-            this.PanalLogin.Size = new System.Drawing.Size(678, 458);
+            this.PanalLogin.Size = new System.Drawing.Size(462, 372);
             this.PanalLogin.TabIndex = 2;
             // 
             // btnExit
@@ -97,10 +101,10 @@
             this.btnExit.IdleFillColor = System.Drawing.Color.White;
             this.btnExit.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnExit.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnExit.Location = new System.Drawing.Point(21, 357);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnExit.Location = new System.Drawing.Point(16, 290);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(619, 56);
+            this.btnExit.Size = new System.Drawing.Size(418, 45);
             this.btnExit.TabIndex = 9;
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -124,10 +128,10 @@
             this.btnLogin.IdleFillColor = System.Drawing.Color.White;
             this.btnLogin.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnLogin.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnLogin.Location = new System.Drawing.Point(21, 270);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnLogin.Location = new System.Drawing.Point(16, 219);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(619, 56);
+            this.btnLogin.Size = new System.Drawing.Size(418, 45);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -143,10 +147,10 @@
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtPassword.isPassword = true;
-            this.txtPassword.Location = new System.Drawing.Point(27, 196);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Location = new System.Drawing.Point(20, 159);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(613, 44);
+            this.txtPassword.Size = new System.Drawing.Size(413, 36);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -161,10 +165,10 @@
             this.txtUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserName.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtUserName.isPassword = false;
-            this.txtUserName.Location = new System.Drawing.Point(27, 74);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUserName.Location = new System.Drawing.Point(20, 60);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(613, 44);
+            this.txtUserName.Size = new System.Drawing.Size(413, 36);
             this.txtUserName.TabIndex = 4;
             this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -174,7 +178,8 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblPassword.Location = new System.Drawing.Point(23, 144);
+            this.lblPassword.Location = new System.Drawing.Point(17, 117);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(124, 23);
             this.lblPassword.TabIndex = 1;
@@ -186,22 +191,32 @@
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblUserName.Location = new System.Drawing.Point(23, 24);
+            this.lblUserName.Location = new System.Drawing.Point(17, 19);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(125, 23);
             this.lblUserName.TabIndex = 0;
             this.lblUserName.Text = "UserName\r\n";
             // 
+            // bunifuElipse
+            // 
+            this.bunifuElipse.ElipseRadius = 20;
+            this.bunifuElipse.TargetControl = this;
+            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1182, 673);
+            this.ClientSize = new System.Drawing.Size(840, 547);
             this.Controls.Add(this.PanalLogin);
             this.Controls.Add(this.bunifuCustomLabel);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -223,6 +238,7 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtUserName;
         private Bunifu.Framework.UI.BunifuCustomLabel lblPassword;
         private Bunifu.Framework.UI.BunifuCustomLabel lblUserName;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse;
     }
 }
 

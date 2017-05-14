@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 namespace SourceCode.DTO
 {
-    class RoundDTO
+    public class RoundDTO
     {
         private uint round_num;
 

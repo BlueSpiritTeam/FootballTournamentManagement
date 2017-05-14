@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace SourceCode.DTO
 {
-    class MatchRecordDTO
+    public class MatchRecordDTO
     {
-        private uint home_club_ratio;
-        private uint guest_club_ratio;
+        private int home_club_ratio;
+        private int guest_club_ratio;
 
-        public uint Home_club_ratio
+        public int Home_club_ratio
         {
             get
             {
@@ -25,7 +25,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Guest_club_ratio
+        public int Guest_club_ratio
         {
             get
             {
@@ -40,7 +40,7 @@ namespace SourceCode.DTO
 
         public MatchRecordDTO() { }
 
-        public MatchRecordDTO(uint hclubratio, uint gclubratio)
+        public MatchRecordDTO(int hclubratio, int gclubratio)
         {
             this.Home_club_ratio = hclubratio;
             this.Guest_club_ratio = gclubratio;
@@ -48,8 +48,8 @@ namespace SourceCode.DTO
 
         public MatchRecordDTO(DataRow row)
         {
-            this.Home_club_ratio = uint.Parse(row["HomeClubRatio"].ToString());
-            this.Guest_club_ratio = uint.Parse(row["GuestClub"].ToString());
+            this.Home_club_ratio = int.Parse(row["HomeClubRatio"].ToString());
+            this.Guest_club_ratio = int.Parse(row["GuestClub"].ToString());
         }
     }
 }

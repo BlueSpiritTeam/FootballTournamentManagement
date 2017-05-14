@@ -31,8 +31,6 @@ namespace SourceCode.DAO
         {
 
         }
-
-
         #region methods
 
         public List<TypeGoalDTO> LoadTypeGoal()
@@ -66,10 +64,8 @@ namespace SourceCode.DAO
 
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { type.Type_id, type.Type_name });
 
-
             return result > 0;
         }
-
         #endregion
     }
 }

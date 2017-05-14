@@ -78,13 +78,14 @@
             this.btnShowResult.IconVisible = true;
             this.btnShowResult.IconZoom = 90D;
             this.btnShowResult.IsTab = false;
-            this.btnShowResult.Location = new System.Drawing.Point(56, 445);
+            this.btnShowResult.Location = new System.Drawing.Point(75, 548);
+            this.btnShowResult.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnShowResult.Name = "btnShowResult";
             this.btnShowResult.Normalcolor = System.Drawing.Color.White;
             this.btnShowResult.OnHovercolor = System.Drawing.Color.Lime;
             this.btnShowResult.OnHoverTextColor = System.Drawing.Color.SeaGreen;
             this.btnShowResult.selected = true;
-            this.btnShowResult.Size = new System.Drawing.Size(170, 42);
+            this.btnShowResult.Size = new System.Drawing.Size(227, 52);
             this.btnShowResult.TabIndex = 19;
             this.btnShowResult.Text = "Show Result";
             this.btnShowResult.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -112,13 +113,14 @@
             this.btnPrintReport.IconVisible = true;
             this.btnPrintReport.IconZoom = 90D;
             this.btnPrintReport.IsTab = false;
-            this.btnPrintReport.Location = new System.Drawing.Point(241, 445);
+            this.btnPrintReport.Location = new System.Drawing.Point(321, 548);
+            this.btnPrintReport.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnPrintReport.Name = "btnPrintReport";
             this.btnPrintReport.Normalcolor = System.Drawing.Color.White;
             this.btnPrintReport.OnHovercolor = System.Drawing.Color.Lime;
             this.btnPrintReport.OnHoverTextColor = System.Drawing.Color.SeaGreen;
             this.btnPrintReport.selected = true;
-            this.btnPrintReport.Size = new System.Drawing.Size(170, 42);
+            this.btnPrintReport.Size = new System.Drawing.Size(227, 52);
             this.btnPrintReport.TabIndex = 18;
             this.btnPrintReport.Text = "Print Report";
             this.btnPrintReport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -158,14 +160,14 @@
             this.dgvListPlayerToScore.HeaderBgColor = System.Drawing.Color.White;
             this.dgvListPlayerToScore.HeaderForeColor = System.Drawing.Color.SeaGreen;
             this.dgvListPlayerToScore.Location = new System.Drawing.Point(0, 0);
-            this.dgvListPlayerToScore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvListPlayerToScore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvListPlayerToScore.Name = "dgvListPlayerToScore";
             this.dgvListPlayerToScore.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
             this.dgvListPlayerToScore.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvListPlayerToScore.RowTemplate.Height = 24;
-            this.dgvListPlayerToScore.Size = new System.Drawing.Size(654, 293);
+            this.dgvListPlayerToScore.Size = new System.Drawing.Size(872, 361);
             this.dgvListPlayerToScore.TabIndex = 2;
             // 
             // OrderingNumber
@@ -204,11 +206,11 @@
             this.pnlRankOfTeams.GradientBottomRight = System.Drawing.Color.White;
             this.pnlRankOfTeams.GradientTopLeft = System.Drawing.Color.White;
             this.pnlRankOfTeams.GradientTopRight = System.Drawing.Color.White;
-            this.pnlRankOfTeams.Location = new System.Drawing.Point(0, 126);
-            this.pnlRankOfTeams.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlRankOfTeams.Location = new System.Drawing.Point(0, 155);
+            this.pnlRankOfTeams.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlRankOfTeams.Name = "pnlRankOfTeams";
             this.pnlRankOfTeams.Quality = 10;
-            this.pnlRankOfTeams.Size = new System.Drawing.Size(654, 293);
+            this.pnlRankOfTeams.Size = new System.Drawing.Size(872, 361);
             this.pnlRankOfTeams.TabIndex = 17;
             // 
             // cmbFrom
@@ -216,10 +218,10 @@
             this.cmbFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFrom.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbFrom.FormattingEnabled = true;
-            this.cmbFrom.Location = new System.Drawing.Point(88, 14);
-            this.cmbFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbFrom.Location = new System.Drawing.Point(117, 17);
+            this.cmbFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbFrom.Name = "cmbFrom";
-            this.cmbFrom.Size = new System.Drawing.Size(174, 28);
+            this.cmbFrom.Size = new System.Drawing.Size(231, 33);
             this.cmbFrom.TabIndex = 64;
             // 
             // bunifuCustomLabel1
@@ -228,10 +230,9 @@
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(20, 20);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(27, 25);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(44, 18);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(55, 24);
             this.bunifuCustomLabel1.TabIndex = 63;
             this.bunifuCustomLabel1.Text = "From";
             // 
@@ -248,11 +249,11 @@
             this.pnlDateOfCompetition.GradientBottomRight = System.Drawing.Color.White;
             this.pnlDateOfCompetition.GradientTopLeft = System.Drawing.Color.White;
             this.pnlDateOfCompetition.GradientTopRight = System.Drawing.Color.White;
-            this.pnlDateOfCompetition.Location = new System.Drawing.Point(0, 67);
-            this.pnlDateOfCompetition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlDateOfCompetition.Location = new System.Drawing.Point(0, 82);
+            this.pnlDateOfCompetition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlDateOfCompetition.Name = "pnlDateOfCompetition";
             this.pnlDateOfCompetition.Quality = 10;
-            this.pnlDateOfCompetition.Size = new System.Drawing.Size(654, 59);
+            this.pnlDateOfCompetition.Size = new System.Drawing.Size(872, 73);
             this.pnlDateOfCompetition.TabIndex = 16;
             // 
             // cmbTo
@@ -260,10 +261,10 @@
             this.cmbTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTo.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbTo.FormattingEnabled = true;
-            this.cmbTo.Location = new System.Drawing.Point(352, 14);
-            this.cmbTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTo.Location = new System.Drawing.Point(469, 17);
+            this.cmbTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTo.Name = "cmbTo";
-            this.cmbTo.Size = new System.Drawing.Size(172, 28);
+            this.cmbTo.Size = new System.Drawing.Size(228, 33);
             this.cmbTo.TabIndex = 66;
             // 
             // bunifuCustomLabel2
@@ -272,10 +273,9 @@
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(296, 20);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(395, 25);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(26, 18);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(33, 24);
             this.bunifuCustomLabel2.TabIndex = 65;
             this.bunifuCustomLabel2.Text = "To";
             // 
@@ -287,10 +287,9 @@
             this.bunifuCustomLabel.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel.Location = new System.Drawing.Point(174, 17);
-            this.bunifuCustomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel.Location = new System.Drawing.Point(232, 21);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
-            this.bunifuCustomLabel.Size = new System.Drawing.Size(304, 37);
+            this.bunifuCustomLabel.Size = new System.Drawing.Size(381, 46);
             this.bunifuCustomLabel.TabIndex = 60;
             this.bunifuCustomLabel.Text = "List Player To Score";
             // 
@@ -298,10 +297,10 @@
             // 
             this.picCreateSchedule.BackColor = System.Drawing.Color.SeaGreen;
             this.picCreateSchedule.Image = ((System.Drawing.Image)(resources.GetObject("picCreateSchedule.Image")));
-            this.picCreateSchedule.Location = new System.Drawing.Point(128, 6);
-            this.picCreateSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCreateSchedule.Location = new System.Drawing.Point(171, 7);
+            this.picCreateSchedule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCreateSchedule.Name = "picCreateSchedule";
-            this.picCreateSchedule.Size = new System.Drawing.Size(41, 46);
+            this.picCreateSchedule.Size = new System.Drawing.Size(55, 57);
             this.picCreateSchedule.TabIndex = 59;
             this.picCreateSchedule.TabStop = false;
             // 
@@ -317,10 +316,10 @@
             this.pnlTitle.GradientTopLeft = System.Drawing.Color.White;
             this.pnlTitle.GradientTopRight = System.Drawing.Color.White;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnlTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTitle.Name = "pnlTitle";
             this.pnlTitle.Quality = 10;
-            this.pnlTitle.Size = new System.Drawing.Size(654, 67);
+            this.pnlTitle.Size = new System.Drawing.Size(872, 82);
             this.pnlTitle.TabIndex = 15;
             // 
             // btnCancel
@@ -344,13 +343,14 @@
             this.btnCancel.IconVisible = true;
             this.btnCancel.IconZoom = 90D;
             this.btnCancel.IsTab = false;
-            this.btnCancel.Location = new System.Drawing.Point(432, 445);
+            this.btnCancel.Location = new System.Drawing.Point(576, 548);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Normalcolor = System.Drawing.Color.White;
             this.btnCancel.OnHovercolor = System.Drawing.Color.Lime;
             this.btnCancel.OnHoverTextColor = System.Drawing.Color.SeaGreen;
             this.btnCancel.selected = true;
-            this.btnCancel.Size = new System.Drawing.Size(170, 42);
+            this.btnCancel.Size = new System.Drawing.Size(227, 52);
             this.btnCancel.TabIndex = 20;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -360,16 +360,17 @@
             // 
             // frmListPlayerToScore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 511);
+            this.ClientSize = new System.Drawing.Size(872, 629);
             this.Controls.Add(this.btnShowResult);
             this.Controls.Add(this.btnPrintReport);
             this.Controls.Add(this.pnlRankOfTeams);
             this.Controls.Add(this.pnlDateOfCompetition);
             this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.btnCancel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmListPlayerToScore";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

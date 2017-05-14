@@ -458,6 +458,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.RecordMatchResult);
             this.Controls.Add(this.pnlTitle);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmRecordMatchResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

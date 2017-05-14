@@ -35,6 +35,7 @@ namespace SourceCode.Views
             }
             else
             {
+                //khoi tao 1 typeGoal
                 TypeGoalDTO temp = new TypeGoalDTO(txt_TypeGoalID.Text, txt_GoalName.Text);
                 if (TypeGoalDAO.Instance.InsertType(temp))
                     MessageBox.Show("Done!!!", "Notification");

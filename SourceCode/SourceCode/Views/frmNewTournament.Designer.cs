@@ -186,6 +186,7 @@
             this.ClientSize = new System.Drawing.Size(711, 412);
             this.Controls.Add(this.grbCreateTournament);
             this.Controls.Add(this.pnlTitle);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNewTournament";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

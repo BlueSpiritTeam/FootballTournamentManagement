@@ -12,8 +12,8 @@ namespace SourceCode.DTO
         private string club_id;
         private string club_name;
         private string stadium;
-        private uint point;
-
+        private string path;
+        #region properties
         public string Club_id
         {
             get
@@ -53,35 +53,36 @@ namespace SourceCode.DTO
             }
         }
 
-        public uint Point
+        public string Path
         {
             get
             {
-                return point;
+                return path;
             }
 
             set
             {
-                point = value;
+                path = value;
             }
         }
-
+        #endregion
         public ClubDTO() { }
 
-        public ClubDTO(string cid, string cname, string s,uint p)
-        {
-            this.Club_id = cid;
-            this.Club_name = cname;
-            this.Stadium = s;
-            this.Point = p;
-        }
-
+        //this.Path(chu hoa la ntn)
         public ClubDTO(DataRow row)
         {
             this.Club_id = (string)row["ClubID"].ToString();
             this.Club_name = (string)row["ClubName"].ToString();
-            this.Stadium = (string)row["StadiumName"].ToString();
-            this.Point = uint.Parse(row["TotalPoint"].ToString());
+            this.Stadium = row["StadiumName"].ToString();
+            this.Path = (string)row["Path"].ToString();
+        }
+
+        public ClubDTO(string club_id, string club_name, string stadium, string path)
+        {
+            this.club_id = club_id;
+            this.club_name = club_name;
+            this.stadium = stadium;
+            this.path = path;
         }
     }
 }

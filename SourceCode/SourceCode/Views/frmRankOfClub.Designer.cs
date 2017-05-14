@@ -373,6 +373,7 @@
             this.Controls.Add(this.pnlRankOfTeams);
             this.Controls.Add(this.pnlDateOfCompetition);
             this.Controls.Add(this.pnlTitle);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmRankOfTeam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
