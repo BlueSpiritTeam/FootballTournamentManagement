@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SourceCode.DAO;
+using SourceCode.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,10 +27,28 @@ namespace SourceCode
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmGeneral general = new frmGeneral();
-            general.ShowDialog();
-            this.Close();
+            string userName = txtUserName.Text;
+            string passWord = txtPassword.Text;
+
+
+            AccountDTO login = new AccountDTO(userName, passWord);
+
+            if (loginCheck(login))
+            {
+                this.Hide();
+                frmGeneral general = new frmGeneral();
+                general.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Password does not match that user! Please try another password!");
+            }
+        }
+
+        bool loginCheck(AccountDTO login)
+        {
+            return AccountDAO.Instance.Login(login);
         }
     }
 }
