@@ -56,3 +56,6 @@ E:\Football\FootballTournamentManagement\football-manager\FootballTournamentMana
 d:\Study\Dev C#\Project\GIT\FootballTournamentManagement\Football\Footbal\bin\Debug\Footbal.exe.config
 d:\Study\Dev C#\Project\GIT\FootballTournamentManagement\Football\Footbal\obj\Debug\Footbal.exe
 d:\Study\Dev C#\Project\GIT\FootballTournamentManagement\Football\Footbal\obj\Debug\Footbal.pdb
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\bin\Debug\Footbal.exe.config
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.exe
+D:\study\github\FootballManager\FootballTournamentManagement\Temporary\Football\Footbal\obj\Debug\Footbal.pdb
