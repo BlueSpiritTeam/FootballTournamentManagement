@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegister));
             this.pnlRegisterContent = new System.Windows.Forms.Panel();
             this.btnAddCoach = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -127,9 +127,9 @@
             this.bunifuTransition.SetDecoration(this.pnlRegisterContent, BunifuAnimatorNS.DecorationType.None);
             this.pnlRegisterContent.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlRegisterContent.Location = new System.Drawing.Point(0, 0);
-            this.pnlRegisterContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlRegisterContent.Margin = new System.Windows.Forms.Padding(2);
             this.pnlRegisterContent.Name = "pnlRegisterContent";
-            this.pnlRegisterContent.Size = new System.Drawing.Size(151, 547);
+            this.pnlRegisterContent.Size = new System.Drawing.Size(151, 546);
             this.pnlRegisterContent.TabIndex = 9;
             // 
             // btnAddCoach
@@ -283,9 +283,9 @@
             this.bunifuTransition.SetDecoration(this.picRegister, BunifuAnimatorNS.DecorationType.None);
             this.picRegister.Image = ((System.Drawing.Image)(resources.GetObject("picRegister.Image")));
             this.picRegister.Location = new System.Drawing.Point(27, 28);
-            this.picRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picRegister.Margin = new System.Windows.Forms.Padding(2);
             this.picRegister.Name = "picRegister";
-            this.picRegister.Size = new System.Drawing.Size(101, 111);
+            this.picRegister.Size = new System.Drawing.Size(101, 110);
             this.picRegister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRegister.TabIndex = 1;
             this.picRegister.TabStop = false;
@@ -312,7 +312,7 @@
             this.txtClubID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClubID.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtClubID.Location = new System.Drawing.Point(253, 38);
-            this.txtClubID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtClubID.Margin = new System.Windows.Forms.Padding(2);
             this.txtClubID.Name = "txtClubID";
             this.txtClubID.Size = new System.Drawing.Size(90, 23);
             this.txtClubID.TabIndex = 3;
@@ -339,7 +339,7 @@
             this.txtClubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClubName.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtClubName.Location = new System.Drawing.Point(467, 38);
-            this.txtClubName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtClubName.Margin = new System.Windows.Forms.Padding(2);
             this.txtClubName.Name = "txtClubName";
             this.txtClubName.Size = new System.Drawing.Size(199, 23);
             this.txtClubName.TabIndex = 5;
@@ -366,7 +366,7 @@
             this.txtStadiumName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStadiumName.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtStadiumName.Location = new System.Drawing.Point(312, 97);
-            this.txtStadiumName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStadiumName.Margin = new System.Windows.Forms.Padding(2);
             this.txtStadiumName.Name = "txtStadiumName";
             this.txtStadiumName.Size = new System.Drawing.Size(236, 23);
             this.txtStadiumName.TabIndex = 11;
@@ -377,7 +377,7 @@
             this.picLogoTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuTransition.SetDecoration(this.picLogoTeam, BunifuAnimatorNS.DecorationType.None);
             this.picLogoTeam.Location = new System.Drawing.Point(5, 24);
-            this.picLogoTeam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picLogoTeam.Margin = new System.Windows.Forms.Padding(2);
             this.picLogoTeam.Name = "picLogoTeam";
             this.picLogoTeam.Size = new System.Drawing.Size(159, 175);
             this.picLogoTeam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -440,7 +440,7 @@
             this.btnChooseImage.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnChooseImage.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnChooseImage.Location = new System.Drawing.Point(16, 210);
-            this.btnChooseImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChooseImage.Margin = new System.Windows.Forms.Padding(4);
             this.btnChooseImage.Name = "btnChooseImage";
             this.btnChooseImage.Size = new System.Drawing.Size(134, 36);
             this.btnChooseImage.TabIndex = 53;
@@ -453,7 +453,7 @@
             this.pnlCoachName.Controls.Add(this.bunifuCustomLabel6);
             this.bunifuTransition.SetDecoration(this.pnlCoachName, BunifuAnimatorNS.DecorationType.None);
             this.pnlCoachName.Location = new System.Drawing.Point(171, 132);
-            this.pnlCoachName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlCoachName.Margin = new System.Windows.Forms.Padding(2);
             this.pnlCoachName.Name = "pnlCoachName";
             this.pnlCoachName.Size = new System.Drawing.Size(376, 67);
             this.pnlCoachName.TabIndex = 54;
@@ -466,7 +466,7 @@
             this.txtCoachNameShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCoachNameShow.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtCoachNameShow.Location = new System.Drawing.Point(82, 18);
-            this.txtCoachNameShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCoachNameShow.Margin = new System.Windows.Forms.Padding(2);
             this.txtCoachNameShow.Name = "txtCoachNameShow";
             this.txtCoachNameShow.Size = new System.Drawing.Size(224, 23);
             this.txtCoachNameShow.TabIndex = 9;
@@ -501,9 +501,9 @@
             this.grbClubInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbClubInfor.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbClubInfor.Location = new System.Drawing.Point(152, 0);
-            this.grbClubInfor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbClubInfor.Margin = new System.Windows.Forms.Padding(2);
             this.grbClubInfor.Name = "grbClubInfor";
-            this.grbClubInfor.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbClubInfor.Padding = new System.Windows.Forms.Padding(2);
             this.grbClubInfor.Size = new System.Drawing.Size(674, 275);
             this.grbClubInfor.TabIndex = 3;
             this.grbClubInfor.TabStop = false;
@@ -548,23 +548,23 @@
             // 
             // dgvRegister
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvRegister.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvRegister.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRegister.BackgroundColor = System.Drawing.Color.White;
             this.dgvRegister.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRegister.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRegister.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRegister.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvRegister.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRegister.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderingNumber,
@@ -581,12 +581,12 @@
             this.dgvRegister.HeaderBgColor = System.Drawing.Color.White;
             this.dgvRegister.HeaderForeColor = System.Drawing.Color.SeaGreen;
             this.dgvRegister.Location = new System.Drawing.Point(2, 18);
-            this.dgvRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvRegister.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRegister.Name = "dgvRegister";
             this.dgvRegister.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvRegister.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvRegister.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvRegister.RowTemplate.Height = 24;
             this.dgvRegister.Size = new System.Drawing.Size(670, 247);
             this.dgvRegister.TabIndex = 0;
@@ -629,9 +629,9 @@
             this.grbTeamPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbTeamPlayer.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbTeamPlayer.Location = new System.Drawing.Point(152, 280);
-            this.grbTeamPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbTeamPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.grbTeamPlayer.Name = "grbTeamPlayer";
-            this.grbTeamPlayer.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbTeamPlayer.Padding = new System.Windows.Forms.Padding(2);
             this.grbTeamPlayer.Size = new System.Drawing.Size(674, 267);
             this.grbTeamPlayer.TabIndex = 10;
             this.grbTeamPlayer.TabStop = false;
@@ -645,7 +645,7 @@
             this.panelAddInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelAddInfor.ForeColor = System.Drawing.Color.SeaGreen;
             this.panelAddInfor.Location = new System.Drawing.Point(831, 0);
-            this.panelAddInfor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelAddInfor.Margin = new System.Windows.Forms.Padding(2);
             this.panelAddInfor.Name = "panelAddInfor";
             this.panelAddInfor.Size = new System.Drawing.Size(578, 544);
             this.panelAddInfor.TabIndex = 11;
@@ -656,7 +656,7 @@
             this.tabControlAddInfor.Controls.Add(this.tabPagePlayer);
             this.bunifuTransition.SetDecoration(this.tabControlAddInfor, BunifuAnimatorNS.DecorationType.None);
             this.tabControlAddInfor.Location = new System.Drawing.Point(2, 2);
-            this.tabControlAddInfor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlAddInfor.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlAddInfor.Name = "tabControlAddInfor";
             this.tabControlAddInfor.SelectedIndex = 0;
             this.tabControlAddInfor.Size = new System.Drawing.Size(600, 547);
@@ -681,9 +681,9 @@
             this.bunifuTransition.SetDecoration(this.tabPageCoach, BunifuAnimatorNS.DecorationType.None);
             this.tabPageCoach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageCoach.Location = new System.Drawing.Point(4, 26);
-            this.tabPageCoach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageCoach.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageCoach.Name = "tabPageCoach";
-            this.tabPageCoach.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageCoach.Padding = new System.Windows.Forms.Padding(2);
             this.tabPageCoach.Size = new System.Drawing.Size(592, 517);
             this.tabPageCoach.TabIndex = 0;
             this.tabPageCoach.Text = "Add Coach";
@@ -708,7 +708,7 @@
             this.btnChooseCoachImage.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnChooseCoachImage.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnChooseCoachImage.Location = new System.Drawing.Point(33, 249);
-            this.btnChooseCoachImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChooseCoachImage.Margin = new System.Windows.Forms.Padding(4);
             this.btnChooseCoachImage.Name = "btnChooseCoachImage";
             this.btnChooseCoachImage.Size = new System.Drawing.Size(134, 36);
             this.btnChooseCoachImage.TabIndex = 69;
@@ -738,7 +738,7 @@
             this.cmbGenderCoach.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbGenderCoach.FormattingEnabled = true;
             this.cmbGenderCoach.Location = new System.Drawing.Point(104, 302);
-            this.cmbGenderCoach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbGenderCoach.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGenderCoach.Name = "cmbGenderCoach";
             this.cmbGenderCoach.Size = new System.Drawing.Size(141, 25);
             this.cmbGenderCoach.TabIndex = 67;
@@ -763,7 +763,7 @@
             this.btnCancel.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnCancel.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnCancel.Location = new System.Drawing.Point(201, 410);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(134, 49);
             this.btnCancel.TabIndex = 66;
@@ -790,7 +790,7 @@
             this.btnSaveCoach.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnSaveCoach.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnSaveCoach.Location = new System.Drawing.Point(46, 410);
-            this.btnSaveCoach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveCoach.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveCoach.Name = "btnSaveCoach";
             this.btnSaveCoach.Size = new System.Drawing.Size(134, 49);
             this.btnSaveCoach.TabIndex = 65;
@@ -819,7 +819,7 @@
             this.txtNationOfCoach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNationOfCoach.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtNationOfCoach.Location = new System.Drawing.Point(104, 358);
-            this.txtNationOfCoach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNationOfCoach.Margin = new System.Windows.Forms.Padding(2);
             this.txtNationOfCoach.Name = "txtNationOfCoach";
             this.txtNationOfCoach.Size = new System.Drawing.Size(226, 24);
             this.txtNationOfCoach.TabIndex = 63;
@@ -877,7 +877,7 @@
             this.txtCoachNameInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCoachNameInsert.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtCoachNameInsert.Location = new System.Drawing.Point(190, 127);
-            this.txtCoachNameInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCoachNameInsert.Margin = new System.Windows.Forms.Padding(2);
             this.txtCoachNameInsert.Name = "txtCoachNameInsert";
             this.txtCoachNameInsert.Size = new System.Drawing.Size(246, 24);
             this.txtCoachNameInsert.TabIndex = 59;
@@ -902,7 +902,7 @@
             this.picCoach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuTransition.SetDecoration(this.picCoach, BunifuAnimatorNS.DecorationType.None);
             this.picCoach.Location = new System.Drawing.Point(19, 67);
-            this.picCoach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCoach.Margin = new System.Windows.Forms.Padding(2);
             this.picCoach.Name = "picCoach";
             this.picCoach.Size = new System.Drawing.Size(161, 175);
             this.picCoach.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -915,9 +915,9 @@
             this.bunifuTransition.SetDecoration(this.tabPagePlayer, BunifuAnimatorNS.DecorationType.None);
             this.tabPagePlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPagePlayer.Location = new System.Drawing.Point(4, 26);
-            this.tabPagePlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPagePlayer.Margin = new System.Windows.Forms.Padding(2);
             this.tabPagePlayer.Name = "tabPagePlayer";
-            this.tabPagePlayer.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPagePlayer.Padding = new System.Windows.Forms.Padding(2);
             this.tabPagePlayer.Size = new System.Drawing.Size(592, 517);
             this.tabPagePlayer.TabIndex = 1;
             this.tabPagePlayer.Text = "Add Players";
@@ -952,7 +952,7 @@
             this.pnlAddNewPlayer.GradientTopLeft = System.Drawing.Color.White;
             this.pnlAddNewPlayer.GradientTopRight = System.Drawing.Color.White;
             this.pnlAddNewPlayer.Location = new System.Drawing.Point(2, 2);
-            this.pnlAddNewPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlAddNewPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.pnlAddNewPlayer.Name = "pnlAddNewPlayer";
             this.pnlAddNewPlayer.Quality = 10;
             this.pnlAddNewPlayer.Size = new System.Drawing.Size(588, 513);
@@ -965,7 +965,7 @@
             this.cmbRole.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbRole.FormattingEnabled = true;
             this.cmbRole.Location = new System.Drawing.Point(100, 288);
-            this.cmbRole.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbRole.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(204, 25);
             this.cmbRole.TabIndex = 54;
@@ -1027,7 +1027,7 @@
             this.btnChoosePlayerImage.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnChoosePlayerImage.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.btnChoosePlayerImage.Location = new System.Drawing.Point(27, 190);
-            this.btnChoosePlayerImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChoosePlayerImage.Margin = new System.Windows.Forms.Padding(4);
             this.btnChoosePlayerImage.Name = "btnChoosePlayerImage";
             this.btnChoosePlayerImage.Size = new System.Drawing.Size(134, 36);
             this.btnChoosePlayerImage.TabIndex = 52;
@@ -1041,7 +1041,7 @@
             this.cmbGenderPlayer.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbGenderPlayer.FormattingEnabled = true;
             this.cmbGenderPlayer.Location = new System.Drawing.Point(100, 344);
-            this.cmbGenderPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbGenderPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGenderPlayer.Name = "cmbGenderPlayer";
             this.cmbGenderPlayer.Size = new System.Drawing.Size(77, 25);
             this.cmbGenderPlayer.TabIndex = 42;
@@ -1069,7 +1069,7 @@
             this.btnSaveNewPlayer.IconZoom = 90D;
             this.btnSaveNewPlayer.IsTab = false;
             this.btnSaveNewPlayer.Location = new System.Drawing.Point(17, 408);
-            this.btnSaveNewPlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSaveNewPlayer.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveNewPlayer.Name = "btnSaveNewPlayer";
             this.btnSaveNewPlayer.Normalcolor = System.Drawing.Color.SeaGreen;
             this.btnSaveNewPlayer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -1089,7 +1089,7 @@
             this.txtKitnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKitnum.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtKitnum.Location = new System.Drawing.Point(287, 344);
-            this.txtKitnum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtKitnum.Margin = new System.Windows.Forms.Padding(2);
             this.txtKitnum.Name = "txtKitnum";
             this.txtKitnum.Size = new System.Drawing.Size(77, 23);
             this.txtKitnum.TabIndex = 41;
@@ -1140,7 +1140,7 @@
             this.txtClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClub.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtClub.Location = new System.Drawing.Point(100, 243);
-            this.txtClub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtClub.Margin = new System.Windows.Forms.Padding(2);
             this.txtClub.Name = "txtClub";
             this.txtClub.Size = new System.Drawing.Size(204, 23);
             this.txtClub.TabIndex = 29;
@@ -1165,7 +1165,7 @@
             this.txtNationOfPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNationOfPlayer.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtNationOfPlayer.Location = new System.Drawing.Point(201, 200);
-            this.txtNationOfPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNationOfPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.txtNationOfPlayer.Name = "txtNationOfPlayer";
             this.txtNationOfPlayer.Size = new System.Drawing.Size(229, 23);
             this.txtNationOfPlayer.TabIndex = 27;
@@ -1219,7 +1219,7 @@
             this.txtPlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlayerName.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtPlayerName.Location = new System.Drawing.Point(201, 41);
-            this.txtPlayerName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPlayerName.Margin = new System.Windows.Forms.Padding(2);
             this.txtPlayerName.Name = "txtPlayerName";
             this.txtPlayerName.Size = new System.Drawing.Size(226, 23);
             this.txtPlayerName.TabIndex = 23;
@@ -1242,7 +1242,7 @@
             this.picPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuTransition.SetDecoration(this.picPlayer, BunifuAnimatorNS.DecorationType.None);
             this.picPlayer.Location = new System.Drawing.Point(17, 9);
-            this.picPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.picPlayer.Name = "picPlayer";
             this.picPlayer.Size = new System.Drawing.Size(161, 175);
             this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1253,22 +1253,22 @@
             // 
             this.bunifuTransition.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlideAndRotate;
             this.bunifuTransition.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(50);
-            animation2.RotateCoeff = 0.3F;
-            animation2.RotateLimit = 0.2F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(50);
+            animation1.RotateCoeff = 0.3F;
+            animation1.RotateLimit = 0.2F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition.DefaultAnimation = animation1;
             this.bunifuTransition.TimeStep = 10F;
             // 
             // imageList1
@@ -1282,13 +1282,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1042, 547);
+            this.ClientSize = new System.Drawing.Size(1042, 546);
             this.Controls.Add(this.panelAddInfor);
             this.Controls.Add(this.grbTeamPlayer);
             this.Controls.Add(this.pnlRegisterContent);
             this.Controls.Add(this.grbClubInfor);
             this.bunifuTransition.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmRegister";

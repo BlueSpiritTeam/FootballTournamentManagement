@@ -97,8 +97,9 @@ namespace SourceCode.DTO
 
         public MatchDTO() { }
 
-        public MatchDTO(DateTime mdate, TimeSpan mtime, string hcname, string gcname, string s)
+        public MatchDTO(int match_id, DateTime mdate, TimeSpan mtime, string hcname, string gcname, string s)
         {
+            this.Match_id = match_id;
             this.Match_date = mdate;
             this.Match_time = mtime;
             this.Home_club_name = hcname;
@@ -106,13 +107,14 @@ namespace SourceCode.DTO
             this.Stadium = s;
         }
 
-        //public MatchDTO(DataRow row)
-        //{
-        //    this.Match_date = DateTime.Parse(row["MacthDate"].ToString());
-        //    this.Match_time = (string)row["MatchTime"].ToString();
-        //    this.Home_club_name = (string)row["HomeClubName"].ToString();
-        //    this.Guest_club_name = (string)row["GuestClubName"].ToString();
-        //    this.Stadium = (string)row["Stadium"].ToString();
-        //}
+        public MatchDTO(DataRow row)
+        {
+            this.Match_id = (int)row["MatchID"];
+            this.Match_date = DateTime.Parse(row["MatchDate"].ToString());
+            this.Match_time = (TimeSpan)row["MatchTime"];
+            this.Home_club_name = (string)row["HomeClubName"].ToString();
+            this.Guest_club_name = (string)row["GuestClubName"].ToString();
+            this.Stadium = (string)row["Stadium"].ToString();
+        }
     }
 }

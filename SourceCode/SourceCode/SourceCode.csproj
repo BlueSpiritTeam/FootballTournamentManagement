@@ -35,9 +35,20 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\bunifu_Framework\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +65,8 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\GenderDAO.cs" />
     <Compile Include="DAO\HumanDAO.cs" />
+    <Compile Include="DAO\MatchDAO.cs" />
+    <Compile Include="DAO\MatchRecordDAO.cs" />
     <Compile Include="DAO\PlayerDAO.cs" />
     <Compile Include="DAO\RoleDAO.cs" />
     <Compile Include="DAO\RuleDAO.cs" />
@@ -71,6 +84,14 @@
     <Compile Include="DTO\RuleDTO.cs" />
     <Compile Include="DTO\TypeGoalDTO.cs" />
     <Compile Include="Helper\CreateSchedule.cs" />
+    <Compile Include="TypeGoal.cs">
+      <DependentUpon>TypeGoal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TypeGoal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TypeGoal.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmChangeRules.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,12 +127,6 @@
     </Compile>
     <Compile Include="Views\frmMatchSchedule.Designer.cs">
       <DependentUpon>frmMatchSchedule.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\frmNewTournament.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\frmNewTournament.Designer.cs">
-      <DependentUpon>frmNewTournament.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmPlayer.cs">
       <SubType>Form</SubType>
@@ -175,6 +190,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\frmMatchRecording.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmMatchRecording.Designer.cs">
+      <DependentUpon>frmMatchRecording.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\frmChangeRules.resx">
       <DependentUpon>frmChangeRules.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,9 +213,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmMatchSchedule.resx">
       <DependentUpon>frmMatchSchedule.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmNewTournament.resx">
-      <DependentUpon>frmNewTournament.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmPlayer.resx">
       <DependentUpon>frmPlayer.cs</DependentUpon>
@@ -235,6 +253,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\frmMatchRecording.resx">
+      <DependentUpon>frmMatchRecording.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -244,6 +266,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TypeGoal.xsc">
+      <DependentUpon>TypeGoal.xsd</DependentUpon>
+    </None>
+    <None Include="TypeGoal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TypeGoal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TypeGoal.xss">
+      <DependentUpon>TypeGoal.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

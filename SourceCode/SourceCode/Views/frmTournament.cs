@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SourceCode.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,11 +34,11 @@ namespace SourceCode
             this.Close();
         }
 
-        private void btnCreateNewTournament_Click(object sender, EventArgs e)
+        private void btn_recording_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmNewTournament new_tournament = new frmNewTournament();
-            new_tournament.ShowDialog();
+            frmMatchRecording recording = new frmMatchRecording();
+            recording.ShowDialog();
             this.Close();
         }
     }
