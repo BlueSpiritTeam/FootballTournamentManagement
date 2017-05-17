@@ -29,6 +29,17 @@ namespace SourceCode
         {
 
             list = CreateSchedule.Instance.Create();
+
+            if (list == null)
+            {
+                MessageBox.Show("Not enough clubs to create match schedule", "Notification");
+                this.Hide();
+                frmTournament tournament = new frmTournament();
+                tournament.ShowDialog();
+                this.Close();
+                return;
+            }
+
             dgvMatchResult.DataSource = list;
             SaveToDataBase();
 
@@ -120,6 +131,9 @@ namespace SourceCode
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (dgvMatchResult.RowCount==0)
+                return;
+
             frmMatchSchedule.ActiveForm.StartPosition = FormStartPosition.CenterScreen;
             frmMatchSchedule.ActiveForm.Width = 955;
             frmMatchSchedule.ActiveForm.Update();

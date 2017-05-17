@@ -40,9 +40,13 @@ namespace SourceCode.Helper
 
             List<ClubDTO> list_clubs = ClubDAO.Instance.LoadAllClubs(); // list of clubs
 
+            if (list_clubs.Count == 0)
+                return null;
+
             List<string> list_id_club = list_clubids(list_clubs); // list of ids of clubs
 
             int number_clubs = list_clubs.Count; // the number of clubs
+
 
             if (number_clubs < 6)
                 return null;
