@@ -131,7 +131,7 @@ namespace SourceCode.DTO
 
         public RuleDTO(DataRow row)
         {
-
+            
             // hàm dựng với datarow
             int temp;
 

@@ -65,6 +65,8 @@ namespace SourceCode.DTO
                 path = value;
             }
         }
+
+
         #endregion
         public ClubDTO() { }
 
@@ -73,7 +75,7 @@ namespace SourceCode.DTO
         {
             this.Club_id = (string)row["ClubID"].ToString();
             this.Club_name = (string)row["ClubName"].ToString();
-            this.Stadium = row["StadiumName"].ToString();
+            this.Stadium = (string)row["StadiumName"].ToString();
             this.Path = (string)row["Path"].ToString();
         }
 
@@ -83,6 +85,13 @@ namespace SourceCode.DTO
             this.club_name = club_name;
             this.stadium = stadium;
             this.path = path;
+        }
+
+        public ClubDTO(string clubname, string stadium, string id)
+        {
+            this.club_name = clubname;
+            this.stadium = stadium;
+            this.club_id = id;
         }
     }
 }

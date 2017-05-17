@@ -49,7 +49,7 @@ namespace SourceCode.DTO
         public MatchRecordDTO(DataRow row)
         {
             this.Home_club_ratio = int.Parse(row["HomeClubRatio"].ToString());
-            this.Guest_club_ratio = int.Parse(row["GuestClub"].ToString());
+            this.Guest_club_ratio = int.Parse(row["GuestClubRatio"].ToString());
         }
     }
 }

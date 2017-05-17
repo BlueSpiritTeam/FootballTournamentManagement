@@ -10,8 +10,8 @@ namespace SourceCode.DAO
 {
     public class DataProvider
     {
-
-        private string str_connection = @"Data Source=.\sqlexpress;Initial Catalog=FootballManagement;Integrated Security=True";
+        
+        private static string str_connection = @"Data Source=.\sqlexpress;Initial Catalog=FootballManagement;Integrated Security=True";
 
         private static DataProvider instance;
 
@@ -38,6 +38,7 @@ namespace SourceCode.DAO
         #region methods
         public DataTable ExcuteQuery(string query, object[] parameter = null)
         {
+            //tra ve mot data table
             DataTable data = new DataTable();
             using (SqlConnection connection = new SqlConnection(str_connection))
             {
@@ -93,6 +94,7 @@ namespace SourceCode.DAO
                         }
                     }
                 }
+
                 data = command.ExecuteNonQuery();
 
                 connection.Close();

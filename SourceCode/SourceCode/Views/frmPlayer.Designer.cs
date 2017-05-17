@@ -33,13 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grbPlayerInfor = new System.Windows.Forms.GroupBox();
+            this.cmbRole = new System.Windows.Forms.ComboBox();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.txtKitnum = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtAge = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtRole = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtClub = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -58,8 +58,10 @@
             this.txtSearchPlayer = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.grbPlayerDetails = new System.Windows.Forms.GroupBox();
             this.dgvPlayerInfor = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnSave = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PlayerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,10 +70,8 @@
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kitnum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSave = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HumanID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbPlayerInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             this.grbSearchPlayer.SuspendLayout();
@@ -82,13 +82,13 @@
             // grbPlayerInfor
             // 
             this.grbPlayerInfor.BackColor = System.Drawing.Color.White;
+            this.grbPlayerInfor.Controls.Add(this.cmbRole);
             this.grbPlayerInfor.Controls.Add(this.cmbGender);
             this.grbPlayerInfor.Controls.Add(this.txtKitnum);
             this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel9);
             this.grbPlayerInfor.Controls.Add(this.txtAge);
             this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel8);
             this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel6);
-            this.grbPlayerInfor.Controls.Add(this.txtRole);
             this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel5);
             this.grbPlayerInfor.Controls.Add(this.txtClub);
             this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel3);
@@ -108,6 +108,16 @@
             this.grbPlayerInfor.TabIndex = 0;
             this.grbPlayerInfor.TabStop = false;
             this.grbPlayerInfor.Text = "Information";
+            // 
+            // cmbRole
+            // 
+            this.cmbRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRole.ForeColor = System.Drawing.Color.SeaGreen;
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.Location = new System.Drawing.Point(781, 35);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Size = new System.Drawing.Size(298, 30);
+            this.cmbRole.TabIndex = 33;
             // 
             // cmbGender
             // 
@@ -166,16 +176,6 @@
             this.bunifuCustomLabel6.TabIndex = 26;
             this.bunifuCustomLabel6.Text = "Gender:";
             // 
-            // txtRole
-            // 
-            this.txtRole.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRole.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtRole.Location = new System.Drawing.Point(781, 34);
-            this.txtRole.Name = "txtRole";
-            this.txtRole.Size = new System.Drawing.Size(260, 28);
-            this.txtRole.TabIndex = 25;
-            // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
@@ -190,15 +190,15 @@
             this.txtClub.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClub.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtClub.Location = new System.Drawing.Point(337, 213);
+            this.txtClub.Location = new System.Drawing.Point(330, 224);
             this.txtClub.Name = "txtClub";
-            this.txtClub.Size = new System.Drawing.Size(270, 28);
+            this.txtClub.Size = new System.Drawing.Size(277, 28);
             this.txtClub.TabIndex = 21;
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(246, 219);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(239, 230);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(69, 21);
             this.bunifuCustomLabel3.TabIndex = 20;
@@ -209,15 +209,15 @@
             this.txtNation.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtNation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNation.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtNation.Location = new System.Drawing.Point(337, 155);
+            this.txtNation.Location = new System.Drawing.Point(330, 166);
             this.txtNation.Name = "txtNation";
-            this.txtNation.Size = new System.Drawing.Size(270, 28);
+            this.txtNation.Size = new System.Drawing.Size(277, 28);
             this.txtNation.TabIndex = 19;
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(246, 158);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(239, 169);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(91, 21);
             this.bunifuCustomLabel2.TabIndex = 18;
@@ -231,17 +231,17 @@
             this.dtpBirthday.ForeColor = System.Drawing.Color.SeaGreen;
             this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpBirthday.FormatCustom = null;
-            this.dtpBirthday.Location = new System.Drawing.Point(372, 84);
+            this.dtpBirthday.Location = new System.Drawing.Point(365, 85);
             this.dtpBirthday.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(235, 45);
+            this.dtpBirthday.Size = new System.Drawing.Size(242, 53);
             this.dtpBirthday.TabIndex = 17;
             this.dtpBirthday.Value = new System.DateTime(2017, 5, 1, 10, 35, 47, 69);
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(246, 98);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(239, 98);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(117, 21);
             this.bunifuCustomLabel1.TabIndex = 16;
@@ -268,7 +268,7 @@
             // 
             // picPlayer
             // 
-            this.picPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.picPlayer.BackColor = System.Drawing.Color.White;
             this.picPlayer.Location = new System.Drawing.Point(12, 37);
             this.picPlayer.Name = "picPlayer";
             this.picPlayer.Size = new System.Drawing.Size(215, 215);
@@ -288,7 +288,7 @@
             this.grbSearchPlayer.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbSearchPlayer.Location = new System.Drawing.Point(0, 297);
             this.grbSearchPlayer.Name = "grbSearchPlayer";
-            this.grbSearchPlayer.Size = new System.Drawing.Size(542, 136);
+            this.grbSearchPlayer.Size = new System.Drawing.Size(614, 136);
             this.grbSearchPlayer.TabIndex = 1;
             this.grbSearchPlayer.TabStop = false;
             this.grbSearchPlayer.Text = "Search";
@@ -300,7 +300,6 @@
             this.btnShowAllPlayer.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnShowAllPlayer.ActiveForecolor = System.Drawing.Color.White;
             this.btnShowAllPlayer.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnShowAllPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnShowAllPlayer.BackColor = System.Drawing.Color.White;
             this.btnShowAllPlayer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowAllPlayer.BackgroundImage")));
             this.btnShowAllPlayer.ButtonText = "Show All Player";
@@ -312,12 +311,13 @@
             this.btnShowAllPlayer.IdleFillColor = System.Drawing.Color.White;
             this.btnShowAllPlayer.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnShowAllPlayer.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnShowAllPlayer.Location = new System.Drawing.Point(286, 87);
+            this.btnShowAllPlayer.Location = new System.Drawing.Point(352, 87);
             this.btnShowAllPlayer.Margin = new System.Windows.Forms.Padding(5);
             this.btnShowAllPlayer.Name = "btnShowAllPlayer";
             this.btnShowAllPlayer.Size = new System.Drawing.Size(181, 41);
             this.btnShowAllPlayer.TabIndex = 24;
             this.btnShowAllPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnShowAllPlayer.Click += new System.EventHandler(this.btnShowAllPlayer_Click);
             // 
             // btnSearchPlayer
             // 
@@ -326,7 +326,6 @@
             this.btnSearchPlayer.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnSearchPlayer.ActiveForecolor = System.Drawing.Color.White;
             this.btnSearchPlayer.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearchPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSearchPlayer.BackColor = System.Drawing.Color.White;
             this.btnSearchPlayer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchPlayer.BackgroundImage")));
             this.btnSearchPlayer.ButtonText = "Search";
@@ -338,27 +337,26 @@
             this.btnSearchPlayer.IdleFillColor = System.Drawing.Color.White;
             this.btnSearchPlayer.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnSearchPlayer.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearchPlayer.Location = new System.Drawing.Point(66, 87);
+            this.btnSearchPlayer.Location = new System.Drawing.Point(132, 87);
             this.btnSearchPlayer.Margin = new System.Windows.Forms.Padding(5);
             this.btnSearchPlayer.Name = "btnSearchPlayer";
             this.btnSearchPlayer.Size = new System.Drawing.Size(181, 41);
             this.btnSearchPlayer.TabIndex = 23;
             this.btnSearchPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearchPlayer.Click += new System.EventHandler(this.btnSearchPlayer_Click);
             // 
             // cmbSearchPlayer
             // 
-            this.cmbSearchPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbSearchPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSearchPlayer.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbSearchPlayer.FormattingEnabled = true;
-            this.cmbSearchPlayer.Location = new System.Drawing.Point(372, 37);
+            this.cmbSearchPlayer.Location = new System.Drawing.Point(372, 39);
             this.cmbSearchPlayer.Name = "cmbSearchPlayer";
-            this.cmbSearchPlayer.Size = new System.Drawing.Size(154, 33);
+            this.cmbSearchPlayer.Size = new System.Drawing.Size(203, 33);
             this.cmbSearchPlayer.TabIndex = 22;
             // 
             // bunifuCustomLabel10
             // 
-            this.bunifuCustomLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Location = new System.Drawing.Point(319, 42);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
@@ -380,18 +378,18 @@
             // 
             this.grbPlayerDetails.BackColor = System.Drawing.Color.White;
             this.grbPlayerDetails.Controls.Add(this.dgvPlayerInfor);
-            this.grbPlayerDetails.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.grbPlayerDetails.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbPlayerDetails.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbPlayerDetails.Location = new System.Drawing.Point(0, 439);
             this.grbPlayerDetails.Name = "grbPlayerDetails";
-            this.grbPlayerDetails.Size = new System.Drawing.Size(1102, 234);
+            this.grbPlayerDetails.Size = new System.Drawing.Size(1102, 315);
             this.grbPlayerDetails.TabIndex = 2;
             this.grbPlayerDetails.TabStop = false;
             this.grbPlayerDetails.Text = "Player Details";
             // 
             // dgvPlayerInfor
             // 
+            this.dgvPlayerInfor.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
@@ -401,7 +399,7 @@
             this.dgvPlayerInfor.BackgroundColor = System.Drawing.Color.White;
             this.dgvPlayerInfor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPlayerInfor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
@@ -412,7 +410,6 @@
             this.dgvPlayerInfor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPlayerInfor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderingNumber,
-            this.PlayerID,
             this.PlayerName,
             this.Birthday,
             this.Age,
@@ -420,7 +417,9 @@
             this.Club,
             this.Role,
             this.Nation,
-            this.Kitnum});
+            this.Kitnum,
+            this.Path,
+            this.HumanID});
             this.dgvPlayerInfor.DoubleBuffered = true;
             this.dgvPlayerInfor.EnableHeadersVisualStyles = false;
             this.dgvPlayerInfor.GridColor = System.Drawing.Color.SeaGreen;
@@ -429,12 +428,92 @@
             this.dgvPlayerInfor.Location = new System.Drawing.Point(3, 24);
             this.dgvPlayerInfor.Name = "dgvPlayerInfor";
             this.dgvPlayerInfor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
             this.dgvPlayerInfor.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPlayerInfor.RowTemplate.Height = 24;
-            this.dgvPlayerInfor.Size = new System.Drawing.Size(1096, 207);
+            this.dgvPlayerInfor.Size = new System.Drawing.Size(1096, 291);
             this.dgvPlayerInfor.TabIndex = 1;
+            this.dgvPlayerInfor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlayerInfor_CellClick);
+            // 
+            // btnSave
+            // 
+            this.btnSave.ActiveBorderThickness = 1;
+            this.btnSave.ActiveCornerRadius = 20;
+            this.btnSave.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSave.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.BackColor = System.Drawing.Color.White;
+            this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
+            this.btnSave.ButtonText = "Save";
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.IdleBorderThickness = 1;
+            this.btnSave.IdleCornerRadius = 20;
+            this.btnSave.IdleFillColor = System.Drawing.Color.White;
+            this.btnSave.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnSave.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.Location = new System.Drawing.Point(634, 306);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(181, 54);
+            this.btnSave.TabIndex = 24;
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.ActiveBorderThickness = 1;
+            this.btnUpdate.ActiveCornerRadius = 20;
+            this.btnUpdate.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
+            this.btnUpdate.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
+            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
+            this.btnUpdate.ButtonText = "Update";
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.IdleBorderThickness = 1;
+            this.btnUpdate.IdleCornerRadius = 20;
+            this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
+            this.btnUpdate.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.Location = new System.Drawing.Point(860, 306);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(181, 54);
+            this.btnUpdate.TabIndex = 25;
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.ActiveBorderThickness = 1;
+            this.btnCancel.ActiveCornerRadius = 20;
+            this.btnCancel.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCancel.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.BackColor = System.Drawing.Color.White;
+            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.ButtonText = "Cancel";
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.IdleBorderThickness = 1;
+            this.btnCancel.IdleCornerRadius = 20;
+            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+            this.btnCancel.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.Location = new System.Drawing.Point(715, 371);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(231, 54);
+            this.btnCancel.TabIndex = 27;
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // OrderingNumber
             // 
@@ -442,17 +521,12 @@
             this.OrderingNumber.HeaderText = "Ordering Number";
             this.OrderingNumber.Name = "OrderingNumber";
             // 
-            // PlayerID
-            // 
-            this.PlayerID.DataPropertyName = "PlayerID";
-            this.PlayerID.HeaderText = "Player ID";
-            this.PlayerID.Name = "PlayerID";
-            // 
             // PlayerName
             // 
             this.PlayerName.DataPropertyName = "Name";
             this.PlayerName.HeaderText = "Player Name";
             this.PlayerName.Name = "PlayerName";
+            this.PlayerName.Width = 150;
             // 
             // Birthday
             // 
@@ -477,12 +551,14 @@
             this.Club.DataPropertyName = "ClubName";
             this.Club.HeaderText = "Club";
             this.Club.Name = "Club";
+            this.Club.Width = 150;
             // 
             // Role
             // 
             this.Role.DataPropertyName = "RoleName";
             this.Role.HeaderText = "Role";
             this.Role.Name = "Role";
+            this.Role.Width = 150;
             // 
             // Nation
             // 
@@ -496,115 +572,27 @@
             this.Kitnum.HeaderText = "Kitnum";
             this.Kitnum.Name = "Kitnum";
             // 
-            // btnSave
+            // Path
             // 
-            this.btnSave.ActiveBorderThickness = 1;
-            this.btnSave.ActiveCornerRadius = 20;
-            this.btnSave.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSave.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
-            this.btnSave.ButtonText = "Save";
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.IdleBorderThickness = 1;
-            this.btnSave.IdleCornerRadius = 20;
-            this.btnSave.IdleFillColor = System.Drawing.Color.White;
-            this.btnSave.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnSave.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.Location = new System.Drawing.Point(610, 307);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(181, 54);
-            this.btnSave.TabIndex = 24;
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Path.DataPropertyName = "Path";
+            this.Path.HeaderText = "Path";
+            this.Path.Name = "Path";
+            this.Path.Visible = false;
             // 
-            // btnUpdate
+            // HumanID
             // 
-            this.btnUpdate.ActiveBorderThickness = 1;
-            this.btnUpdate.ActiveCornerRadius = 20;
-            this.btnUpdate.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
-            this.btnUpdate.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.BackColor = System.Drawing.SystemColors.Control;
-            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-            this.btnUpdate.ButtonText = "Update";
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.IdleBorderThickness = 1;
-            this.btnUpdate.IdleCornerRadius = 20;
-            this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
-            this.btnUpdate.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.Location = new System.Drawing.Point(860, 307);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(181, 54);
-            this.btnUpdate.TabIndex = 25;
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.ActiveBorderThickness = 1;
-            this.btnDelete.ActiveCornerRadius = 20;
-            this.btnDelete.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
-            this.btnDelete.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.BackColor = System.Drawing.SystemColors.Control;
-            this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
-            this.btnDelete.ButtonText = "Delete";
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.IdleBorderThickness = 1;
-            this.btnDelete.IdleCornerRadius = 20;
-            this.btnDelete.IdleFillColor = System.Drawing.Color.White;
-            this.btnDelete.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.Location = new System.Drawing.Point(610, 374);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(5);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(181, 54);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.ActiveBorderThickness = 1;
-            this.btnCancel.ActiveCornerRadius = 20;
-            this.btnCancel.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCancel.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-            this.btnCancel.ButtonText = "Cancel";
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.IdleBorderThickness = 1;
-            this.btnCancel.IdleCornerRadius = 20;
-            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-            this.btnCancel.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.Location = new System.Drawing.Point(860, 374);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(5);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(181, 54);
-            this.btnCancel.TabIndex = 27;
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.HumanID.DataPropertyName = "HumanID";
+            this.HumanID.HeaderText = "HumanID";
+            this.HumanID.Name = "HumanID";
+            this.HumanID.Visible = false;
             // 
             // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 673);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1102, 753);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grbPlayerDetails);
@@ -643,7 +631,6 @@
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtAge;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtRole;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtClub;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
@@ -656,12 +643,11 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvPlayerInfor;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSave;
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
         private System.Windows.Forms.ComboBox cmbGender;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtSearchPlayer;
+        private System.Windows.Forms.ComboBox cmbRole;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderingNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PlayerID;
         private System.Windows.Forms.DataGridViewTextBoxColumn PlayerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Birthday;
         private System.Windows.Forms.DataGridViewTextBoxColumn Age;
@@ -670,5 +656,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Role;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nation;
         private System.Windows.Forms.DataGridViewTextBoxColumn Kitnum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Path;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HumanID;
     }
 }

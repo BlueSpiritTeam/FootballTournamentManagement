@@ -32,9 +32,7 @@ namespace SourceCode.DAO
 
         }
 
-
         #region methods
-
         public RuleDTO LoadRules()
         {
             DataTable data = DataProvider.Instance.ExcuteQuery("LoadRuleS"); // stored procedure "LoadRules" đã đc chạy trên sql server
@@ -52,7 +50,6 @@ namespace SourceCode.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {rule.Max_age,rule.Min_age,rule.Min_player,rule.Max_player,rule.Score_win,rule.Score_lose,rule.Score_draw });
             return result > 0;
         }
-
 
         #endregion
 

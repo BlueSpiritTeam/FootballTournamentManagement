@@ -18,6 +18,9 @@ namespace SourceCode
         public static List<GenderDTO> list_gender = new List<GenderDTO>();
         public static List<RoleDTO> list_roles = new List<RoleDTO>();
         public static List<CoachDTO> list_coach = new List<CoachDTO>();
+        private static RuleDTO rules = new RuleDTO();
+        public static RuleDTO Rules;
+
         public string path_img_club = ""; //lay file path cua club
         public string path_img_coach = "";
         public string path_img_player = "";
@@ -25,30 +28,34 @@ namespace SourceCode
         {
             InitializeComponent();
             pnlCoachName.Visible = false;
-            LoadGender();
-            LoadRoles();
+            LoadGenderIntoCombobox(cmbGenderCoach);
+            LoadGenderIntoCombobox(cmbGenderPlayer);
+            LoadRolesIntoCombobox(cmbRole);
+            LoadRules();
         }
-        
-        private void LoadGender()
+
+        #region methods
+        private void LoadRules()
         {
+            Rules = RuleDAO.Instance.LoadRules(); // load tât cả các rule vào đối tượng Rules đc tạo static ở trên
+        }
+        private void LoadGenderIntoCombobox(ComboBox cb)
+        {
+            list_gender = GenderDAO.Instances.LoadAllGender();
             // lay vao list_gender trong ham LoadGender() cua DAO vao List<>
             list_gender = GenderDAO.Instances.LoadAllGender();
-
             foreach(GenderDTO item in list_gender)
             {
-                //trong thang list_gender no da co Male va Female roi.
-                cmbGenderCoach.Items.Add(item.Gender_name);
-                cmbGenderPlayer.Items.Add(item.Gender_name);
+                cb.Items.Add(item.Gender_name);
             }
         }
 
-        private void LoadRoles()
+        private void LoadRolesIntoCombobox(ComboBox cb)
         {
+            
             list_roles = RoleDAO.Instances.LoadAllRoles();
             foreach (RoleDTO item in list_roles)
-            {
-                cmbRole.Items.Add(item.Role_name);
-            }
+                cb.Items.Add(item.Role_name);
         }
 
         private bool CheckClubId()
@@ -72,23 +79,32 @@ namespace SourceCode
                 return true;
             return false;
         }
+        int number_of_club = 1;
         private void AddClub()
         {
-            if (CheckTextbox_Club() == false)
+            if (number_of_club == 1)
             {
-                string club_id = txtClubID.Text;
-                string club_name = txtClubName.Text;
-                string stadium = txtStadiumName.Text;
-                string path = path_img_club;
-
-                ClubDTO club = new ClubDTO(club_id, club_name, stadium, path);
-                if(ClubDAO.Instance.InsertNewClub(club))
+                if (CheckTextbox_Club() == false)
                 {
-                    MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
+                    string club_id = txtClubID.Text;
+                    string club_name = txtClubName.Text;
+                    string stadium = txtStadiumName.Text;
+                    string path = path_img_club;
+
+                    ClubDTO club = new ClubDTO(club_id, club_name, stadium, path);
+                    if (ClubDAO.Instance.InsertNewClub(club))
+                    {
+                        MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
+                        number_of_club = 0;
+                        btnAddCoach.Enabled = true;
+                    }
                 }
+                else
+                    MessageBox.Show("Input wrong or be the same", "Error!!!", MessageBoxButtons.OK);
+                
             }
             else
-                MessageBox.Show("Input wrong or be the same", "Error!!!", MessageBoxButtons.OK);
+                MessageBox.Show("You must be add coach and list player to this club", "Error!!!", MessageBoxButtons.OK);
         }
 
         private bool CheckTextboxCoach()
@@ -100,59 +116,119 @@ namespace SourceCode
             else
                 return false;
          }
-        /*
+
+        int number_of_coach = 0;
         public void AddCoach()
         {
-            if(CheckTextboxCoach() == false)
+            if (number_of_coach == 0)
             {
-                string human_id = "C_" + txtClubID;
-                string gender_id = GenderDAO.Instances.GetGenderID(cmbGenderCoach.Text);
-                string clubid = txtClubID.Text;
-                string name_coach = txtCoachNameInsert.Text;
-                DateTime birthday_coach = dtpBirthdayCoach.Value;
-                string nation_coach = txtNationOfCoach.Text;
-                string path_coach = path_img_coach;
-
-                //add data vo bang HumanInfromation
-                HumanDTO hu = new HumanDTO(human_id, gender_id, clubid, name_coach, birthday_coach, nation_coach, path_coach);
-                if(HumanDAO.Instance.InsertNewHuman(hu))
+                if (CheckTextboxCoach() == false)
                 {
-                    MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
+                    string coach_id = "C_" + txtClubID.Text;
+                    string humanid = "C_" + txtClubID.Text;
+                    string gender_id = GenderDAO.Instances.GetGenderID(cmbGenderCoach.Text);
+                    string clubid = txtClubID.Text;
+                    string name_coach = txtCoachNameInsert.Text;
+                    DateTime birthday_coach = dtpBirthdayCoach.Value;
+                    string nation_coach = txtNationOfCoach.Text;
+                    string path_coach = path_img_coach;
+
+                    //add data vao bang HumanInformation
+                    HumanDTO hm = new HumanDTO(humanid, gender_id, clubid, name_coach, birthday_coach, nation_coach, path_coach);
+                    if (HumanDAO.Instance.InsertNewHuman(hm))
+                    {
+                        MessageBox.Show("Succesflly add human", "Notification", MessageBoxButtons.OK);
+                    }
+
+                    //add data vao bảng Coach
+                    CoachDTO c = new CoachDTO(coach_id);
+                    if (CoachDAO.Instance.InsertNewCoach(c))
+                    {
+                        number_of_coach = 1;
+                        MessageBox.Show("Succesflly add coach", "Notification", MessageBoxButtons.OK);
+                    }
+                }
+                else
+                    MessageBox.Show("Input wrong or be the same", "Error!!!", MessageBoxButtons.OK);  
+            }
+            else
+                MessageBox.Show("Coach is already", "Error!!!", MessageBoxButtons.OK);
+        }
+
+        public bool CheckTextbox_Player()
+        {
+            if (txtPlayerName.Text == "")
+                return true;
+            if (txtNationOfPlayer.Text == "")
+                return true;
+            if (txtKitnum.Text == "")
+                return true;
+            return false;
+        }
+        int P_ID = 1; //bien check dieu kien cua player and ordering number
+        public void AddPlayer()
+        {
+            if (P_ID <= Rules.Max_player)
+            {
+                if (CheckTextbox_Player() == false)
+                {
+                    string humanid = "P_" + txtClubID.Text + "_" + P_ID.ToString();
+                    string gender_id = GenderDAO.Instances.GetGenderID(cmbGenderPlayer.Text);
+                    string clubid = txtClubID.Text;
+                    string name_player = txtPlayerName.Text;
+                    DateTime birthday_player = dtpBirthdayPlayer.Value;
+                    string nation_player = txtNationOfPlayer.Text;
+                    string path_player = path_img_player;
+
+                    string player_id = "P_" + txtClubID.Text + "_" + P_ID.ToString();
+                    int role = RoleDAO.Instances.GetRoleId(cmbRole.Text);
+                    int goal_number = 0;
+                    int ass_number = 0;
+                    int kitnum = int.Parse(txtKitnum.Text);
+
+                    
+                    //add data vao bang HumanInformation
+                    HumanDTO hm = new HumanDTO(humanid, gender_id, clubid, name_player, birthday_player, nation_player, path_player);
+
+                    if (HumanDAO.Instance.InsertNewHuman(hm))
+                    {
+                        MessageBox.Show("Succesflly add human", "Notification", MessageBoxButtons.OK);
+                    }
+                    
+                    PlayerDTO p = new PlayerDTO(player_id, role, goal_number, ass_number, kitnum);
+                    if (PlayerDAO.Instance.InsertNewPlayer(p))
+                    {
+                        MessageBox.Show("Succesflly add player", "Notification", MessageBoxButtons.OK);
+                    }
+
+                    this.dgvRegister.Rows.Add(P_ID, player_id, name_player, cmbRole.Text, nation_player);
+                    P_ID++;
+                }
+                else
+                {
+                    MessageBox.Show("Input wrong or be the same", "Error!!!", MessageBoxButtons.OK);
                 }
             }
             else
-                MessageBox.Show("Input wrong or be the same", "Error!!!", MessageBoxButtons.OK);
-        }
-        */
-        public void AddCoach()
-        {
-            if (CheckTextboxCoach() == false)
             {
-                string human_id = "C_" + txtClubID;
-                string gender_id = GenderDAO.Instances.GetGenderID(cmbGenderCoach.Text);
-                string clubid = txtClubID.Text;
-                string name_coach = txtCoachNameInsert.Text;
-                DateTime birthday_coach = dtpBirthdayCoach.Value;
-                string nation_coach = txtNationOfCoach.Text;
-                string path_coach = path_img_coach;
-
-                //add data vo bang HumanInfromation
-                CoachDTO c = new CoachDTO(human_id);
-                if (HumanDAO.Instance.InsertNewHuman(c))
-                {
-                    MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
-                }
+                MessageBox.Show("Number of player form "+ Rules.Min_player.ToString() + " to "+ Rules.Max_player.ToString(), "Error!!!", MessageBoxButtons.OK);
             }
-            else
-                MessageBox.Show("Input wrong or be the same", "Error!!!", MessageBoxButtons.OK);
         }
+
+        #endregion
+        /*-------------------------------------------------*/
+        #region events
         private void frmRegister_Load(object sender, EventArgs e)
         {
             txtCoachNameShow.Enabled = false;
+            btnAddCoach.Enabled = false;
+            btnAddNewPlayers.Enabled = false;
         }
 
         private void btnAddCoach_Click(object sender, EventArgs e)
         {
+            //default
+            cmbGenderCoach.Text = "Male";
             frmRegister.ActiveForm.StartPosition = FormStartPosition.CenterScreen;
             frmRegister.ActiveForm.Width = 1310;
             frmRegister.ActiveForm.Update();
@@ -163,14 +239,25 @@ namespace SourceCode
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            btnAddNewPlayers.Enabled = true;
+            btnAddCoach.Enabled = false;
+
+            txtCoachNameInsert.Clear();
+            txtNationOfCoach.Clear();
+
             frmRegister.ActiveForm.Width = 850;
             frmRegister.ActiveForm.Update();
         }
 
         private void btnCancelAddPlayer_Click(object sender, EventArgs e)
         {
-            frmRegister.ActiveForm.Width = 850;
-            frmRegister.ActiveForm.Update();
+            if (P_ID < Rules.Min_player)
+                MessageBox.Show("Number of player form " + Rules.Min_player.ToString() + " to " + Rules.Max_player.ToString(), "Error!!!", MessageBoxButtons.OK);
+            else
+            {
+                frmRegister.ActiveForm.Width = 850;
+                frmRegister.ActiveForm.Update();
+            }
         }
         
         private void btnChooseImage_Click(object sender, EventArgs e)
@@ -207,10 +294,15 @@ namespace SourceCode
         
         private void btnSaveClub_Click(object sender, EventArgs e)
         {
-            if(CheckClubId() == true)
+
+            if (CheckClubId() == true)
+            {
+                btnAddCoach.Enabled = true;
                 AddClub();
+            }    
             else
                 MessageBox.Show("Club ID already", "Error!!!", MessageBoxButtons.OK);
+            
         }
 
         private void btnChooseCoachImage_Click(object sender, EventArgs e)
@@ -241,6 +333,12 @@ namespace SourceCode
 
         private void btnAddNewPlayers_Click(object sender, EventArgs e)
         {
+            //enable and default
+            txtClubplayer.Enabled = false;
+            txtClubplayer.Text = txtClubName.Text;
+            cmbGenderPlayer.Text = "Male";
+            cmbRole.Text = "GoalKeeper";
+
             frmRegister.ActiveForm.StartPosition = FormStartPosition.CenterScreen;
             frmRegister.ActiveForm.Width = 1310;
             frmRegister.ActiveForm.Update();
@@ -278,6 +376,21 @@ namespace SourceCode
         private void btnSaveCoach_Click(object sender, EventArgs e)
         {
             AddCoach();
+            picPlayer.InitialImage = null;
         }
+
+        private void btnSaveNewPlayer_Click(object sender, EventArgs e)
+        {
+            AddPlayer();
+        }
+
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmGeneral general = new frmGeneral();
+            general.ShowDialog();
+            this.Close();
+        }
+        #endregion
     }
 }

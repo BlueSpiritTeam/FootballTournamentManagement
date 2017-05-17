@@ -9,16 +9,18 @@ namespace SourceCode.DTO
 {
     public /*abstract*/ class HumanDTO
     {
-        private string human_id;
+        //default la protected
+        protected string human_id;
         protected string gender_id;
         protected string club_id;
         protected string name;
         protected DateTime birthday;
         protected string nation;
-        private string path_img;
+        protected string path_img;
+
 
         #region properties
-        protected string Gender_id
+        public string Gender_id
         {
             get
             {
@@ -31,7 +33,7 @@ namespace SourceCode.DTO
             }
         }
 
-        protected string Club_id
+        public string Club_id
         {
             get
             {
@@ -44,7 +46,7 @@ namespace SourceCode.DTO
             }
         }
 
-        protected string Name
+        public string Name
         {
             get
             {
@@ -57,7 +59,7 @@ namespace SourceCode.DTO
             }
         }
 
-        protected DateTime Birthday
+        public DateTime Birthday
         {
             get
             {
@@ -70,7 +72,7 @@ namespace SourceCode.DTO
             }
         }
 
-        protected string Nation
+        public string Nation
         {
             get
             {
@@ -82,7 +84,7 @@ namespace SourceCode.DTO
                 nation = value;
             }
         }
-        protected string Path_img
+        public string Path_img
         {
             get
             {
@@ -94,6 +96,7 @@ namespace SourceCode.DTO
                 path_img = value;
             }
         }
+
 
         public string Human_id
         {
@@ -124,13 +127,22 @@ namespace SourceCode.DTO
 
         public HumanDTO(DataRow row)
         {
-            this.Human_id = (string)row["CoachID"].ToString();
+            this.Human_id = (string)row["HumanID"].ToString();
             this.Gender_id = (string)row["GenderName"].ToString();
-            this.Club_id = (string)row["ClubID"].ToString();
+            this.Club_id = (string)row["Human_ClubID"].ToString();
             this.Name = (string)row["Name"].ToString();
             this.Birthday = DateTime.Parse(row["Birthday"].ToString());
             this.Nation = (string)row["Nation"].ToString();
             this.Path_img = (string)row["Path"].ToString();
+        }
+
+        public HumanDTO(string human_name, string human_gender_id, DateTime human_birthday, string human_nation, string h_id)
+        {
+            this.Name = human_name;
+            this.Gender_id = human_gender_id;
+            this.Birthday = human_birthday;
+            this.Nation = human_nation;
+            this.Human_id = h_id;
         }
     }
 }

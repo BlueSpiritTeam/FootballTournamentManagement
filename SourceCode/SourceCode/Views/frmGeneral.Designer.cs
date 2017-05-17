@@ -58,7 +58,7 @@
             this.pnlGeneralContent.GradientTopLeft = System.Drawing.Color.SeaGreen;
             this.pnlGeneralContent.GradientTopRight = System.Drawing.Color.SeaGreen;
             this.pnlGeneralContent.Location = new System.Drawing.Point(0, 0);
-            this.pnlGeneralContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlGeneralContent.Margin = new System.Windows.Forms.Padding(2);
             this.pnlGeneralContent.Name = "pnlGeneralContent";
             this.pnlGeneralContent.Quality = 10;
             this.pnlGeneralContent.Size = new System.Drawing.Size(181, 544);
@@ -87,6 +87,7 @@
             this.btnLogout.IconZoom = 90D;
             this.btnLogout.IsTab = false;
             this.btnLogout.Location = new System.Drawing.Point(4, 467);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.White;
             this.btnLogout.OnHovercolor = System.Drawing.Color.Lime;
@@ -120,7 +121,7 @@
             this.picGeneralContent.BackColor = System.Drawing.Color.SeaGreen;
             this.picGeneralContent.Image = ((System.Drawing.Image)(resources.GetObject("picGeneralContent.Image")));
             this.picGeneralContent.Location = new System.Drawing.Point(48, 46);
-            this.picGeneralContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picGeneralContent.Margin = new System.Windows.Forms.Padding(2);
             this.picGeneralContent.Name = "picGeneralContent";
             this.picGeneralContent.Size = new System.Drawing.Size(100, 111);
             this.picGeneralContent.TabIndex = 0;
@@ -140,7 +141,7 @@
             this.btnClub.ImagePosition = 14;
             this.btnClub.ImageZoom = 50;
             this.btnClub.LabelPosition = 30;
-            this.btnClub.LabelText = "Club Management";
+            this.btnClub.LabelText = "Club Information";
             this.btnClub.Location = new System.Drawing.Point(79, 186);
             this.btnClub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClub.Name = "btnClub";
@@ -164,7 +165,7 @@
             this.pnlGeneral.GradientTopLeft = System.Drawing.Color.White;
             this.pnlGeneral.GradientTopRight = System.Drawing.Color.White;
             this.pnlGeneral.Location = new System.Drawing.Point(181, 0);
-            this.pnlGeneral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlGeneral.Margin = new System.Windows.Forms.Padding(2);
             this.pnlGeneral.Name = "pnlGeneral";
             this.pnlGeneral.Quality = 10;
             this.pnlGeneral.Size = new System.Drawing.Size(643, 544);
@@ -186,6 +187,7 @@
             this.btnSetting.LabelPosition = 30;
             this.btnSetting.LabelText = "Setting";
             this.btnSetting.Location = new System.Drawing.Point(332, 356);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Size = new System.Drawing.Size(244, 163);
             this.btnSetting.TabIndex = 6;
@@ -207,6 +209,7 @@
             this.btnTournamentReport.LabelPosition = 30;
             this.btnTournamentReport.LabelText = "Tournament Report";
             this.btnTournamentReport.Location = new System.Drawing.Point(79, 356);
+            this.btnTournamentReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTournamentReport.Name = "btnTournamentReport";
             this.btnTournamentReport.Size = new System.Drawing.Size(244, 163);
             this.btnTournamentReport.TabIndex = 5;
@@ -226,8 +229,9 @@
             this.btnPlayerManagement.ImagePosition = 14;
             this.btnPlayerManagement.ImageZoom = 50;
             this.btnPlayerManagement.LabelPosition = 30;
-            this.btnPlayerManagement.LabelText = "Player Management";
+            this.btnPlayerManagement.LabelText = "Player Information";
             this.btnPlayerManagement.Location = new System.Drawing.Point(332, 186);
+            this.btnPlayerManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPlayerManagement.Name = "btnPlayerManagement";
             this.btnPlayerManagement.Size = new System.Drawing.Size(244, 163);
             this.btnPlayerManagement.TabIndex = 4;
@@ -249,6 +253,7 @@
             this.btnTournamentManagement.LabelPosition = 30;
             this.btnTournamentManagement.LabelText = "Tournament Management";
             this.btnTournamentManagement.Location = new System.Drawing.Point(332, 16);
+            this.btnTournamentManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTournamentManagement.Name = "btnTournamentManagement";
             this.btnTournamentManagement.Size = new System.Drawing.Size(244, 163);
             this.btnTournamentManagement.TabIndex = 3;
@@ -270,6 +275,7 @@
             this.btnRegister.LabelPosition = 30;
             this.btnRegister.LabelText = "Register";
             this.btnRegister.Location = new System.Drawing.Point(79, 16);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(244, 163);
             this.btnRegister.TabIndex = 2;
@@ -286,7 +292,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmGeneral";

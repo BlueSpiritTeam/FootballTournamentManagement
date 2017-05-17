@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="grbTeamInfor.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnCoachInfor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -175,38 +178,111 @@
         By5audP3ySZ1pO4sifwfzwKLxV/RnNF7wOXvFgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnSearchClub.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAU0AAAApCAYAAACx4ns8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJKSURBVHhe7d2vi5RBAMdh/yKbyWaymcRySYMIBi1aNJgM
-        Cv4IF4QLBkXQcGC4JIh4IBpERJQLJwgbVORELhwaRr5z+66+7LvLTd19Hhg49n7EDzPzvjdzqABwYKIJ
-        0EA0ARqIJkAD0QRoIJoADeZGc+/P77LxcbNcenqnnHl0rRy/d74cvnHKMAxjoUbalsZdWL9Z1t8/L7/2
-        dscVnDYzmi+339Y/lGAmnG++fCijn9/G3wVYHGlbGvds63W5urFa25d4DpmKZgqbXzr35Hr5vrsz/hRg
-        eczrYC+a+cGT9y/PLCzAMsmKe+XBld4quxfNlFUwAf7Jsj37nZ1JNFPUTEUB6Lv94mFZe7Vev67RzFPy
-        bHzawwSYlkZm63L7x2g/mlmSZ2kOwLDMNDPjrNHMu0l51A7AsE9fP9fZZo3mibWLddoJwLAs0Y/cWtmP
-        5tG7p+e+AQ9Aqf89VKOZLwCYTzQBGogmQAPRBGggmgANRBOggWgCNBBNgAaTaOYt97ztDsBsk2jmhCNX
-        WQDMN4lmztHMeZoADMv5HDmno0azO/IIgGHdEZo1mlmap6D2NQGGdUdo1mjG6ubjOgDoyzXmuc48JtHM
-        LDOXB70bbY0/ASDXAGUl3h2fOYlmZKOzuwcDYNklmJlM5kbKTi+akZlmwtndvAawjLJ/mRnm/8GMqWhG
-        lup5mp7C5omRWyqBZZAleLd/mQc/QzdaDEazk8LmEfux1bP1pU7DMIxFHrn6J8FMOGeZG00A+kQToIFo
-        AjQQTYAGoglwYKX8BZpyTbsWZbSGAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="OrderingNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="dgvTeamPlayer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="PlayerID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="dgvTeamPlayer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="OrderingPlayer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="PlayerName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Position.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Role.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="PlayerType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="KitNum.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Note.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="dgvListClubs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="dgvListClubs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="OrderingNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ClubID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ClubName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="StadiumName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="CoachName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Path.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="GenderCoach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="CoachNation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="CoachBirthday.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="CoachPath.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="grbCoachInformation.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnCancelViewCoach.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAYAAAAA8CAYAAABvuG0FAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALMSURBVHhe7du/S5VRGMDx/qI2J7cmNydpcaohBIdadMnB
+        qaEgdXAQ7tCQCDlcaHASQhJEBwmRwsFAuEOKGOIgNZx4zr1eNNO5+z6fDxy8vv4Yz/e+z3nvgwJASgIA
+        kJQAACQlAABJCQBAUgIAkNS9Abj8/ausfd0sUx/ny9OV2TKyNFkevn5sWZZl/acr9unYr5+335T23qdy
+        fnnR29FvuzMAnw936z+KzT8isHO0Xzo/j3s/BeB/FPt07NfrB9tlZm2x7uMRgn+5FYCoRfzRxOqrcnJx
+        1rsKwCC6b0+/EYD4xbF303fWAoDBFFOd8fcvb0xybgQgKmHzB2imGA3F+cCVfgCiDnGLAEBzzW0sl9ZW
+        u76uAYinfeKgwMwfoNliv49R/+FppxuAGPvE+AeA5os7gLgTqAGI50XjkSEAmu/bj+/1LqAGYLT1ot4O
+        ANB8MQYaejveDcDwwpN7Py0GQLPEp4ZrAOIFAHkIAEBSAgCQlAAAJCUAAEkJAEBSAgCQlAAAJCUAAEkJ
+        AEBSAgCQlAAAJCUAAEkJAEBSAgCQlAAAJCUAAEkJAEBSAgCQlAAAJCUAAEkJAEBSAgCQlAAAJCUAAEkJ
+        AEBSAgCQVD8AQ2/Hy+XvX/UiAM3XD8DI0mTp/DyuFwFovn4AJlZflc+Hu/UiAM12eNopo60X3QC0ttpl
+        bmO5/gCAZmvvfSoza4vdAMT4J2rgHACg+Z6335T1g+1uAMLi5oe6AGiuta+bZerjfH3dD0C8+3+6Mlu+
+        dA56VwBokpOLszrtOb+8qN/3AxDiYGDs3XT9CkBzxOYfb/J3jvZ7V/4KQIg7gIhAHAwDMPhi3h/v/K9v
+        /uFWAEKMg+KpoKhFnBZHOQAYHDHmuZr3x6Hv1djnun8G4ErUIh4VerT4rH5owLIsyxqMNbzwpG7+EYG7
+        3BsAAJpLAACSEgCApAQAICkBAEiplD9GEWHy3NpKggAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnUpdateCoachInfor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALIAAAA8CAYAAADCMODAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJfSURBVHhe7d2/S1tRGIfx/kVundycunUSl0x2KEIHu+ii
+        QycHC1WHDIJDB0uhDgEHJ0FKA6UdpJRSyRBByKAiFckQdDjyPd5zaciPTXPPl+cDF0L8MT0c3tzAfZ8F
+        wAAhwwIhwwIhwwIhwwIhw8LYkHt3t+HgbzMs7W+GV5/fhRfbb8LU+hwX15Nc6k3dLTbeh8bvo3DT6xZl
+        DhoZ8rf2cfxHilgx/zz7EzrXF8VPgcen3tTdYetHWD2oxx4V9DADIat6/dHC3lq47P4r3gUmb1ybfSHr
+        F2c/Lo+sHqgCTQu13ZW+CaEvZNVOxMiBRg7Nz0kZsirXkQ3kYuPrp7DzvRFfx5B1d0KDNDMxcqJuNQq3
+        rzoPIWuc0FgB5EYnsk7mGLLu0+kWB5Cbk/PTeCrHkF/uvI3HM5AbjRfPP9QeQp7emh/7rQlQZfoWMIas
+        F0CuCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkWCBkW
+        CBkWCBkWCBkWCBkWCBkWCBkWCBkWypD1EDg9DA7IURmyHvLNxibkqgxZKxe0egHIjR6HrMcix5DTU7+B
+        3KRtCzFkjRWqmjkZuUnbFmLIUm9+iReQi7ReWsqQdRprb9mvTqt4B6gubSDTFJE2LZQhiwbntO4JqCpF
+        rENXSyOTvpBFJ7JiTov4gCrRPKyT+P+IZSBk0ZihuxiqXp8KWSSJSdL4kOZhfbgbtrhpaMiJqtetjZn6
+        63jTmYtrEpe2jilixTzK2JCBXBAyLBAyLBAyLBAyDIRwDyvyEWuj/f/nAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnSaveCoachInfor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALMAAAA8CAYAAAAt8ov+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJfSURBVHhe7d2/S1tRGIfx/kXdOrk5uXUqLpnsIIUOdtHF
+        Dp06tKB2yCA4OFgEOwQcMgmlNFDaQaSIkiGCkKGVopQMQYdTvif3XBryY0zu+fJ84EKIP6aHw5sbuO+j
+        AJggZtggZtggZtggZtggZtiYGnP/4T40L1ph/XgnPD98E5Z2X4bH75a5uGZ2qTm1t9Z4Hxo/P4e//V5R
+        56iJMX/tnMZ/pJAV9I/r89C9+138FJgNNaf2Ttrfw+tmPTapqMcZiVnl649efHobbnq3xbtANUzrcyhm
+        /eKz/Y2J5QNVocmhdrA5NC0MxaziCRm50PiheTopY1bpOrqBnGx/+Rj2vjXi6xiz7lposGZGRm7Urkbj
+        zp/uIGaNFhoxgBzpZNYJHWPWPTzd+gBydPnrKp7OMeane6/iMQ3kSKPGk63aIOaFDytTv1kBqk7fFsaY
+        9QLIGTHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHDBjHD
+        BjHDBjHDBjHDBjHDBjHDBjHDBjHDRhmzHjqnh88BuSpj1oPG2SSFnJUxa/2D1kAAOdLjmPVY5hhzevI4
+        kKO0+SHGrBFDZTM3I0dp80OMWeqto3gBOUnrsKWMWaeydqqdddvFO0C1aTuaJoq09aGMWTRIpzVUQJUp
+        ZB2+WmyZDMUsOpkVdFoUCFSN5mOdyP+HLCMxi0YO3d1Q+fqkyLJLzJtGiTQf6wPfuIVSY2NOVL5ueSzW
+        V+NNaS6ueV3aiKaQFfQkU2MGckLMsEHMsEHMsEHMMBHCP1Zg/KERheCiAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>
