@@ -11,7 +11,7 @@ namespace SourceCode.DTO
     {
         protected string human_id;
         protected string gender_id;
-        protected string club_id;
+        private string human_clubid;
         protected string name;
         protected DateTime birthday;
         protected string nation;
@@ -31,18 +31,7 @@ namespace SourceCode.DTO
             }
         }
 
-        public string Club_id
-        {
-            get
-            {
-                return club_id;
-            }
-
-            set
-            {
-                club_id = value;
-            }
-        }
+        
 
         public string Name
         {
@@ -107,6 +96,19 @@ namespace SourceCode.DTO
                 human_id = value;
             }
         }
+
+        protected string Human_clubid
+        {
+            get
+            {
+                return human_clubid;
+            }
+
+            set
+            {
+                human_clubid = value;
+            }
+        }
         #endregion
 
         public HumanDTO() { }
@@ -115,7 +117,7 @@ namespace SourceCode.DTO
         {
             this.Human_id = hid;
             this.Gender_id = gid;
-            this.Club_id = cid;
+            this.Human_clubid = cid;
             this.Name = n;
             this.Birthday = bd;
             this.Nation = nt;
@@ -126,7 +128,7 @@ namespace SourceCode.DTO
         {
             this.Human_id = (string)row["CoachID"].ToString();
             this.Gender_id = (string)row["GenderName"].ToString();
-            this.Club_id = (string)row["ClubID"].ToString();
+            this.Human_clubid = (string)row["Human_ClubID"].ToString();
             this.Name = (string)row["Name"].ToString();
             this.Birthday = DateTime.Parse(row["Birthday"].ToString());
             this.Nation = (string)row["Nation"].ToString();
