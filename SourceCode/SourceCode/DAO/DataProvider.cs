@@ -11,7 +11,7 @@ namespace SourceCode.DAO
     public class DataProvider
     {
 
-        private string str_connection = @"Server=tcp:footballtournamentmanager.database.windows.net,1433;Initial Catalog=FootballTournamentManager;Persist Security Info=False;User ID={bluespirit};Password={Haidang029};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private string str_connection = @"Data Source=footballtournamentmanager.database.windows.net;Initial Catalog=FootballTournamentManager;Integrated Security=False;User ID=bluespirit;Password=Haidang029;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         private static DataProvider instance;
 
