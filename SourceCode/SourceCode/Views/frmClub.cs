@@ -68,15 +68,6 @@ namespace SourceCode
             DataTable dt = ClubDAO.Instance.LoadAllPlayerForClub(ID);
             dgvTeamPlayer.DataSource = dt;
         }
-        void LoadListClub()
-        {
-            // dgvListClubs.DataSource = ClubDAO.Instance.LoadAllClubs();
-            /*
-            list_clubs = ClubDAO.Instance.LoadAllClubs();
-            foreach(ClubDTO item in list_clubs)
-                //dgvListClubs.Rows.Add(count, item.Club_id, item.Club_name); //add data vao rows
-            */
-        }
 
         public void BindingAtt()
         {

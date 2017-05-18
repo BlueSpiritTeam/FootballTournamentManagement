@@ -53,7 +53,6 @@ namespace SourceCode.DAO
                 CoachDTO coach = new CoachDTO(item);
                 list.Add(coach);
             }
-
             return list;
         }
         #endregion

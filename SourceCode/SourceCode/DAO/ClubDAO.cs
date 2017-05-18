@@ -53,7 +53,7 @@ namespace SourceCode.DAO
 
         public DataTable LoaClubs()
         {
-            DataTable data = DataProvider.Instance.ExcuteQuery("LoadClubByDataTable");
+            DataTable data = DataProvider.Instance.ExcuteQuery("LoadAllClubInfor");
             return data;
         }
 

@@ -110,11 +110,14 @@ namespace SourceCode
 
         public void LoadImage(PictureBox pic)
         {
+            try { 
                 int index = dgvPlayerInfor.CurrentCell.RowIndex;//lấy ra chỉ số của row đang đc chọn
                                                                 //lay ra link anh
 
-                string str_path_player = dgvPlayerInfor.Rows[index].Cells[9].Value.ToString().Trim(); //5 la thu tu cot Path
-                pic.Image = Image.FromFile(paths + str_path_player);
+            string str_path_player = dgvPlayerInfor.Rows[index].Cells[9].Value.ToString().Trim(); //5 la thu tu cot Path
+            pic.Image = Image.FromFile(paths + str_path_player);
+        }
+            catch {  }
         }
 
         public void SearchCategory()
@@ -215,5 +218,7 @@ namespace SourceCode
             UpdatePlayer();
             
         }
+
+        
     }
 }
