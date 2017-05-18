@@ -197,12 +197,6 @@
     <Compile Include="Views\frmTypesGoal.Designer.cs">
       <DependentUpon>frmTypesGoal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmViewCoachInfor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\frmViewCoachInfor.Designer.cs">
-      <DependentUpon>frmViewCoachInfor.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\frmMatchRecording.cs">
@@ -231,6 +225,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmPlayer.resx">
       <DependentUpon>frmPlayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmRankOfClub.resx">
       <DependentUpon>frmRankOfClub.cs</DependentUpon>
@@ -255,9 +250,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmTypesGoal.resx">
       <DependentUpon>frmTypesGoal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmViewCoachInfor.resx">
-      <DependentUpon>frmViewCoachInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

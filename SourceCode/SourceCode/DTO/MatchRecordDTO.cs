@@ -50,6 +50,7 @@ namespace SourceCode.DTO
         {
             this.Matchid = (int)row["MatchID"];
             this.Home_club_ratio = (string)row["HomeClubRatio"].ToString();
+
         }
     }
 }

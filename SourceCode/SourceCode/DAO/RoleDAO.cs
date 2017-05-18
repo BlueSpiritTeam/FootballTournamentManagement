@@ -32,10 +32,11 @@ namespace SourceCode.DAO
         { }
 
         #region methods
+
         public List<RoleDTO> LoadAllRoles() //load Gender tu GenderDTO va tra ve mot List<> cac thuoc tinh cua gender
         {
             List<RoleDTO> list_roles = new List<RoleDTO>();
-            //ket noi va chay cau truy van
+            //ket noi va chay cau truy va
             DataTable data = DataProvider.Instance.ExcuteQuery("LoadRoles");
 
             foreach (DataRow item in data.Rows)

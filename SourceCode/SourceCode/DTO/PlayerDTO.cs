@@ -85,7 +85,7 @@ namespace SourceCode.DTO
         {
 
         }
-
+        
         public PlayerDTO(string pid, string name, string gender, string clubid, int role_id, DateTime birth, string nation, int goal, int assist, int kit)
         {
             this.Player_id = pid;
@@ -99,6 +99,39 @@ namespace SourceCode.DTO
             this.Goalassist = assist;
             this.Kitnum = kit;
         }
+        public PlayerDTO(string pid, int r, int k)
+        {
+            this.Player_id = pid;
+            this.Role_id = r;
+            this.Kitnum = k;
+        }
+        public PlayerDTO(string pid, int roleid, int gn, int gas, int k)
+        {
+            this.Player_id = pid;
+            this.Role_id = roleid;
+            this.Goalnumber = gn;
+            this.Goalassist = gas;
+            this.Kitnum = k;
+        }
 
+
+        public PlayerDTO(DataRow row)
+        {
+
+            this.Player_id = (string)(row["PlayerID"].ToString());
+            int temp;
+
+            int.TryParse(row["RoleID"].ToString(), out temp);
+            this.Role_id = temp;
+
+            int.TryParse(row["GoalNumber"].ToString(), out temp);
+            this.Goalnumber = temp;
+
+            int.TryParse(row["AssistNumber"].ToString(), out temp);
+            this.Goalassist = temp;
+
+            int.TryParse(row["KitNum"].ToString(), out temp);
+            this.Kitnum = temp;
+        }
     }
 }

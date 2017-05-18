@@ -11,7 +11,11 @@ namespace SourceCode.DAO
     public class DataProvider
     {
 
-        private string str_connection = @"Data Source=footballtournamentmanager.database.windows.net;Initial Catalog=FootballTournamentManager;Integrated Security=False;User ID=bluespirit;Password=Haidang029;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        
+       
+
+
+       private string str_connection = @"Data Source=footballtournamentmanager.database.windows.net;Initial Catalog=FootballTournamentManager;Integrated Security=False;User ID=bluespirit;Password=Haidang029;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         private static DataProvider instance;
 
@@ -38,6 +42,7 @@ namespace SourceCode.DAO
         #region methods
         public DataTable ExcuteQuery(string query, object[] parameter = null)
         {
+            //tra ve mot data table
             DataTable data = new DataTable();
             using (SqlConnection connection = new SqlConnection(str_connection))
             {
@@ -93,6 +98,7 @@ namespace SourceCode.DAO
                         }
                     }
                 }
+
                 data = command.ExecuteNonQuery();
 
                 connection.Close();

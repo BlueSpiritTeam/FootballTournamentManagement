@@ -34,10 +34,12 @@ namespace SourceCode.DAO
         #region methods
         public List<GenderDTO> LoadAllGender() //load Gender tu GenderDTO va tra ve mot List<> cac thuoc tinh cua gender
         {
+            //dinh nghia mot List<Gender>
             List<GenderDTO> list_gender = new List<GenderDTO>();
-            //ket noi va chay cau truy van
+            //DataTable de ExecuteQuery
             DataTable data = DataProvider.Instance.ExcuteQuery("LoadGender");
 
+            //lay ra tung dong trong DataRow
             foreach (DataRow item in data.Rows)
             {
                 GenderDTO gender = new GenderDTO(item);

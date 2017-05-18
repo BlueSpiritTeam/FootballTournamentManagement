@@ -40,7 +40,6 @@ namespace SourceCode
         }
 
 
-
         #region methods
         private void LoadRules()
         {
@@ -63,8 +62,8 @@ namespace SourceCode
         {
             max_age.Value = 45;
             min_age.Value = 16;
-            min_player.Value = 16;
-            max_player.Value = 45;
+            min_player.Value = 2; // 16 de test nen giam xuong
+            max_player.Value = 5; //45 de test nen bo xuong 
             win_score.Value = 3;
             draw_score.Value = 1;
             lose_score.Value = 0;

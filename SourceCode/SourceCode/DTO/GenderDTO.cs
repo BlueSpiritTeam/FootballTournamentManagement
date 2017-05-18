@@ -46,6 +46,7 @@ namespace SourceCode.DTO
             this.Gender_name = gname;
         }
 
+        //ham dung voi dataRow de DataRow dua vao
         public GenderDTO(DataRow row)
         {
             this.Gender_id = (string)row["GenderID"].ToString();
