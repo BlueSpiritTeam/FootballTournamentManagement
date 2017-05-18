@@ -219,6 +219,9 @@ namespace SourceCode
             
         }
 
-        
+        private void grbPlayerDetails_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

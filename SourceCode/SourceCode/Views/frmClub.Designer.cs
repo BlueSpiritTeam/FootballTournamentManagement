@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClub));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grbTeamInfor = new System.Windows.Forms.GroupBox();
             this.btnUpdateTeamInfor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -54,13 +54,24 @@
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.grbTeamPlayer = new System.Windows.Forms.GroupBox();
             this.dgvTeamPlayer = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.grouAllClub = new System.Windows.Forms.GroupBox();
-            this.dgvListClubs = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.OrderingPlayer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KitNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grouAllClub = new System.Windows.Forms.GroupBox();
+            this.dgvListClubs = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClubID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClubName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StadiumName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CoachName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GenderCoach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CoachNation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CoachBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CoachPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbCoachInformation = new System.Windows.Forms.GroupBox();
+            this.dtpBirthday = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.btnCancelViewCoach = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUpdateCoachInfor = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -72,17 +83,6 @@
             this.txtCoachName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.picViewCoach = new System.Windows.Forms.PictureBox();
-            this.dtpBirthday = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClubID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClubName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StadiumName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CoachName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GenderCoach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CoachNation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CoachBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CoachPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbTeamInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoTeam)).BeginInit();
             this.grbTeamPlayer.SuspendLayout();
@@ -432,23 +432,23 @@
             // dgvTeamPlayer
             // 
             this.dgvTeamPlayer.AllowUserToAddRows = false;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvTeamPlayer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvTeamPlayer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTeamPlayer.BackgroundColor = System.Drawing.Color.White;
             this.dgvTeamPlayer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTeamPlayer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTeamPlayer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTeamPlayer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTeamPlayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTeamPlayer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OrderingPlayer,
@@ -463,83 +463,13 @@
             this.dgvTeamPlayer.Location = new System.Drawing.Point(3, 22);
             this.dgvTeamPlayer.Name = "dgvTeamPlayer";
             this.dgvTeamPlayer.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvTeamPlayer.RowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvTeamPlayer.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTeamPlayer.RowTemplate.Height = 24;
             this.dgvTeamPlayer.Size = new System.Drawing.Size(1096, 209);
             this.dgvTeamPlayer.TabIndex = 0;
-            // 
-            // grouAllClub
-            // 
-            this.grouAllClub.BackColor = System.Drawing.Color.White;
-            this.grouAllClub.Controls.Add(this.dgvListClubs);
-            this.grouAllClub.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grouAllClub.ForeColor = System.Drawing.Color.SeaGreen;
-            this.grouAllClub.Location = new System.Drawing.Point(0, 0);
-            this.grouAllClub.Name = "grouAllClub";
-            this.grouAllClub.Size = new System.Drawing.Size(1104, 262);
-            this.grouAllClub.TabIndex = 7;
-            this.grouAllClub.TabStop = false;
-            this.grouAllClub.Text = "List Clubs";
-            // 
-            // dgvListClubs
-            // 
-            this.dgvListClubs.AllowUserToAddRows = false;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvListClubs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle18;
-            this.dgvListClubs.BackgroundColor = System.Drawing.Color.White;
-            this.dgvListClubs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvListClubs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListClubs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
-            this.dgvListClubs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListClubs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.OrderingNumber,
-            this.ClubID,
-            this.ClubName,
-            this.StadiumName,
-            this.CoachName,
-            this.Path,
-            this.GenderCoach,
-            this.CoachNation,
-            this.CoachBirthday,
-            this.CoachPath});
-            this.dgvListClubs.DoubleBuffered = true;
-            this.dgvListClubs.EnableHeadersVisualStyles = false;
-            this.dgvListClubs.GridColor = System.Drawing.Color.SeaGreen;
-            this.dgvListClubs.HeaderBgColor = System.Drawing.Color.White;
-            this.dgvListClubs.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvListClubs.Location = new System.Drawing.Point(3, 22);
-            this.dgvListClubs.Name = "dgvListClubs";
-            this.dgvListClubs.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListClubs.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvListClubs.RowsDefaultCellStyle = dataGridViewCellStyle21;
-            this.dgvListClubs.RowTemplate.Height = 24;
-            this.dgvListClubs.Size = new System.Drawing.Size(1096, 234);
-            this.dgvListClubs.TabIndex = 0;
-            this.dgvListClubs.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListClubs_CellClick);
             // 
             // OrderingPlayer
             // 
@@ -566,6 +496,144 @@
             this.KitNum.HeaderText = "KitNum";
             this.KitNum.Name = "KitNum";
             // 
+            // grouAllClub
+            // 
+            this.grouAllClub.BackColor = System.Drawing.Color.White;
+            this.grouAllClub.Controls.Add(this.dgvListClubs);
+            this.grouAllClub.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grouAllClub.ForeColor = System.Drawing.Color.SeaGreen;
+            this.grouAllClub.Location = new System.Drawing.Point(0, 0);
+            this.grouAllClub.Name = "grouAllClub";
+            this.grouAllClub.Size = new System.Drawing.Size(1104, 262);
+            this.grouAllClub.TabIndex = 7;
+            this.grouAllClub.TabStop = false;
+            this.grouAllClub.Text = "List Clubs";
+            // 
+            // dgvListClubs
+            // 
+            this.dgvListClubs.AllowUserToAddRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvListClubs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvListClubs.BackgroundColor = System.Drawing.Color.White;
+            this.dgvListClubs.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvListClubs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListClubs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvListClubs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListClubs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.OrderingNumber,
+            this.ClubID,
+            this.ClubName,
+            this.StadiumName,
+            this.CoachName,
+            this.Path,
+            this.GenderCoach,
+            this.CoachNation,
+            this.CoachBirthday,
+            this.CoachPath});
+            this.dgvListClubs.DoubleBuffered = true;
+            this.dgvListClubs.EnableHeadersVisualStyles = false;
+            this.dgvListClubs.GridColor = System.Drawing.Color.SeaGreen;
+            this.dgvListClubs.HeaderBgColor = System.Drawing.Color.White;
+            this.dgvListClubs.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvListClubs.Location = new System.Drawing.Point(3, 22);
+            this.dgvListClubs.Name = "dgvListClubs";
+            this.dgvListClubs.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListClubs.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvListClubs.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvListClubs.RowTemplate.Height = 24;
+            this.dgvListClubs.Size = new System.Drawing.Size(1096, 234);
+            this.dgvListClubs.TabIndex = 0;
+            this.dgvListClubs.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListClubs_CellClick);
+            // 
+            // OrderingNumber
+            // 
+            this.OrderingNumber.DataPropertyName = "OrderingNumber";
+            this.OrderingNumber.HeaderText = "Ordering Number";
+            this.OrderingNumber.Name = "OrderingNumber";
+            // 
+            // ClubID
+            // 
+            this.ClubID.DataPropertyName = "ClubID";
+            this.ClubID.HeaderText = "Club ID";
+            this.ClubID.Name = "ClubID";
+            // 
+            // ClubName
+            // 
+            this.ClubName.DataPropertyName = "ClubName";
+            this.ClubName.HeaderText = "Club Name";
+            this.ClubName.Name = "ClubName";
+            this.ClubName.Width = 200;
+            // 
+            // StadiumName
+            // 
+            this.StadiumName.DataPropertyName = "StadiumName";
+            this.StadiumName.HeaderText = "Stadium Name";
+            this.StadiumName.Name = "StadiumName";
+            this.StadiumName.Width = 200;
+            // 
+            // CoachName
+            // 
+            this.CoachName.DataPropertyName = "CoachName";
+            this.CoachName.HeaderText = "Coach Name";
+            this.CoachName.Name = "CoachName";
+            this.CoachName.Width = 150;
+            // 
+            // Path
+            // 
+            this.Path.DataPropertyName = "PathClub";
+            this.Path.HeaderText = "PathClub";
+            this.Path.Name = "Path";
+            this.Path.Visible = false;
+            // 
+            // GenderCoach
+            // 
+            this.GenderCoach.DataPropertyName = "CoachGender";
+            this.GenderCoach.HeaderText = "CoachGender";
+            this.GenderCoach.Name = "GenderCoach";
+            this.GenderCoach.Visible = false;
+            // 
+            // CoachNation
+            // 
+            this.CoachNation.DataPropertyName = "CoachNation";
+            this.CoachNation.HeaderText = "Coach Nation";
+            this.CoachNation.Name = "CoachNation";
+            this.CoachNation.Visible = false;
+            // 
+            // CoachBirthday
+            // 
+            this.CoachBirthday.DataPropertyName = "CoachBirthday";
+            this.CoachBirthday.HeaderText = "Coach Birthday";
+            this.CoachBirthday.Name = "CoachBirthday";
+            this.CoachBirthday.Visible = false;
+            // 
+            // CoachPath
+            // 
+            this.CoachPath.DataPropertyName = "CoachPath";
+            this.CoachPath.HeaderText = "CoachPath";
+            this.CoachPath.Name = "CoachPath";
+            this.CoachPath.Visible = false;
+            // 
             // grbCoachInformation
             // 
             this.grbCoachInformation.BackColor = System.Drawing.Color.White;
@@ -589,6 +657,21 @@
             this.grbCoachInformation.TabIndex = 8;
             this.grbCoachInformation.TabStop = false;
             this.grbCoachInformation.Text = "Coach Information";
+            // 
+            // dtpBirthday
+            // 
+            this.dtpBirthday.BackColor = System.Drawing.Color.White;
+            this.dtpBirthday.BorderRadius = 0;
+            this.dtpBirthday.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirthday.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpBirthday.FormatCustom = null;
+            this.dtpBirthday.Location = new System.Drawing.Point(258, 246);
+            this.dtpBirthday.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(268, 45);
+            this.dtpBirthday.TabIndex = 81;
+            this.dtpBirthday.Value = new System.DateTime(2017, 5, 1, 10, 35, 47, 69);
             // 
             // cmbGender
             // 
@@ -751,89 +834,6 @@
             this.picViewCoach.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picViewCoach.TabIndex = 70;
             this.picViewCoach.TabStop = false;
-            // 
-            // dtpBirthday
-            // 
-            this.dtpBirthday.BackColor = System.Drawing.Color.White;
-            this.dtpBirthday.BorderRadius = 0;
-            this.dtpBirthday.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBirthday.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpBirthday.FormatCustom = null;
-            this.dtpBirthday.Location = new System.Drawing.Point(258, 246);
-            this.dtpBirthday.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(268, 45);
-            this.dtpBirthday.TabIndex = 81;
-            this.dtpBirthday.Value = new System.DateTime(2017, 5, 1, 10, 35, 47, 69);
-            // 
-            // OrderingNumber
-            // 
-            this.OrderingNumber.DataPropertyName = "OrderingNumber";
-            this.OrderingNumber.HeaderText = "Ordering Number";
-            this.OrderingNumber.Name = "OrderingNumber";
-            // 
-            // ClubID
-            // 
-            this.ClubID.DataPropertyName = "ClubID";
-            this.ClubID.HeaderText = "Club ID";
-            this.ClubID.Name = "ClubID";
-            // 
-            // ClubName
-            // 
-            this.ClubName.DataPropertyName = "ClubName";
-            this.ClubName.HeaderText = "Club Name";
-            this.ClubName.Name = "ClubName";
-            this.ClubName.Width = 200;
-            // 
-            // StadiumName
-            // 
-            this.StadiumName.DataPropertyName = "StadiumName";
-            this.StadiumName.HeaderText = "Stadium Name";
-            this.StadiumName.Name = "StadiumName";
-            this.StadiumName.Width = 200;
-            // 
-            // CoachName
-            // 
-            this.CoachName.DataPropertyName = "CoachName";
-            this.CoachName.HeaderText = "Coach Name";
-            this.CoachName.Name = "CoachName";
-            this.CoachName.Width = 150;
-            // 
-            // Path
-            // 
-            this.Path.DataPropertyName = "PathClub";
-            this.Path.HeaderText = "PathClub";
-            this.Path.Name = "Path";
-            this.Path.Visible = false;
-            // 
-            // GenderCoach
-            // 
-            this.GenderCoach.DataPropertyName = "CoachGender";
-            this.GenderCoach.HeaderText = "CoachGender";
-            this.GenderCoach.Name = "GenderCoach";
-            this.GenderCoach.Visible = false;
-            // 
-            // CoachNation
-            // 
-            this.CoachNation.DataPropertyName = "CoachNation";
-            this.CoachNation.HeaderText = "Coach Nation";
-            this.CoachNation.Name = "CoachNation";
-            this.CoachNation.Visible = false;
-            // 
-            // CoachBirthday
-            // 
-            this.CoachBirthday.DataPropertyName = "CoachBirthday";
-            this.CoachBirthday.HeaderText = "Coach Birthday";
-            this.CoachBirthday.Name = "CoachBirthday";
-            this.CoachBirthday.Visible = false;
-            // 
-            // CoachPath
-            // 
-            this.CoachPath.DataPropertyName = "CoachPath";
-            this.CoachPath.HeaderText = "CoachPath";
-            this.CoachPath.Name = "CoachPath";
-            this.CoachPath.Visible = false;
             // 
             // frmClub
             // 
