@@ -91,7 +91,7 @@ namespace SourceCode.DTO
             this.Player_id = pid;
             this.Name = name;
             this.Gender_id = gender;
-            this.Club_id = clubid;
+            this.Human_clubid = clubid;
             this.Role_id = role_id;
             this.Birthday = birth;
             this.Nation = nation;
