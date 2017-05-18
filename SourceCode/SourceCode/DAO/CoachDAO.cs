@@ -34,7 +34,6 @@ namespace SourceCode.DAO
         }
 
         #region methods
-
         public bool InsertNewCoach( CoachDTO coach)
         {
             string query = "exec InsertCoach @coach_id";

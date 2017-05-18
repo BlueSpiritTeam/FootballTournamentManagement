@@ -122,19 +122,19 @@ namespace SourceCode
         {
             if (number_of_coach == 0)
             {
-                if (CheckTextboxCoach() == false)
+            if (CheckTextboxCoach() == false)
                 {
-                    string coach_id = "C_" + txtClubID.Text;
-                    string humanid = "C_" + txtClubID.Text;
+                    string human_id = "C_" + txtClubID.Text;
                     string gender_id = GenderDAO.Instances.GetGenderID(cmbGenderCoach.Text);
                     string clubid = txtClubID.Text;
                     string name_coach = txtCoachNameInsert.Text;
                     DateTime birthday_coach = dtpBirthdayCoach.Value;
                     string nation_coach = txtNationOfCoach.Text;
                     string path_coach = path_img_coach;
+                    string coach_id = "C_" + txtClubID.Text;
 
                     //add data vao bang HumanInformation
-                    HumanDTO hm = new HumanDTO(humanid, gender_id, clubid, name_coach, birthday_coach, nation_coach, path_coach);
+                    HumanDTO hm = new HumanDTO(human_id, gender_id, clubid, name_coach, birthday_coach, nation_coach, path_coach);
                     if (HumanDAO.Instance.InsertNewHuman(hm))
                     {
                         MessageBox.Show("Succesflly add human", "Notification", MessageBoxButtons.OK);

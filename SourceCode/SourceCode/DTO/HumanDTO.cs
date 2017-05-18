@@ -9,7 +9,9 @@ namespace SourceCode.DTO
 {
     public /*abstract*/ class HumanDTO
     {
+
         //default la protected
+
         protected string human_id;
         protected string gender_id;
         protected string club_id;

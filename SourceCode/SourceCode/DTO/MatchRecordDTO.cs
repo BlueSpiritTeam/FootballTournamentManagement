@@ -9,10 +9,23 @@ namespace SourceCode.DTO
 {
     public class MatchRecordDTO
     {
-        private int home_club_ratio;
-        private int guest_club_ratio;
+        private int matchid;
+        private string home_club_ratio;
+   
+        public int Matchid
+        {
+            get
+            {
+                return matchid;
+            }
 
-        public int Home_club_ratio
+            set
+            {
+                matchid = value;
+            }
+        }
+
+        public string Home_club_ratio
         {
             get
             {
@@ -25,31 +38,19 @@ namespace SourceCode.DTO
             }
         }
 
-        public int Guest_club_ratio
-        {
-            get
-            {
-                return guest_club_ratio;
-            }
-
-            set
-            {
-                guest_club_ratio = value;
-            }
-        }
-
         public MatchRecordDTO() { }
 
-        public MatchRecordDTO(int hclubratio, int gclubratio)
+        public MatchRecordDTO(int id, string ratio)
         {
-            this.Home_club_ratio = hclubratio;
-            this.Guest_club_ratio = gclubratio;
+            this.Matchid = id;
+            this.Home_club_ratio = ratio;
         }
 
         public MatchRecordDTO(DataRow row)
         {
-            this.Home_club_ratio = int.Parse(row["HomeClubRatio"].ToString());
-            this.Guest_club_ratio = int.Parse(row["GuestClubRatio"].ToString());
+            this.Matchid = (int)row["MatchID"];
+            this.Home_club_ratio = (string)row["HomeClubRatio"].ToString();
+
         }
     }
 }
