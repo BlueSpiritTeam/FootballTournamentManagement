@@ -9,13 +9,17 @@ namespace SourceCode.DTO
 {
     public /*abstract*/ class HumanDTO
     {
+
+        //default la protected
+
         protected string human_id;
         protected string gender_id;
-        private string human_clubid;
+        private string club_id;
         protected string name;
         protected DateTime birthday;
         protected string nation;
         protected string path_img;
+
 
         #region properties
         public string Gender_id
@@ -84,6 +88,7 @@ namespace SourceCode.DTO
             }
         }
 
+
         public string Human_id
         {
             get
@@ -97,18 +102,20 @@ namespace SourceCode.DTO
             }
         }
 
-        protected string Human_clubid
+        public string Club_id
         {
             get
             {
-                return human_clubid;
+                return club_id;
             }
 
             set
             {
-                human_clubid = value;
+                club_id = value;
             }
         }
+
+
         #endregion
 
         public HumanDTO() { }
@@ -117,7 +124,7 @@ namespace SourceCode.DTO
         {
             this.Human_id = hid;
             this.Gender_id = gid;
-            this.Human_clubid = cid;
+            this.Club_id = cid;
             this.Name = n;
             this.Birthday = bd;
             this.Nation = nt;
@@ -126,13 +133,23 @@ namespace SourceCode.DTO
 
         public HumanDTO(DataRow row)
         {
-            this.Human_id = (string)row["CoachID"].ToString();
+            this.Human_id = (string)row["HumanID"].ToString();
             this.Gender_id = (string)row["GenderName"].ToString();
-            this.Human_clubid = (string)row["Human_ClubID"].ToString();
+            this.Club_id = (string)row["Human_ClubID"].ToString();
+
             this.Name = (string)row["Name"].ToString();
             this.Birthday = DateTime.Parse(row["Birthday"].ToString());
             this.Nation = (string)row["Nation"].ToString();
             this.Path_img = (string)row["Path"].ToString();
+        }
+
+        public HumanDTO(string human_name, string human_gender_id, DateTime human_birthday, string human_nation, string h_id)
+        {
+            this.Name = human_name;
+            this.Gender_id = human_gender_id;
+            this.Birthday = human_birthday;
+            this.Nation = human_nation;
+            this.Human_id = h_id;
         }
     }
 }

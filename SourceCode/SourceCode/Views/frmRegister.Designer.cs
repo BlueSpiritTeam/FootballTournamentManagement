@@ -89,7 +89,7 @@
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtClub = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtClubplayer = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtNationOfPlayer = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -127,9 +127,9 @@
             this.bunifuTransition.SetDecoration(this.pnlRegisterContent, BunifuAnimatorNS.DecorationType.None);
             this.pnlRegisterContent.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlRegisterContent.Location = new System.Drawing.Point(0, 0);
-            this.pnlRegisterContent.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlRegisterContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlRegisterContent.Name = "pnlRegisterContent";
-            this.pnlRegisterContent.Size = new System.Drawing.Size(151, 546);
+            this.pnlRegisterContent.Size = new System.Drawing.Size(201, 672);
             this.pnlRegisterContent.TabIndex = 9;
             // 
             // btnAddCoach
@@ -154,13 +154,14 @@
             this.btnAddCoach.IconVisible = true;
             this.btnAddCoach.IconZoom = 90D;
             this.btnAddCoach.IsTab = false;
-            this.btnAddCoach.Location = new System.Drawing.Point(3, 159);
+            this.btnAddCoach.Location = new System.Drawing.Point(4, 196);
+            this.btnAddCoach.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAddCoach.Name = "btnAddCoach";
             this.btnAddCoach.Normalcolor = System.Drawing.Color.White;
             this.btnAddCoach.OnHovercolor = System.Drawing.Color.Lime;
             this.btnAddCoach.OnHoverTextColor = System.Drawing.Color.SeaGreen;
             this.btnAddCoach.selected = true;
-            this.btnAddCoach.Size = new System.Drawing.Size(146, 49);
+            this.btnAddCoach.Size = new System.Drawing.Size(195, 60);
             this.btnAddCoach.TabIndex = 12;
             this.btnAddCoach.Text = "Add Coach";
             this.btnAddCoach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -190,18 +191,20 @@
             this.btnFinish.IconVisible = true;
             this.btnFinish.IconZoom = 90D;
             this.btnFinish.IsTab = false;
-            this.btnFinish.Location = new System.Drawing.Point(3, 325);
+            this.btnFinish.Location = new System.Drawing.Point(4, 400);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnFinish.Name = "btnFinish";
             this.btnFinish.Normalcolor = System.Drawing.Color.White;
             this.btnFinish.OnHovercolor = System.Drawing.Color.Lime;
             this.btnFinish.OnHoverTextColor = System.Drawing.Color.SeaGreen;
             this.btnFinish.selected = true;
-            this.btnFinish.Size = new System.Drawing.Size(146, 49);
+            this.btnFinish.Size = new System.Drawing.Size(195, 60);
             this.btnFinish.TabIndex = 11;
             this.btnFinish.Text = "Finish";
             this.btnFinish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnFinish.Textcolor = System.Drawing.Color.SeaGreen;
             this.btnFinish.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // btnReview
             // 
@@ -225,13 +228,14 @@
             this.btnReview.IconVisible = true;
             this.btnReview.IconZoom = 90D;
             this.btnReview.IsTab = false;
-            this.btnReview.Location = new System.Drawing.Point(3, 270);
+            this.btnReview.Location = new System.Drawing.Point(4, 332);
+            this.btnReview.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnReview.Name = "btnReview";
             this.btnReview.Normalcolor = System.Drawing.Color.White;
             this.btnReview.OnHovercolor = System.Drawing.Color.Lime;
             this.btnReview.OnHoverTextColor = System.Drawing.Color.SeaGreen;
             this.btnReview.selected = true;
-            this.btnReview.Size = new System.Drawing.Size(146, 49);
+            this.btnReview.Size = new System.Drawing.Size(195, 60);
             this.btnReview.TabIndex = 10;
             this.btnReview.Text = "Review";
             this.btnReview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -260,13 +264,14 @@
             this.btnAddNewPlayers.IconVisible = true;
             this.btnAddNewPlayers.IconZoom = 90D;
             this.btnAddNewPlayers.IsTab = false;
-            this.btnAddNewPlayers.Location = new System.Drawing.Point(3, 214);
+            this.btnAddNewPlayers.Location = new System.Drawing.Point(4, 263);
+            this.btnAddNewPlayers.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAddNewPlayers.Name = "btnAddNewPlayers";
             this.btnAddNewPlayers.Normalcolor = System.Drawing.Color.White;
             this.btnAddNewPlayers.OnHovercolor = System.Drawing.Color.Lime;
             this.btnAddNewPlayers.OnHoverTextColor = System.Drawing.Color.SeaGreen;
             this.btnAddNewPlayers.selected = true;
-            this.btnAddNewPlayers.Size = new System.Drawing.Size(146, 49);
+            this.btnAddNewPlayers.Size = new System.Drawing.Size(195, 60);
             this.btnAddNewPlayers.TabIndex = 9;
             this.btnAddNewPlayers.Text = "Add Players";
             this.btnAddNewPlayers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -282,10 +287,10 @@
             this.picRegister.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuTransition.SetDecoration(this.picRegister, BunifuAnimatorNS.DecorationType.None);
             this.picRegister.Image = ((System.Drawing.Image)(resources.GetObject("picRegister.Image")));
-            this.picRegister.Location = new System.Drawing.Point(27, 28);
-            this.picRegister.Margin = new System.Windows.Forms.Padding(2);
+            this.picRegister.Location = new System.Drawing.Point(36, 34);
+            this.picRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picRegister.Name = "picRegister";
-            this.picRegister.Size = new System.Drawing.Size(101, 110);
+            this.picRegister.Size = new System.Drawing.Size(135, 135);
             this.picRegister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRegister.TabIndex = 1;
             this.picRegister.TabStop = false;
@@ -296,10 +301,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(184, 41);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(245, 50);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(57, 17);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(70, 20);
             this.bunifuCustomLabel3.TabIndex = 1;
             this.bunifuCustomLabel3.Text = "Club ID:";
             // 
@@ -311,10 +315,10 @@
             this.bunifuTransition.SetDecoration(this.txtClubID, BunifuAnimatorNS.DecorationType.None);
             this.txtClubID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClubID.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtClubID.Location = new System.Drawing.Point(253, 38);
-            this.txtClubID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtClubID.Location = new System.Drawing.Point(337, 47);
+            this.txtClubID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtClubID.Name = "txtClubID";
-            this.txtClubID.Size = new System.Drawing.Size(90, 23);
+            this.txtClubID.Size = new System.Drawing.Size(119, 27);
             this.txtClubID.TabIndex = 3;
             // 
             // bunifuCustomLabel4
@@ -323,10 +327,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(364, 41);
-            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(485, 50);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(81, 17);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(97, 20);
             this.bunifuCustomLabel4.TabIndex = 4;
             this.bunifuCustomLabel4.Text = "Club Name:";
             // 
@@ -338,10 +341,10 @@
             this.bunifuTransition.SetDecoration(this.txtClubName, BunifuAnimatorNS.DecorationType.None);
             this.txtClubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClubName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtClubName.Location = new System.Drawing.Point(467, 38);
-            this.txtClubName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtClubName.Location = new System.Drawing.Point(623, 47);
+            this.txtClubName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtClubName.Name = "txtClubName";
-            this.txtClubName.Size = new System.Drawing.Size(199, 23);
+            this.txtClubName.Size = new System.Drawing.Size(264, 27);
             this.txtClubName.TabIndex = 5;
             // 
             // bunifuCustomLabel7
@@ -350,10 +353,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel7, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(182, 100);
-            this.bunifuCustomLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(243, 123);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(104, 17);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(124, 20);
             this.bunifuCustomLabel7.TabIndex = 10;
             this.bunifuCustomLabel7.Text = "Stadium Name:";
             // 
@@ -365,10 +367,10 @@
             this.bunifuTransition.SetDecoration(this.txtStadiumName, BunifuAnimatorNS.DecorationType.None);
             this.txtStadiumName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStadiumName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtStadiumName.Location = new System.Drawing.Point(312, 97);
-            this.txtStadiumName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStadiumName.Location = new System.Drawing.Point(416, 119);
+            this.txtStadiumName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStadiumName.Name = "txtStadiumName";
-            this.txtStadiumName.Size = new System.Drawing.Size(236, 23);
+            this.txtStadiumName.Size = new System.Drawing.Size(313, 27);
             this.txtStadiumName.TabIndex = 11;
             // 
             // picLogoTeam
@@ -376,10 +378,10 @@
             this.picLogoTeam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.picLogoTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuTransition.SetDecoration(this.picLogoTeam, BunifuAnimatorNS.DecorationType.None);
-            this.picLogoTeam.Location = new System.Drawing.Point(5, 24);
-            this.picLogoTeam.Margin = new System.Windows.Forms.Padding(2);
+            this.picLogoTeam.Location = new System.Drawing.Point(7, 30);
+            this.picLogoTeam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picLogoTeam.Name = "picLogoTeam";
-            this.picLogoTeam.Size = new System.Drawing.Size(159, 175);
+            this.picLogoTeam.Size = new System.Drawing.Size(212, 215);
             this.picLogoTeam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogoTeam.TabIndex = 12;
             this.picLogoTeam.TabStop = false;
@@ -406,14 +408,14 @@
             this.btnSaveClubInfor.IconVisible = true;
             this.btnSaveClubInfor.IconZoom = 90D;
             this.btnSaveClubInfor.IsTab = false;
-            this.btnSaveClubInfor.Location = new System.Drawing.Point(835, 350);
-            this.btnSaveClubInfor.Margin = new System.Windows.Forms.Padding(16, 6, 16, 6);
+            this.btnSaveClubInfor.Location = new System.Drawing.Point(1113, 431);
+            this.btnSaveClubInfor.Margin = new System.Windows.Forms.Padding(21, 7, 21, 7);
             this.btnSaveClubInfor.Name = "btnSaveClubInfor";
             this.btnSaveClubInfor.Normalcolor = System.Drawing.Color.SeaGreen;
             this.btnSaveClubInfor.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSaveClubInfor.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSaveClubInfor.selected = true;
-            this.btnSaveClubInfor.Size = new System.Drawing.Size(936, 89);
+            this.btnSaveClubInfor.Size = new System.Drawing.Size(1248, 110);
             this.btnSaveClubInfor.TabIndex = 26;
             this.btnSaveClubInfor.Text = "Save Club Information";
             this.btnSaveClubInfor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -439,10 +441,10 @@
             this.btnChooseImage.IdleFillColor = System.Drawing.Color.White;
             this.btnChooseImage.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnChooseImage.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnChooseImage.Location = new System.Drawing.Point(16, 210);
-            this.btnChooseImage.Margin = new System.Windows.Forms.Padding(4);
+            this.btnChooseImage.Location = new System.Drawing.Point(21, 258);
+            this.btnChooseImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnChooseImage.Name = "btnChooseImage";
-            this.btnChooseImage.Size = new System.Drawing.Size(134, 36);
+            this.btnChooseImage.Size = new System.Drawing.Size(179, 44);
             this.btnChooseImage.TabIndex = 53;
             this.btnChooseImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnChooseImage.Click += new System.EventHandler(this.btnChooseImage_Click);
@@ -452,10 +454,10 @@
             this.pnlCoachName.Controls.Add(this.txtCoachNameShow);
             this.pnlCoachName.Controls.Add(this.bunifuCustomLabel6);
             this.bunifuTransition.SetDecoration(this.pnlCoachName, BunifuAnimatorNS.DecorationType.None);
-            this.pnlCoachName.Location = new System.Drawing.Point(171, 132);
-            this.pnlCoachName.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlCoachName.Location = new System.Drawing.Point(228, 162);
+            this.pnlCoachName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlCoachName.Name = "pnlCoachName";
-            this.pnlCoachName.Size = new System.Drawing.Size(376, 67);
+            this.pnlCoachName.Size = new System.Drawing.Size(501, 82);
             this.pnlCoachName.TabIndex = 54;
             // 
             // txtCoachNameShow
@@ -465,10 +467,10 @@
             this.bunifuTransition.SetDecoration(this.txtCoachNameShow, BunifuAnimatorNS.DecorationType.None);
             this.txtCoachNameShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCoachNameShow.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtCoachNameShow.Location = new System.Drawing.Point(82, 18);
-            this.txtCoachNameShow.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCoachNameShow.Location = new System.Drawing.Point(109, 22);
+            this.txtCoachNameShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCoachNameShow.Name = "txtCoachNameShow";
-            this.txtCoachNameShow.Size = new System.Drawing.Size(224, 23);
+            this.txtCoachNameShow.Size = new System.Drawing.Size(297, 27);
             this.txtCoachNameShow.TabIndex = 9;
             // 
             // bunifuCustomLabel6
@@ -476,10 +478,9 @@
             this.bunifuCustomLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel6, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(13, 21);
-            this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(17, 26);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(52, 17);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(62, 20);
             this.bunifuCustomLabel6.TabIndex = 8;
             this.bunifuCustomLabel6.Text = "Coach:";
             // 
@@ -500,11 +501,11 @@
             this.bunifuTransition.SetDecoration(this.grbClubInfor, BunifuAnimatorNS.DecorationType.None);
             this.grbClubInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbClubInfor.ForeColor = System.Drawing.Color.SeaGreen;
-            this.grbClubInfor.Location = new System.Drawing.Point(152, 0);
-            this.grbClubInfor.Margin = new System.Windows.Forms.Padding(2);
+            this.grbClubInfor.Location = new System.Drawing.Point(203, 0);
+            this.grbClubInfor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbClubInfor.Name = "grbClubInfor";
-            this.grbClubInfor.Padding = new System.Windows.Forms.Padding(2);
-            this.grbClubInfor.Size = new System.Drawing.Size(674, 275);
+            this.grbClubInfor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbClubInfor.Size = new System.Drawing.Size(899, 338);
             this.grbClubInfor.TabIndex = 3;
             this.grbClubInfor.TabStop = false;
             this.grbClubInfor.Text = "New Club Information";
@@ -531,14 +532,14 @@
             this.btnSaveClub.IconVisible = true;
             this.btnSaveClub.IconZoom = 90D;
             this.btnSaveClub.IsTab = false;
-            this.btnSaveClub.Location = new System.Drawing.Point(228, 210);
-            this.btnSaveClub.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.btnSaveClub.Location = new System.Drawing.Point(304, 258);
+            this.btnSaveClub.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnSaveClub.Name = "btnSaveClub";
             this.btnSaveClub.Normalcolor = System.Drawing.Color.SeaGreen;
             this.btnSaveClub.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSaveClub.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSaveClub.selected = true;
-            this.btnSaveClub.Size = new System.Drawing.Size(318, 54);
+            this.btnSaveClub.Size = new System.Drawing.Size(424, 66);
             this.btnSaveClub.TabIndex = 54;
             this.btnSaveClub.Text = "Save New Club";
             this.btnSaveClub.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -580,15 +581,15 @@
             this.dgvRegister.GridColor = System.Drawing.Color.SeaGreen;
             this.dgvRegister.HeaderBgColor = System.Drawing.Color.White;
             this.dgvRegister.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvRegister.Location = new System.Drawing.Point(2, 18);
-            this.dgvRegister.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvRegister.Location = new System.Drawing.Point(3, 22);
+            this.dgvRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvRegister.Name = "dgvRegister";
             this.dgvRegister.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
             this.dgvRegister.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvRegister.RowTemplate.Height = 24;
-            this.dgvRegister.Size = new System.Drawing.Size(670, 247);
+            this.dgvRegister.Size = new System.Drawing.Size(893, 305);
             this.dgvRegister.TabIndex = 0;
             // 
             // OrderingNumber
@@ -628,11 +629,11 @@
             this.bunifuTransition.SetDecoration(this.grbTeamPlayer, BunifuAnimatorNS.DecorationType.None);
             this.grbTeamPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbTeamPlayer.ForeColor = System.Drawing.Color.SeaGreen;
-            this.grbTeamPlayer.Location = new System.Drawing.Point(152, 280);
-            this.grbTeamPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.grbTeamPlayer.Location = new System.Drawing.Point(203, 345);
+            this.grbTeamPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbTeamPlayer.Name = "grbTeamPlayer";
-            this.grbTeamPlayer.Padding = new System.Windows.Forms.Padding(2);
-            this.grbTeamPlayer.Size = new System.Drawing.Size(674, 267);
+            this.grbTeamPlayer.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbTeamPlayer.Size = new System.Drawing.Size(899, 329);
             this.grbTeamPlayer.TabIndex = 10;
             this.grbTeamPlayer.TabStop = false;
             this.grbTeamPlayer.Text = "The List Of New Team Players";
@@ -644,10 +645,10 @@
             this.bunifuTransition.SetDecoration(this.panelAddInfor, BunifuAnimatorNS.DecorationType.None);
             this.panelAddInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelAddInfor.ForeColor = System.Drawing.Color.SeaGreen;
-            this.panelAddInfor.Location = new System.Drawing.Point(831, 0);
-            this.panelAddInfor.Margin = new System.Windows.Forms.Padding(2);
+            this.panelAddInfor.Location = new System.Drawing.Point(1108, 0);
+            this.panelAddInfor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelAddInfor.Name = "panelAddInfor";
-            this.panelAddInfor.Size = new System.Drawing.Size(578, 544);
+            this.panelAddInfor.Size = new System.Drawing.Size(771, 670);
             this.panelAddInfor.TabIndex = 11;
             // 
             // tabControlAddInfor
@@ -655,11 +656,11 @@
             this.tabControlAddInfor.Controls.Add(this.tabPageCoach);
             this.tabControlAddInfor.Controls.Add(this.tabPagePlayer);
             this.bunifuTransition.SetDecoration(this.tabControlAddInfor, BunifuAnimatorNS.DecorationType.None);
-            this.tabControlAddInfor.Location = new System.Drawing.Point(2, 2);
-            this.tabControlAddInfor.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControlAddInfor.Location = new System.Drawing.Point(3, 2);
+            this.tabControlAddInfor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControlAddInfor.Name = "tabControlAddInfor";
             this.tabControlAddInfor.SelectedIndex = 0;
-            this.tabControlAddInfor.Size = new System.Drawing.Size(600, 547);
+            this.tabControlAddInfor.Size = new System.Drawing.Size(800, 673);
             this.tabControlAddInfor.TabIndex = 0;
             // 
             // tabPageCoach
@@ -680,11 +681,11 @@
             this.tabPageCoach.Controls.Add(this.picCoach);
             this.bunifuTransition.SetDecoration(this.tabPageCoach, BunifuAnimatorNS.DecorationType.None);
             this.tabPageCoach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageCoach.Location = new System.Drawing.Point(4, 26);
-            this.tabPageCoach.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageCoach.Location = new System.Drawing.Point(4, 29);
+            this.tabPageCoach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageCoach.Name = "tabPageCoach";
-            this.tabPageCoach.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageCoach.Size = new System.Drawing.Size(592, 517);
+            this.tabPageCoach.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPageCoach.Size = new System.Drawing.Size(792, 640);
             this.tabPageCoach.TabIndex = 0;
             this.tabPageCoach.Text = "Add Coach";
             // 
@@ -707,10 +708,10 @@
             this.btnChooseCoachImage.IdleFillColor = System.Drawing.Color.White;
             this.btnChooseCoachImage.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnChooseCoachImage.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnChooseCoachImage.Location = new System.Drawing.Point(33, 249);
-            this.btnChooseCoachImage.Margin = new System.Windows.Forms.Padding(4);
+            this.btnChooseCoachImage.Location = new System.Drawing.Point(44, 306);
+            this.btnChooseCoachImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnChooseCoachImage.Name = "btnChooseCoachImage";
-            this.btnChooseCoachImage.Size = new System.Drawing.Size(134, 36);
+            this.btnChooseCoachImage.Size = new System.Drawing.Size(179, 44);
             this.btnChooseCoachImage.TabIndex = 69;
             this.btnChooseCoachImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnChooseCoachImage.Click += new System.EventHandler(this.btnChooseCoachImage_Click);
@@ -723,10 +724,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel.Location = new System.Drawing.Point(92, 16);
-            this.bunifuCustomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel.Location = new System.Drawing.Point(123, 20);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
-            this.bunifuCustomLabel.Size = new System.Drawing.Size(177, 37);
+            this.bunifuCustomLabel.Size = new System.Drawing.Size(219, 46);
             this.bunifuCustomLabel.TabIndex = 68;
             this.bunifuCustomLabel.Text = "Add Coach";
             // 
@@ -737,10 +737,10 @@
             this.cmbGenderCoach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGenderCoach.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbGenderCoach.FormattingEnabled = true;
-            this.cmbGenderCoach.Location = new System.Drawing.Point(104, 302);
-            this.cmbGenderCoach.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbGenderCoach.Location = new System.Drawing.Point(139, 372);
+            this.cmbGenderCoach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbGenderCoach.Name = "cmbGenderCoach";
-            this.cmbGenderCoach.Size = new System.Drawing.Size(141, 25);
+            this.cmbGenderCoach.Size = new System.Drawing.Size(187, 30);
             this.cmbGenderCoach.TabIndex = 67;
             // 
             // btnCancel
@@ -762,10 +762,10 @@
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
             this.btnCancel.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnCancel.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.Location = new System.Drawing.Point(201, 410);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(268, 505);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(134, 49);
+            this.btnCancel.Size = new System.Drawing.Size(179, 60);
             this.btnCancel.TabIndex = 66;
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -789,10 +789,10 @@
             this.btnSaveCoach.IdleFillColor = System.Drawing.Color.White;
             this.btnSaveCoach.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnSaveCoach.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSaveCoach.Location = new System.Drawing.Point(46, 410);
-            this.btnSaveCoach.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSaveCoach.Location = new System.Drawing.Point(61, 505);
+            this.btnSaveCoach.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSaveCoach.Name = "btnSaveCoach";
-            this.btnSaveCoach.Size = new System.Drawing.Size(134, 49);
+            this.btnSaveCoach.Size = new System.Drawing.Size(179, 60);
             this.btnSaveCoach.TabIndex = 65;
             this.btnSaveCoach.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSaveCoach.Click += new System.EventHandler(this.btnSaveCoach_Click);
@@ -804,10 +804,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(19, 308);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(25, 379);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(61, 18);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(79, 24);
             this.bunifuCustomLabel1.TabIndex = 64;
             this.bunifuCustomLabel1.Text = "Gender:";
             // 
@@ -818,10 +817,10 @@
             this.bunifuTransition.SetDecoration(this.txtNationOfCoach, BunifuAnimatorNS.DecorationType.None);
             this.txtNationOfCoach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNationOfCoach.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtNationOfCoach.Location = new System.Drawing.Point(104, 358);
-            this.txtNationOfCoach.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNationOfCoach.Location = new System.Drawing.Point(139, 441);
+            this.txtNationOfCoach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNationOfCoach.Name = "txtNationOfCoach";
-            this.txtNationOfCoach.Size = new System.Drawing.Size(226, 24);
+            this.txtNationOfCoach.Size = new System.Drawing.Size(300, 28);
             this.txtNationOfCoach.TabIndex = 63;
             // 
             // bunifuCustomLabel2
@@ -831,10 +830,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(22, 364);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(29, 448);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(55, 18);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(69, 24);
             this.bunifuCustomLabel2.TabIndex = 62;
             this.bunifuCustomLabel2.Text = "Nation:";
             // 
@@ -848,10 +846,10 @@
             this.dtpBirthdayCoach.ForeColor = System.Drawing.Color.SeaGreen;
             this.dtpBirthdayCoach.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpBirthdayCoach.FormatCustom = null;
-            this.dtpBirthdayCoach.Location = new System.Drawing.Point(190, 210);
-            this.dtpBirthdayCoach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpBirthdayCoach.Location = new System.Drawing.Point(253, 258);
+            this.dtpBirthdayCoach.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dtpBirthdayCoach.Name = "dtpBirthdayCoach";
-            this.dtpBirthdayCoach.Size = new System.Drawing.Size(245, 50);
+            this.dtpBirthdayCoach.Size = new System.Drawing.Size(327, 62);
             this.dtpBirthdayCoach.TabIndex = 61;
             this.dtpBirthdayCoach.Value = new System.DateTime(2017, 5, 1, 10, 35, 47, 69);
             // 
@@ -862,10 +860,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(188, 178);
-            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(251, 219);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(69, 18);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(87, 24);
             this.bunifuCustomLabel5.TabIndex = 60;
             this.bunifuCustomLabel5.Text = "Birthday: ";
             // 
@@ -876,10 +873,10 @@
             this.bunifuTransition.SetDecoration(this.txtCoachNameInsert, BunifuAnimatorNS.DecorationType.None);
             this.txtCoachNameInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCoachNameInsert.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtCoachNameInsert.Location = new System.Drawing.Point(190, 127);
-            this.txtCoachNameInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCoachNameInsert.Location = new System.Drawing.Point(253, 156);
+            this.txtCoachNameInsert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCoachNameInsert.Name = "txtCoachNameInsert";
-            this.txtCoachNameInsert.Size = new System.Drawing.Size(246, 24);
+            this.txtCoachNameInsert.Size = new System.Drawing.Size(327, 28);
             this.txtCoachNameInsert.TabIndex = 59;
             // 
             // bunifuCustomLabel8
@@ -889,10 +886,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(188, 95);
-            this.bunifuCustomLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(251, 117);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(52, 18);
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(66, 24);
             this.bunifuCustomLabel8.TabIndex = 58;
             this.bunifuCustomLabel8.Text = "Name:";
             // 
@@ -901,10 +897,10 @@
             this.picCoach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.picCoach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuTransition.SetDecoration(this.picCoach, BunifuAnimatorNS.DecorationType.None);
-            this.picCoach.Location = new System.Drawing.Point(19, 67);
-            this.picCoach.Margin = new System.Windows.Forms.Padding(2);
+            this.picCoach.Location = new System.Drawing.Point(25, 82);
+            this.picCoach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCoach.Name = "picCoach";
-            this.picCoach.Size = new System.Drawing.Size(161, 175);
+            this.picCoach.Size = new System.Drawing.Size(215, 215);
             this.picCoach.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCoach.TabIndex = 57;
             this.picCoach.TabStop = false;
@@ -914,11 +910,11 @@
             this.tabPagePlayer.Controls.Add(this.pnlAddNewPlayer);
             this.bunifuTransition.SetDecoration(this.tabPagePlayer, BunifuAnimatorNS.DecorationType.None);
             this.tabPagePlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPagePlayer.Location = new System.Drawing.Point(4, 26);
-            this.tabPagePlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPagePlayer.Location = new System.Drawing.Point(4, 29);
+            this.tabPagePlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPagePlayer.Name = "tabPagePlayer";
-            this.tabPagePlayer.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPagePlayer.Size = new System.Drawing.Size(592, 517);
+            this.tabPagePlayer.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPagePlayer.Size = new System.Drawing.Size(792, 640);
             this.tabPagePlayer.TabIndex = 1;
             this.tabPagePlayer.Text = "Add Players";
             this.tabPagePlayer.UseVisualStyleBackColor = true;
@@ -936,7 +932,7 @@
             this.pnlAddNewPlayer.Controls.Add(this.bunifuCustomLabel9);
             this.pnlAddNewPlayer.Controls.Add(this.bunifuCustomLabel10);
             this.pnlAddNewPlayer.Controls.Add(this.bunifuCustomLabel11);
-            this.pnlAddNewPlayer.Controls.Add(this.txtClub);
+            this.pnlAddNewPlayer.Controls.Add(this.txtClubplayer);
             this.pnlAddNewPlayer.Controls.Add(this.bunifuCustomLabel12);
             this.pnlAddNewPlayer.Controls.Add(this.txtNationOfPlayer);
             this.pnlAddNewPlayer.Controls.Add(this.bunifuCustomLabel13);
@@ -951,11 +947,11 @@
             this.pnlAddNewPlayer.GradientBottomRight = System.Drawing.Color.White;
             this.pnlAddNewPlayer.GradientTopLeft = System.Drawing.Color.White;
             this.pnlAddNewPlayer.GradientTopRight = System.Drawing.Color.White;
-            this.pnlAddNewPlayer.Location = new System.Drawing.Point(2, 2);
-            this.pnlAddNewPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlAddNewPlayer.Location = new System.Drawing.Point(3, 2);
+            this.pnlAddNewPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAddNewPlayer.Name = "pnlAddNewPlayer";
             this.pnlAddNewPlayer.Quality = 10;
-            this.pnlAddNewPlayer.Size = new System.Drawing.Size(588, 513);
+            this.pnlAddNewPlayer.Size = new System.Drawing.Size(786, 636);
             this.pnlAddNewPlayer.TabIndex = 13;
             // 
             // cmbRole
@@ -964,10 +960,10 @@
             this.cmbRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRole.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Location = new System.Drawing.Point(100, 288);
-            this.cmbRole.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbRole.Location = new System.Drawing.Point(133, 368);
+            this.cmbRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(204, 25);
+            this.cmbRole.Size = new System.Drawing.Size(306, 30);
             this.cmbRole.TabIndex = 54;
             // 
             // btnCancelAddPlayer
@@ -980,6 +976,7 @@
             this.btnCancelAddPlayer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition.SetDecoration(this.btnCancelAddPlayer, BunifuAnimatorNS.DecorationType.None);
             this.btnCancelAddPlayer.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCancelAddPlayer.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelAddPlayer.Iconcolor = System.Drawing.Color.SeaGreen;
             this.btnCancelAddPlayer.Iconimage = null;
             this.btnCancelAddPlayer.Iconimage_right = null;
@@ -992,14 +989,14 @@
             this.btnCancelAddPlayer.IconVisible = false;
             this.btnCancelAddPlayer.IconZoom = 90D;
             this.btnCancelAddPlayer.IsTab = false;
-            this.btnCancelAddPlayer.Location = new System.Drawing.Point(227, 408);
-            this.btnCancelAddPlayer.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.btnCancelAddPlayer.Location = new System.Drawing.Point(303, 502);
+            this.btnCancelAddPlayer.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnCancelAddPlayer.Name = "btnCancelAddPlayer";
             this.btnCancelAddPlayer.Normalcolor = System.Drawing.Color.SeaGreen;
             this.btnCancelAddPlayer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCancelAddPlayer.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCancelAddPlayer.selected = true;
-            this.btnCancelAddPlayer.Size = new System.Drawing.Size(175, 50);
+            this.btnCancelAddPlayer.Size = new System.Drawing.Size(233, 62);
             this.btnCancelAddPlayer.TabIndex = 53;
             this.btnCancelAddPlayer.Text = "Cancel";
             this.btnCancelAddPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1026,10 +1023,10 @@
             this.btnChoosePlayerImage.IdleFillColor = System.Drawing.Color.White;
             this.btnChoosePlayerImage.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnChoosePlayerImage.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnChoosePlayerImage.Location = new System.Drawing.Point(27, 190);
-            this.btnChoosePlayerImage.Margin = new System.Windows.Forms.Padding(4);
+            this.btnChoosePlayerImage.Location = new System.Drawing.Point(36, 234);
+            this.btnChoosePlayerImage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnChoosePlayerImage.Name = "btnChoosePlayerImage";
-            this.btnChoosePlayerImage.Size = new System.Drawing.Size(134, 36);
+            this.btnChoosePlayerImage.Size = new System.Drawing.Size(179, 44);
             this.btnChoosePlayerImage.TabIndex = 52;
             this.btnChoosePlayerImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnChoosePlayerImage.Click += new System.EventHandler(this.btnChoosePlayerImage_Click);
@@ -1040,10 +1037,10 @@
             this.cmbGenderPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGenderPlayer.ForeColor = System.Drawing.Color.SeaGreen;
             this.cmbGenderPlayer.FormattingEnabled = true;
-            this.cmbGenderPlayer.Location = new System.Drawing.Point(100, 344);
-            this.cmbGenderPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbGenderPlayer.Location = new System.Drawing.Point(133, 427);
+            this.cmbGenderPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbGenderPlayer.Name = "cmbGenderPlayer";
-            this.cmbGenderPlayer.Size = new System.Drawing.Size(77, 25);
+            this.cmbGenderPlayer.Size = new System.Drawing.Size(101, 30);
             this.cmbGenderPlayer.TabIndex = 42;
             // 
             // btnSaveNewPlayer
@@ -1068,19 +1065,20 @@
             this.btnSaveNewPlayer.IconVisible = false;
             this.btnSaveNewPlayer.IconZoom = 90D;
             this.btnSaveNewPlayer.IsTab = false;
-            this.btnSaveNewPlayer.Location = new System.Drawing.Point(17, 408);
-            this.btnSaveNewPlayer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSaveNewPlayer.Location = new System.Drawing.Point(23, 502);
+            this.btnSaveNewPlayer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSaveNewPlayer.Name = "btnSaveNewPlayer";
             this.btnSaveNewPlayer.Normalcolor = System.Drawing.Color.SeaGreen;
             this.btnSaveNewPlayer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSaveNewPlayer.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSaveNewPlayer.selected = true;
-            this.btnSaveNewPlayer.Size = new System.Drawing.Size(199, 50);
+            this.btnSaveNewPlayer.Size = new System.Drawing.Size(265, 62);
             this.btnSaveNewPlayer.TabIndex = 12;
             this.btnSaveNewPlayer.Text = "Save New Player";
             this.btnSaveNewPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveNewPlayer.Textcolor = System.Drawing.Color.White;
-            this.btnSaveNewPlayer.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveNewPlayer.TextFont = new System.Drawing.Font("Source Sans Pro Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveNewPlayer.Click += new System.EventHandler(this.btnSaveNewPlayer_Click);
             // 
             // txtKitnum
             // 
@@ -1088,10 +1086,10 @@
             this.bunifuTransition.SetDecoration(this.txtKitnum, BunifuAnimatorNS.DecorationType.None);
             this.txtKitnum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKitnum.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtKitnum.Location = new System.Drawing.Point(287, 344);
-            this.txtKitnum.Margin = new System.Windows.Forms.Padding(2);
+            this.txtKitnum.Location = new System.Drawing.Point(381, 432);
+            this.txtKitnum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKitnum.Name = "txtKitnum";
-            this.txtKitnum.Size = new System.Drawing.Size(77, 23);
+            this.txtKitnum.Size = new System.Drawing.Size(101, 27);
             this.txtKitnum.TabIndex = 41;
             // 
             // bunifuCustomLabel9
@@ -1100,10 +1098,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel9, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(211, 349);
-            this.bunifuCustomLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(281, 430);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(58, 18);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(73, 24);
             this.bunifuCustomLabel9.TabIndex = 40;
             this.bunifuCustomLabel9.Text = "Kitnum:";
             // 
@@ -1113,10 +1110,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel10, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(22, 352);
-            this.bunifuCustomLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(29, 433);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(61, 18);
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(79, 24);
             this.bunifuCustomLabel10.TabIndex = 36;
             this.bunifuCustomLabel10.Text = "Gender:";
             // 
@@ -1126,24 +1122,23 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel11, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(22, 296);
-            this.bunifuCustomLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(29, 375);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(43, 18);
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(54, 24);
             this.bunifuCustomLabel11.TabIndex = 34;
             this.bunifuCustomLabel11.Text = "Role:";
             // 
-            // txtClub
+            // txtClubplayer
             // 
-            this.txtClub.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTransition.SetDecoration(this.txtClub, BunifuAnimatorNS.DecorationType.None);
-            this.txtClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClub.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtClub.Location = new System.Drawing.Point(100, 243);
-            this.txtClub.Margin = new System.Windows.Forms.Padding(2);
-            this.txtClub.Name = "txtClub";
-            this.txtClub.Size = new System.Drawing.Size(204, 23);
-            this.txtClub.TabIndex = 29;
+            this.txtClubplayer.BorderColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTransition.SetDecoration(this.txtClubplayer, BunifuAnimatorNS.DecorationType.None);
+            this.txtClubplayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClubplayer.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtClubplayer.Location = new System.Drawing.Point(133, 312);
+            this.txtClubplayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClubplayer.Name = "txtClubplayer";
+            this.txtClubplayer.Size = new System.Drawing.Size(306, 27);
+            this.txtClubplayer.TabIndex = 29;
             // 
             // bunifuCustomLabel12
             // 
@@ -1151,10 +1146,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel12, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(22, 245);
-            this.bunifuCustomLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(29, 313);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
-            this.bunifuCustomLabel12.Size = new System.Drawing.Size(42, 18);
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(54, 24);
             this.bunifuCustomLabel12.TabIndex = 28;
             this.bunifuCustomLabel12.Text = "Club:";
             // 
@@ -1164,10 +1158,10 @@
             this.bunifuTransition.SetDecoration(this.txtNationOfPlayer, BunifuAnimatorNS.DecorationType.None);
             this.txtNationOfPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNationOfPlayer.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtNationOfPlayer.Location = new System.Drawing.Point(201, 200);
-            this.txtNationOfPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNationOfPlayer.Location = new System.Drawing.Point(268, 257);
+            this.txtNationOfPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNationOfPlayer.Name = "txtNationOfPlayer";
-            this.txtNationOfPlayer.Size = new System.Drawing.Size(229, 23);
+            this.txtNationOfPlayer.Size = new System.Drawing.Size(268, 27);
             this.txtNationOfPlayer.TabIndex = 27;
             // 
             // bunifuCustomLabel13
@@ -1176,10 +1170,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel13, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(199, 166);
-            this.bunifuCustomLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(265, 215);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
-            this.bunifuCustomLabel13.Size = new System.Drawing.Size(55, 18);
+            this.bunifuCustomLabel13.Size = new System.Drawing.Size(69, 24);
             this.bunifuCustomLabel13.TabIndex = 26;
             this.bunifuCustomLabel13.Text = "Nation:";
             // 
@@ -1192,10 +1185,10 @@
             this.dtpBirthdayPlayer.ForeColor = System.Drawing.Color.SeaGreen;
             this.dtpBirthdayPlayer.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpBirthdayPlayer.FormatCustom = null;
-            this.dtpBirthdayPlayer.Location = new System.Drawing.Point(201, 112);
-            this.dtpBirthdayPlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpBirthdayPlayer.Location = new System.Drawing.Point(268, 129);
+            this.dtpBirthdayPlayer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dtpBirthdayPlayer.Name = "dtpBirthdayPlayer";
-            this.dtpBirthdayPlayer.Size = new System.Drawing.Size(225, 41);
+            this.dtpBirthdayPlayer.Size = new System.Drawing.Size(300, 70);
             this.dtpBirthdayPlayer.TabIndex = 25;
             this.dtpBirthdayPlayer.Value = new System.DateTime(2017, 5, 1, 10, 35, 47, 69);
             // 
@@ -1205,10 +1198,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel14, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel14.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel14.Location = new System.Drawing.Point(199, 80);
-            this.bunifuCustomLabel14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(265, 98);
             this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
-            this.bunifuCustomLabel14.Size = new System.Drawing.Size(69, 18);
+            this.bunifuCustomLabel14.Size = new System.Drawing.Size(87, 24);
             this.bunifuCustomLabel14.TabIndex = 24;
             this.bunifuCustomLabel14.Text = "Birthday: ";
             // 
@@ -1218,10 +1210,10 @@
             this.bunifuTransition.SetDecoration(this.txtPlayerName, BunifuAnimatorNS.DecorationType.None);
             this.txtPlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlayerName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtPlayerName.Location = new System.Drawing.Point(201, 41);
-            this.txtPlayerName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPlayerName.Location = new System.Drawing.Point(268, 50);
+            this.txtPlayerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPlayerName.Name = "txtPlayerName";
-            this.txtPlayerName.Size = new System.Drawing.Size(226, 23);
+            this.txtPlayerName.Size = new System.Drawing.Size(300, 27);
             this.txtPlayerName.TabIndex = 23;
             // 
             // bunifuCustomLabel15
@@ -1230,10 +1222,9 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel15, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel15.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel15.Location = new System.Drawing.Point(199, 9);
-            this.bunifuCustomLabel15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel15.Location = new System.Drawing.Point(265, 11);
             this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
-            this.bunifuCustomLabel15.Size = new System.Drawing.Size(52, 18);
+            this.bunifuCustomLabel15.Size = new System.Drawing.Size(66, 24);
             this.bunifuCustomLabel15.TabIndex = 22;
             this.bunifuCustomLabel15.Text = "Name:";
             // 
@@ -1241,10 +1232,10 @@
             // 
             this.picPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuTransition.SetDecoration(this.picPlayer, BunifuAnimatorNS.DecorationType.None);
-            this.picPlayer.Location = new System.Drawing.Point(17, 9);
-            this.picPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.picPlayer.Location = new System.Drawing.Point(23, 11);
+            this.picPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picPlayer.Name = "picPlayer";
-            this.picPlayer.Size = new System.Drawing.Size(161, 175);
+            this.picPlayer.Size = new System.Drawing.Size(215, 215);
             this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPlayer.TabIndex = 14;
             this.picPlayer.TabStop = false;
@@ -1279,16 +1270,16 @@
             // 
             // frmRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1042, 546);
+            this.ClientSize = new System.Drawing.Size(1789, 672);
             this.Controls.Add(this.panelAddInfor);
             this.Controls.Add(this.grbTeamPlayer);
             this.Controls.Add(this.pnlRegisterContent);
             this.Controls.Add(this.grbClubInfor);
             this.bunifuTransition.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmRegister";
@@ -1371,7 +1362,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtClub;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtClubplayer;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtNationOfPlayer;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SourceCode
 {
-    public partial class frmViewCoachInfor : Form
+    public partial class frmAddCoach : Form
     {
-        public frmViewCoachInfor()
+        public frmAddCoach()
         {
             InitializeComponent();
         }
@@ -20,19 +20,11 @@ namespace SourceCode
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmClub team = new frmClub();
-            team.ShowDialog();
+            frmRegister register = new frmRegister();
+            register.ShowDialog();
             this.Close();
         }
 
-        private void frmViewCoachInfor_Load(object sender, EventArgs e)
-        {
-            btnSaveCoachInfor.Visible = false;
-        }
-
-        private void btnUpdateCoachInfor_Click(object sender, EventArgs e)
-        {
-            btnSaveCoachInfor.Visible = true;
-        }
+        
     }
 }
