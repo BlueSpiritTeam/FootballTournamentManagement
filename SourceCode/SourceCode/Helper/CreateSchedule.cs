@@ -48,7 +48,7 @@ namespace SourceCode.Helper
             int number_clubs = list_clubs.Count; // the number of clubs
 
 
-            if (number_clubs < 6)
+            if (number_clubs < 4)
                 return null;
 
 
@@ -68,11 +68,11 @@ namespace SourceCode.Helper
             int match_id = 0;
 
 
-            if (number_clubs % 2 != 0) // case odd number
+            if (number_clubs % 2 == 0) // case even number
             {
                 for (int i = 0; i < round; i++)// rounds
                 {
-                    for (int j = 0; j < number_clubs - 1; j += 2)
+                    for (int j = 0; j < number_clubs ; j += 2)
                     {
                         match_id++;
                         string clubA = list_id_club[j];
@@ -92,10 +92,12 @@ namespace SourceCode.Helper
             else
             {
 
-                for (int i = 0; i < round; i++)// case even number
+                for (int i = 0; i < round; i++)// case odd number
                 {
                     for (int j = 0; j < number_clubs; j += 2)
                     {
+                        if (j + 1 >= number_clubs)
+                            break;
                         match_id++;
                         string clubA = list_id_club[j];
                         string clubB = list_id_club[j + 1];

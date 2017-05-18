@@ -96,5 +96,16 @@ namespace SourceCode.DAO
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             return data;
         }
+
+
+        public bool check_belongto_aclub(string playerid, string clubid)
+        {
+            string query = "exec check_belong_to_club @PlayerID , @ClubID";
+
+            int result = (int)DataProvider.Instance.ExcuteScalar(query, new object[] { playerid, clubid });
+
+            return result > 0;
+
+        }
     }
 }

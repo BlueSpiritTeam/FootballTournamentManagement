@@ -53,5 +53,32 @@ namespace SourceCode.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { player.Player_id, player.Role_id, player.Kitnum });
             return result > 0;
         }
+
+        public DataTable LoadPlayersByClubID(string a, string b)
+        {
+            string query = "exec LoadPlayerBelongToMatch @ClubID_A , @ClubID_B";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { a, b });
+            return data;
+        }
+
+        public bool UpdateGoal(string id)
+        {
+            string query = "exec UpdateGoalPlayer @PlayerID";
+
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { id });
+
+            return result > 0;
+        }
+
+        public bool UpdateAssistance(string id)
+        {
+            string query = "exec UpdateAssistance @PlayerID";
+
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { id });
+
+            return result > 0;
+        }
+
+        
     }
 }

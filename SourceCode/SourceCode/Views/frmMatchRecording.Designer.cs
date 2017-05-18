@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMatchRecording));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlFooter = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnFinish = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgv_match = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -47,8 +47,8 @@
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lb_homeclub = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lbA = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lbB = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lb_awayclub = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btn_score = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel_detailrecord = new System.Windows.Forms.Panel();
@@ -61,10 +61,8 @@
             this.comboBox_assitance = new System.Windows.Forms.ComboBox();
             this.comboBox_score = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.btn_finishrecord = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.typeGoal = new SourceCode.TypeGoal();
             this.typeGoalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.typeGoalTableAdapter = new SourceCode.TypeGoalTableAdapters.TypeGoalTableAdapter();
+            this.btn_finishrecord = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_match)).BeginInit();
             this.pnlTitle.SuspendLayout();
@@ -72,7 +70,6 @@
             this.contextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_score)).BeginInit();
             this.panel_detailrecord.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typeGoal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeGoalBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,23 +120,23 @@
             this.dgv_match.AllowUserToAddRows = false;
             this.dgv_match.AllowUserToDeleteRows = false;
             this.dgv_match.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_match.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_match.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_match.BackgroundColor = System.Drawing.Color.White;
             this.dgv_match.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_match.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_match.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_match.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_match.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_match.DoubleBuffered = true;
             this.dgv_match.EnableHeadersVisualStyles = false;
@@ -152,9 +149,9 @@
             this.dgv_match.Name = "dgv_match";
             this.dgv_match.ReadOnly = true;
             this.dgv_match.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgv_match.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgv_match.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_match.RowTemplate.Height = 24;
             this.dgv_match.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_match.Size = new System.Drawing.Size(693, 350);
@@ -310,42 +307,42 @@
             this.lb_homeclub.Text = "Text";
             this.lb_homeclub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // bunifuCustomLabel3
+            // lbA
             // 
-            this.bunifuCustomLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.BackColor = System.Drawing.Color.Crimson;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(852, 98);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(35, 37);
-            this.bunifuCustomLabel3.TabIndex = 56;
-            this.bunifuCustomLabel3.Text = "0";
+            this.lbA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbA.AutoSize = true;
+            this.lbA.BackColor = System.Drawing.Color.Crimson;
+            this.lbA.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbA.ForeColor = System.Drawing.Color.White;
+            this.lbA.Location = new System.Drawing.Point(852, 98);
+            this.lbA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbA.Name = "lbA";
+            this.lbA.Size = new System.Drawing.Size(35, 37);
+            this.lbA.TabIndex = 56;
+            this.lbA.Text = "0";
             // 
-            // bunifuCustomLabel4
+            // lbB
             // 
-            this.bunifuCustomLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.BackColor = System.Drawing.Color.Crimson;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(931, 98);
-            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(35, 37);
-            this.bunifuCustomLabel4.TabIndex = 56;
-            this.bunifuCustomLabel4.Text = "0";
+            this.lbB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbB.AutoSize = true;
+            this.lbB.BackColor = System.Drawing.Color.Crimson;
+            this.lbB.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbB.ForeColor = System.Drawing.Color.White;
+            this.lbB.Location = new System.Drawing.Point(931, 98);
+            this.lbB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbB.Name = "lbB";
+            this.lbB.Size = new System.Drawing.Size(35, 37);
+            this.lbB.TabIndex = 56;
+            this.lbB.Text = "0";
             // 
             // lb_awayclub
             // 
-            this.lb_awayclub.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lb_awayclub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_awayclub.AutoSize = true;
             this.lb_awayclub.BackColor = System.Drawing.Color.SeaGreen;
             this.lb_awayclub.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_awayclub.ForeColor = System.Drawing.Color.White;
-            this.lb_awayclub.Location = new System.Drawing.Point(1037, 161);
+            this.lb_awayclub.Location = new System.Drawing.Point(1023, 161);
             this.lb_awayclub.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_awayclub.Name = "lb_awayclub";
             this.lb_awayclub.Size = new System.Drawing.Size(78, 37);
@@ -499,8 +496,7 @@
             // 
             // comboBox_typegoal
             // 
-            this.comboBox_typegoal.DataSource = this.typeGoalBindingSource;
-            this.comboBox_typegoal.DisplayMember = "TypeGoalName";
+            this.comboBox_typegoal.DisplayMember = "TypeGoalID";
             this.comboBox_typegoal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_typegoal.FormattingEnabled = true;
             this.comboBox_typegoal.Location = new System.Drawing.Point(222, 129);
@@ -551,7 +547,7 @@
             this.btn_finishrecord.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btn_finishrecord.BackColor = System.Drawing.SystemColors.Control;
             this.btn_finishrecord.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_finishrecord.BackgroundImage")));
-            this.btn_finishrecord.ButtonText = "Finish";
+            this.btn_finishrecord.ButtonText = "Finish Match";
             this.btn_finishrecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_finishrecord.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_finishrecord.ForeColor = System.Drawing.Color.SeaGreen;
@@ -568,25 +564,11 @@
             this.btn_finishrecord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_finishrecord.Click += new System.EventHandler(this.btn_finishrecord_Click);
             // 
-            // typeGoal
-            // 
-            this.typeGoal.DataSetName = "TypeGoal";
-            this.typeGoal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // typeGoalBindingSource
-            // 
-            this.typeGoalBindingSource.DataMember = "TypeGoal";
-            this.typeGoalBindingSource.DataSource = this.typeGoal;
-            // 
-            // typeGoalTableAdapter
-            // 
-            this.typeGoalTableAdapter.ClearBeforeFill = true;
-            // 
             // frmMatchRecording
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1128, 538);
+            this.ClientSize = new System.Drawing.Size(1045, 538);
             this.Controls.Add(this.btn_finishrecord);
             this.Controls.Add(this.panel_detailrecord);
             this.Controls.Add(this.btn_score);
@@ -594,8 +576,8 @@
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.lb_awayclub);
             this.Controls.Add(this.lb_homeclub);
-            this.Controls.Add(this.bunifuCustomLabel4);
-            this.Controls.Add(this.bunifuCustomLabel3);
+            this.Controls.Add(this.lbB);
+            this.Controls.Add(this.lbA);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.bunifuCustomLabel12);
             this.Controls.Add(this.pnlFooter);
@@ -616,7 +598,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_score)).EndInit();
             this.panel_detailrecord.ResumeLayout(false);
             this.panel_detailrecord.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typeGoal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.typeGoalBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -639,8 +620,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
         private Bunifu.Framework.UI.BunifuCustomLabel lb_homeclub;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbA;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbB;
         private Bunifu.Framework.UI.BunifuCustomLabel lb_awayclub;
         private Bunifu.Framework.UI.BunifuImageButton btn_score;
         private System.Windows.Forms.Panel panel_detailrecord;
@@ -654,8 +635,6 @@
         private Bunifu.Framework.UI.BunifuCheckbox checkbox_assistance;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private System.Windows.Forms.ComboBox comboBox_typegoal;
-        private TypeGoal typeGoal;
         private System.Windows.Forms.BindingSource typeGoalBindingSource;
-        private TypeGoalTableAdapters.TypeGoalTableAdapter typeGoalTableAdapter;
     }
 }

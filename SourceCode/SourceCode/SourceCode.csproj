@@ -99,14 +99,6 @@
     <Compile Include="DTO\RuleDTO.cs" />
     <Compile Include="DTO\TypeGoalDTO.cs" />
     <Compile Include="Helper\CreateSchedule.cs" />
-    <Compile Include="TypeGoal.cs">
-      <DependentUpon>TypeGoal.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="TypeGoal.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TypeGoal.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Views\frmChangeRules.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,17 +265,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TypeGoal.xsc">
-      <DependentUpon>TypeGoal.xsd</DependentUpon>
-    </None>
-    <None Include="TypeGoal.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TypeGoal.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TypeGoal.xss">
-      <DependentUpon>TypeGoal.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -14,22 +14,22 @@ namespace SourceCode.Views
 {
     public partial class frmMatchRecording : Form
     {
-
+        private static int A = 0;
+        private static int B = 0;
+        private static MatchDTO match = new MatchDTO();
+        private static List<TypeGoalDTO> typegoal = TypeGoalDAO.Instance.LoadTypeGoal();
         private List<MatchDTO> list = new List<MatchDTO>();
         public frmMatchRecording()
         {
             InitializeComponent();
             if (list != null)
                 LoadMatches();
+            LoadTypeGoalToComboBox();
         }
 
-        private void btnFinish_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmTournament tournament = new frmTournament();
-            tournament.ShowDialog();
-            this.Close();
-        }
+       
+
+        #region methods
 
         private void LoadMatches()
         {
@@ -64,39 +64,37 @@ namespace SourceCode.Views
             dgv_match.ClearSelection();
         }
 
-        private void dgv_match_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        private DataTable list_players_BelongToMach(string a, string b)
         {
-            if(e.Button==MouseButtons.Right)
-            {
-                MatchDTO match = new MatchDTO();
-                match = list[dgv_match.CurrentCell.RowIndex];
-                this.contextMenuStrip.Show(this.dgv_match, e.Location);
-                this.contextMenuStrip.Show(Cursor.Position);
-            }
+            return PlayerDAO.Instance.LoadPlayersByClubID(a, b);
         }
 
-        private void recordThisMatchToolStripMenuItem_Click(object sender, EventArgs e)
+        private void LoadPlayerToComboBox(string a, string b)
         {
-            MatchDTO match = list[dgv_match.CurrentCell.RowIndex];
-            if (check_MatchRecordAlready(match)==true)
-            {
-                if (MessageBox.Show("This match was recorded. Do you want to do it again?", "Notification", MessageBoxButtons.YesNo) == DialogResult.No)
-                    return;
-            }
-            frmMatchRecording.ActiveForm.Width = 1126;
-            frmMatchRecording.ActiveForm.Update();
-                    
-            lb_homeclub.Text = match.Home_club_name;
-            lb_awayclub.Text = match.Guest_club_name;
+            DataTable data_A = list_players_BelongToMach(a,b);
+            DataTable data_B = list_players_BelongToMach(a,b);
 
-            LoadTypeGoalToComboBox();
+            comboBox_score.DataSource = data_A.DefaultView;
+            comboBox_assitance.DataSource = data_B.DefaultView;
 
-            dgv_match.Enabled = false;
-            pnlFooter.Visible = false;
+            comboBox_score.DisplayMember = "Name";
+            comboBox_assitance.DisplayMember = "Name";
+            comboBox_score.ValueMember = "ID";
+            comboBox_assitance.ValueMember = "ID";
+
         }
 
-        
+        #endregion
 
+        #region events
+
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmTournament tournament = new frmTournament();
+            tournament.ShowDialog();
+            this.Close();
+        }
         private void btn_score_Click(object sender, EventArgs e)
         {
             panel_detailrecord.Visible = true;
@@ -107,12 +105,30 @@ namespace SourceCode.Views
         {
             btn_finishrecord.Visible = true;
             panel_detailrecord.Visible = false;
+
         }
 
         private void btn_save_Click(object sender, EventArgs e)
         {
+            
+            PlayerDAO.Instance.UpdateGoal(comboBox_score.SelectedValue.ToString());
+            if (checkbox_assistance.Checked == true)
+                PlayerDAO.Instance.UpdateAssistance(comboBox_assitance.SelectedValue.ToString());
+
+            if (HumanDAO.Instance.check_belongto_aclub(comboBox_score.SelectedValue.ToString(), match.Home_club_name.ToString()) == true)
+            {
+                A++;
+                lbA.Text = A.ToString();
+            }
+            else
+            {
+                B++;
+                lbB.Text = B.ToString();
+            }
+
             btn_finishrecord.Visible = true;
             panel_detailrecord.Visible = false;
+            checkbox_assistance.Checked = false;
         }
 
         private void checkbox_assistance_OnChange(object sender, EventArgs e)
@@ -125,19 +141,27 @@ namespace SourceCode.Views
 
         private void btn_finishrecord_Click(object sender, EventArgs e)
         {
+            MatchRecordDTO record = new MatchRecordDTO(match.Match_id, lbA.Text + ":" + lbB.Text);
+
+            if (MatchRecordDAO.Instance.Insert_A_MatchRecord(record))
+            {
+
+                MessageBox.Show("Done");
+            }
+
             dgv_match.Enabled = true;
             pnlFooter.Visible = true;
         }
 
-        private void LoadPlayersToComboBox(ComboBox cb)
-        {
-
-        }
-
         private void LoadTypeGoalToComboBox()
         {
-            // TODO: This line of code loads data into the 'typeGoal._TypeGoal' table. You can move, or remove it, as needed.
-            this.typeGoalTableAdapter.Fill(this.typeGoal._TypeGoal);
+            foreach(TypeGoalDTO item in typegoal)
+            {
+                comboBox_typegoal.Items.Add(item);
+            }
+            comboBox_typegoal.DisplayMember = "type_name";
+            comboBox_typegoal.ValueMember = "type_id";
+            comboBox_typegoal.SelectedIndex = 0;
         }
 
         private bool check_MatchRecordAlready(MatchDTO match)
@@ -149,7 +173,41 @@ namespace SourceCode.Views
 
         private void frmMatchRecording_Load(object sender, EventArgs e)
         {
-            
+
         }
+
+        private void dgv_match_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                MatchDTO match = new MatchDTO();
+                match = list[dgv_match.CurrentCell.RowIndex];
+                this.contextMenuStrip.Show(this.dgv_match, e.Location);
+                this.contextMenuStrip.Show(Cursor.Position);
+            }
+        }
+
+        private void recordThisMatchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            match = list[dgv_match.CurrentCell.RowIndex];
+            if (check_MatchRecordAlready(match) == true)
+            {
+                if (MessageBox.Show("This match was recorded. Do you want to do it again?", "Notification", MessageBoxButtons.YesNo) == DialogResult.No)
+                    return;
+            }
+
+            frmMatchRecording.ActiveForm.Width = 1126;
+            frmMatchRecording.ActiveForm.Update();
+
+            lb_homeclub.Text = match.Home_club_name;
+            lb_awayclub.Text = match.Guest_club_name;
+            LoadPlayerToComboBox(match.Home_club_name, match.Guest_club_name);
+
+            dgv_match.Enabled = false;
+            pnlFooter.Visible = false;
+
+
+        }
+        #endregion
     }
 }
