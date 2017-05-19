@@ -86,7 +86,21 @@ namespace SourceCode
         private void UpdateRule()
         {
             RuleDTO temp = new RuleDTO((int)max_age.Value, (int)min_age.Value, (int)max_player.Value, (int)min_player.Value, (int)win_score.Value, (int)draw_score.Value, (int)lose_score.Value);
-            if(RuleDAO.Instance.UpdateRule(temp))
+            if ((int)max_age.Value < (int)min_age.Value)
+            {
+                MessageBox.Show("Max age must be greater than min age!");
+                this.max_age.Select();
+                this.max_age.Focus();
+            }
+            else
+            if ((int)max_player.Value < (int)min_player.Value)
+            {
+                MessageBox.Show("Number of max players must be greater than min players!");
+                this.max_player.Select();
+                this.max_player.Focus();
+            }
+            else
+            if (RuleDAO.Instance.UpdateRule(temp))
             {
                 MessageBox.Show("Done!!!");
             }
