@@ -33,7 +33,6 @@
             this.btnFinish = new Bunifu.Framework.UI.BunifuFlatButton();
             this.picTournament = new System.Windows.Forms.PictureBox();
             this.btnRankOfClub = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnMatchResult = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnListPlayerToScore = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnReviewMatchResult = new Bunifu.Framework.UI.BunifuTileButton();
             this.pnlTournamentContent.SuspendLayout();
@@ -118,26 +117,6 @@
             this.btnRankOfClub.TabIndex = 15;
             this.btnRankOfClub.Click += new System.EventHandler(this.btnRankOfTeam_Click);
             // 
-            // btnMatchResult
-            // 
-            this.btnMatchResult.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnMatchResult.color = System.Drawing.Color.SeaGreen;
-            this.btnMatchResult.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.btnMatchResult.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMatchResult.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMatchResult.ForeColor = System.Drawing.Color.White;
-            this.btnMatchResult.Image = ((System.Drawing.Image)(resources.GetObject("btnMatchResult.Image")));
-            this.btnMatchResult.ImagePosition = 14;
-            this.btnMatchResult.ImageZoom = 50;
-            this.btnMatchResult.LabelPosition = 30;
-            this.btnMatchResult.LabelText = "Record Match Result";
-            this.btnMatchResult.Location = new System.Drawing.Point(266, 35);
-            this.btnMatchResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnMatchResult.Name = "btnMatchResult";
-            this.btnMatchResult.Size = new System.Drawing.Size(340, 201);
-            this.btnMatchResult.TabIndex = 14;
-            this.btnMatchResult.Click += new System.EventHandler(this.btnMatchResult_Click);
-            // 
             // btnListPlayerToScore
             // 
             this.btnListPlayerToScore.BackColor = System.Drawing.Color.SeaGreen;
@@ -171,7 +150,7 @@
             this.btnReviewMatchResult.ImageZoom = 50;
             this.btnReviewMatchResult.LabelPosition = 30;
             this.btnReviewMatchResult.LabelText = "Review Match Result";
-            this.btnReviewMatchResult.Location = new System.Drawing.Point(614, 35);
+            this.btnReviewMatchResult.Location = new System.Drawing.Point(433, 35);
             this.btnReviewMatchResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReviewMatchResult.Name = "btnReviewMatchResult";
             this.btnReviewMatchResult.Size = new System.Drawing.Size(340, 201);
@@ -188,7 +167,6 @@
             this.Controls.Add(this.btnListPlayerToScore);
             this.Controls.Add(this.pnlTournamentContent);
             this.Controls.Add(this.btnRankOfClub);
-            this.Controls.Add(this.btnMatchResult);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmTournamentReport";
@@ -206,7 +184,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnFinish;
         private System.Windows.Forms.PictureBox picTournament;
         private Bunifu.Framework.UI.BunifuTileButton btnRankOfClub;
-        private Bunifu.Framework.UI.BunifuTileButton btnMatchResult;
         private Bunifu.Framework.UI.BunifuTileButton btnListPlayerToScore;
         private Bunifu.Framework.UI.BunifuTileButton btnReviewMatchResult;
     }

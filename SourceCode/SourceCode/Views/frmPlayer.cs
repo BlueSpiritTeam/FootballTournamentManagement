@@ -178,7 +178,7 @@ namespace SourceCode
                 PlayerDTO pl = new PlayerDTO(h_id, player_role, player_kitnum);
                 if (HumanDAO.Instance.UpdateHuman(hm) && PlayerDAO.Instance.UpdatePlayer(pl))
                 {
-                    MessageBox.Show("Update Human Done!!!");
+                    MessageBox.Show("Update Done!!!");
                 }
             }
             catch { }
@@ -215,8 +215,7 @@ namespace SourceCode
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            UpdatePlayer();
-            
+            UpdatePlayer();  
         }
 
         private void grbPlayerDetails_Enter(object sender, EventArgs e)

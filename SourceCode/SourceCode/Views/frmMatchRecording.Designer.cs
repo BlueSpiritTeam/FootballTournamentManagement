@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMatchRecording));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlFooter = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnFinish = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgv_match = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -61,7 +61,6 @@
             this.comboBox_assitance = new System.Windows.Forms.ComboBox();
             this.comboBox_score = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.typeGoalBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btn_finishrecord = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_match)).BeginInit();
@@ -70,7 +69,6 @@
             this.contextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_score)).BeginInit();
             this.panel_detailrecord.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typeGoalBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlFooter
@@ -82,11 +80,11 @@
             this.pnlFooter.GradientBottomRight = System.Drawing.Color.White;
             this.pnlFooter.GradientTopLeft = System.Drawing.Color.White;
             this.pnlFooter.GradientTopRight = System.Drawing.Color.White;
-            this.pnlFooter.Location = new System.Drawing.Point(-1, 487);
-            this.pnlFooter.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlFooter.Location = new System.Drawing.Point(-1, 620);
+            this.pnlFooter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Quality = 10;
-            this.pnlFooter.Size = new System.Drawing.Size(695, 50);
+            this.pnlFooter.Size = new System.Drawing.Size(924, 72);
             this.pnlFooter.TabIndex = 72;
             // 
             // btnFinish
@@ -96,7 +94,7 @@
             this.btnFinish.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnFinish.ActiveForecolor = System.Drawing.Color.White;
             this.btnFinish.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnFinish.BackColor = System.Drawing.SystemColors.Control;
+            this.btnFinish.BackColor = System.Drawing.Color.White;
             this.btnFinish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFinish.BackgroundImage")));
             this.btnFinish.ButtonText = "Finish";
             this.btnFinish.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -107,10 +105,10 @@
             this.btnFinish.IdleFillColor = System.Drawing.Color.White;
             this.btnFinish.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnFinish.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnFinish.Location = new System.Drawing.Point(262, 0);
-            this.btnFinish.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFinish.Location = new System.Drawing.Point(354, 7);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(5);
             this.btnFinish.Name = "btnFinish";
-            this.btnFinish.Size = new System.Drawing.Size(134, 49);
+            this.btnFinish.Size = new System.Drawing.Size(179, 60);
             this.btnFinish.TabIndex = 69;
             this.btnFinish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
@@ -120,57 +118,58 @@
             this.dgv_match.AllowUserToAddRows = false;
             this.dgv_match.AllowUserToDeleteRows = false;
             this.dgv_match.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_match.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_match.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_match.BackgroundColor = System.Drawing.Color.White;
             this.dgv_match.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_match.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_match.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_match.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_match.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_match.DoubleBuffered = true;
             this.dgv_match.EnableHeadersVisualStyles = false;
             this.dgv_match.GridColor = System.Drawing.Color.SeaGreen;
             this.dgv_match.HeaderBgColor = System.Drawing.Color.White;
             this.dgv_match.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgv_match.Location = new System.Drawing.Point(-1, 135);
-            this.dgv_match.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_match.Location = new System.Drawing.Point(-1, 167);
+            this.dgv_match.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_match.MultiSelect = false;
             this.dgv_match.Name = "dgv_match";
             this.dgv_match.ReadOnly = true;
             this.dgv_match.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgv_match.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgv_match.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_match.RowTemplate.Height = 24;
             this.dgv_match.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_match.Size = new System.Drawing.Size(693, 350);
+            this.dgv_match.Size = new System.Drawing.Size(924, 453);
             this.dgv_match.TabIndex = 71;
             this.dgv_match.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_match_CellMouseDown);
             // 
             // pnl_space
             // 
+            this.pnl_space.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pnl_space.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl_space.BackgroundImage")));
             this.pnl_space.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnl_space.GradientBottomLeft = System.Drawing.Color.White;
             this.pnl_space.GradientBottomRight = System.Drawing.Color.White;
             this.pnl_space.GradientTopLeft = System.Drawing.Color.White;
             this.pnl_space.GradientTopRight = System.Drawing.Color.White;
-            this.pnl_space.Location = new System.Drawing.Point(-1, 76);
-            this.pnl_space.Margin = new System.Windows.Forms.Padding(2);
+            this.pnl_space.Location = new System.Drawing.Point(0, 91);
+            this.pnl_space.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_space.Name = "pnl_space";
             this.pnl_space.Quality = 10;
-            this.pnl_space.Size = new System.Drawing.Size(695, 59);
+            this.pnl_space.Size = new System.Drawing.Size(921, 73);
             this.pnl_space.TabIndex = 70;
             // 
             // pnlTitle
@@ -179,15 +178,16 @@
             this.pnlTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTitle.Controls.Add(this.bunifuCustomLabel);
             this.pnlTitle.Controls.Add(this.picCreateSchedule);
+            this.pnlTitle.Controls.Add(this.pnl_space);
             this.pnlTitle.GradientBottomLeft = System.Drawing.Color.White;
             this.pnlTitle.GradientBottomRight = System.Drawing.Color.White;
             this.pnlTitle.GradientTopLeft = System.Drawing.Color.White;
             this.pnlTitle.GradientTopRight = System.Drawing.Color.White;
             this.pnlTitle.Location = new System.Drawing.Point(-1, -1);
-            this.pnlTitle.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTitle.Name = "pnlTitle";
             this.pnlTitle.Quality = 10;
-            this.pnlTitle.Size = new System.Drawing.Size(695, 77);
+            this.pnlTitle.Size = new System.Drawing.Size(921, 95);
             this.pnlTitle.TabIndex = 69;
             // 
             // bunifuCustomLabel
@@ -197,10 +197,9 @@
             this.bunifuCustomLabel.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel.Location = new System.Drawing.Point(185, 24);
-            this.bunifuCustomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel.Location = new System.Drawing.Point(247, 30);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
-            this.bunifuCustomLabel.Size = new System.Drawing.Size(258, 37);
+            this.bunifuCustomLabel.Size = new System.Drawing.Size(323, 46);
             this.bunifuCustomLabel.TabIndex = 56;
             this.bunifuCustomLabel.Text = "Match Recording";
             // 
@@ -208,26 +207,27 @@
             // 
             this.picCreateSchedule.BackColor = System.Drawing.Color.SeaGreen;
             this.picCreateSchedule.Image = ((System.Drawing.Image)(resources.GetObject("picCreateSchedule.Image")));
-            this.picCreateSchedule.Location = new System.Drawing.Point(101, 16);
-            this.picCreateSchedule.Margin = new System.Windows.Forms.Padding(2);
+            this.picCreateSchedule.Location = new System.Drawing.Point(135, 20);
+            this.picCreateSchedule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCreateSchedule.Name = "picCreateSchedule";
-            this.picCreateSchedule.Size = new System.Drawing.Size(38, 46);
+            this.picCreateSchedule.Size = new System.Drawing.Size(51, 57);
             this.picCreateSchedule.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCreateSchedule.TabIndex = 0;
             this.picCreateSchedule.TabStop = false;
             // 
             // contextMenuStrip
             // 
+            this.contextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.recordThisMatchToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(171, 26);
+            this.contextMenuStrip.Size = new System.Drawing.Size(198, 28);
             this.contextMenuStrip.Text = "Menu";
             // 
             // recordThisMatchToolStripMenuItem
             // 
             this.recordThisMatchToolStripMenuItem.Name = "recordThisMatchToolStripMenuItem";
-            this.recordThisMatchToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.recordThisMatchToolStripMenuItem.Size = new System.Drawing.Size(197, 24);
             this.recordThisMatchToolStripMenuItem.Text = "Record this match";
             this.recordThisMatchToolStripMenuItem.Click += new System.EventHandler(this.recordThisMatchToolStripMenuItem_Click);
             // 
@@ -238,10 +238,9 @@
             this.bunifuCustomLabel12.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(852, 24);
-            this.bunifuCustomLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(1136, 46);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
-            this.bunifuCustomLabel12.Size = new System.Drawing.Size(114, 37);
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(141, 46);
             this.bunifuCustomLabel12.TabIndex = 56;
             this.bunifuCustomLabel12.Text = "RATIO";
             // 
@@ -252,10 +251,9 @@
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(709, 98);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(945, 137);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(102, 37);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(127, 46);
             this.bunifuCustomLabel1.TabIndex = 56;
             this.bunifuCustomLabel1.Text = "Home";
             // 
@@ -266,10 +264,9 @@
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(1020, 98);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(1360, 137);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(95, 37);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(118, 46);
             this.bunifuCustomLabel2.TabIndex = 56;
             this.bunifuCustomLabel2.Text = "Away";
             // 
@@ -284,10 +281,10 @@
             this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(1832, 148);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(8);
+            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(2443, 182);
+            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(176, 130);
+            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(235, 160);
             this.bunifuMetroTextbox2.TabIndex = 73;
             this.bunifuMetroTextbox2.Text = "bunifuMetroTextbox1";
             this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -297,12 +294,11 @@
             this.lb_homeclub.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lb_homeclub.AutoSize = true;
             this.lb_homeclub.BackColor = System.Drawing.Color.SeaGreen;
-            this.lb_homeclub.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_homeclub.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_homeclub.ForeColor = System.Drawing.Color.White;
-            this.lb_homeclub.Location = new System.Drawing.Point(709, 161);
-            this.lb_homeclub.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_homeclub.Location = new System.Drawing.Point(945, 214);
             this.lb_homeclub.Name = "lb_homeclub";
-            this.lb_homeclub.Size = new System.Drawing.Size(78, 37);
+            this.lb_homeclub.Size = new System.Drawing.Size(94, 44);
             this.lb_homeclub.TabIndex = 56;
             this.lb_homeclub.Text = "Text";
             this.lb_homeclub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -314,10 +310,9 @@
             this.lbA.BackColor = System.Drawing.Color.Crimson;
             this.lbA.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbA.ForeColor = System.Drawing.Color.White;
-            this.lbA.Location = new System.Drawing.Point(852, 98);
-            this.lbA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbA.Location = new System.Drawing.Point(1136, 137);
             this.lbA.Name = "lbA";
-            this.lbA.Size = new System.Drawing.Size(35, 37);
+            this.lbA.Size = new System.Drawing.Size(42, 46);
             this.lbA.TabIndex = 56;
             this.lbA.Text = "0";
             // 
@@ -328,10 +323,9 @@
             this.lbB.BackColor = System.Drawing.Color.Crimson;
             this.lbB.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbB.ForeColor = System.Drawing.Color.White;
-            this.lbB.Location = new System.Drawing.Point(931, 98);
-            this.lbB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbB.Location = new System.Drawing.Point(1241, 137);
             this.lbB.Name = "lbB";
-            this.lbB.Size = new System.Drawing.Size(35, 37);
+            this.lbB.Size = new System.Drawing.Size(42, 46);
             this.lbB.TabIndex = 56;
             this.lbB.Text = "0";
             // 
@@ -340,12 +334,11 @@
             this.lb_awayclub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_awayclub.AutoSize = true;
             this.lb_awayclub.BackColor = System.Drawing.Color.SeaGreen;
-            this.lb_awayclub.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_awayclub.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_awayclub.ForeColor = System.Drawing.Color.White;
-            this.lb_awayclub.Location = new System.Drawing.Point(1023, 161);
-            this.lb_awayclub.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_awayclub.Location = new System.Drawing.Point(1364, 214);
             this.lb_awayclub.Name = "lb_awayclub";
-            this.lb_awayclub.Size = new System.Drawing.Size(78, 37);
+            this.lb_awayclub.Size = new System.Drawing.Size(94, 44);
             this.lb_awayclub.TabIndex = 56;
             this.lb_awayclub.Text = "Text";
             this.lb_awayclub.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -355,9 +348,10 @@
             this.btn_score.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn_score.Image = ((System.Drawing.Image)(resources.GetObject("btn_score.Image")));
             this.btn_score.ImageActive = null;
-            this.btn_score.Location = new System.Drawing.Point(871, 198);
+            this.btn_score.Location = new System.Drawing.Point(1172, 261);
+            this.btn_score.Margin = new System.Windows.Forms.Padding(4);
             this.btn_score.Name = "btn_score";
-            this.btn_score.Size = new System.Drawing.Size(71, 71);
+            this.btn_score.Size = new System.Drawing.Size(84, 70);
             this.btn_score.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_score.TabIndex = 74;
             this.btn_score.TabStop = false;
@@ -375,9 +369,11 @@
             this.panel_detailrecord.Controls.Add(this.comboBox_assitance);
             this.panel_detailrecord.Controls.Add(this.comboBox_score);
             this.panel_detailrecord.Controls.Add(this.bunifuCustomLabel5);
-            this.panel_detailrecord.Location = new System.Drawing.Point(716, 275);
+            this.panel_detailrecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_detailrecord.Location = new System.Drawing.Point(955, 330);
+            this.panel_detailrecord.Margin = new System.Windows.Forms.Padding(4);
             this.panel_detailrecord.Name = "panel_detailrecord";
-            this.panel_detailrecord.Size = new System.Drawing.Size(399, 210);
+            this.panel_detailrecord.Size = new System.Drawing.Size(532, 290);
             this.panel_detailrecord.TabIndex = 75;
             this.panel_detailrecord.Visible = false;
             // 
@@ -391,8 +387,9 @@
             this.btn_cancel.ButtonText = "Cancel";
             this.btn_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cancel.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_cancel.Font = new System.Drawing.Font("Copperplate Gothic Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_cancel.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Iconimage")));
+            this.btn_cancel.Iconimage = null;
             this.btn_cancel.Iconimage_right = null;
             this.btn_cancel.Iconimage_right_Selected = null;
             this.btn_cancel.Iconimage_Selected = null;
@@ -403,13 +400,14 @@
             this.btn_cancel.IconVisible = true;
             this.btn_cancel.IconZoom = 90D;
             this.btn_cancel.IsTab = false;
-            this.btn_cancel.Location = new System.Drawing.Point(222, 179);
+            this.btn_cancel.Location = new System.Drawing.Point(296, 236);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(5);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btn_cancel.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btn_cancel.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_cancel.selected = false;
-            this.btn_cancel.Size = new System.Drawing.Size(119, 28);
+            this.btn_cancel.Size = new System.Drawing.Size(159, 49);
             this.btn_cancel.TabIndex = 59;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -427,6 +425,7 @@
             this.btn_save.ButtonText = "Save";
             this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_save.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_save.Font = new System.Drawing.Font("Copperplate Gothic Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.Iconcolor = System.Drawing.Color.Transparent;
             this.btn_save.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_save.Iconimage")));
             this.btn_save.Iconimage_right = null;
@@ -439,13 +438,14 @@
             this.btn_save.IconVisible = true;
             this.btn_save.IconZoom = 90D;
             this.btn_save.IsTab = false;
-            this.btn_save.Location = new System.Drawing.Point(76, 179);
+            this.btn_save.Location = new System.Drawing.Point(101, 236);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(5);
             this.btn_save.Name = "btn_save";
             this.btn_save.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btn_save.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btn_save.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_save.selected = false;
-            this.btn_save.Size = new System.Drawing.Size(119, 28);
+            this.btn_save.Size = new System.Drawing.Size(159, 49);
             this.btn_save.TabIndex = 59;
             this.btn_save.Text = "Save";
             this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -455,12 +455,13 @@
             // 
             // checkbox_assistance
             // 
-            this.checkbox_assistance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.checkbox_assistance.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.checkbox_assistance.BackColor = System.Drawing.Color.SeaGreen;
+            this.checkbox_assistance.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.checkbox_assistance.Checked = false;
-            this.checkbox_assistance.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.checkbox_assistance.CheckedOnColor = System.Drawing.Color.SeaGreen;
             this.checkbox_assistance.ForeColor = System.Drawing.Color.White;
-            this.checkbox_assistance.Location = new System.Drawing.Point(185, 90);
+            this.checkbox_assistance.Location = new System.Drawing.Point(204, 101);
+            this.checkbox_assistance.Margin = new System.Windows.Forms.Padding(5);
             this.checkbox_assistance.Name = "checkbox_assistance";
             this.checkbox_assistance.Size = new System.Drawing.Size(20, 20);
             this.checkbox_assistance.TabIndex = 58;
@@ -471,57 +472,66 @@
             this.bunifuCustomLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(15, 129);
-            this.bunifuCustomLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(42, 170);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(164, 37);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(161, 32);
             this.bunifuCustomLabel7.TabIndex = 56;
-            this.bunifuCustomLabel7.Text = "Type Goal";
+            this.bunifuCustomLabel7.Text = "Type Goal: ";
             // 
             // bunifuCustomLabel6
             // 
             this.bunifuCustomLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(15, 73);
-            this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(42, 101);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(156, 37);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(154, 32);
             this.bunifuCustomLabel6.TabIndex = 56;
-            this.bunifuCustomLabel6.Text = "Assitance";
+            this.bunifuCustomLabel6.Text = "Assitance: ";
             // 
             // comboBox_typegoal
             // 
+            this.comboBox_typegoal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.comboBox_typegoal.DisplayMember = "TypeGoalID";
             this.comboBox_typegoal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_typegoal.ForeColor = System.Drawing.Color.SeaGreen;
             this.comboBox_typegoal.FormattingEnabled = true;
-            this.comboBox_typegoal.Location = new System.Drawing.Point(222, 129);
+            this.comboBox_typegoal.Location = new System.Drawing.Point(261, 169);
+            this.comboBox_typegoal.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_typegoal.Name = "comboBox_typegoal";
-            this.comboBox_typegoal.Size = new System.Drawing.Size(163, 21);
+            this.comboBox_typegoal.Size = new System.Drawing.Size(216, 33);
             this.comboBox_typegoal.TabIndex = 57;
             this.comboBox_typegoal.ValueMember = "TypeGoalID";
             // 
             // comboBox_assitance
             // 
+            this.comboBox_assitance.BackColor = System.Drawing.Color.WhiteSmoke;
             this.comboBox_assitance.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_assitance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_assitance.ForeColor = System.Drawing.Color.SeaGreen;
             this.comboBox_assitance.FormattingEnabled = true;
-            this.comboBox_assitance.Location = new System.Drawing.Point(222, 73);
+            this.comboBox_assitance.Location = new System.Drawing.Point(261, 101);
+            this.comboBox_assitance.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_assitance.Name = "comboBox_assitance";
-            this.comboBox_assitance.Size = new System.Drawing.Size(163, 21);
+            this.comboBox_assitance.Size = new System.Drawing.Size(216, 33);
             this.comboBox_assitance.TabIndex = 57;
             this.comboBox_assitance.Visible = false;
             // 
             // comboBox_score
             // 
+            this.comboBox_score.BackColor = System.Drawing.Color.WhiteSmoke;
             this.comboBox_score.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_score.ForeColor = System.Drawing.Color.SeaGreen;
             this.comboBox_score.FormattingEnabled = true;
-            this.comboBox_score.Location = new System.Drawing.Point(222, 16);
+            this.comboBox_score.Location = new System.Drawing.Point(261, 30);
+            this.comboBox_score.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_score.Name = "comboBox_score";
-            this.comboBox_score.Size = new System.Drawing.Size(163, 21);
+            this.comboBox_score.Size = new System.Drawing.Size(216, 33);
             this.comboBox_score.TabIndex = 57;
             // 
             // bunifuCustomLabel5
@@ -529,12 +539,11 @@
             this.bunifuCustomLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(15, 16);
-            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(42, 31);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(180, 37);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(157, 32);
             this.bunifuCustomLabel5.TabIndex = 56;
             this.bunifuCustomLabel5.Text = "Who score:";
             // 
@@ -545,7 +554,7 @@
             this.btn_finishrecord.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btn_finishrecord.ActiveForecolor = System.Drawing.Color.White;
             this.btn_finishrecord.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_finishrecord.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_finishrecord.BackColor = System.Drawing.Color.White;
             this.btn_finishrecord.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_finishrecord.BackgroundImage")));
             this.btn_finishrecord.ButtonText = "Finish Match";
             this.btn_finishrecord.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -556,19 +565,20 @@
             this.btn_finishrecord.IdleFillColor = System.Drawing.Color.White;
             this.btn_finishrecord.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_finishrecord.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_finishrecord.Location = new System.Drawing.Point(871, 492);
-            this.btn_finishrecord.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_finishrecord.Location = new System.Drawing.Point(1153, 627);
+            this.btn_finishrecord.Margin = new System.Windows.Forms.Padding(5);
             this.btn_finishrecord.Name = "btn_finishrecord";
-            this.btn_finishrecord.Size = new System.Drawing.Size(134, 49);
+            this.btn_finishrecord.Size = new System.Drawing.Size(179, 60);
             this.btn_finishrecord.TabIndex = 69;
             this.btn_finishrecord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_finishrecord.Click += new System.EventHandler(this.btn_finishrecord_Click);
             // 
             // frmMatchRecording
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 538);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(920, 694);
             this.Controls.Add(this.btn_finishrecord);
             this.Controls.Add(this.panel_detailrecord);
             this.Controls.Add(this.btn_score);
@@ -582,11 +592,12 @@
             this.Controls.Add(this.bunifuCustomLabel12);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.dgv_match);
-            this.Controls.Add(this.pnl_space);
             this.Controls.Add(this.pnlTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMatchRecording";
-            this.Tag = "1126 , 538";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Tag = "1 , 538";
             this.Text = "Match Recording";
             this.Load += new System.EventHandler(this.frmMatchRecording_Load);
             this.pnlFooter.ResumeLayout(false);
@@ -598,7 +609,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_score)).EndInit();
             this.panel_detailrecord.ResumeLayout(false);
             this.panel_detailrecord.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typeGoalBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -635,6 +645,5 @@
         private Bunifu.Framework.UI.BunifuCheckbox checkbox_assistance;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private System.Windows.Forms.ComboBox comboBox_typegoal;
-        private System.Windows.Forms.BindingSource typeGoalBindingSource;
     }
 }

@@ -444,6 +444,7 @@
             this.dgvPlayerInfor.HeaderForeColor = System.Drawing.Color.SeaGreen;
             this.dgvPlayerInfor.Location = new System.Drawing.Point(6, 35);
             this.dgvPlayerInfor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvPlayerInfor.MultiSelect = false;
             this.dgvPlayerInfor.Name = "dgvPlayerInfor";
             this.dgvPlayerInfor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SourceCode.DAO;
+using SourceCode.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +18,10 @@ namespace SourceCode
         {
             InitializeComponent();
         }
-
-        private void btnShowResult_Click(object sender, EventArgs e)
+        public DataTable LoadAllRankOfClub()
         {
-
+            DataTable dt = ClubDAO.Instance.LoadRankOfClub();
+            return dt;
         }
 
         private void btnCancel_Click_1(object sender, EventArgs e)
@@ -28,6 +30,22 @@ namespace SourceCode
             frmTournamentReport tournament_report = new frmTournamentReport();
             tournament_report.ShowDialog();
             this.Close();
+        }
+
+        private void frmRankOfTeam_Load(object sender, EventArgs e)
+        {
+            dgvRankOfTeams.DataSource = LoadAllRankOfClub();
+        }
+
+        private void btnReLoad_Click(object sender, EventArgs e)
+        {
+            dgvRankOfTeams.DataSource = LoadAllRankOfClub();
+        }
+
+        private void btnPrintReport_Click(object sender, EventArgs e)
+        {
+            frmReportRankOfClub rp = new frmReportRankOfClub();
+            rp.ShowDialog();
         }
     }
 }

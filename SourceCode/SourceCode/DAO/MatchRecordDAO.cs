@@ -51,5 +51,11 @@ namespace SourceCode.DAO
 
             return result > 0;
         }
+
+        public DataTable LoadMatchReview()
+        {
+            DataTable dt = DataProvider.Instance.ExcuteQuery("ReviewMatchResult");
+            return dt;
+        }
     }
 }

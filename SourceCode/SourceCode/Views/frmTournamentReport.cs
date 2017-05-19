@@ -27,10 +27,7 @@ namespace SourceCode
 
         private void btnMatchResult_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmRecordMatchResult match_result = new frmRecordMatchResult();
-            match_result.ShowDialog();
-            this.Close();
+
         }
 
         private void btnReviewMatchResult_Click(object sender, EventArgs e)
