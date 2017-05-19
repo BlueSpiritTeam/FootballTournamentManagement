@@ -14,6 +14,7 @@ namespace SourceCode.Views
 {
     public partial class frmMatchRecording : Form
     {
+        private static RuleDTO match_rule = RuleDAO.Instance.LoadRules();
         private static int A = 0;
         private static int B = 0;
         private static MatchDTO match = new MatchDTO();
@@ -145,12 +146,63 @@ namespace SourceCode.Views
 
             if (MatchRecordDAO.Instance.Insert_A_MatchRecord(record))
             {
-
+                UpdateClubDetail();                
                 MessageBox.Show("Done");
             }
 
+            frmMatchRecording.ActiveForm.Width = 690;
+            frmMatchRecording.ActiveForm.Update();
+
             dgv_match.Enabled = true;
             pnlFooter.Visible = true;
+        }
+
+        private void UpdateClubDetail()
+        {
+            DetailClubDTO Club_A = ClubDAO.Instance.GetDetailClub(match.Home_club_name);
+            DetailClubDTO Club_B = ClubDAO.Instance.GetDetailClub(match.Guest_club_name);
+
+            Club_A.Wingoal += A;
+            Club_A.Losegoal += B;
+            Club_A.Offset = Club_A.Wingoal - Club_A.Losegoal;
+
+            Club_B.Wingoal += A;
+            Club_B.Losegoal += B;
+            Club_B.Offset = Club_B.Wingoal - Club_B.Losegoal;
+
+
+            if (A == B)
+            {
+                Club_A.Total_point += match_rule.Score_draw;
+                Club_A.Numberdraw++;
+
+                Club_B.Total_point += match_rule.Score_draw;
+                Club_B.Numberdraw++;
+
+            }
+            else
+            {
+                if(A>B)
+                {
+                    Club_A.Total_point += match_rule.Score_win;
+                    Club_A.Numberwin++;
+
+                    Club_B.Total_point += match_rule.Score_lose;
+                    Club_B.Numberlose++;
+                }
+                else
+                {
+                    Club_B.Total_point += match_rule.Score_win;
+                    Club_B.Numberwin++;
+
+                    Club_A.Total_point += match_rule.Score_lose;
+                    Club_A.Numberlose++;
+                }
+            }
+
+            ClubDAO.Instance.UpdateDetailClub(Club_A);
+            ClubDAO.Instance.UpdateDetailClub(Club_B);
+
         }
 
         private void LoadTypeGoalToComboBox()

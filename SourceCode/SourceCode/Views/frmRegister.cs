@@ -94,6 +94,7 @@ namespace SourceCode
                     ClubDTO club = new ClubDTO(club_id, club_name, stadium, path);
                     if (ClubDAO.Instance.InsertNewClub(club))
                     {
+                        ClubDAO.Instance.InitializeDetailClub(club_id);
                         MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
                         number_of_club = 0;
                         btnAddCoach.Enabled = true;

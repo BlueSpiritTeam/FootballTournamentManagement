@@ -83,6 +83,39 @@ namespace SourceCode.DAO
             return result > 0;
         }
         
+
+        public bool InitializeDetailClub(string id)
+        {
+            string query = "exec InitializeDetailClub @ClubID";
+
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { id });
+
+            return result > 0; ;
+        }
+
+        public bool UpdateDetailClub(DetailClubDTO detail)
+        {
+            string query = "exec UpdateDetailClub @ClubID , @TotalPoint , @NumberOfWinMatch , @NumberOfLoseMatch , @NumberOfDrawMatch , @Offset , @TotalWinGoal , @TotalLoseGoal";
+
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { detail.Clubid, detail.Total_point, detail.Numberwin, detail.Numberlose, detail.Numberdraw, detail.Offset, detail.Wingoal, detail.Losegoal });
+
+            return result > 0;
+        }
+
+        public DetailClubDTO GetDetailClub(string clubid)
+        {
+            string query = "exec GetDetailClub @ClubID";
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { clubid });
+
+            foreach(DataRow item in data.Rows)
+            {
+                DetailClubDTO detail = new DetailClubDTO(item);
+                return detail;
+            }
+            return null;
+             
+        }
         #endregion
     }
 }
