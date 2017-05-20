@@ -64,6 +64,7 @@
             this.panelAddInfor = new System.Windows.Forms.Panel();
             this.tabControlAddInfor = new System.Windows.Forms.TabControl();
             this.tabPageCoach = new System.Windows.Forms.TabPage();
+            this.dtpBirthdayCoach = new Bunifu.Framework.UI.BunifuDatepicker();
             this.btnChooseCoachImage = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cmbGenderCoach = new System.Windows.Forms.ComboBox();
@@ -98,7 +99,6 @@
             this.picPlayer = new System.Windows.Forms.PictureBox();
             this.bunifuTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.dtpBirthdayCoach = new Bunifu.Framework.UI.BunifuDatepicker();
             this.pnlRegisterContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRegister)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoTeam)).BeginInit();
@@ -140,6 +140,7 @@
             this.btnAddCoach.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition.SetDecoration(this.btnAddCoach, BunifuAnimatorNS.DecorationType.None);
             this.btnAddCoach.DisabledColor = System.Drawing.Color.Silver;
+            this.btnAddCoach.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCoach.Iconcolor = System.Drawing.Color.White;
             this.btnAddCoach.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAddCoach.Iconimage")));
             this.btnAddCoach.Iconimage_right = null;
@@ -177,6 +178,7 @@
             this.btnFinish.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition.SetDecoration(this.btnFinish, BunifuAnimatorNS.DecorationType.None);
             this.btnFinish.DisabledColor = System.Drawing.Color.Silver;
+            this.btnFinish.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinish.Iconcolor = System.Drawing.Color.White;
             this.btnFinish.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnFinish.Iconimage")));
             this.btnFinish.Iconimage_right = null;
@@ -214,6 +216,7 @@
             this.btnAddNewPlayers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition.SetDecoration(this.btnAddNewPlayers, BunifuAnimatorNS.DecorationType.None);
             this.btnAddNewPlayers.DisabledColor = System.Drawing.Color.Silver;
+            this.btnAddNewPlayers.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewPlayers.Iconcolor = System.Drawing.Color.White;
             this.btnAddNewPlayers.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAddNewPlayers.Iconimage")));
             this.btnAddNewPlayers.Iconimage_right = null;
@@ -265,7 +268,7 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(245, 50);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(70, 20);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(86, 19);
             this.bunifuCustomLabel3.TabIndex = 1;
             this.bunifuCustomLabel3.Text = "Club ID:";
             // 
@@ -291,7 +294,7 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(485, 50);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(97, 20);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(118, 19);
             this.bunifuCustomLabel4.TabIndex = 4;
             this.bunifuCustomLabel4.Text = "Club Name:";
             // 
@@ -317,7 +320,7 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel7, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel7.Location = new System.Drawing.Point(243, 123);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(124, 20);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(147, 19);
             this.bunifuCustomLabel7.TabIndex = 10;
             this.bunifuCustomLabel7.Text = "Stadium Name:";
             // 
@@ -442,7 +445,7 @@
             this.bunifuTransition.SetDecoration(this.bunifuCustomLabel6, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel6.Location = new System.Drawing.Point(17, 26);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(62, 20);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(76, 19);
             this.bunifuCustomLabel6.TabIndex = 8;
             this.bunifuCustomLabel6.Text = "Coach:";
             // 
@@ -461,7 +464,7 @@
             this.grbClubInfor.Controls.Add(this.txtClubID);
             this.grbClubInfor.Controls.Add(this.bunifuCustomLabel3);
             this.bunifuTransition.SetDecoration(this.grbClubInfor, BunifuAnimatorNS.DecorationType.None);
-            this.grbClubInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbClubInfor.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbClubInfor.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbClubInfor.Location = new System.Drawing.Point(203, 0);
             this.grbClubInfor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -522,7 +525,7 @@
             this.dgvRegister.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SeaGreen;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -543,7 +546,7 @@
             this.dgvRegister.GridColor = System.Drawing.Color.SeaGreen;
             this.dgvRegister.HeaderBgColor = System.Drawing.Color.White;
             this.dgvRegister.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvRegister.Location = new System.Drawing.Point(3, 22);
+            this.dgvRegister.Location = new System.Drawing.Point(3, 21);
             this.dgvRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvRegister.Name = "dgvRegister";
             this.dgvRegister.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -551,7 +554,7 @@
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen;
             this.dgvRegister.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvRegister.RowTemplate.Height = 24;
-            this.dgvRegister.Size = new System.Drawing.Size(893, 305);
+            this.dgvRegister.Size = new System.Drawing.Size(893, 306);
             this.dgvRegister.TabIndex = 0;
             // 
             // OrderingNumber
@@ -589,7 +592,7 @@
             this.grbTeamPlayer.BackColor = System.Drawing.Color.White;
             this.grbTeamPlayer.Controls.Add(this.dgvRegister);
             this.bunifuTransition.SetDecoration(this.grbTeamPlayer, BunifuAnimatorNS.DecorationType.None);
-            this.grbTeamPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbTeamPlayer.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbTeamPlayer.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbTeamPlayer.Location = new System.Drawing.Point(203, 345);
             this.grbTeamPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -650,6 +653,22 @@
             this.tabPageCoach.Size = new System.Drawing.Size(792, 640);
             this.tabPageCoach.TabIndex = 0;
             this.tabPageCoach.Text = "Add Coach";
+            // 
+            // dtpBirthdayCoach
+            // 
+            this.dtpBirthdayCoach.BackColor = System.Drawing.Color.White;
+            this.dtpBirthdayCoach.BorderRadius = 0;
+            this.bunifuTransition.SetDecoration(this.dtpBirthdayCoach, BunifuAnimatorNS.DecorationType.None);
+            this.dtpBirthdayCoach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirthdayCoach.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dtpBirthdayCoach.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpBirthdayCoach.FormatCustom = null;
+            this.dtpBirthdayCoach.Location = new System.Drawing.Point(255, 248);
+            this.dtpBirthdayCoach.Margin = new System.Windows.Forms.Padding(5);
+            this.dtpBirthdayCoach.Name = "dtpBirthdayCoach";
+            this.dtpBirthdayCoach.Size = new System.Drawing.Size(345, 82);
+            this.dtpBirthdayCoach.TabIndex = 70;
+            this.dtpBirthdayCoach.Value = new System.DateTime(2017, 5, 1, 10, 35, 47, 69);
             // 
             // btnChooseCoachImage
             // 
@@ -1213,28 +1232,12 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // dtpBirthdayCoach
-            // 
-            this.dtpBirthdayCoach.BackColor = System.Drawing.Color.White;
-            this.dtpBirthdayCoach.BorderRadius = 0;
-            this.bunifuTransition.SetDecoration(this.dtpBirthdayCoach, BunifuAnimatorNS.DecorationType.None);
-            this.dtpBirthdayCoach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBirthdayCoach.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dtpBirthdayCoach.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpBirthdayCoach.FormatCustom = null;
-            this.dtpBirthdayCoach.Location = new System.Drawing.Point(255, 248);
-            this.dtpBirthdayCoach.Margin = new System.Windows.Forms.Padding(5);
-            this.dtpBirthdayCoach.Name = "dtpBirthdayCoach";
-            this.dtpBirthdayCoach.Size = new System.Drawing.Size(345, 82);
-            this.dtpBirthdayCoach.TabIndex = 70;
-            this.dtpBirthdayCoach.Value = new System.DateTime(2017, 5, 1, 10, 35, 47, 69);
-            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1782, 672);
+            this.ClientSize = new System.Drawing.Size(1102, 672);
             this.Controls.Add(this.panelAddInfor);
             this.Controls.Add(this.grbTeamPlayer);
             this.Controls.Add(this.pnlRegisterContent);

@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace SourceCode
 {
-    public partial class frmRankOfTeam : Form
+    public partial class frmRankOfClub : Form
     {
-        public frmRankOfTeam()
+        public frmRankOfClub()
         {
             InitializeComponent();
         }
@@ -44,8 +44,10 @@ namespace SourceCode
 
         private void btnPrintReport_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmReportRankOfClub rp = new frmReportRankOfClub();
             rp.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SourceCode
 {
-    partial class frmRankOfTeam
+    partial class frmRankOfClub
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRankOfTeam));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRankOfClub));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -37,9 +37,6 @@
             this.picCreateSchedule = new System.Windows.Forms.PictureBox();
             this.pnlRankOfTeams = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.dgvRankOfTeams = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnPrintReport = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnReLoad = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClubName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Win = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +47,9 @@
             this.TotalWinGoal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalLoseGoal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rank = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPrintReport = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReLoad = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).BeginInit();
             this.pnlRankOfTeams.SuspendLayout();
@@ -161,13 +161,73 @@
             this.dgvRankOfTeams.Size = new System.Drawing.Size(1046, 416);
             this.dgvRankOfTeams.TabIndex = 2;
             // 
+            // OrderingNumber
+            // 
+            this.OrderingNumber.DataPropertyName = "OrderingNumber";
+            this.OrderingNumber.HeaderText = "Ordering Number";
+            this.OrderingNumber.Name = "OrderingNumber";
+            // 
+            // ClubName
+            // 
+            this.ClubName.DataPropertyName = "ClubName";
+            this.ClubName.HeaderText = "Club Name";
+            this.ClubName.Name = "ClubName";
+            // 
+            // Win
+            // 
+            this.Win.DataPropertyName = "Win";
+            this.Win.HeaderText = "Win";
+            this.Win.Name = "Win";
+            // 
+            // Draw
+            // 
+            this.Draw.DataPropertyName = "Draw";
+            this.Draw.HeaderText = "Draw";
+            this.Draw.Name = "Draw";
+            // 
+            // Lose
+            // 
+            this.Lose.DataPropertyName = "Lose";
+            this.Lose.HeaderText = "Lose";
+            this.Lose.Name = "Lose";
+            // 
+            // Offset
+            // 
+            this.Offset.DataPropertyName = "Offset";
+            this.Offset.HeaderText = "Offset";
+            this.Offset.Name = "Offset";
+            // 
+            // TotalPoint
+            // 
+            this.TotalPoint.DataPropertyName = "TotalPoint";
+            this.TotalPoint.HeaderText = "Total Point";
+            this.TotalPoint.Name = "TotalPoint";
+            // 
+            // TotalWinGoal
+            // 
+            this.TotalWinGoal.DataPropertyName = "TotalWinGoal";
+            this.TotalWinGoal.HeaderText = "Total Win Goal";
+            this.TotalWinGoal.Name = "TotalWinGoal";
+            // 
+            // TotalLoseGoal
+            // 
+            this.TotalLoseGoal.DataPropertyName = "TotalLoseGoal";
+            this.TotalLoseGoal.HeaderText = "Total Lose Goal";
+            this.TotalLoseGoal.Name = "TotalLoseGoal";
+            // 
+            // Rank
+            // 
+            this.Rank.DataPropertyName = "RankClub";
+            this.Rank.HeaderText = "Rank";
+            this.Rank.Name = "Rank";
+            // 
             // btnPrintReport
             // 
             this.btnPrintReport.Activecolor = System.Drawing.Color.White;
             this.btnPrintReport.BackColor = System.Drawing.Color.White;
             this.btnPrintReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPrintReport.BorderRadius = 3;
-            this.btnPrintReport.ButtonText = "Print Report";
+            this.btnPrintReport.ButtonText = "Create Report";
             this.btnPrintReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrintReport.DisabledColor = System.Drawing.Color.Gray;
             this.btnPrintReport.Iconcolor = System.Drawing.Color.White;
@@ -191,7 +251,7 @@
             this.btnPrintReport.selected = true;
             this.btnPrintReport.Size = new System.Drawing.Size(226, 52);
             this.btnPrintReport.TabIndex = 12;
-            this.btnPrintReport.Text = "Print Report";
+            this.btnPrintReport.Text = "Create Report";
             this.btnPrintReport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPrintReport.Textcolor = System.Drawing.Color.SeaGreen;
             this.btnPrintReport.TextFont = new System.Drawing.Font("Source Sans Pro Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -269,67 +329,7 @@
             this.btnCancel.TextFont = new System.Drawing.Font("Source Sans Pro Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
-            // OrderingNumber
-            // 
-            this.OrderingNumber.DataPropertyName = "OrderingNumber";
-            this.OrderingNumber.HeaderText = "Ordering Number";
-            this.OrderingNumber.Name = "OrderingNumber";
-            // 
-            // ClubName
-            // 
-            this.ClubName.DataPropertyName = "ClubName";
-            this.ClubName.HeaderText = "Club Name";
-            this.ClubName.Name = "ClubName";
-            // 
-            // Win
-            // 
-            this.Win.DataPropertyName = "Win";
-            this.Win.HeaderText = "Win";
-            this.Win.Name = "Win";
-            // 
-            // Draw
-            // 
-            this.Draw.DataPropertyName = "Draw";
-            this.Draw.HeaderText = "Draw";
-            this.Draw.Name = "Draw";
-            // 
-            // Lose
-            // 
-            this.Lose.DataPropertyName = "Lose";
-            this.Lose.HeaderText = "Lose";
-            this.Lose.Name = "Lose";
-            // 
-            // Offset
-            // 
-            this.Offset.DataPropertyName = "Offset";
-            this.Offset.HeaderText = "Offset";
-            this.Offset.Name = "Offset";
-            // 
-            // TotalPoint
-            // 
-            this.TotalPoint.DataPropertyName = "TotalPoint";
-            this.TotalPoint.HeaderText = "Total Point";
-            this.TotalPoint.Name = "TotalPoint";
-            // 
-            // TotalWinGoal
-            // 
-            this.TotalWinGoal.DataPropertyName = "TotalWinGoal";
-            this.TotalWinGoal.HeaderText = "Total Win Goal";
-            this.TotalWinGoal.Name = "TotalWinGoal";
-            // 
-            // TotalLoseGoal
-            // 
-            this.TotalLoseGoal.DataPropertyName = "TotalLoseGoal";
-            this.TotalLoseGoal.HeaderText = "Total Lose Goal";
-            this.TotalLoseGoal.Name = "TotalLoseGoal";
-            // 
-            // Rank
-            // 
-            this.Rank.DataPropertyName = "RankClub";
-            this.Rank.HeaderText = "Rank";
-            this.Rank.Name = "Rank";
-            // 
-            // frmRankOfTeam
+            // frmRankOfClub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -342,7 +342,7 @@
             this.Controls.Add(this.pnlTitle);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmRankOfTeam";
+            this.Name = "frmRankOfClub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rank Of Clubs";
             this.Load += new System.EventHandler(this.frmRankOfTeam_Load);

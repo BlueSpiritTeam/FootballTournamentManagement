@@ -58,6 +58,7 @@
             this.btnFinish.ButtonText = "Finish";
             this.btnFinish.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinish.DisabledColor = System.Drawing.Color.Gray;
+            this.btnFinish.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinish.Iconcolor = System.Drawing.Color.White;
             this.btnFinish.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnFinish.Iconimage")));
             this.btnFinish.Iconimage_right = null;
@@ -102,7 +103,7 @@
             this.btnApplicationSetting.color = System.Drawing.Color.SeaGreen;
             this.btnApplicationSetting.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnApplicationSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnApplicationSetting.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApplicationSetting.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApplicationSetting.ForeColor = System.Drawing.Color.White;
             this.btnApplicationSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnApplicationSetting.Image")));
             this.btnApplicationSetting.ImagePosition = 14;
@@ -121,7 +122,7 @@
             this.btnTournamentSetting.color = System.Drawing.Color.SeaGreen;
             this.btnTournamentSetting.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnTournamentSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTournamentSetting.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTournamentSetting.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTournamentSetting.ForeColor = System.Drawing.Color.White;
             this.btnTournamentSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnTournamentSetting.Image")));
             this.btnTournamentSetting.ImagePosition = 14;

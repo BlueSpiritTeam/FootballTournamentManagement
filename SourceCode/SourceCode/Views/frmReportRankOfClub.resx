@@ -117,4 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="loadRankOfClubBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>332, 17</value>
+  </metadata>
+  <metadata name="footballTournamentManagerDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="footballTournamentManagerDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="loadRankOfClubTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>598, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCancel.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAz5JREFUaEPt
+        Wd1x1DAQvhIogUdmwJ50EDogLyfnjXSQdMC9MfiYSTqADpIOoAPSQejg6AD2s/YOn/TJkmzZhJn7Zvbl
+        drXSp/2R5FudcMJ/gKpdn9db86HaNt/q1vyot83vI5HfOh1sxFaHPQ+82V6+rdrmi7foRMFY+FB3y6P6
+        ZC7s7vIF5gp8wae6nx+vPl6+LEnAlao195hDp5sH2DHJ7x1bQFkxu9miU7fNNZ+0J635VW3NVynkK+R9
+        f2dft+szW0/rK4noA2ypj77InDq8DGLFLOnwHQtU82RonT0yn3vB3Go+DeLsxnV+EESgQApgE8TfT8//
+        X7lR03GwNUEdi5jd2e3FCzWdDPjqUo7OJZEZu2HI71hhFwt7D1IXd2wurGVUN0ttsUuSwZrUJA2hlAoV
+        5hxkQmmWlWI0GlLYXR7bwjzWiZQmg7nEr9cAkqOCXu8O7hz0dmIpMqF5ku5mONDcgUgpVR+wGBmSzlij
+        qsNwB3UDZdGqPsISZHi9mp2qOeggqQ1VUyxBhl1nBtNLmG7cASlhnJsM72Bmo2ofuDO5A0Jp5WJOMsw3
+        1qpqHxJC73ma1CEUc5GhnVTWqmofnrFI7rVgDjJ4AjCfqvaRZTyAOcgwf6rykWUcQWkyzJeqfDBjhFXV
+        2ShFxt7EfT+q9sFO0ZxiZyhBhhU7u20cMKX9DmEqGbH1XqnD7ZceiM2DqidhCpnsA5H269i9JgNjyWAN
+        7phoyrsDIFmPmQhyyVD7yP2vQ+Aan/fEjCCHDLttJF3jeXphkulF30cKGX6Fz+ikrHvVbfNU8vMPMETG
+        PnX92hjsVi5COyFO7tWkGEJkGAlIcjT2oFGBtM2dmhRDmMyxjDoKumsBeZlZh+ZWzYohSkbWMuoDHRBK
+        MQjSrGTNdDXB/q5TmXwEiJOBj9jNU/3ZvFfT0bAbNvh5dtpH7D3Y2XIk9k/Od2qeDGzCUBQgSWdGDsRp
+        ODIHMTukHBYoOX/efwIgv/GbRPG6sxmOwF7KRMJFlwKBBlBUZI7JNRGD3dlAay4gaLGju9MYYMdKEoKv
+        7MOuJDB5tBmEBCkkY/8pAQYsSIp4g92VFCEfn5tHG0WzeXaLP+EEhtXqDwS7ktY13xhkAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>56</value>
+  </metadata>
 </root>

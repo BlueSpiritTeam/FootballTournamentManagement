@@ -96,11 +96,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel.AutoSize = true;
             this.bunifuCustomLabel.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel.Font = new System.Drawing.Font("Copperplate Gothic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel.Location = new System.Drawing.Point(239, 18);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
-            this.bunifuCustomLabel.Size = new System.Drawing.Size(369, 46);
+            this.bunifuCustomLabel.Size = new System.Drawing.Size(483, 44);
             this.bunifuCustomLabel.TabIndex = 60;
             this.bunifuCustomLabel.Text = "Tournament Setting";
             // 
@@ -130,7 +130,7 @@
             this.grbTeam.Controls.Add(this.bunifuCustomLabel1);
             this.grbTeam.Controls.Add(this.bunifuCustomLabel3);
             this.grbTeam.Dock = System.Windows.Forms.DockStyle.Top;
-            this.grbTeam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbTeam.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbTeam.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbTeam.Location = new System.Drawing.Point(0, 82);
             this.grbTeam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -147,7 +147,7 @@
             this.max_player.Location = new System.Drawing.Point(544, 113);
             this.max_player.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.max_player.Name = "max_player";
-            this.max_player.Size = new System.Drawing.Size(76, 28);
+            this.max_player.Size = new System.Drawing.Size(76, 27);
             this.max_player.TabIndex = 38;
             // 
             // min_player
@@ -156,7 +156,7 @@
             this.min_player.Location = new System.Drawing.Point(384, 113);
             this.min_player.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.min_player.Name = "min_player";
-            this.min_player.Size = new System.Drawing.Size(76, 28);
+            this.min_player.Size = new System.Drawing.Size(76, 27);
             this.min_player.TabIndex = 37;
             // 
             // bunifuCustomLabel4
@@ -164,11 +164,11 @@
             this.bunifuCustomLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(488, 114);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(25, 24);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(35, 21);
             this.bunifuCustomLabel4.TabIndex = 36;
             this.bunifuCustomLabel4.Text = "to";
             // 
@@ -177,11 +177,11 @@
             this.bunifuCustomLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(309, 114);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(55, 24);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(65, 21);
             this.bunifuCustomLabel5.TabIndex = 35;
             this.bunifuCustomLabel5.Text = "From";
             // 
@@ -190,11 +190,11 @@
             this.bunifuCustomLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel6.Location = new System.Drawing.Point(37, 114);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(174, 24);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(231, 21);
             this.bunifuCustomLabel6.TabIndex = 34;
             this.bunifuCustomLabel6.Text = "Number Of Players:";
             // 
@@ -204,7 +204,7 @@
             this.max_age.Location = new System.Drawing.Point(544, 53);
             this.max_age.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.max_age.Name = "max_age";
-            this.max_age.Size = new System.Drawing.Size(76, 28);
+            this.max_age.Size = new System.Drawing.Size(76, 27);
             this.max_age.TabIndex = 33;
             // 
             // min_age
@@ -213,7 +213,7 @@
             this.min_age.Location = new System.Drawing.Point(384, 53);
             this.min_age.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.min_age.Name = "min_age";
-            this.min_age.Size = new System.Drawing.Size(76, 28);
+            this.min_age.Size = new System.Drawing.Size(76, 27);
             this.min_age.TabIndex = 32;
             // 
             // bunifuCustomLabel2
@@ -221,11 +221,11 @@
             this.bunifuCustomLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(488, 55);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(25, 24);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(35, 21);
             this.bunifuCustomLabel2.TabIndex = 31;
             this.bunifuCustomLabel2.Text = "to";
             // 
@@ -234,11 +234,11 @@
             this.bunifuCustomLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(309, 55);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(55, 24);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(65, 21);
             this.bunifuCustomLabel1.TabIndex = 30;
             this.bunifuCustomLabel1.Text = "From";
             // 
@@ -247,11 +247,11 @@
             this.bunifuCustomLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(37, 55);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(140, 24);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(188, 21);
             this.bunifuCustomLabel3.TabIndex = 29;
             this.bunifuCustomLabel3.Text = "Age Of Players:";
             // 
@@ -288,7 +288,7 @@
             this.listView_typeGoal.FullRowSelect = true;
             this.listView_typeGoal.GridLines = true;
             this.listView_typeGoal.Location = new System.Drawing.Point(27, 95);
-            this.listView_typeGoal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView_typeGoal.Margin = new System.Windows.Forms.Padding(4);
             this.listView_typeGoal.Name = "listView_typeGoal";
             this.listView_typeGoal.Size = new System.Drawing.Size(280, 155);
             this.listView_typeGoal.TabIndex = 54;
@@ -319,11 +319,11 @@
             this.bunifuCustomLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel12.AutoSize = true;
-            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel12.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel12.Location = new System.Drawing.Point(463, 199);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
-            this.bunifuCustomLabel12.Size = new System.Drawing.Size(111, 24);
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(145, 21);
             this.bunifuCustomLabel12.TabIndex = 52;
             this.bunifuCustomLabel12.Text = "Lose Score:";
             // 
@@ -341,11 +341,11 @@
             this.bunifuCustomLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel10.AutoSize = true;
-            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel10.Location = new System.Drawing.Point(463, 149);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(113, 24);
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(152, 21);
             this.bunifuCustomLabel10.TabIndex = 50;
             this.bunifuCustomLabel10.Text = "Draw Score:";
             // 
@@ -363,11 +363,11 @@
             this.bunifuCustomLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel11.AutoSize = true;
-            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel11.Location = new System.Drawing.Point(469, 95);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(103, 24);
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(132, 21);
             this.bunifuCustomLabel11.TabIndex = 48;
             this.bunifuCustomLabel11.Text = "Win Score:";
             // 
@@ -399,11 +399,11 @@
             this.bunifuCustomLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Copperplate Gothic Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomLabel9.Location = new System.Drawing.Point(23, 54);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(171, 24);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(250, 21);
             this.bunifuCustomLabel9.TabIndex = 42;
             this.bunifuCustomLabel9.Text = "List Of type of goals";
             // 
@@ -429,7 +429,7 @@
             this.btnDefaultRules.IconZoom = 90D;
             this.btnDefaultRules.IsTab = false;
             this.btnDefaultRules.Location = new System.Drawing.Point(19, 598);
-            this.btnDefaultRules.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnDefaultRules.Margin = new System.Windows.Forms.Padding(5);
             this.btnDefaultRules.Name = "btnDefaultRules";
             this.btnDefaultRules.Normalcolor = System.Drawing.Color.White;
             this.btnDefaultRules.OnHovercolor = System.Drawing.Color.Lime;
@@ -465,7 +465,7 @@
             this.btnUpdateRules.IconZoom = 90D;
             this.btnUpdateRules.IsTab = false;
             this.btnUpdateRules.Location = new System.Drawing.Point(265, 598);
-            this.btnUpdateRules.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnUpdateRules.Margin = new System.Windows.Forms.Padding(5);
             this.btnUpdateRules.Name = "btnUpdateRules";
             this.btnUpdateRules.Normalcolor = System.Drawing.Color.White;
             this.btnUpdateRules.OnHovercolor = System.Drawing.Color.Lime;
@@ -501,7 +501,7 @@
             this.btnCancel.IconZoom = 90D;
             this.btnCancel.IsTab = false;
             this.btnCancel.Location = new System.Drawing.Point(520, 598);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Normalcolor = System.Drawing.Color.White;
             this.btnCancel.OnHovercolor = System.Drawing.Color.Lime;

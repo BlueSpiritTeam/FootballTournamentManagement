@@ -33,5 +33,16 @@ namespace SourceCode.Properties {
                 return ((string)(this["FootballManagementConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=footballtournamentmanager.database.windows.net;Initial Catalog=Footba" +
+            "llTournamentManager;User ID=bluespirit;Password=Haidang029")]
+        public string FootballTournamentManagerConnectionString {
+            get {
+                return ((string)(this["FootballTournamentManagerConnectionString"]));
+            }
+        }
     }
 }

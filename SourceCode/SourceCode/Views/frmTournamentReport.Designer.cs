@@ -59,6 +59,7 @@
             this.btnFinish.ButtonText = "Finish";
             this.btnFinish.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinish.DisabledColor = System.Drawing.Color.Gray;
+            this.btnFinish.Font = new System.Drawing.Font("Copperplate Gothic Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinish.Iconcolor = System.Drawing.Color.White;
             this.btnFinish.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnFinish.Iconimage")));
             this.btnFinish.Iconimage_right = null;
@@ -103,7 +104,7 @@
             this.btnRankOfClub.color = System.Drawing.Color.SeaGreen;
             this.btnRankOfClub.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnRankOfClub.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRankOfClub.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRankOfClub.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRankOfClub.ForeColor = System.Drawing.Color.White;
             this.btnRankOfClub.Image = ((System.Drawing.Image)(resources.GetObject("btnRankOfClub.Image")));
             this.btnRankOfClub.ImagePosition = 14;
@@ -123,7 +124,7 @@
             this.btnListPlayerToScore.color = System.Drawing.Color.SeaGreen;
             this.btnListPlayerToScore.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnListPlayerToScore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnListPlayerToScore.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListPlayerToScore.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListPlayerToScore.ForeColor = System.Drawing.Color.White;
             this.btnListPlayerToScore.Image = ((System.Drawing.Image)(resources.GetObject("btnListPlayerToScore.Image")));
             this.btnListPlayerToScore.ImagePosition = 14;
@@ -143,7 +144,7 @@
             this.btnReviewMatchResult.color = System.Drawing.Color.SeaGreen;
             this.btnReviewMatchResult.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnReviewMatchResult.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReviewMatchResult.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReviewMatchResult.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReviewMatchResult.ForeColor = System.Drawing.Color.White;
             this.btnReviewMatchResult.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewMatchResult.Image")));
             this.btnReviewMatchResult.ImagePosition = 14;

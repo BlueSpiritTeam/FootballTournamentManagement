@@ -102,6 +102,16 @@
     <Compile Include="DTO\RoundDTO.cs" />
     <Compile Include="DTO\RuleDTO.cs" />
     <Compile Include="DTO\TypeGoalDTO.cs" />
+    <Compile Include="FootballTournamentManagerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FootballTournamentManagerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FootballTournamentManagerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FootballTournamentManagerDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Helper\CreateSchedule.cs" />
     <Compile Include="Views\frmChangeRules.cs">
       <SubType>Form</SubType>
@@ -268,6 +278,30 @@
     <EmbeddedResource Include="Views\frmMatchRecording.resx">
       <DependentUpon>frmMatchRecording.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report1.rdlc" />
+    <EmbeddedResource Include="Views\Report2.rdlc" />
+    <None Include="FootballTournamentManagerDataSet1.xsc">
+      <DependentUpon>FootballTournamentManagerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FootballTournamentManagerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FootballTournamentManagerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FootballTournamentManagerDataSet1.xss">
+      <DependentUpon>FootballTournamentManagerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FootballTournamentManagerDataSet3.xsc">
+      <DependentUpon>FootballTournamentManagerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="FootballTournamentManagerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FootballTournamentManagerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FootballTournamentManagerDataSet3.xss">
+      <DependentUpon>FootballTournamentManagerDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

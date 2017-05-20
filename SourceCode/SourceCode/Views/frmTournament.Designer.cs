@@ -45,9 +45,9 @@
             this.pnlTournamentContent.Controls.Add(this.picTournament);
             this.pnlTournamentContent.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlTournamentContent.Location = new System.Drawing.Point(0, 0);
-            this.pnlTournamentContent.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTournamentContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTournamentContent.Name = "pnlTournamentContent";
-            this.pnlTournamentContent.Size = new System.Drawing.Size(176, 271);
+            this.pnlTournamentContent.Size = new System.Drawing.Size(235, 334);
             this.pnlTournamentContent.TabIndex = 10;
             // 
             // btnFinish
@@ -59,6 +59,7 @@
             this.btnFinish.ButtonText = "Finish";
             this.btnFinish.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinish.DisabledColor = System.Drawing.Color.Gray;
+            this.btnFinish.Font = new System.Drawing.Font("Copperplate Gothic Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinish.Iconcolor = System.Drawing.Color.White;
             this.btnFinish.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnFinish.Iconimage")));
             this.btnFinish.Iconimage_right = null;
@@ -71,13 +72,14 @@
             this.btnFinish.IconVisible = true;
             this.btnFinish.IconZoom = 90D;
             this.btnFinish.IsTab = false;
-            this.btnFinish.Location = new System.Drawing.Point(3, 165);
+            this.btnFinish.Location = new System.Drawing.Point(4, 203);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnFinish.Name = "btnFinish";
             this.btnFinish.Normalcolor = System.Drawing.Color.White;
             this.btnFinish.OnHovercolor = System.Drawing.Color.Lime;
             this.btnFinish.OnHoverTextColor = System.Drawing.Color.SeaGreen;
             this.btnFinish.selected = true;
-            this.btnFinish.Size = new System.Drawing.Size(170, 66);
+            this.btnFinish.Size = new System.Drawing.Size(227, 81);
             this.btnFinish.TabIndex = 11;
             this.btnFinish.Text = "Finish";
             this.btnFinish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,10 +91,10 @@
             // 
             this.picTournament.BackColor = System.Drawing.Color.SeaGreen;
             this.picTournament.Image = ((System.Drawing.Image)(resources.GetObject("picTournament.Image")));
-            this.picTournament.Location = new System.Drawing.Point(31, 28);
-            this.picTournament.Margin = new System.Windows.Forms.Padding(2);
+            this.picTournament.Location = new System.Drawing.Point(41, 34);
+            this.picTournament.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picTournament.Name = "picTournament";
-            this.picTournament.Size = new System.Drawing.Size(126, 111);
+            this.picTournament.Size = new System.Drawing.Size(168, 137);
             this.picTournament.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTournament.TabIndex = 1;
             this.picTournament.TabStop = false;
@@ -103,17 +105,17 @@
             this.btn_recording.color = System.Drawing.Color.SeaGreen;
             this.btn_recording.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btn_recording.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_recording.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_recording.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_recording.ForeColor = System.Drawing.Color.White;
             this.btn_recording.Image = ((System.Drawing.Image)(resources.GetObject("btn_recording.Image")));
             this.btn_recording.ImagePosition = 14;
             this.btn_recording.ImageZoom = 50;
             this.btn_recording.LabelPosition = 30;
             this.btn_recording.LabelText = "Recording    ";
-            this.btn_recording.Location = new System.Drawing.Point(240, 42);
-            this.btn_recording.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_recording.Location = new System.Drawing.Point(320, 52);
+            this.btn_recording.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btn_recording.Name = "btn_recording";
-            this.btn_recording.Size = new System.Drawing.Size(255, 163);
+            this.btn_recording.Size = new System.Drawing.Size(340, 201);
             this.btn_recording.TabIndex = 11;
             this.btn_recording.Click += new System.EventHandler(this.btn_recording_Click);
             // 
@@ -123,30 +125,30 @@
             this.btnCreateSchedule.color = System.Drawing.Color.SeaGreen;
             this.btnCreateSchedule.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnCreateSchedule.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCreateSchedule.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateSchedule.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateSchedule.ForeColor = System.Drawing.Color.White;
             this.btnCreateSchedule.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateSchedule.Image")));
             this.btnCreateSchedule.ImagePosition = 14;
             this.btnCreateSchedule.ImageZoom = 50;
             this.btnCreateSchedule.LabelPosition = 30;
             this.btnCreateSchedule.LabelText = "Match Schedule       ";
-            this.btnCreateSchedule.Location = new System.Drawing.Point(501, 42);
-            this.btnCreateSchedule.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCreateSchedule.Location = new System.Drawing.Point(668, 52);
+            this.btnCreateSchedule.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnCreateSchedule.Name = "btnCreateSchedule";
-            this.btnCreateSchedule.Size = new System.Drawing.Size(255, 163);
+            this.btnCreateSchedule.Size = new System.Drawing.Size(340, 201);
             this.btnCreateSchedule.TabIndex = 12;
             this.btnCreateSchedule.Click += new System.EventHandler(this.btnCreateSchedule_Click);
             // 
             // frmTournament
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(828, 271);
+            this.ClientSize = new System.Drawing.Size(1104, 334);
             this.Controls.Add(this.btnCreateSchedule);
             this.Controls.Add(this.btn_recording);
             this.Controls.Add(this.pnlTournamentContent);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmTournament";

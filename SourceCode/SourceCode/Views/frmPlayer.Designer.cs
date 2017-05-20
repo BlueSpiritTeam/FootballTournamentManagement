@@ -100,13 +100,13 @@
             this.grbPlayerInfor.Controls.Add(this.bunifuCustomLabel7);
             this.grbPlayerInfor.Controls.Add(this.picPlayer);
             this.grbPlayerInfor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.grbPlayerInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbPlayerInfor.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbPlayerInfor.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbPlayerInfor.Location = new System.Drawing.Point(0, 0);
             this.grbPlayerInfor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbPlayerInfor.Name = "grbPlayerInfor";
             this.grbPlayerInfor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbPlayerInfor.Size = new System.Drawing.Size(1155, 281);
+            this.grbPlayerInfor.Size = new System.Drawing.Size(1162, 281);
             this.grbPlayerInfor.TabIndex = 0;
             this.grbPlayerInfor.TabStop = false;
             this.grbPlayerInfor.Text = "Information";
@@ -149,7 +149,7 @@
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Location = new System.Drawing.Point(716, 177);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(73, 24);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(91, 21);
             this.bunifuCustomLabel9.TabIndex = 30;
             this.bunifuCustomLabel9.Text = "Kitnum:";
             // 
@@ -169,7 +169,7 @@
             this.bunifuCustomLabel8.AutoSize = true;
             this.bunifuCustomLabel8.Location = new System.Drawing.Point(935, 106);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(50, 24);
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(57, 21);
             this.bunifuCustomLabel8.TabIndex = 28;
             this.bunifuCustomLabel8.Text = "Age:";
             // 
@@ -178,7 +178,7 @@
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.Location = new System.Drawing.Point(711, 106);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(79, 24);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(96, 21);
             this.bunifuCustomLabel6.TabIndex = 26;
             this.bunifuCustomLabel6.Text = "Gender:";
             // 
@@ -187,7 +187,7 @@
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(711, 42);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(54, 24);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(68, 21);
             this.bunifuCustomLabel5.TabIndex = 24;
             this.bunifuCustomLabel5.Text = "Role:";
             // 
@@ -207,7 +207,7 @@
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(277, 240);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(54, 24);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(69, 21);
             this.bunifuCustomLabel3.TabIndex = 20;
             this.bunifuCustomLabel3.Text = "Club:";
             // 
@@ -227,7 +227,7 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(277, 181);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(69, 24);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(91, 21);
             this.bunifuCustomLabel2.TabIndex = 18;
             this.bunifuCustomLabel2.Text = "Nation:";
             // 
@@ -251,7 +251,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(277, 108);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(87, 24);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(117, 21);
             this.bunifuCustomLabel1.TabIndex = 16;
             this.bunifuCustomLabel1.Text = "Birthday: ";
             // 
@@ -271,7 +271,7 @@
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Location = new System.Drawing.Point(277, 42);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(66, 24);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(74, 21);
             this.bunifuCustomLabel7.TabIndex = 14;
             this.bunifuCustomLabel7.Text = "Name:";
             // 
@@ -294,7 +294,7 @@
             this.grbSearchPlayer.Controls.Add(this.cmbSearchPlayer);
             this.grbSearchPlayer.Controls.Add(this.bunifuCustomLabel10);
             this.grbSearchPlayer.Controls.Add(this.txtSearchPlayer);
-            this.grbSearchPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbSearchPlayer.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbSearchPlayer.ForeColor = System.Drawing.Color.SeaGreen;
             this.grbSearchPlayer.Location = new System.Drawing.Point(0, 285);
             this.grbSearchPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -373,7 +373,7 @@
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Location = new System.Drawing.Point(334, 53);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(30, 24);
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(34, 21);
             this.bunifuCustomLabel10.TabIndex = 21;
             this.bunifuCustomLabel10.Text = "by";
             // 
@@ -398,7 +398,7 @@
             this.grbPlayerDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbPlayerDetails.Name = "grbPlayerDetails";
             this.grbPlayerDetails.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbPlayerDetails.Size = new System.Drawing.Size(1469, 475);
+            this.grbPlayerDetails.Size = new System.Drawing.Size(1469, 382);
             this.grbPlayerDetails.TabIndex = 2;
             this.grbPlayerDetails.TabStop = false;
             this.grbPlayerDetails.Text = "Player Details";
@@ -442,7 +442,7 @@
             this.dgvPlayerInfor.GridColor = System.Drawing.Color.SeaGreen;
             this.dgvPlayerInfor.HeaderBgColor = System.Drawing.Color.White;
             this.dgvPlayerInfor.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvPlayerInfor.Location = new System.Drawing.Point(6, 35);
+            this.dgvPlayerInfor.Location = new System.Drawing.Point(12, 34);
             this.dgvPlayerInfor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvPlayerInfor.MultiSelect = false;
             this.dgvPlayerInfor.Name = "dgvPlayerInfor";
@@ -452,7 +452,7 @@
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
             this.dgvPlayerInfor.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPlayerInfor.RowTemplate.Height = 24;
-            this.dgvPlayerInfor.Size = new System.Drawing.Size(1149, 436);
+            this.dgvPlayerInfor.Size = new System.Drawing.Size(1149, 344);
             this.dgvPlayerInfor.TabIndex = 1;
             this.dgvPlayerInfor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlayerInfor_CellClick);
             // 
@@ -610,7 +610,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1155, 927);
+            this.ClientSize = new System.Drawing.Size(1162, 835);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.grbPlayerDetails);
             this.Controls.Add(this.btnUpdate);

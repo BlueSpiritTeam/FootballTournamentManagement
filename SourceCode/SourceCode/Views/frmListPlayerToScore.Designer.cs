@@ -60,6 +60,7 @@
             this.btnReload.ButtonText = "ReLoad";
             this.btnReload.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReload.DisabledColor = System.Drawing.Color.Gray;
+            this.btnReload.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.Iconcolor = System.Drawing.Color.White;
             this.btnReload.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnReload.Iconimage")));
             this.btnReload.Iconimage_right = null;
@@ -93,9 +94,10 @@
             this.btnPrintReport.BackColor = System.Drawing.Color.White;
             this.btnPrintReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPrintReport.BorderRadius = 3;
-            this.btnPrintReport.ButtonText = "Print Report";
+            this.btnPrintReport.ButtonText = "Create Report";
             this.btnPrintReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrintReport.DisabledColor = System.Drawing.Color.Gray;
+            this.btnPrintReport.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintReport.Iconcolor = System.Drawing.Color.White;
             this.btnPrintReport.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnPrintReport.Iconimage")));
             this.btnPrintReport.Iconimage_right = null;
@@ -117,7 +119,7 @@
             this.btnPrintReport.selected = true;
             this.btnPrintReport.Size = new System.Drawing.Size(227, 52);
             this.btnPrintReport.TabIndex = 18;
-            this.btnPrintReport.Text = "Print Report";
+            this.btnPrintReport.Text = "Create Report";
             this.btnPrintReport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPrintReport.Textcolor = System.Drawing.Color.SeaGreen;
             this.btnPrintReport.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -175,6 +177,7 @@
             this.btnCancel.ButtonText = "Cancel";
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCancel.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Iconcolor = System.Drawing.Color.White;
             this.btnCancel.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCancel.Iconimage")));
             this.btnCancel.Iconimage_right = null;

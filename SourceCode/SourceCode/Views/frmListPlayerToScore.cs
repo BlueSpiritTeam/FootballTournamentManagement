@@ -43,8 +43,10 @@ namespace SourceCode
 
         private void btnPrintReport_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmReportListPlayerToScore rp = new frmReportListPlayerToScore();
             rp.ShowDialog();
+            this.Close();
         }
     }
 }

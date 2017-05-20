@@ -41,7 +41,7 @@ namespace SourceCode
         private void btnRankOfTeam_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmRankOfTeam rank_of_team = new frmRankOfTeam();
+            frmRankOfClub rank_of_team = new frmRankOfClub();
             rank_of_team.ShowDialog();
             this.Close();
         }
