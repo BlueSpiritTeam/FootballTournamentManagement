@@ -86,6 +86,7 @@ namespace SourceCode
         private void UpdateRule()
         {
             RuleDTO temp = new RuleDTO((int)max_age.Value, (int)min_age.Value, (int)max_player.Value, (int)min_player.Value, (int)win_score.Value, (int)draw_score.Value, (int)lose_score.Value);
+            if (RuleDAO.Instance.UpdateRule(temp))
             if ((int)max_age.Value < (int)min_age.Value)
             {
                 MessageBox.Show("Max age must be greater than min age!");

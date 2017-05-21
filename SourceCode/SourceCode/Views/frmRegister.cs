@@ -163,6 +163,12 @@ namespace SourceCode
                 return true;
             return false;
         }
+        public bool CheckAge()
+        {
+            if (Rules.Min_age <= DateTime.Now.Year - dtpBirthdayPlayer.Value.Year && DateTime.Now.Year - dtpBirthdayPlayer.Value.Year <= Rules.Max_age)
+                return true;
+            return false;
+        }
         int P_ID = 1; //bien check dieu kien cua player and ordering number
         public void AddPlayer()
         {
@@ -195,10 +201,7 @@ namespace SourceCode
                         txtPlayerName.Text = "";
                         txtNationOfPlayer.Text = "";
                         txtKitnum.Text = "";
-                        //Graphics g = Graphics.FromImage(picPlayer.Image);
-                        //g.Clear(picPlayer);
                         picPlayer.Image = null;
-
                     }
 
                     this.dgvRegister.Rows.Add(P_ID, player_id, name_player, cmbRole.Text, nation_player);
@@ -379,7 +382,13 @@ namespace SourceCode
 
         private void btnSaveNewPlayer_Click(object sender, EventArgs e)
         {
-            AddPlayer();
+            if (CheckAge() == true)
+                AddPlayer();
+            else
+            {
+                MessageBox.Show("Age of player form " + Rules.Min_age.ToString() + " to " + Rules.Max_age.ToString(), "Error!!!", MessageBoxButtons.OK);
+                dtpBirthdayPlayer.Focus();
+            }
         }
 
         private void btnFinish_Click(object sender, EventArgs e)

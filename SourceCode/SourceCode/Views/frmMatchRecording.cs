@@ -82,7 +82,6 @@ namespace SourceCode.Views
             comboBox_assitance.DisplayMember = "Name";
             comboBox_score.ValueMember = "ID";
             comboBox_assitance.ValueMember = "ID";
-
         }
 
         #endregion
@@ -130,6 +129,8 @@ namespace SourceCode.Views
             btn_finishrecord.Visible = true;
             panel_detailrecord.Visible = false;
             checkbox_assistance.Checked = false;
+            //A = 0;
+            //B = 0;
         }
 
         private void checkbox_assistance_OnChange(object sender, EventArgs e)
@@ -155,6 +156,10 @@ namespace SourceCode.Views
 
             dgv_match.Enabled = true;
             pnlFooter.Visible = true;
+            lbA.Text = "0";
+            lbB.Text = "0";
+            A = 0;
+            B = 0;
         }
 
         private void UpdateClubDetail()
@@ -202,7 +207,6 @@ namespace SourceCode.Views
 
             ClubDAO.Instance.UpdateDetailClub(Club_A);
             ClubDAO.Instance.UpdateDetailClub(Club_B);
-
         }
 
         private void LoadTypeGoalToComboBox()
