@@ -45,8 +45,14 @@ namespace SourceCode
         private void btnPrintReport_Click(object sender, EventArgs e)
         {
             this.Hide();
+            
             frmReportRankOfClub rp = new frmReportRankOfClub();
             rp.ShowDialog();
+            
+            /*
+            Report03 rp = new Report03();
+            rp.ShowDialog();
+            */
             this.Close();
         }
     }

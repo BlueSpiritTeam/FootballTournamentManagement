@@ -41,7 +41,6 @@ namespace SourceCode
         }
         private void LoadGenderIntoCombobox(ComboBox cb)
         {
-            list_gender = GenderDAO.Instances.LoadAllGender();
             // lay vao list_gender trong ham LoadGender() cua DAO vao List<>
             list_gender = GenderDAO.Instances.LoadAllGender();
             foreach(GenderDTO item in list_gender)
@@ -98,6 +97,7 @@ namespace SourceCode
                         MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
                         number_of_club = 0;
                         btnAddCoach.Enabled = true;
+                        btnCancelAll.Enabled = false;
                     }
                 }
                 else
@@ -298,6 +298,7 @@ namespace SourceCode
         
         private void btnSaveClub_Click(object sender, EventArgs e)
         {
+            
             if (CheckClubId() == true)
             {
                 AddClub();
@@ -398,6 +399,16 @@ namespace SourceCode
             general.ShowDialog();
             this.Close();
         }
+        
+
+        private void btnCancelAll_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmGeneral general = new frmGeneral();
+            general.ShowDialog();
+            this.Close();
+        }
+
         #endregion
     }
 }

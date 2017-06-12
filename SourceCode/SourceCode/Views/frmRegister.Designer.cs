@@ -99,6 +99,7 @@
             this.picPlayer = new System.Windows.Forms.PictureBox();
             this.bunifuTransition = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnCancelAll = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlRegisterContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRegister)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoTeam)).BeginInit();
@@ -118,6 +119,7 @@
             // pnlRegisterContent
             // 
             this.pnlRegisterContent.BackColor = System.Drawing.Color.SeaGreen;
+            this.pnlRegisterContent.Controls.Add(this.btnCancelAll);
             this.pnlRegisterContent.Controls.Add(this.btnAddCoach);
             this.pnlRegisterContent.Controls.Add(this.btnFinish);
             this.pnlRegisterContent.Controls.Add(this.btnAddNewPlayers);
@@ -1232,6 +1234,44 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // btnCancelAll
+            // 
+            this.btnCancelAll.Activecolor = System.Drawing.Color.White;
+            this.btnCancelAll.BackColor = System.Drawing.Color.White;
+            this.btnCancelAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelAll.BorderRadius = 3;
+            this.btnCancelAll.ButtonText = "Cancel";
+            this.btnCancelAll.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition.SetDecoration(this.btnCancelAll, BunifuAnimatorNS.DecorationType.None);
+            this.btnCancelAll.DisabledColor = System.Drawing.Color.Silver;
+            this.btnCancelAll.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelAll.Iconcolor = System.Drawing.Color.White;
+            this.btnCancelAll.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCancelAll.Iconimage")));
+            this.btnCancelAll.Iconimage_right = null;
+            this.btnCancelAll.Iconimage_right_Selected = null;
+            this.btnCancelAll.Iconimage_Selected = null;
+            this.btnCancelAll.IconMarginLeft = 1;
+            this.btnCancelAll.IconMarginRight = 0;
+            this.btnCancelAll.IconRightVisible = false;
+            this.btnCancelAll.IconRightZoom = 0D;
+            this.btnCancelAll.IconVisible = true;
+            this.btnCancelAll.IconZoom = 90D;
+            this.btnCancelAll.IsTab = false;
+            this.btnCancelAll.Location = new System.Drawing.Point(3, 403);
+            this.btnCancelAll.Margin = new System.Windows.Forms.Padding(5);
+            this.btnCancelAll.Name = "btnCancelAll";
+            this.btnCancelAll.Normalcolor = System.Drawing.Color.White;
+            this.btnCancelAll.OnHovercolor = System.Drawing.Color.Lime;
+            this.btnCancelAll.OnHoverTextColor = System.Drawing.Color.SeaGreen;
+            this.btnCancelAll.selected = true;
+            this.btnCancelAll.Size = new System.Drawing.Size(195, 60);
+            this.btnCancelAll.TabIndex = 13;
+            this.btnCancelAll.Text = "Cancel";
+            this.btnCancelAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCancelAll.Textcolor = System.Drawing.Color.SeaGreen;
+            this.btnCancelAll.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelAll.Click += new System.EventHandler(this.btnCancelAll_Click);
+            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1338,5 +1378,6 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ComboBox cmbRole;
         private Bunifu.Framework.UI.BunifuDatepicker dtpBirthdayCoach;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCancelAll;
     }
 }

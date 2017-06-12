@@ -204,6 +204,8 @@ namespace SourceCode
         private void btnSaveCoachInfor_Click(object sender, EventArgs e)
         {
             UpdateHumanInfor();
+            LoadData();
+            BindingAtt();
         }
     }
 }

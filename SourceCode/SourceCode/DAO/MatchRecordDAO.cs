@@ -57,5 +57,17 @@ namespace SourceCode.DAO
             DataTable dt = DataProvider.Instance.ExcuteQuery("ReviewMatchResult");
             return dt;
         }
+
+        public DataTable LoadMatchResultByClub(string club_name)
+        {
+            string query = string.Format(@"select Row_number() over(order by mr.MatchID DESC) as OrderingNumber,
+	                            m.HomeClubName as Home, m.GuestClubName as Away,
+	                            mr.HomeClubRatio as Ratio, m.MatchDate as Date, m.MatchTime as Time,
+	                            m.Stadium 
+	                        from Match as m, MatchRecord as mr
+	                        where m.MatchID = mr.MatchID and  (m.HomeClubName like N'%{0}%' or m.GuestClubName like N'%{1}%')", club_name, club_name);
+            DataTable dt = DataProvider.Instance.ExcuteQuery(query);
+            return dt;
+        }
     }
 }

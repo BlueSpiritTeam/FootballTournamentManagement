@@ -29,12 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReviewMatchResult));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCustomLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.picCreateSchedule = new System.Windows.Forms.PictureBox();
             this.pnlTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.cmbClub = new System.Windows.Forms.ComboBox();
+            this.dgvReviewMatch = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.OrderingPlayer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HomeClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AwayClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ratio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stadium = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtHomeClubName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.txtAwayClubName = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -45,22 +55,15 @@
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtStadium = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.pnlMatchResult = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.txtRatio = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtRatio = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.dgvReviewMatch = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.OrderingPlayer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HomeClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AwayClub = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ratio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stadium = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLoadAll = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).BeginInit();
             this.pnlTitle.SuspendLayout();
-            this.pnlMatchResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReviewMatch)).BeginInit();
+            this.pnlMatchResult.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel
@@ -91,6 +94,9 @@
             // 
             this.pnlTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTitle.BackgroundImage")));
             this.pnlTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlTitle.Controls.Add(this.btnLoadAll);
+            this.pnlTitle.Controls.Add(this.bunifuCustomLabel1);
+            this.pnlTitle.Controls.Add(this.cmbClub);
             this.pnlTitle.Controls.Add(this.dgvReviewMatch);
             this.pnlTitle.Controls.Add(this.bunifuCustomLabel);
             this.pnlTitle.Controls.Add(this.picCreateSchedule);
@@ -103,6 +109,120 @@
             this.pnlTitle.Quality = 10;
             this.pnlTitle.Size = new System.Drawing.Size(833, 440);
             this.pnlTitle.TabIndex = 56;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(113, 97);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(150, 21);
+            this.bunifuCustomLabel1.TabIndex = 63;
+            this.bunifuCustomLabel1.Text = "Choose Club";
+            // 
+            // cmbClub
+            // 
+            this.cmbClub.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbClub.ForeColor = System.Drawing.Color.SeaGreen;
+            this.cmbClub.FormattingEnabled = true;
+            this.cmbClub.Location = new System.Drawing.Point(290, 90);
+            this.cmbClub.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbClub.Name = "cmbClub";
+            this.cmbClub.Size = new System.Drawing.Size(203, 33);
+            this.cmbClub.TabIndex = 62;
+            this.cmbClub.SelectedIndexChanged += new System.EventHandler(this.cmbClub_SelectedIndexChanged);
+            // 
+            // dgvReviewMatch
+            // 
+            this.dgvReviewMatch.AllowUserToAddRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvReviewMatch.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvReviewMatch.BackgroundColor = System.Drawing.Color.White;
+            this.dgvReviewMatch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvReviewMatch.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReviewMatch.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvReviewMatch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReviewMatch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.OrderingPlayer,
+            this.HomeClub,
+            this.AwayClub,
+            this.Ratio,
+            this.Date,
+            this.Time,
+            this.Stadium});
+            this.dgvReviewMatch.DoubleBuffered = true;
+            this.dgvReviewMatch.EnableHeadersVisualStyles = false;
+            this.dgvReviewMatch.GridColor = System.Drawing.Color.SeaGreen;
+            this.dgvReviewMatch.HeaderBgColor = System.Drawing.Color.White;
+            this.dgvReviewMatch.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvReviewMatch.Location = new System.Drawing.Point(0, 149);
+            this.dgvReviewMatch.MultiSelect = false;
+            this.dgvReviewMatch.Name = "dgvReviewMatch";
+            this.dgvReviewMatch.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvReviewMatch.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvReviewMatch.RowTemplate.Height = 24;
+            this.dgvReviewMatch.Size = new System.Drawing.Size(833, 288);
+            this.dgvReviewMatch.TabIndex = 61;
+            // 
+            // OrderingPlayer
+            // 
+            this.OrderingPlayer.DataPropertyName = "OrderingNumber";
+            this.OrderingPlayer.HeaderText = "Odering Number";
+            this.OrderingPlayer.Name = "OrderingPlayer";
+            // 
+            // HomeClub
+            // 
+            this.HomeClub.DataPropertyName = "Home";
+            this.HomeClub.HeaderText = "Home Club";
+            this.HomeClub.Name = "HomeClub";
+            // 
+            // AwayClub
+            // 
+            this.AwayClub.DataPropertyName = "Away";
+            this.AwayClub.HeaderText = "Away Club";
+            this.AwayClub.Name = "AwayClub";
+            // 
+            // Ratio
+            // 
+            this.Ratio.DataPropertyName = "Ratio";
+            this.Ratio.HeaderText = "Ratio";
+            this.Ratio.Name = "Ratio";
+            this.Ratio.Width = 70;
+            // 
+            // Date
+            // 
+            this.Date.DataPropertyName = "Date";
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // Time
+            // 
+            this.Time.DataPropertyName = "Time";
+            this.Time.HeaderText = "Time";
+            this.Time.Name = "Time";
+            // 
+            // Stadium
+            // 
+            this.Stadium.DataPropertyName = "Stadium";
+            this.Stadium.HeaderText = "Stadium";
+            this.Stadium.Name = "Stadium";
+            this.Stadium.Width = 150;
             // 
             // btnCancel
             // 
@@ -243,6 +363,16 @@
             this.pnlMatchResult.Size = new System.Drawing.Size(833, 253);
             this.pnlMatchResult.TabIndex = 57;
             // 
+            // txtRatio
+            // 
+            this.txtRatio.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRatio.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtRatio.Location = new System.Drawing.Point(279, 75);
+            this.txtRatio.Name = "txtRatio";
+            this.txtRatio.Size = new System.Drawing.Size(150, 28);
+            this.txtRatio.TabIndex = 64;
+            // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
@@ -279,105 +409,31 @@
             this.bunifuCustomLabel2.TabIndex = 61;
             this.bunifuCustomLabel2.Text = "Home Club";
             // 
-            // txtRatio
+            // btnLoadAll
             // 
-            this.txtRatio.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtRatio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRatio.ForeColor = System.Drawing.Color.SeaGreen;
-            this.txtRatio.Location = new System.Drawing.Point(279, 75);
-            this.txtRatio.Name = "txtRatio";
-            this.txtRatio.Size = new System.Drawing.Size(150, 28);
-            this.txtRatio.TabIndex = 64;
-            // 
-            // dgvReviewMatch
-            // 
-            this.dgvReviewMatch.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvReviewMatch.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvReviewMatch.BackgroundColor = System.Drawing.Color.White;
-            this.dgvReviewMatch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvReviewMatch.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReviewMatch.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvReviewMatch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReviewMatch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.OrderingPlayer,
-            this.HomeClub,
-            this.AwayClub,
-            this.Ratio,
-            this.Date,
-            this.Time,
-            this.Stadium});
-            this.dgvReviewMatch.DoubleBuffered = true;
-            this.dgvReviewMatch.EnableHeadersVisualStyles = false;
-            this.dgvReviewMatch.GridColor = System.Drawing.Color.SeaGreen;
-            this.dgvReviewMatch.HeaderBgColor = System.Drawing.Color.White;
-            this.dgvReviewMatch.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvReviewMatch.Location = new System.Drawing.Point(0, 83);
-            this.dgvReviewMatch.MultiSelect = false;
-            this.dgvReviewMatch.Name = "dgvReviewMatch";
-            this.dgvReviewMatch.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvReviewMatch.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvReviewMatch.RowTemplate.Height = 24;
-            this.dgvReviewMatch.Size = new System.Drawing.Size(833, 354);
-            this.dgvReviewMatch.TabIndex = 61;
-            // 
-            // OrderingPlayer
-            // 
-            this.OrderingPlayer.DataPropertyName = "OrderingNumber";
-            this.OrderingPlayer.HeaderText = "Odering Number";
-            this.OrderingPlayer.Name = "OrderingPlayer";
-            // 
-            // HomeClub
-            // 
-            this.HomeClub.DataPropertyName = "Home";
-            this.HomeClub.HeaderText = "Home Club";
-            this.HomeClub.Name = "HomeClub";
-            // 
-            // AwayClub
-            // 
-            this.AwayClub.DataPropertyName = "Away";
-            this.AwayClub.HeaderText = "Away Club";
-            this.AwayClub.Name = "AwayClub";
-            // 
-            // Ratio
-            // 
-            this.Ratio.DataPropertyName = "Ratio";
-            this.Ratio.HeaderText = "Ratio";
-            this.Ratio.Name = "Ratio";
-            this.Ratio.Width = 70;
-            // 
-            // Date
-            // 
-            this.Date.DataPropertyName = "Date";
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // Time
-            // 
-            this.Time.DataPropertyName = "Time";
-            this.Time.HeaderText = "Time";
-            this.Time.Name = "Time";
-            // 
-            // Stadium
-            // 
-            this.Stadium.DataPropertyName = "Stadium";
-            this.Stadium.HeaderText = "Stadium";
-            this.Stadium.Name = "Stadium";
-            this.Stadium.Width = 150;
+            this.btnLoadAll.ActiveBorderThickness = 1;
+            this.btnLoadAll.ActiveCornerRadius = 20;
+            this.btnLoadAll.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnLoadAll.ActiveForecolor = System.Drawing.Color.White;
+            this.btnLoadAll.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnLoadAll.BackColor = System.Drawing.Color.White;
+            this.btnLoadAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLoadAll.BackgroundImage")));
+            this.btnLoadAll.ButtonText = "Load all Result";
+            this.btnLoadAll.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLoadAll.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadAll.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnLoadAll.IdleBorderThickness = 1;
+            this.btnLoadAll.IdleCornerRadius = 20;
+            this.btnLoadAll.IdleFillColor = System.Drawing.Color.White;
+            this.btnLoadAll.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnLoadAll.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnLoadAll.Location = new System.Drawing.Point(550, 72);
+            this.btnLoadAll.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnLoadAll.Name = "btnLoadAll";
+            this.btnLoadAll.Size = new System.Drawing.Size(205, 59);
+            this.btnLoadAll.TabIndex = 64;
+            this.btnLoadAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLoadAll.Click += new System.EventHandler(this.btnLoadAll_Click);
             // 
             // frmReviewMatchResult
             // 
@@ -396,9 +452,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).EndInit();
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReviewMatch)).EndInit();
             this.pnlMatchResult.ResumeLayout(false);
             this.pnlMatchResult.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReviewMatch)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,5 +485,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Time;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stadium;
+        private System.Windows.Forms.ComboBox cmbClub;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnLoadAll;
     }
 }

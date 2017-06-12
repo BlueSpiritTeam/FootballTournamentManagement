@@ -1,4 +1,5 @@
 ﻿using SourceCode.DAO;
+using SourceCode.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +14,28 @@ namespace SourceCode
 {
     public partial class frmReviewMatchResult : Form
     {
+        List<ClubDTO> list_clubs = new List<ClubDTO>();
         public frmReviewMatchResult()
         {
             InitializeComponent();
-        }
 
+        }
         public DataTable LoadReviewMatch()
         {
             DataTable dt = MatchRecordDAO.Instance.LoadMatchReview();
+            return dt;
+        }
+        public void LoadClubIntoCombobox(ComboBox cb)
+        {
+            list_clubs = ClubDAO.Instance.LoadAllClubs();
+            foreach(ClubDTO item in list_clubs)
+            {
+                cb.Items.Add(item.Club_id);
+            }
+        }
+        public DataTable LoadMatchResulByClub(string name)
+        {
+            DataTable dt = MatchRecordDAO.Instance.LoadMatchResultByClub(name);
             return dt;
         }
         public void Binding()
@@ -37,6 +52,7 @@ namespace SourceCode
             txtRatio.DataBindings.Add("Text", dgvReviewMatch.DataSource, "Ratio", true, DataSourceUpdateMode.Never);
             txtStadium.DataBindings.Clear();
             txtStadium.DataBindings.Add("Text", dgvReviewMatch.DataSource, "Stadium", true, DataSourceUpdateMode.Never);
+            
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -48,7 +64,21 @@ namespace SourceCode
 
         private void frmReviewMatchResult_Load(object sender, EventArgs e)
         {
+            LoadClubIntoCombobox(cmbClub);
             dgvReviewMatch.DataSource = LoadReviewMatch();
+            Binding();
+        }
+
+
+        private void btnLoadAll_Click(object sender, EventArgs e)
+        {
+            dgvReviewMatch.DataSource = LoadReviewMatch();
+            Binding();
+        }
+
+        private void cmbClub_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dgvReviewMatch.DataSource = LoadMatchResulByClub(cmbClub.Text);
             Binding();
         }
     }

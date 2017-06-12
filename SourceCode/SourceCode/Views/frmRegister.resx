@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="btnAddCoach.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="btnCancelAll.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="bunifuTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -159,6 +159,29 @@
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCancelAll.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAM+SURBVGhD7VndcdQwEL4SKIFHZsCedBA6IC8n5410kHTAvTH4mEk6gA6SDqAD0kHo4OgA9rP2
+        Dp/0yZJs2YSZ+2b25Xa10qf9keRbnXDCf4CqXZ/XW/Oh2jbf6tb8qLfN7yOR3zodbMRWhz0PvNlevq3a
+        5ou36ETBWPhQd8uj+mQu7O7yBeYKfMGnup8frz5evixJwJWqNfeYQ6ebB9gxye8dW0BZMbvZolO3zTWf
+        tCet+VVtzVcp5CvkfX9nX7frM1tP6yuJ6ANsqY++yJw6vAxixSzp8B0LVPNkaJ09Mp97wdxqPg3i7MZ1
+        fhBEoEAKYBPE30/P/1+5UdNxsDVBHYuY3dntxQs1nQz46lKOziWRGbthyO9YYRcLew9SF3dsLqxlVDdL
+        bbFLksGa1CQNoZQKFeYcZEJplpViNBpS2F0e28I81omUJoO5xK/XAJKjgl7vDu4c9HZiKTKheZLuZjjQ
+        3IFIKVUfsBgZks5Yo6rDcAd1A2XRqj7CEmR4vZqdqjnoIKkNVVMsQYZdZwbTS5hu3AEpYZybDO9gZqNq
+        H7gzuQNCaeViTjLMN9aqah8SQu95mtQhFHORoZ1U1qpqH56xSO61YA4yeAIwn6r2kWU8gDnIMH+q8pFl
+        HEFpMsyXqnwwY4RV1dkoRcbexH0/qvbBTtGcYmcoQYYVO7ttHDCl/Q5hKhmx9V6pw+2XHojNg6onYQqZ
+        7AOR9uvYvSYDY8lgDe6YaMq7AyBZj5kIcslQ+8j9r0PgGp/3xIwghwy7bSRd43l6YZLpRd9HChl+hc/o
+        pKx71W3zVPLzDzBExj51/doY7FYuQjshTu7VpBhCZBgJSHI09qBRgbTNnZoUQ5jMsYw6CrprAXmZWYfm
+        Vs2KIUpG1jLqAx0QSjEI0qxkzXQ1wf6uU5l8BIiTgY/YzVP92bxX09GwGzb4eXbaR+w92NlyJPZPzndq
+        ngxswlAUIElnRg7EaTgyBzE7pBwWKDl/3n8CIL/xm0TxurMZjsBeykTCRZcCgQZQVGSOyTURg93ZQGsu
+        IGixo7vTGGDHShKCr+zDriQwebQZhAQpJGP/KQEGLEiKeIPdlRQhH5+bRxtFs3l2iz/hBIbV6g8Eu5LW
+        Nd8YZAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="btnAddCoach.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnAddCoach.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAA51JREFUaEPt
