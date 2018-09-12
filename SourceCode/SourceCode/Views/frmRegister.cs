@@ -41,7 +41,6 @@ namespace SourceCode
         }
         private void LoadGenderIntoCombobox(ComboBox cb)
         {
-            list_gender = GenderDAO.Instances.LoadAllGender();
             // lay vao list_gender trong ham LoadGender() cua DAO vao List<>
             list_gender = GenderDAO.Instances.LoadAllGender();
             foreach(GenderDTO item in list_gender)
@@ -98,6 +97,7 @@ namespace SourceCode
                         MessageBox.Show("Succesflly", "Notification", MessageBoxButtons.OK);
                         number_of_club = 0;
                         btnAddCoach.Enabled = true;
+                        btnCancelAll.Enabled = false;
                     }
                 }
                 else
@@ -136,18 +136,15 @@ namespace SourceCode
 
                     //add data vao bang HumanInformation
                     HumanDTO hm = new HumanDTO(human_id, gender_id, clubid, name_coach, birthday_coach, nation_coach, path_coach);
-                    if (HumanDAO.Instance.InsertNewHuman(hm))
-                    {
-                        MessageBox.Show("Succesflly add human", "Notification", MessageBoxButtons.OK);
-                    }
-
                     //add data vao bảng Coach
                     CoachDTO c = new CoachDTO(coach_id);
-                    if (CoachDAO.Instance.InsertNewCoach(c))
+                    if (HumanDAO.Instance.InsertNewHuman(hm) && CoachDAO.Instance.InsertNewCoach(c))
                     {
                         number_of_coach = 1;
                         MessageBox.Show("Succesflly add coach", "Notification", MessageBoxButtons.OK);
                     }
+                    pnlCoachName.Visible = true;
+                    txtCoachNameShow.Text = txtCoachNameInsert.Text;
                 }
                 else
                     MessageBox.Show("Input wrong or be the same", "Error!!!", MessageBoxButtons.OK);  
@@ -163,6 +160,12 @@ namespace SourceCode
             if (txtNationOfPlayer.Text == "")
                 return true;
             if (txtKitnum.Text == "")
+                return true;
+            return false;
+        }
+        public bool CheckAge()
+        {
+            if (Rules.Min_age <= DateTime.Now.Year - dtpBirthdayPlayer.Value.Year && DateTime.Now.Year - dtpBirthdayPlayer.Value.Year <= Rules.Max_age)
                 return true;
             return false;
         }
@@ -190,16 +193,15 @@ namespace SourceCode
                     
                     //add data vao bang HumanInformation
                     HumanDTO hm = new HumanDTO(humanid, gender_id, clubid, name_player, birthday_player, nation_player, path_player);
-
-                    if (HumanDAO.Instance.InsertNewHuman(hm))
-                    {
-                        MessageBox.Show("Succesflly add human", "Notification", MessageBoxButtons.OK);
-                    }
-                    
                     PlayerDTO p = new PlayerDTO(player_id, role, goal_number, ass_number, kitnum);
-                    if (PlayerDAO.Instance.InsertNewPlayer(p))
+                    if (HumanDAO.Instance.InsertNewHuman(hm) && PlayerDAO.Instance.InsertNewPlayer(p))
                     {
                         MessageBox.Show("Succesflly add player", "Notification", MessageBoxButtons.OK);
+
+                        txtPlayerName.Text = "";
+                        txtNationOfPlayer.Text = "";
+                        txtKitnum.Text = "";
+                        picPlayer.Image = null;
                     }
 
                     this.dgvRegister.Rows.Add(P_ID, player_id, name_player, cmbRole.Text, nation_player);
@@ -221,6 +223,7 @@ namespace SourceCode
         #region events
         private void frmRegister_Load(object sender, EventArgs e)
         {
+            btnFinish.Enabled = false;
             txtCoachNameShow.Enabled = false;
             btnAddCoach.Enabled = false;
             btnAddNewPlayers.Enabled = false;
@@ -258,6 +261,7 @@ namespace SourceCode
             {
                 frmRegister.ActiveForm.Width = 850;
                 frmRegister.ActiveForm.Update();
+                btnFinish.Enabled = true;
             }
         }
         
@@ -287,7 +291,6 @@ namespace SourceCode
                     
                     picLogoTeam.Image = Image.FromFile(paths + "\\Images\\" + CorrectFileName);
                     path_img_club = "\\Images\\" + CorrectFileName;
-                    MessageBox.Show("Successfully Upload");
                 }
             }
             //ClubDAO.Instance.ChooImage(open, picLogoTeam, path_img);
@@ -295,15 +298,13 @@ namespace SourceCode
         
         private void btnSaveClub_Click(object sender, EventArgs e)
         {
-
+            
             if (CheckClubId() == true)
             {
-                btnAddCoach.Enabled = true;
                 AddClub();
             }    
             else
                 MessageBox.Show("Club ID already", "Error!!!", MessageBoxButtons.OK);
-            
         }
 
         private void btnChooseCoachImage_Click(object sender, EventArgs e)
@@ -382,7 +383,13 @@ namespace SourceCode
 
         private void btnSaveNewPlayer_Click(object sender, EventArgs e)
         {
-            AddPlayer();
+            if (CheckAge() == true)
+                AddPlayer();
+            else
+            {
+                MessageBox.Show("Age of player form " + Rules.Min_age.ToString() + " to " + Rules.Max_age.ToString(), "Error!!!", MessageBoxButtons.OK);
+                dtpBirthdayPlayer.Focus();
+            }
         }
 
         private void btnFinish_Click(object sender, EventArgs e)
@@ -392,6 +399,16 @@ namespace SourceCode
             general.ShowDialog();
             this.Close();
         }
+        
+
+        private void btnCancelAll_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmGeneral general = new frmGeneral();
+            general.ShowDialog();
+            this.Close();
+        }
+
         #endregion
     }
 }

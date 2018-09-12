@@ -96,15 +96,17 @@ namespace SourceCode
             string club_name = txtClubName.Text;
             string stadium = txtStadiumName.Text;
             string clubID = txtClubID.Text;
+
             try
             {
                 ClubDTO club = new ClubDTO(club_name, stadium, clubID);
                 if (ClubDAO.Instance.UpdateClub(club))
-                    MessageBox.Show("Update Done!!!");
+                    MessageBox.Show("Update Done!!!","Notification", MessageBoxButtons.OK);
                 else
-                    MessageBox.Show("Update fail");
+                    MessageBox.Show("Update fail","Notification", MessageBoxButtons.OK);
             }
             catch { }
+
             LoadData();
             BindingAtt();
         }
@@ -121,7 +123,7 @@ namespace SourceCode
                 HumanDTO hm = new HumanDTO(human_name, human_gender_id, human_birthday, human_nation, h_id);
                 if (HumanDAO.Instance.UpdateHuman(hm))
                 {
-                    MessageBox.Show("Update Done!!!");
+                    MessageBox.Show("Update Done!!!", "Notification",MessageBoxButtons.OK);
                 }
             }
             catch { }
@@ -202,6 +204,8 @@ namespace SourceCode
         private void btnSaveCoachInfor_Click(object sender, EventArgs e)
         {
             UpdateHumanInfor();
+            LoadData();
+            BindingAtt();
         }
     }
 }

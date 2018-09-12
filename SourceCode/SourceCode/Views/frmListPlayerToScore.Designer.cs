@@ -32,8 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnShowResult = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReload = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPrintReport = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuCustomLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.picCreateSchedule = new System.Windows.Forms.PictureBox();
+            this.pnlTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dgvListPlayerToScore = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.OrderingNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlayerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,56 +45,48 @@
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalNumberOfGoals = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlRankOfTeams = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.cmbFrom = new System.Windows.Forms.ComboBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pnlDateOfCompetition = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.cmbTo = new System.Windows.Forms.ComboBox();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.picCreateSchedule = new System.Windows.Forms.PictureBox();
-            this.pnlTitle = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListPlayerToScore)).BeginInit();
-            this.pnlRankOfTeams.SuspendLayout();
-            this.pnlDateOfCompetition.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).BeginInit();
             this.pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListPlayerToScore)).BeginInit();
+            this.pnlRankOfTeams.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnShowResult
+            // btnReload
             // 
-            this.btnShowResult.Activecolor = System.Drawing.Color.White;
-            this.btnShowResult.BackColor = System.Drawing.Color.White;
-            this.btnShowResult.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnShowResult.BorderRadius = 3;
-            this.btnShowResult.ButtonText = "Show Result";
-            this.btnShowResult.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShowResult.DisabledColor = System.Drawing.Color.Gray;
-            this.btnShowResult.Iconcolor = System.Drawing.Color.White;
-            this.btnShowResult.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnShowResult.Iconimage")));
-            this.btnShowResult.Iconimage_right = null;
-            this.btnShowResult.Iconimage_right_Selected = null;
-            this.btnShowResult.Iconimage_Selected = null;
-            this.btnShowResult.IconMarginLeft = 1;
-            this.btnShowResult.IconMarginRight = 0;
-            this.btnShowResult.IconRightVisible = false;
-            this.btnShowResult.IconRightZoom = 0D;
-            this.btnShowResult.IconVisible = true;
-            this.btnShowResult.IconZoom = 90D;
-            this.btnShowResult.IsTab = false;
-            this.btnShowResult.Location = new System.Drawing.Point(75, 548);
-            this.btnShowResult.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnShowResult.Name = "btnShowResult";
-            this.btnShowResult.Normalcolor = System.Drawing.Color.White;
-            this.btnShowResult.OnHovercolor = System.Drawing.Color.Lime;
-            this.btnShowResult.OnHoverTextColor = System.Drawing.Color.SeaGreen;
-            this.btnShowResult.selected = true;
-            this.btnShowResult.Size = new System.Drawing.Size(227, 52);
-            this.btnShowResult.TabIndex = 19;
-            this.btnShowResult.Text = "Show Result";
-            this.btnShowResult.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnShowResult.Textcolor = System.Drawing.Color.SeaGreen;
-            this.btnShowResult.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReload.Activecolor = System.Drawing.Color.White;
+            this.btnReload.BackColor = System.Drawing.Color.White;
+            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReload.BorderRadius = 3;
+            this.btnReload.ButtonText = "ReLoad";
+            this.btnReload.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReload.DisabledColor = System.Drawing.Color.Gray;
+            this.btnReload.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReload.Iconcolor = System.Drawing.Color.White;
+            this.btnReload.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnReload.Iconimage")));
+            this.btnReload.Iconimage_right = null;
+            this.btnReload.Iconimage_right_Selected = null;
+            this.btnReload.Iconimage_Selected = null;
+            this.btnReload.IconMarginLeft = 1;
+            this.btnReload.IconMarginRight = 0;
+            this.btnReload.IconRightVisible = false;
+            this.btnReload.IconRightZoom = 0D;
+            this.btnReload.IconVisible = true;
+            this.btnReload.IconZoom = 90D;
+            this.btnReload.IsTab = false;
+            this.btnReload.Location = new System.Drawing.Point(73, 563);
+            this.btnReload.Margin = new System.Windows.Forms.Padding(5);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Normalcolor = System.Drawing.Color.White;
+            this.btnReload.OnHovercolor = System.Drawing.Color.Lime;
+            this.btnReload.OnHoverTextColor = System.Drawing.Color.SeaGreen;
+            this.btnReload.selected = true;
+            this.btnReload.Size = new System.Drawing.Size(227, 52);
+            this.btnReload.TabIndex = 19;
+            this.btnReload.Text = "ReLoad";
+            this.btnReload.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReload.Textcolor = System.Drawing.Color.SeaGreen;
+            this.btnReload.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnPrintReport
             // 
@@ -98,9 +94,10 @@
             this.btnPrintReport.BackColor = System.Drawing.Color.White;
             this.btnPrintReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPrintReport.BorderRadius = 3;
-            this.btnPrintReport.ButtonText = "Print Report";
+            this.btnPrintReport.ButtonText = "Create Report";
             this.btnPrintReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrintReport.DisabledColor = System.Drawing.Color.Gray;
+            this.btnPrintReport.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintReport.Iconcolor = System.Drawing.Color.White;
             this.btnPrintReport.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnPrintReport.Iconimage")));
             this.btnPrintReport.Iconimage_right = null;
@@ -113,8 +110,8 @@
             this.btnPrintReport.IconVisible = true;
             this.btnPrintReport.IconZoom = 90D;
             this.btnPrintReport.IsTab = false;
-            this.btnPrintReport.Location = new System.Drawing.Point(321, 548);
-            this.btnPrintReport.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnPrintReport.Location = new System.Drawing.Point(319, 563);
+            this.btnPrintReport.Margin = new System.Windows.Forms.Padding(5);
             this.btnPrintReport.Name = "btnPrintReport";
             this.btnPrintReport.Normalcolor = System.Drawing.Color.White;
             this.btnPrintReport.OnHovercolor = System.Drawing.Color.Lime;
@@ -122,162 +119,11 @@
             this.btnPrintReport.selected = true;
             this.btnPrintReport.Size = new System.Drawing.Size(227, 52);
             this.btnPrintReport.TabIndex = 18;
-            this.btnPrintReport.Text = "Print Report";
+            this.btnPrintReport.Text = "Create Report";
             this.btnPrintReport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPrintReport.Textcolor = System.Drawing.Color.SeaGreen;
             this.btnPrintReport.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // dgvListPlayerToScore
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvListPlayerToScore.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvListPlayerToScore.BackgroundColor = System.Drawing.Color.White;
-            this.dgvListPlayerToScore.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvListPlayerToScore.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListPlayerToScore.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvListPlayerToScore.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListPlayerToScore.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.OrderingNumber,
-            this.PlayerName,
-            this.Club,
-            this.Role,
-            this.TotalNumberOfGoals});
-            this.dgvListPlayerToScore.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgvListPlayerToScore.DoubleBuffered = true;
-            this.dgvListPlayerToScore.EnableHeadersVisualStyles = false;
-            this.dgvListPlayerToScore.GridColor = System.Drawing.Color.SeaGreen;
-            this.dgvListPlayerToScore.HeaderBgColor = System.Drawing.Color.White;
-            this.dgvListPlayerToScore.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvListPlayerToScore.Location = new System.Drawing.Point(0, 0);
-            this.dgvListPlayerToScore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvListPlayerToScore.Name = "dgvListPlayerToScore";
-            this.dgvListPlayerToScore.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvListPlayerToScore.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvListPlayerToScore.RowTemplate.Height = 24;
-            this.dgvListPlayerToScore.Size = new System.Drawing.Size(872, 361);
-            this.dgvListPlayerToScore.TabIndex = 2;
-            // 
-            // OrderingNumber
-            // 
-            this.OrderingNumber.HeaderText = "Ordering Number";
-            this.OrderingNumber.Name = "OrderingNumber";
-            // 
-            // PlayerName
-            // 
-            this.PlayerName.HeaderText = "Player Name";
-            this.PlayerName.Name = "PlayerName";
-            // 
-            // Club
-            // 
-            this.Club.HeaderText = "Club";
-            this.Club.Name = "Club";
-            // 
-            // Role
-            // 
-            this.Role.HeaderText = "Role";
-            this.Role.Name = "Role";
-            // 
-            // TotalNumberOfGoals
-            // 
-            this.TotalNumberOfGoals.HeaderText = "Total Number Of Goals";
-            this.TotalNumberOfGoals.Name = "TotalNumberOfGoals";
-            // 
-            // pnlRankOfTeams
-            // 
-            this.pnlRankOfTeams.BackColor = System.Drawing.Color.Silver;
-            this.pnlRankOfTeams.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlRankOfTeams.BackgroundImage")));
-            this.pnlRankOfTeams.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRankOfTeams.Controls.Add(this.dgvListPlayerToScore);
-            this.pnlRankOfTeams.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlRankOfTeams.GradientBottomLeft = System.Drawing.Color.White;
-            this.pnlRankOfTeams.GradientBottomRight = System.Drawing.Color.White;
-            this.pnlRankOfTeams.GradientTopLeft = System.Drawing.Color.White;
-            this.pnlRankOfTeams.GradientTopRight = System.Drawing.Color.White;
-            this.pnlRankOfTeams.Location = new System.Drawing.Point(0, 155);
-            this.pnlRankOfTeams.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlRankOfTeams.Name = "pnlRankOfTeams";
-            this.pnlRankOfTeams.Quality = 10;
-            this.pnlRankOfTeams.Size = new System.Drawing.Size(872, 361);
-            this.pnlRankOfTeams.TabIndex = 17;
-            // 
-            // cmbFrom
-            // 
-            this.cmbFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbFrom.ForeColor = System.Drawing.Color.SeaGreen;
-            this.cmbFrom.FormattingEnabled = true;
-            this.cmbFrom.Location = new System.Drawing.Point(117, 17);
-            this.cmbFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbFrom.Name = "cmbFrom";
-            this.cmbFrom.Size = new System.Drawing.Size(231, 33);
-            this.cmbFrom.TabIndex = 64;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(27, 25);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(55, 24);
-            this.bunifuCustomLabel1.TabIndex = 63;
-            this.bunifuCustomLabel1.Text = "From";
-            // 
-            // pnlDateOfCompetition
-            // 
-            this.pnlDateOfCompetition.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlDateOfCompetition.BackgroundImage")));
-            this.pnlDateOfCompetition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlDateOfCompetition.Controls.Add(this.cmbTo);
-            this.pnlDateOfCompetition.Controls.Add(this.bunifuCustomLabel2);
-            this.pnlDateOfCompetition.Controls.Add(this.cmbFrom);
-            this.pnlDateOfCompetition.Controls.Add(this.bunifuCustomLabel1);
-            this.pnlDateOfCompetition.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDateOfCompetition.GradientBottomLeft = System.Drawing.Color.White;
-            this.pnlDateOfCompetition.GradientBottomRight = System.Drawing.Color.White;
-            this.pnlDateOfCompetition.GradientTopLeft = System.Drawing.Color.White;
-            this.pnlDateOfCompetition.GradientTopRight = System.Drawing.Color.White;
-            this.pnlDateOfCompetition.Location = new System.Drawing.Point(0, 82);
-            this.pnlDateOfCompetition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlDateOfCompetition.Name = "pnlDateOfCompetition";
-            this.pnlDateOfCompetition.Quality = 10;
-            this.pnlDateOfCompetition.Size = new System.Drawing.Size(872, 73);
-            this.pnlDateOfCompetition.TabIndex = 16;
-            // 
-            // cmbTo
-            // 
-            this.cmbTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTo.ForeColor = System.Drawing.Color.SeaGreen;
-            this.cmbTo.FormattingEnabled = true;
-            this.cmbTo.Location = new System.Drawing.Point(469, 17);
-            this.cmbTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbTo.Name = "cmbTo";
-            this.cmbTo.Size = new System.Drawing.Size(228, 33);
-            this.cmbTo.TabIndex = 66;
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(395, 25);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(33, 24);
-            this.bunifuCustomLabel2.TabIndex = 65;
-            this.bunifuCustomLabel2.Text = "To";
+            this.btnPrintReport.Click += new System.EventHandler(this.btnPrintReport_Click);
             // 
             // bunifuCustomLabel
             // 
@@ -331,6 +177,7 @@
             this.btnCancel.ButtonText = "Cancel";
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCancel.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Iconcolor = System.Drawing.Color.White;
             this.btnCancel.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCancel.Iconimage")));
             this.btnCancel.Iconimage_right = null;
@@ -343,8 +190,8 @@
             this.btnCancel.IconVisible = true;
             this.btnCancel.IconZoom = 90D;
             this.btnCancel.IsTab = false;
-            this.btnCancel.Location = new System.Drawing.Point(576, 548);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCancel.Location = new System.Drawing.Point(574, 563);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Normalcolor = System.Drawing.Color.White;
             this.btnCancel.OnHovercolor = System.Drawing.Color.Lime;
@@ -358,15 +205,110 @@
             this.btnCancel.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // dgvListPlayerToScore
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvListPlayerToScore.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvListPlayerToScore.BackgroundColor = System.Drawing.Color.White;
+            this.dgvListPlayerToScore.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvListPlayerToScore.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListPlayerToScore.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvListPlayerToScore.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListPlayerToScore.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.OrderingNumber,
+            this.PlayerName,
+            this.Club,
+            this.Role,
+            this.TotalNumberOfGoals});
+            this.dgvListPlayerToScore.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvListPlayerToScore.DoubleBuffered = true;
+            this.dgvListPlayerToScore.EnableHeadersVisualStyles = false;
+            this.dgvListPlayerToScore.GridColor = System.Drawing.Color.SeaGreen;
+            this.dgvListPlayerToScore.HeaderBgColor = System.Drawing.Color.White;
+            this.dgvListPlayerToScore.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvListPlayerToScore.Location = new System.Drawing.Point(0, 0);
+            this.dgvListPlayerToScore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvListPlayerToScore.MultiSelect = false;
+            this.dgvListPlayerToScore.Name = "dgvListPlayerToScore";
+            this.dgvListPlayerToScore.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvListPlayerToScore.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvListPlayerToScore.RowTemplate.Height = 24;
+            this.dgvListPlayerToScore.Size = new System.Drawing.Size(872, 459);
+            this.dgvListPlayerToScore.TabIndex = 2;
+            // 
+            // OrderingNumber
+            // 
+            this.OrderingNumber.DataPropertyName = "OrderingNumber";
+            this.OrderingNumber.HeaderText = "Ordering Number";
+            this.OrderingNumber.Name = "OrderingNumber";
+            // 
+            // PlayerName
+            // 
+            this.PlayerName.DataPropertyName = "Name";
+            this.PlayerName.HeaderText = "Player Name";
+            this.PlayerName.Name = "PlayerName";
+            this.PlayerName.Width = 150;
+            // 
+            // Club
+            // 
+            this.Club.DataPropertyName = "ClubName";
+            this.Club.HeaderText = "Club";
+            this.Club.Name = "Club";
+            this.Club.Width = 150;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "RoleName";
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            // 
+            // TotalNumberOfGoals
+            // 
+            this.TotalNumberOfGoals.DataPropertyName = "GoalNumber";
+            this.TotalNumberOfGoals.HeaderText = "Total Number Of Goals";
+            this.TotalNumberOfGoals.Name = "TotalNumberOfGoals";
+            // 
+            // pnlRankOfTeams
+            // 
+            this.pnlRankOfTeams.BackColor = System.Drawing.Color.Silver;
+            this.pnlRankOfTeams.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlRankOfTeams.BackgroundImage")));
+            this.pnlRankOfTeams.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlRankOfTeams.Controls.Add(this.dgvListPlayerToScore);
+            this.pnlRankOfTeams.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlRankOfTeams.GradientBottomLeft = System.Drawing.Color.White;
+            this.pnlRankOfTeams.GradientBottomRight = System.Drawing.Color.White;
+            this.pnlRankOfTeams.GradientTopLeft = System.Drawing.Color.White;
+            this.pnlRankOfTeams.GradientTopRight = System.Drawing.Color.White;
+            this.pnlRankOfTeams.Location = new System.Drawing.Point(0, 82);
+            this.pnlRankOfTeams.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlRankOfTeams.Name = "pnlRankOfTeams";
+            this.pnlRankOfTeams.Quality = 10;
+            this.pnlRankOfTeams.Size = new System.Drawing.Size(872, 459);
+            this.pnlRankOfTeams.TabIndex = 17;
+            // 
             // frmListPlayerToScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(872, 629);
-            this.Controls.Add(this.btnShowResult);
+            this.Controls.Add(this.btnReload);
             this.Controls.Add(this.btnPrintReport);
             this.Controls.Add(this.pnlRankOfTeams);
-            this.Controls.Add(this.pnlDateOfCompetition);
             this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.btnCancel);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -375,32 +317,26 @@
             this.Name = "frmListPlayerToScore";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "List Player To Score";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListPlayerToScore)).EndInit();
-            this.pnlRankOfTeams.ResumeLayout(false);
-            this.pnlDateOfCompetition.ResumeLayout(false);
-            this.pnlDateOfCompetition.PerformLayout();
+            this.Load += new System.EventHandler(this.frmListPlayerToScore_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picCreateSchedule)).EndInit();
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListPlayerToScore)).EndInit();
+            this.pnlRankOfTeams.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuFlatButton btnShowResult;
+        private Bunifu.Framework.UI.BunifuFlatButton btnReload;
         private Bunifu.Framework.UI.BunifuFlatButton btnPrintReport;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvListPlayerToScore;
-        private Bunifu.Framework.UI.BunifuGradientPanel pnlRankOfTeams;
-        private System.Windows.Forms.ComboBox cmbFrom;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuGradientPanel pnlDateOfCompetition;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel;
         private System.Windows.Forms.PictureBox picCreateSchedule;
         private Bunifu.Framework.UI.BunifuGradientPanel pnlTitle;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
-        private System.Windows.Forms.ComboBox cmbTo;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvListPlayerToScore;
+        private Bunifu.Framework.UI.BunifuGradientPanel pnlRankOfTeams;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderingNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn PlayerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Club;

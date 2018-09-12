@@ -17,6 +17,8 @@ namespace SourceCode
         public frmLogin()
         {
             InitializeComponent();
+            txtUserName.Text = "admin1";
+            txtPassword.Text = "1";
         }
 
         private void btnExit_Click(object sender, EventArgs e)

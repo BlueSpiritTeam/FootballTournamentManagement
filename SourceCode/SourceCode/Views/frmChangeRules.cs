@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -128,7 +128,7 @@ namespace SourceCode
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmGeneral general = new frmGeneral();
+            frmTournament general = new frmTournament();
             general.ShowDialog();
             this.Close();
         }

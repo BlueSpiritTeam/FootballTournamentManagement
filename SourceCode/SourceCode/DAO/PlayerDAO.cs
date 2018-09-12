@@ -79,6 +79,10 @@ namespace SourceCode.DAO
             return result > 0;
         }
 
-        
+        public DataTable ListPlayerToScore()
+        {
+            DataTable dt = DataProvider.Instance.ExcuteQuery("ListPlayerToScore");
+            return dt;
+        }
     }
 }

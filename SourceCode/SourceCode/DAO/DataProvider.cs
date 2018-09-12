@@ -23,6 +23,7 @@ namespace SourceCode.DAO
         {
             get
             {
+
                 if (instance == null)
                     instance = new DataProvider();
                 return instance;
@@ -53,7 +54,7 @@ namespace SourceCode.DAO
 
                 if (parameter != null)
                 {
-                    string[] listPara = query.Split(' ');
+                    string[] listPara = query.Split(' '); //trong cau lenh goi cac parameter phai co mot dau cach
                     int i = 0;
                     foreach (string item in listPara)
                     {

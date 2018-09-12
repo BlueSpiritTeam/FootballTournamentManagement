@@ -71,10 +71,10 @@
             this.pnlTitle.GradientTopLeft = System.Drawing.Color.White;
             this.pnlTitle.GradientTopRight = System.Drawing.Color.White;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnlTitle.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTitle.Name = "pnlTitle";
             this.pnlTitle.Quality = 10;
-            this.pnlTitle.Size = new System.Drawing.Size(695, 77);
+            this.pnlTitle.Size = new System.Drawing.Size(927, 95);
             this.pnlTitle.TabIndex = 0;
             // 
             // bunifuCustomLabel
@@ -82,12 +82,11 @@
             this.bunifuCustomLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCustomLabel.AutoSize = true;
             this.bunifuCustomLabel.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel.Font = new System.Drawing.Font("Copperplate Gothic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel.Location = new System.Drawing.Point(185, 24);
-            this.bunifuCustomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel.Location = new System.Drawing.Point(247, 30);
             this.bunifuCustomLabel.Name = "bunifuCustomLabel";
-            this.bunifuCustomLabel.Size = new System.Drawing.Size(349, 37);
+            this.bunifuCustomLabel.Size = new System.Drawing.Size(568, 44);
             this.bunifuCustomLabel.TabIndex = 56;
             this.bunifuCustomLabel.Text = "Create Match Schedule";
             // 
@@ -95,10 +94,10 @@
             // 
             this.picCreateSchedule.BackColor = System.Drawing.Color.SeaGreen;
             this.picCreateSchedule.Image = ((System.Drawing.Image)(resources.GetObject("picCreateSchedule.Image")));
-            this.picCreateSchedule.Location = new System.Drawing.Point(101, 16);
-            this.picCreateSchedule.Margin = new System.Windows.Forms.Padding(2);
+            this.picCreateSchedule.Location = new System.Drawing.Point(135, 20);
+            this.picCreateSchedule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCreateSchedule.Name = "picCreateSchedule";
-            this.picCreateSchedule.Size = new System.Drawing.Size(38, 46);
+            this.picCreateSchedule.Size = new System.Drawing.Size(51, 57);
             this.picCreateSchedule.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCreateSchedule.TabIndex = 0;
             this.picCreateSchedule.TabStop = false;
@@ -111,11 +110,11 @@
             this.pnlMatchRound.GradientBottomRight = System.Drawing.Color.White;
             this.pnlMatchRound.GradientTopLeft = System.Drawing.Color.White;
             this.pnlMatchRound.GradientTopRight = System.Drawing.Color.White;
-            this.pnlMatchRound.Location = new System.Drawing.Point(0, 77);
-            this.pnlMatchRound.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlMatchRound.Location = new System.Drawing.Point(0, 95);
+            this.pnlMatchRound.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMatchRound.Name = "pnlMatchRound";
             this.pnlMatchRound.Quality = 10;
-            this.pnlMatchRound.Size = new System.Drawing.Size(693, 59);
+            this.pnlMatchRound.Size = new System.Drawing.Size(924, 73);
             this.pnlMatchRound.TabIndex = 2;
             // 
             // dgvMatchResult
@@ -146,8 +145,8 @@
             this.dgvMatchResult.GridColor = System.Drawing.Color.SeaGreen;
             this.dgvMatchResult.HeaderBgColor = System.Drawing.Color.White;
             this.dgvMatchResult.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvMatchResult.Location = new System.Drawing.Point(0, 136);
-            this.dgvMatchResult.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvMatchResult.Location = new System.Drawing.Point(0, 167);
+            this.dgvMatchResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvMatchResult.MultiSelect = false;
             this.dgvMatchResult.Name = "dgvMatchResult";
             this.dgvMatchResult.ReadOnly = true;
@@ -157,7 +156,7 @@
             this.dgvMatchResult.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMatchResult.RowTemplate.Height = 24;
             this.dgvMatchResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMatchResult.Size = new System.Drawing.Size(691, 350);
+            this.dgvMatchResult.Size = new System.Drawing.Size(921, 431);
             this.dgvMatchResult.TabIndex = 3;
             // 
             // btnCreateMatch
@@ -178,10 +177,10 @@
             this.btnCreateMatch.IdleFillColor = System.Drawing.Color.White;
             this.btnCreateMatch.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnCreateMatch.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCreateMatch.Location = new System.Drawing.Point(13, 4);
-            this.btnCreateMatch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCreateMatch.Location = new System.Drawing.Point(17, 5);
+            this.btnCreateMatch.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCreateMatch.Name = "btnCreateMatch";
-            this.btnCreateMatch.Size = new System.Drawing.Size(204, 49);
+            this.btnCreateMatch.Size = new System.Drawing.Size(272, 60);
             this.btnCreateMatch.TabIndex = 67;
             this.btnCreateMatch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCreateMatch.Click += new System.EventHandler(this.btnCreateMatch_Click);
@@ -197,11 +196,11 @@
             this.pnlFooter.GradientBottomRight = System.Drawing.Color.White;
             this.pnlFooter.GradientTopLeft = System.Drawing.Color.White;
             this.pnlFooter.GradientTopRight = System.Drawing.Color.White;
-            this.pnlFooter.Location = new System.Drawing.Point(0, 488);
-            this.pnlFooter.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlFooter.Location = new System.Drawing.Point(0, 601);
+            this.pnlFooter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Quality = 10;
-            this.pnlFooter.Size = new System.Drawing.Size(693, 59);
+            this.pnlFooter.Size = new System.Drawing.Size(924, 73);
             this.pnlFooter.TabIndex = 68;
             // 
             // btnFinish
@@ -222,10 +221,10 @@
             this.btnFinish.IdleFillColor = System.Drawing.Color.White;
             this.btnFinish.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnFinish.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnFinish.Location = new System.Drawing.Point(424, 4);
-            this.btnFinish.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFinish.Location = new System.Drawing.Point(565, 5);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnFinish.Name = "btnFinish";
-            this.btnFinish.Size = new System.Drawing.Size(134, 49);
+            this.btnFinish.Size = new System.Drawing.Size(179, 60);
             this.btnFinish.TabIndex = 69;
             this.btnFinish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
@@ -248,10 +247,10 @@
             this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
             this.btnUpdate.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnUpdate.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.Location = new System.Drawing.Point(251, 4);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Location = new System.Drawing.Point(335, 5);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(134, 49);
+            this.btnUpdate.Size = new System.Drawing.Size(179, 60);
             this.btnUpdate.TabIndex = 68;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -269,9 +268,10 @@
             this.pnl_update.Controls.Add(this.bunifuCustomLabel1);
             this.pnl_update.Controls.Add(this.dtpNewMatchDate);
             this.pnl_update.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.pnl_update.Location = new System.Drawing.Point(691, 0);
+            this.pnl_update.Location = new System.Drawing.Point(921, 0);
+            this.pnl_update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_update.Name = "pnl_update";
-            this.pnl_update.Size = new System.Drawing.Size(258, 545);
+            this.pnl_update.Size = new System.Drawing.Size(344, 671);
             this.pnl_update.TabIndex = 69;
             // 
             // btn_cancel
@@ -292,10 +292,10 @@
             this.btn_cancel.IdleFillColor = System.Drawing.Color.White;
             this.btn_cancel.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_cancel.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_cancel.Location = new System.Drawing.Point(54, 451);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_cancel.Location = new System.Drawing.Point(72, 555);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(134, 49);
+            this.btn_cancel.Size = new System.Drawing.Size(179, 60);
             this.btn_cancel.TabIndex = 69;
             this.btn_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -318,36 +318,38 @@
             this.btn_Change.IdleFillColor = System.Drawing.Color.White;
             this.btn_Change.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_Change.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_Change.Location = new System.Drawing.Point(54, 394);
-            this.btn_Change.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Change.Location = new System.Drawing.Point(72, 485);
+            this.btn_Change.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_Change.Name = "btn_Change";
-            this.btn_Change.Size = new System.Drawing.Size(134, 49);
+            this.btn_Change.Size = new System.Drawing.Size(179, 60);
             this.btn_Change.TabIndex = 69;
             this.btn_Change.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_Change.Click += new System.EventHandler(this.btn_Change_Click);
             // 
             // numericUpDown_mm
             // 
-            this.numericUpDown_mm.Location = new System.Drawing.Point(172, 340);
+            this.numericUpDown_mm.Location = new System.Drawing.Point(229, 418);
+            this.numericUpDown_mm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDown_mm.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
             this.numericUpDown_mm.Name = "numericUpDown_mm";
-            this.numericUpDown_mm.Size = new System.Drawing.Size(48, 21);
+            this.numericUpDown_mm.Size = new System.Drawing.Size(64, 24);
             this.numericUpDown_mm.TabIndex = 70;
             // 
             // numericUpDown_hh
             // 
-            this.numericUpDown_hh.Location = new System.Drawing.Point(67, 340);
+            this.numericUpDown_hh.Location = new System.Drawing.Point(89, 418);
+            this.numericUpDown_hh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDown_hh.Maximum = new decimal(new int[] {
             23,
             0,
             0,
             0});
             this.numericUpDown_hh.Name = "numericUpDown_hh";
-            this.numericUpDown_hh.Size = new System.Drawing.Size(48, 21);
+            this.numericUpDown_hh.Size = new System.Drawing.Size(64, 24);
             this.numericUpDown_hh.TabIndex = 70;
             // 
             // bunifuCustomLabel2
@@ -356,10 +358,9 @@
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(18, 295);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(24, 363);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(209, 29);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(250, 36);
             this.bunifuCustomLabel2.TabIndex = 19;
             this.bunifuCustomLabel2.Text = "New Match Time";
             // 
@@ -369,10 +370,9 @@
             this.bunifuCustomLabel4.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(130, 340);
-            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(173, 418);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(37, 20);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(48, 25);
             this.bunifuCustomLabel4.TabIndex = 19;
             this.bunifuCustomLabel4.Text = "MM";
             // 
@@ -382,10 +382,9 @@
             this.bunifuCustomLabel3.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(27, 340);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(36, 418);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(35, 20);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(42, 25);
             this.bunifuCustomLabel3.TabIndex = 19;
             this.bunifuCustomLabel3.Text = "HH";
             // 
@@ -395,10 +394,9 @@
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.White;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(17, 162);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(23, 199);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(203, 29);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(247, 36);
             this.bunifuCustomLabel1.TabIndex = 19;
             this.bunifuCustomLabel1.Text = "New Match Date";
             // 
@@ -410,25 +408,25 @@
             this.dtpNewMatchDate.ForeColor = System.Drawing.Color.SeaGreen;
             this.dtpNewMatchDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNewMatchDate.FormatCustom = null;
-            this.dtpNewMatchDate.Location = new System.Drawing.Point(31, 195);
-            this.dtpNewMatchDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNewMatchDate.Location = new System.Drawing.Point(41, 240);
+            this.dtpNewMatchDate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dtpNewMatchDate.Name = "dtpNewMatchDate";
-            this.dtpNewMatchDate.Size = new System.Drawing.Size(176, 37);
+            this.dtpNewMatchDate.Size = new System.Drawing.Size(235, 46);
             this.dtpNewMatchDate.TabIndex = 18;
             this.dtpNewMatchDate.Value = new System.DateTime(2017, 5, 1, 0, 0, 0, 0);
             // 
             // frmMatchSchedule
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 545);
+            this.ClientSize = new System.Drawing.Size(915, 671);
             this.Controls.Add(this.pnl_update);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.dgvMatchResult);
             this.Controls.Add(this.pnlMatchRound);
             this.Controls.Add(this.pnlTitle);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMatchSchedule";

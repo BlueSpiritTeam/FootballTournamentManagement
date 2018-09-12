@@ -57,10 +57,14 @@ namespace SourceCode.DAO
             return data;
         }
 
-        
+        public DataTable LoadRankOfClub()
+        {
+            DataTable dt = DataProvider.Instance.ExcuteQuery("LoadRankOfClub");
+            return dt;
+        }
         public DataTable LoadAllPlayerForClub(string ID)
         {
-            //can tra ra mot DataTable, Neu dung ExcuteNonQuery() thi khong tra ra duoc.
+            //can tra ra mot DataTable, Neu dung ExcuteNonQuery() thi khong tra ra duoc, //optimize dung excuteQuery()
             string cstr = @"select Row_number() over(order by PlayerID) as OrderingPlayer, h.Name as PlayerName, r.RoleName, p.KitNum
 	                        from dbo.HumanInformation as h, dbo.Club as c, dbo.Player as p, dbo.Role as r 
 	                        where h.Human_ClubID = c.ClubID and h.HumanID = p.PlayerID and p.RoleID = r.RoleID and c.ClubID = '" + ID + "'";
@@ -83,7 +87,6 @@ namespace SourceCode.DAO
             return result > 0;
         }
         
-
         public bool InitializeDetailClub(string id)
         {
             string query = "exec InitializeDetailClub @ClubID";

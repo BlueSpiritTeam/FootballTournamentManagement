@@ -167,21 +167,23 @@ namespace SourceCode
             string human_gender_id = GenderDAO.Instances.GetGenderID(cmbGender.Text);
             DateTime human_birthday = dtpBirthday.Value;
             string human_nation = txtNation.Text;
-            int index = dgvPlayerInfor.CurrentCell.RowIndex;//lấy ra chỉ số của row đang đc chọn
-            string h_id = dgvPlayerInfor.Rows[index].Cells[10].Value.ToString().Trim(); //loi o day
+            int index = dgvPlayerInfor.CurrentCell.RowIndex;//lấy ra chỉ số của row đang đc chọn --> khong chon dong nao fail
+            string h_id = dgvPlayerInfor.Rows[index].Cells[10].Value.ToString().Trim();
 
             int player_role = RoleDAO.Instances.GetRoleId(cmbRole.Text);
             int player_kitnum = int.Parse(txtKitnum.Text);
+
             try
             {
                 HumanDTO hm = new HumanDTO(human_name, human_gender_id, human_birthday, human_nation, h_id);
                 PlayerDTO pl = new PlayerDTO(h_id, player_role, player_kitnum);
                 if (HumanDAO.Instance.UpdateHuman(hm) && PlayerDAO.Instance.UpdatePlayer(pl))
-                {
-                    MessageBox.Show("Update Human Done!!!");
-                }
+                    MessageBox.Show("Update Done!!!", "Notification", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Update fail", "Notification", MessageBoxButtons.OK);
             }
             catch { }
+            
             DisableAtt();
             LoadAllPlayerInfor();
             Binding();
@@ -215,8 +217,7 @@ namespace SourceCode
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            UpdatePlayer();
-            
+            UpdatePlayer();  
         }
 
         private void grbPlayerDetails_Enter(object sender, EventArgs e)
