@@ -1,7 +1,8 @@
-﻿using SourceCode.DAO;
+using SourceCode.DAO;
 using System;
 using System.Collections.Generic;
 using System.Data;
+
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -12,7 +13,7 @@ namespace SourceCode.DTO
     class AccountDTO
     {
         private string username;
-         private string password;
+        private string password;
  
          public string Username
          {
@@ -61,6 +62,6 @@ namespace SourceCode.DTO
                  hasPass += item;
              }
              return hasPass;
-         }
+         } 
     }
 }
